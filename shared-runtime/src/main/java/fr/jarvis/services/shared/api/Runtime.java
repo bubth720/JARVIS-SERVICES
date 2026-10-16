@@ -33,7 +33,7 @@ public final class Runtime {
     data = new Data();
     memory = new Memory(store, guard);
     actions = new Actions(store, guard, documents);
-    analyst = new Analyst(documents, guard, llm);
+    analyst = new Analyst(documents, guard, llm, knowledge);
     bridge = new Bridge(guard, new Bridge.Simulator());
     diagnostics = new Diagnostics(store, guard);
     recovery = new Recovery(store, guard);

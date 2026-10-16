@@ -45,23 +45,40 @@ public final class OfflineSmokeTest {
     if (permissions != null)
       for (String p : permissions) assertFalse("android.permission.INTERNET".equals(p));
   }
+
   private boolean contains(android.view.View view, String text) {
-    if (view instanceof android.widget.TextView && ((android.widget.TextView)view).getText().toString().contains(text)) return true;
-    if (view instanceof android.view.ViewGroup) { android.view.ViewGroup group=(android.view.ViewGroup)view; for(int i=0;i<group.getChildCount();i++) if(contains(group.getChildAt(i),text))return true; }
+    if (view instanceof android.widget.TextView
+        && ((android.widget.TextView) view).getText().toString().contains(text)) return true;
+    if (view instanceof android.view.ViewGroup) {
+      android.view.ViewGroup group = (android.view.ViewGroup) view;
+      for (int i = 0; i < group.getChildCount(); i++)
+        if (contains(group.getChildAt(i), text)) return true;
+    }
     return false;
   }
-  @Test public void diagnosticActivityInitializesAllModules() throws Exception {
-    android.app.Instrumentation instrumentation=InstrumentationRegistry.getInstrumentation();
-    android.content.Intent intent=new android.content.Intent(context(),MainActivity.class).addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
-    android.app.Activity activity=instrumentation.startActivitySync(intent);
+
+  @Test
+  public void diagnosticActivityInitializesAllModules() throws Exception {
+    android.app.Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
+    android.content.Intent intent =
+        new android.content.Intent(context(), MainActivity.class)
+            .addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
+    android.app.Activity activity = instrumentation.startActivitySync(intent);
     try {
-      java.util.concurrent.atomic.AtomicBoolean ready=new java.util.concurrent.atomic.AtomicBoolean();
-      long deadline=android.os.SystemClock.uptimeMillis()+10000;
-      while(!ready.get() && android.os.SystemClock.uptimeMillis()<deadline){
-        instrumentation.runOnMainSync(()->ready.set(contains(activity.getWindow().getDecorView(),"available_in_process")&&contains(activity.getWindow().getDecorView(),"bridge")));
-        if(!ready.get())Thread.sleep(50);
+      java.util.concurrent.atomic.AtomicBoolean ready =
+          new java.util.concurrent.atomic.AtomicBoolean();
+      long deadline = android.os.SystemClock.uptimeMillis() + 10000;
+      while (!ready.get() && android.os.SystemClock.uptimeMillis() < deadline) {
+        instrumentation.runOnMainSync(
+            () ->
+                ready.set(
+                    contains(activity.getWindow().getDecorView(), "available_in_process")
+                        && contains(activity.getWindow().getDecorView(), "bridge")));
+        if (!ready.get()) Thread.sleep(50);
       }
-      assertTrue("Diagnostic did not initialize modules",ready.get());
-    } finally { instrumentation.runOnMainSync(activity::finish); }
+      assertTrue("Diagnostic did not initialize modules", ready.get());
+    } finally {
+      instrumentation.runOnMainSync(activity::finish);
+    }
   }
 }

@@ -528,4 +528,22 @@ class ModulesTest {
         () -> runtime.documents.export(new Context("llm", Set.of()), "x.txt", "txt", "x", task()));
     code("UNSAFE_PATH", () -> runtime.documents.export(owner, "../escape.txt", "txt", "x", task()));
   }
+
+  @Test
+  void analystCoordinatesKnowledgeDocumentsDataAndModel() {
+    Map<String, Object> d = doc("evidence for exact calculation");
+    runtime.knowledge.index(owner, d, task());
+    Map<String, Object> report =
+        runtime.analyst.analyze(
+            owner,
+            "Calculate and cite",
+            "evidence",
+            runtime.data.csv("value\n0.1\n0.2"),
+            "value",
+            task());
+    assertEquals(true, report.get("simulated"));
+    Map<?, ?> calculation = (Map<?, ?>) report.get("calculations");
+    assertEquals("0.3", ((Map<?, ?>) calculation.get("statistics")).get("sum"));
+    assertEquals(5, ((List<?>) report.get("executed_plan")).size());
+  }
 }

@@ -5,6 +5,7 @@ import fr.jarvis.services.modules.data.Data;
 import fr.jarvis.services.modules.documents.Documents;
 import fr.jarvis.services.modules.guard.Guard;
 import fr.jarvis.services.modules.guard.Guard.Context;
+import fr.jarvis.services.modules.knowledge.Knowledge;
 import fr.jarvis.services.shared.api.Contracts.Failure;
 import fr.jarvis.services.shared.tasks.Task;
 import java.util.*;
@@ -13,8 +14,14 @@ public final class Analyst {
   private final Documents documents;
   private final Guard guard;
   private final LlmPort llm;
+  private final Knowledge knowledge;
 
   public Analyst(Documents documents, Guard guard, LlmPort llm) {
+    this(documents, guard, llm, null);
+  }
+
+  public Analyst(Documents documents, Guard guard, LlmPort llm, Knowledge knowledge) {
+    this.knowledge = knowledge;
     this.documents = documents;
     this.guard = guard;
     this.llm = llm;
@@ -28,7 +35,6 @@ public final class Analyst {
     List<Map<String, Object>> conflicts = new ArrayList<>();
     Map<String, Map<String, String>> values = new LinkedHashMap<>();
     long sourceChars = 0, quotedChars = 0;
-    List<String> facts = new ArrayList<>();
     List<Map<String, Object>> differences = new ArrayList<>();
     for (String id : ids) {
       task.check();
@@ -47,7 +53,6 @@ public final class Analyst {
         }
       }
       evidence.add(new LlmPort.Evidence(id, (String) d.get("text_sha256"), quote));
-      facts.add(quote);
     }
     for (int i = 1; i < ids.size(); i++)
       differences.add(documents.compare(ctx, ids.get(0), ids.get(i)));
@@ -99,6 +104,40 @@ public final class Analyst {
       out.put("simulated", false);
     }
     return out;
+  }
+
+  /** Fixed, inspectable plan; no autonomous tool execution or LLM arithmetic. */
+  public Map<String, Object> analyze(
+      Context ctx,
+      String question,
+      String searchTerm,
+      Data.Table table,
+      String numericColumn,
+      Task task) {
+    guard.require(ctx, "analyst.read");
+    task.check();
+    if (knowledge == null) throw new Failure("KNOWLEDGE_UNAVAILABLE");
+    List<String> sources = new ArrayList<>();
+    for (Map<String, String> hit : knowledge.lexical(ctx, searchTerm, 8))
+      sources.add(hit.get("id"));
+    if (sources.isEmpty()) throw new Failure("NO_EVIDENCE");
+    Map<String, Object> report = report(ctx, question, sources, task);
+    List<String> plan =
+        new ArrayList<>(
+            Arrays.asList(
+                "retrieve_fts5",
+                "extract_evidence",
+                "compare_sources",
+                "interpret_with_local_adapter"));
+    if (table != null) {
+      task.check();
+      Map<String, Object> calculation = calculate(ctx, table, numericColumn);
+      calculation.put("input_sha256", Guard.digest(table.csv()));
+      report.put("calculations", calculation);
+      plan.add("calculate_exact_decimals");
+    }
+    report.put("executed_plan", plan);
+    return report;
   }
 
   public Map<String, Object> calculate(Context ctx, Data.Table table, String column) {
