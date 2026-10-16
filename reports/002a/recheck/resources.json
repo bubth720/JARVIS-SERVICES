@@ -1,0 +1,8 @@
+{
+  "checkpoints": 8,
+  "max_observed_checkpoint_pss_kib": 27146,
+  "max_kernel_vm_hwm_kib": 86456,
+  "host_installation_and_instrumentation_seconds": 159.332,
+  "interpretation": "PSS sampled after scenarios; VmHWM is cumulative process RSS high-water mark, not per-scenario allocation; host duration includes APK transfer/install. Emulated values only.",
+  "physical_battery_thermal_measurements": "not performed"
+}

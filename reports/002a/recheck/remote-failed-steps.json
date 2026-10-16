@@ -1,0 +1,389 @@
+[
+  {
+    "job_id": "117029329059",
+    "steps": [
+      {
+        "data-name": "Set up job",
+        "data-number": "1",
+        "data-conclusion": "success",
+        "data-external-id": "43b7924d-10b9-45fa-aa0c-d25296d61a04",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:47Z",
+        "data-completed-at": "2026-10-16T14:40:49Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/1",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "data-number": "2",
+        "data-conclusion": "success",
+        "data-external-id": "daf72f8d-ce0a-48b2-90e0-cbec15dd6709",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:49Z",
+        "data-completed-at": "2026-10-16T14:40:49Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/2",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "data-number": "3",
+        "data-conclusion": "success",
+        "data-external-id": "ffc604e0-78e7-422b-badc-3555e10dd880",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:49Z",
+        "data-completed-at": "2026-10-16T14:40:50Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/3",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "JVM regressions",
+        "data-number": "4",
+        "data-conclusion": "failure",
+        "data-external-id": "c394325d-1b82-439b-821d-27a62c84cdc0",
+        "data-expand": "true",
+        "data-started-at": "2026-10-16T14:40:50Z",
+        "data-completed-at": "2026-10-16T14:41:11Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/4",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "data-number": "5",
+        "data-conclusion": "success",
+        "data-external-id": "c9dd593e-1217-4c34-a41c-72436c7113c9",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:11Z",
+        "data-completed-at": "2026-10-16T14:41:11Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/5",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Post Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "data-number": "9",
+        "data-conclusion": "success",
+        "data-external-id": "690fddb8-6b5f-4e37-a84a-cf9d044447c8",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:11Z",
+        "data-completed-at": "2026-10-16T14:41:11Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/9",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "data-number": "10",
+        "data-conclusion": "success",
+        "data-external-id": "1e815ee5-8b17-4b5f-aad3-31edc4fd7d23",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:11Z",
+        "data-completed-at": "2026-10-16T14:41:11Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/10",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Complete job",
+        "data-number": "11",
+        "data-conclusion": "success",
+        "data-external-id": "c8c19112-a8bf-42a8-aa5d-28adef8822b6",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:12Z",
+        "data-completed-at": "2026-10-16T14:41:12Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329059/logs/11",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      }
+    ]
+  },
+  {
+    "job_id": "117029328586",
+    "steps": [
+      {
+        "data-name": "Set up job",
+        "data-number": "1",
+        "data-conclusion": "success",
+        "data-external-id": "8713ea41-7e4b-4f96-8ff8-1e8531565f83",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:47Z",
+        "data-completed-at": "2026-10-16T14:40:48Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/1",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "data-number": "2",
+        "data-conclusion": "success",
+        "data-external-id": "19862465-a1cc-4365-9ccd-f6eb77c4da47",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:48Z",
+        "data-completed-at": "2026-10-16T14:40:49Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/2",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "data-number": "3",
+        "data-conclusion": "success",
+        "data-external-id": "9c5c32c8-5d82-4678-b544-e89af4aed1ef",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:49Z",
+        "data-completed-at": "2026-10-16T14:40:49Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/3",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407",
+        "data-number": "4",
+        "data-conclusion": "failure",
+        "data-external-id": "8f35300e-2b3c-40cc-b029-d8a601a0aea4",
+        "data-expand": "true",
+        "data-started-at": "2026-10-16T14:40:49Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/4",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "SDK prerequisites",
+        "data-number": "5",
+        "data-conclusion": "skipped",
+        "data-external-id": "6328286d-7687-4e02-b1d7-11d65f276771",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Build diagnostic APK",
+        "data-number": "6",
+        "data-conclusion": "skipped",
+        "data-external-id": "1caa8c3b-6401-4291-a6b3-d965bb781582",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Build instrumentation APK",
+        "data-number": "7",
+        "data-conclusion": "skipped",
+        "data-external-id": "2cef695d-d6ba-4279-b1f0-d055a5ff676d",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Android Lint (no suppression or severity reduction)",
+        "data-number": "8",
+        "data-conclusion": "skipped",
+        "data-external-id": "9444b9f9-5cd2-44ef-875e-26608cfc9b2c",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Artifact provenance",
+        "data-number": "9",
+        "data-conclusion": "skipped",
+        "data-external-id": "332cab3c-0e0b-46d8-ae74-089bf643b25f",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "data-number": "10",
+        "data-conclusion": "success",
+        "data-external-id": "917d06e7-09cd-4a33-89f6-acd8dbffcc8e",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/10",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Post Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "data-number": "19",
+        "data-conclusion": "success",
+        "data-external-id": "e02e92a1-6153-4c29-aa2c-8ffaf536b0a1",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/19",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "data-number": "20",
+        "data-conclusion": "success",
+        "data-external-id": "544caa20-a6b3-4d83-82dd-a225237e9094",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/20",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Complete job",
+        "data-number": "21",
+        "data-conclusion": "success",
+        "data-external-id": "376805c0-a183-4153-869d-c2dfcff3f8e1",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:01Z",
+        "data-completed-at": "2026-10-16T14:41:01Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029328586/logs/21",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      }
+    ]
+  },
+  {
+    "job_id": "117029329073",
+    "steps": [
+      {
+        "data-name": "Set up job",
+        "data-number": "1",
+        "data-conclusion": "success",
+        "data-external-id": "a2207abf-03f7-45c4-8dca-efb63064f558",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:47Z",
+        "data-completed-at": "2026-10-16T14:40:48Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/1",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "data-number": "2",
+        "data-conclusion": "success",
+        "data-external-id": "85419d71-174c-41c6-bda2-118b00c28daf",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:48Z",
+        "data-completed-at": "2026-10-16T14:40:49Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/2",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "data-number": "3",
+        "data-conclusion": "success",
+        "data-external-id": "73c381a1-ea95-486d-8533-7d1c6d87509b",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:49Z",
+        "data-completed-at": "2026-10-16T14:40:49Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/3",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407",
+        "data-number": "4",
+        "data-conclusion": "failure",
+        "data-external-id": "9678218f-b561-4108-8e40-721a5946b75c",
+        "data-expand": "true",
+        "data-started-at": "2026-10-16T14:40:49Z",
+        "data-completed-at": "2026-10-16T14:40:59Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/4",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "SDK prerequisites",
+        "data-number": "5",
+        "data-conclusion": "skipped",
+        "data-external-id": "7e5e8eff-db96-42db-9314-aaf80fde416f",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:59Z",
+        "data-completed-at": "2026-10-16T14:40:59Z",
+        "data-log-url": "",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Execute real Android instrumentation on an isolated CI emulator",
+        "data-number": "6",
+        "data-conclusion": "skipped",
+        "data-external-id": "e3a38155-8f76-4cad-a762-592a8a5007ac",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:59Z",
+        "data-completed-at": "2026-10-16T14:40:59Z",
+        "data-log-url": "",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+        "data-number": "7",
+        "data-conclusion": "success",
+        "data-external-id": "1669c082-c186-4496-980e-a191df54e2f2",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:59Z",
+        "data-completed-at": "2026-10-16T14:40:59Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/7",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Post Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+        "data-number": "13",
+        "data-conclusion": "success",
+        "data-external-id": "8917b4d4-daa3-4b76-a344-766ba0ed56c6",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:59Z",
+        "data-completed-at": "2026-10-16T14:40:59Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/13",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+        "data-number": "14",
+        "data-conclusion": "success",
+        "data-external-id": "99521b66-79a4-4705-94b5-9b5a14007131",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:40:59Z",
+        "data-completed-at": "2026-10-16T14:41:00Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/14",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      },
+      {
+        "data-name": "Complete job",
+        "data-number": "15",
+        "data-conclusion": "success",
+        "data-external-id": "b04e9811-478a-4f01-95e0-0b2441dca047",
+        "data-expand": "",
+        "data-started-at": "2026-10-16T14:41:00Z",
+        "data-completed-at": "2026-10-16T14:41:00Z",
+        "data-log-url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43/checks/117029329073/logs/15",
+        "data-job-completed": null,
+        "data-use-actions-ux": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "original_jvm_case_count": 55,
+  "all_original_cases_present_and_passing": true,
+  "current_jvm_cases": 59,
+  "new_cases": [
+    [
+      "fr.jarvis.services.DocxSecurityTest",
+      "dtdIsRejectedForUtf8AndUtf16()"
+    ],
+    [
+      "fr.jarvis.services.DocxSecurityTest",
+      "extractedTextIsBounded()"
+    ],
+    [
+      "fr.jarvis.services.DocxSecurityTest",
+      "malformedXmlIsRejected()"
+    ],
+    [
+      "fr.jarvis.services.DocxSecurityTest",
+      "utf16AndBuiltInEntitiesRemainSupported()"
+    ]
+  ],
+  "application_sources_unchanged_since_start": true,
+  "code_commit_changed_files": [
+    ".github/workflows/verify.yml",
+    "gradle/verification-metadata.xml"
+  ],
+  "rebuilt_apks_match_instrumented_apks": true,
+  "native_instrumentation_cases": 11,
+  "native_failures": 0,
+  "native_skipped": 0,
+  "scope": "Existing automated scenarios only; no universal absence-of-regression claim"
+}

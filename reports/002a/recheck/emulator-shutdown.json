@@ -1,0 +1,10 @@
+{
+  "pid": 36664,
+  "identity_verified": true,
+  "signal": "SIGTERM",
+  "personal_devices_used": false,
+  "timestamp_utc": "2026-10-16T15:06:09.379526+00:00",
+  "process_absent_after_signal": true,
+  "launcher_exit_code": 138,
+  "launcher_message": "User defined signal 1 after requested SIGTERM; process absent; instrumentation had already completed successfully."
+}

@@ -1,0 +1,37 @@
+{
+  "actions/checkout": {
+    "tag": "v5",
+    "sha": "fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+    "archive_url": "https://codeload.github.com/actions/checkout/zip/fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+    "manifest_sha256": "d59219cb79590abdb877deaa14e3b65a00c05318bf5a6f3b989b9162b5d08c35",
+    "runtime": "node24"
+  },
+  "actions/setup-java": {
+    "tag": "v5",
+    "sha": "b6effb05e454b25005698d916606bdc6ffcbf961",
+    "archive_url": "https://codeload.github.com/actions/setup-java/zip/b6effb05e454b25005698d916606bdc6ffcbf961",
+    "manifest_sha256": "54e5e8ef36785d9800698a0889ed17bacbdeb9f9fedcf3bbb0999b722c230bae",
+    "runtime": "node24"
+  },
+  "actions/upload-artifact": {
+    "tag": "v6",
+    "sha": "b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+    "archive_url": "https://codeload.github.com/actions/upload-artifact/zip/b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+    "manifest_sha256": "3760874f860e631be3d785d0589ade7cecb541eeac6f581989a814a2c99fc94f",
+    "runtime": "node24"
+  },
+  "android-actions/setup-android": {
+    "tag": "v4",
+    "sha": "be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd",
+    "archive_url": "https://codeload.github.com/android-actions/setup-android/zip/be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd",
+    "manifest_sha256": "a7ee24e1ddce624c235f7069ee78f26b98077cb3ecdc20b2cbfe7a1aa4624aa1",
+    "runtime": "node24"
+  },
+  "ReactiveCircus/android-emulator-runner": {
+    "tag": "v2",
+    "sha": "4c44018e59b437e86cdfc41da381398f93ed8808",
+    "archive_url": "https://codeload.github.com/ReactiveCircus/android-emulator-runner/zip/4c44018e59b437e86cdfc41da381398f93ed8808",
+    "manifest_sha256": "a7c4de9a466ae7d70a599ffdc5a27b2bccadd7b2d602e24b44f8b490cb7bbdfe",
+    "runtime": "node24"
+  }
+}

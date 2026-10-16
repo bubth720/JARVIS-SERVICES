@@ -1,0 +1,151 @@
+{
+  "mission": "002A qualification follow-up",
+  "branch": "mission-002a-android-qualification",
+  "start_commit": "34ab1c2147c439b205b9a49383f3b4f0c6368d43",
+  "code_commit": "c2c129850143aa4f8187666dc5dea4520a0843ab",
+  "delivery_commit_scope": "Later evidence-only commit identified in Git history and delivery response; no self-referential SHA.",
+  "recorded_at_utc": "2026-10-16T15:15:58.944875+00:00",
+  "application_sources_changed": false,
+  "fixes": [
+    "Missing SHA-256 for JUnit BOM 5.11.4 POM",
+    "Missing SHA-256 for JUnit BOM 5.10.2 Gradle module",
+    "Android setup v4 with explicit platform-tools, no obsolete tools package",
+    "Node24 actions pinned by commit; Ubuntu24.04; dependency verification reports retained"
+  ],
+  "jvm": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "original_55_cases": true,
+  "local_commands": [
+    {
+      "command": "scripts/cloud-gradle.sh --offline -PwithAndroid :desktop:test :android:assembleDebug :android:assembleAndroidTest :android:lintDebug --rerun-tasks --no-daemon",
+      "exit_code": 0,
+      "log": "build.log"
+    },
+    {
+      "command": "scripts/cloud-gradle.sh :desktop:test --rerun-tasks --no-daemon",
+      "cache": "new dependency cache",
+      "exit_code_before_fix": 1,
+      "before_log": "clean-jvm.log",
+      "exit_code_after_fix": 0,
+      "after_log": "clean-jvm-fixed.log"
+    },
+    {
+      "command": "scripts/cloud-gradle.sh -PwithAndroid :android:assembleDebug :android:assembleAndroidTest :android:lintDebug --rerun-tasks --no-daemon",
+      "cache": "same new dependency cache",
+      "exit_code_before_fix": 1,
+      "before_log": "clean-android.log",
+      "exit_code_after_fix": 0,
+      "after_log": "clean-android-fixed.log"
+    }
+  ],
+  "android_instrumentation": {
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0,
+    "complete": true,
+    "success": true,
+    "emulator_identity": {
+      "qemu": true,
+      "api": 26,
+      "boot_completed": true
+    },
+    "command": "am instrument -w -r fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner"
+  },
+  "original_android_tests": [
+    {
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "test": "diagnosticActivityInitializesAllModules",
+      "status_code": 0
+    },
+    {
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "test": "noInternetPermission",
+      "status_code": 0
+    },
+    {
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "test": "bundledFts5AndMigration",
+      "status_code": 0
+    }
+  ],
+  "android_evidence": "instrumentation.json",
+  "android_log": "instrumentation.log",
+  "apks": "apk-manifest.json",
+  "rebuilt_apks_identical_to_instrumented": true,
+  "lint": {
+    "errors": 0,
+    "warnings": 1,
+    "issue": "TrustAllX509TrustManager",
+    "scope": "Existing third-party dependency warning; no severity reductions"
+  },
+  "resources": {
+    "checkpoints": 8,
+    "max_observed_checkpoint_pss_kib": 27146,
+    "max_kernel_vm_hwm_kib": 86456,
+    "host_installation_and_instrumentation_seconds": 159.332,
+    "interpretation": "PSS sampled after scenarios; VmHWM is cumulative process RSS high-water mark, not per-scenario allocation; host duration includes APK transfer/install. Emulated values only.",
+    "physical_battery_thermal_measurements": "not performed"
+  },
+  "ci": {
+    "run": {
+      "id": "38921336822",
+      "runUrl": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/38921336822",
+      "title": "fix(ci): verify cold-cache JUnit metadata and modernize Android setup",
+      "state": {
+        "status": "WORKFLOW_RUN_STATUS_COMPLETED",
+        "conclusion": "WORKFLOW_RUN_CONCLUSION_SUCCESS"
+      },
+      "timing": {
+        "kind": "WORKFLOW_RUN_TIMING_KIND_DURATION",
+        "text": "6m 54s"
+      },
+      "commit_url": "/bubth720/JARVIS-SERVICES/commit/c2c129850143aa4f8187666dc5dea4520a0843ab"
+    },
+    "job_observation_file": "remote-jobs.json",
+    "observed_at_utc": "2026-10-16T15:15:09.739309+00:00",
+    "api_access": "HTTP403 proxy tunnel denied",
+    "html_access": "working",
+    "previous_failed_step_logs": "HTTP404 without authentication; exact previous full error text unavailable",
+    "all_three_jobs_succeeded": true
+  },
+  "not_performed": [
+    "Physical-device tests",
+    "Physical battery or thermal measurements",
+    "System SAF picker automation",
+    "Repeat UI process restart probe in this follow-up",
+    "Real CORE/LLM/NEXUS integration or physical BRIDGE synchronization"
+  ],
+  "main_unchanged_sha": "c9f94ad2fa219a5e09cda92fb451aca606ee1646",
+  "other_repositories_modified": false,
+  "personal_devices_used": false,
+  "evidence_sha256": {
+    "action-pins.json": "e7ed1bff03bcdf9e43cdda4e613c2aeaa0c93fd3d5b083f04a643a4a2850ecbe",
+    "android-sdk-catalog.json": "d1f5bfc57ebc4ab2de89d403e37230ea8d47dd6adf865852a64e9d72d2a5e3c8",
+    "apk-manifest.json": "388e1375edeee0a9f1c3dd399aafd7875075b627041b88a4b0afd8370f198daf",
+    "build.log": "b10660d200f55899e3bc3d755e1cd9b6ac81d1e0e44a0e1e330bf5874f5fc64a",
+    "clean-android-fixed.log": "9043c308c3c290a89b3ab8b8fb017bc22ab4f181a7d18587cb7b5450dcacc7c7",
+    "clean-android.log": "949a85bfac2cbf520083d930d47e8f4ab8089449f56d1cce8be1339d96b330be",
+    "clean-jvm-fixed.log": "cb55b1cb0805eaeec331f1bb26a51deef2e2ddd4348dcc0de8870ca25a84410f",
+    "clean-jvm.log": "5074adda6958fd3056f18b1aeebd5469bfda006d9bcee30a886f93c03e1b104b",
+    "emulator-shutdown.json": "398afd3a8f569f1cb37cee2f5ad007da5d40bb24b95114c9f0047ac4851bdf30",
+    "emulator.log": "0c2a1a151c302d523f524f3d62ed2441e5b9521c1688b0f2b4a3d80f329b18f5",
+    "github-actions.json": "98aac9142f9a756747bfd3a2b0c089b03abd2b84eea5548b3db12758ed6af914",
+    "instrumentation.json": "cd70052034b719d50de5b96cbe3ea902913e09770ec4e67c5caffdbd2b700058",
+    "instrumentation.log": "c8716ebc4eb85bf074ecbf1c442f5e92a5e050b513fa127149b1fd51215cb24d",
+    "junit-module-provenance.json": "733ef929379682eec9fd9a2a26cb0948820fbe6603ab946eca9d51b9d117f2e7",
+    "junit-pom-provenance.json": "2a307192c0edfe9b50fa204b496593375923156b4ecba24d5af64ef28e935f2c",
+    "jvm.json": "614884a8068d3b2513a4be6e28af8b41f396a7347d32913cff1fb00cc4f13c7d",
+    "lint.json": "3b0738e5d335d9e6fb290ae9176bbdb1460e63600917f6ee7563270f4be5c37e",
+    "regression-check.json": "3ee0cf4804c90e9bacb02c1dc31c31c4a07a7406dd8cfee702defea4f9a26f7a",
+    "remote-failed-steps.json": "80f4410c95d12baabdc3a6a73a430d3b527a855868106c985a76e73f02067ea1",
+    "remote-jobs.json": "1d48f6f1efd1e633aa9ced9030e7e760bb89933fdeb0e3c82e769c0ea6791f54",
+    "remote-runs.json": "79ed8cf790f9f8d3936f32d7396752f0da3aaedf871155afbf580f18639c4e04",
+    "remote-summary.txt": "ae2b4f085f768c9be45b9abf60f5be7c691e1a5a8f420d0dd016487f5de6e575",
+    "resources.json": "f647942b924ee49262cf5676be2f4d9a4578df16603394ae9da22f77b8c2d295",
+    "workflow-check.json": "20101d0c91d65b62a13548fcf018c43f9bbca76582396ffdfe216b8c42337760"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "yaml_parsed": true,
+  "jobs": [
+    "jvm",
+    "android-build",
+    "android-instrumented"
+  ],
+  "immutable_action_references": true,
+  "runner": "ubuntu-24.04",
+  "real_remote_execution": "Tracked separately in remote-runs.json and remote-jobs.json; this file checks workflow structure only."
+}

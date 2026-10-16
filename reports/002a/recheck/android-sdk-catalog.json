@@ -1,0 +1,11 @@
+{
+  "repository": "https://dl.google.com/android/repository/repository2-1.xml",
+  "obsolete_tools_available": false,
+  "action_default_cmdline_tools": [
+    {
+      "package": "cmdline-tools;22.0",
+      "archive": "commandlinetools-linux-15859902_latest.zip",
+      "checksum": "040d3996a65543d22ec4bf73e4c37aa37a8d4af4"
+    }
+  ]
+}

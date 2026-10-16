@@ -1,0 +1,126 @@
+Picked up JAVA_TOOL_OPTIONS:  -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :android
+Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+
+> Task :android:preBuild UP-TO-DATE
+> Task :android:preDebugBuild UP-TO-DATE
+> Task :android:mergeDebugNativeDebugMetadata NO-SOURCE
+
+> Task :shared-runtime:compileJava
+Note: /workspace/JARVIS-SERVICES/shared-runtime/src/main/java/fr/jarvis/services/shared/storage/Store.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :shared-runtime:processResources NO-SOURCE
+> Task :shared-runtime:classes
+> Task :shared-runtime:jar
+> Task :android:javaPreCompileDebug
+> Task :android:generateDebugResValues
+> Task :android:checkDebugAarMetadata
+> Task :android:mapDebugSourceSetPaths
+> Task :android:generateDebugResources
+> Task :android:mergeDebugResources
+> Task :android:packageDebugResources
+> Task :android:createDebugCompatibleScreenManifests
+> Task :android:extractDeepLinksDebug
+> Task :android:parseDebugLocalResources
+> Task :android:processDebugMainManifest
+> Task :android:processDebugManifest
+> Task :android:mergeDebugShaders
+> Task :android:compileDebugShaders NO-SOURCE
+> Task :android:processDebugManifestForPackage
+> Task :android:generateDebugAssets UP-TO-DATE
+> Task :android:mergeDebugAssets
+> Task :android:processDebugResources
+> Task :android:compressDebugAssets
+
+> Task :android:compileDebugJavaWithJavac
+Picked up JAVA_TOOL_OPTIONS:  -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Picked up JAVA_TOOL_OPTIONS:  -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Picked up JAVA_TOOL_OPTIONS:  -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+
+> Task :android:processDebugJavaRes NO-SOURCE
+> Task :android:checkDebugDuplicateClasses
+> Task :android:desugarDebugFileDependencies
+> Task :android:mergeDebugJavaResource
+> Task :android:mergeExtDexDebug
+> Task :android:mergeLibDexDebug
+> Task :android:dexBuilderDebug
+> Task :android:mergeProjectDexDebug
+> Task :android:mergeDebugJniLibFolders
+> Task :android:mergeDebugNativeLibs
+> Task :android:validateSigningDebug
+> Task :android:writeDebugAppMetadata
+> Task :android:writeDebugSigningConfigVersions
+
+> Task :android:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libsqliteJni.so.
+
+> Task :android:bundleDebugClassesToCompileJar
+> Task :android:preDebugAndroidTestBuild SKIPPED
+> Task :android:javaPreCompileDebugAndroidTest
+> Task :android:checkDebugAndroidTestAarMetadata
+> Task :android:packageDebug
+> Task :android:createDebugApkListingFileRedirect
+> Task :android:assembleDebug
+> Task :android:generateDebugAndroidTestResValues
+> Task :android:mapDebugAndroidTestSourceSetPaths
+> Task :android:generateDebugAndroidTestResources
+> Task :android:mergeDebugAndroidTestResources
+> Task :android:processDebugAndroidTestManifest
+> Task :android:mergeDebugAndroidTestShaders
+> Task :android:compileDebugAndroidTestShaders NO-SOURCE
+> Task :android:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :android:mergeDebugAndroidTestAssets
+> Task :android:compressDebugAndroidTestAssets
+> Task :android:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :android:processDebugAndroidTestResources
+> Task :android:mergeDebugAndroidTestJavaResource
+> Task :android:compileDebugAndroidTestJavaWithJavac
+> Task :android:checkDebugAndroidTestDuplicateClasses
+> Task :android:desugarDebugAndroidTestFileDependencies
+> Task :android:mergeExtDexDebugAndroidTest
+> Task :android:mergeLibDexDebugAndroidTest
+> Task :android:dexBuilderDebugAndroidTest
+> Task :android:mergeDebugAndroidTestJniLibFolders
+> Task :android:mergeProjectDexDebugAndroidTest
+> Task :android:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :android:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :android:validateSigningDebugAndroidTest
+> Task :android:writeDebugAndroidTestSigningConfigVersions
+> Task :android:generateDebugAndroidTestLintModel
+> Task :android:extractProguardFiles
+> Task :android:packageDebugAndroidTest
+> Task :android:createDebugAndroidTestApkListingFileRedirect
+> Task :android:assembleDebugAndroidTest
+> Task :android:assembleAndroidTest
+> Task :android:generateDebugLintReportModel
+> Task :android:preDebugUnitTestBuild UP-TO-DATE
+> Task :android:generateDebugUnitTestLintModel
+
+> Task :android:lintAnalyzeDebug
+Warning: Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+
+> Task :android:lintAnalyzeDebugAndroidTest
+> Task :android:lintAnalyzeDebugUnitTest
+
+> Task :android:lintReportDebug
+Wrote HTML report to file:///workspace/JARVIS-SERVICES/android/build/reports/lint-results-debug.html
+
+> Task :android:lintDebug
+
+[Incubating] Problems report is available at: file:///workspace/JARVIS-SERVICES/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 33s
+69 actionable tasks: 69 executed

@@ -1,0 +1,7 @@
+{
+  "url": "https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.module",
+  "sha256": "de23b114b3e4119a8fe6eb17bed5a3852816698bace67071579d6d927ebb080a",
+  "publisher_checksum_url": "https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.module.sha256",
+  "matches_publisher_checksum": true,
+  "matches_clean_cache_download": true
+}

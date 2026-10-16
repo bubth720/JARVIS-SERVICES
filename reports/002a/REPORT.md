@@ -1,12 +1,20 @@
 # JARVIS SERVICES — Mission 002A
 
+> Mise à jour : [reprise de qualification et correctifs CI](recheck/REPORT.md).
+> Le correctif `c2c1298` résout les échecs de vérification observés avec un cache
+> vierge et actualise la préparation Android. Les preuves de la campagne initiale
+> ci-dessous sont conservées. Le run `38921336822` du correctif est réussi
+> (trois jobs); les détails figurent dans le rapport de reprise.
+
 Qualification Android et fiabilisation de FOUNDATION V1 — 16 octobre 2026.
 Branche exclusive : `mission-002a-android-qualification`.
 
 **Résultat : 59 tests JVM et 11 tests Android instrumentés réussis sur un émulateur
 API26 x86. Les 55 cas JVM et trois cas Android d'origine sont conservés.**
 La campagne Android corrigée a réussi deux fois. Cela ne qualifie pas les appareils
-physiques, les autres versions Android ni la CI distante, refusée par le proxy.
+physiques ni les autres versions Android. Lors de cette campagne initiale, la CI
+distante n’était pas observable via l’API; voir la reprise pour les observations
+désormais obtenues via les pages web publiques.
 
 ## Références et périmètre
 

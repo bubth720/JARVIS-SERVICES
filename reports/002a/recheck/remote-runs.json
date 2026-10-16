@@ -1,0 +1,49 @@
+{
+  "observed_at_utc": "2026-10-16T15:15:08.133487+00:00",
+  "source_url": "https://github.com/bubth720/JARVIS-SERVICES/actions?query=branch%3Amission-002a-android-qualification",
+  "access": "public GitHub HTML, no API authentication",
+  "runs": [
+    {
+      "id": "38921336822",
+      "runUrl": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/38921336822",
+      "title": "fix(ci): verify cold-cache JUnit metadata and modernize Android setup",
+      "state": {
+        "status": "WORKFLOW_RUN_STATUS_COMPLETED",
+        "conclusion": "WORKFLOW_RUN_CONCLUSION_SUCCESS"
+      },
+      "timing": {
+        "kind": "WORKFLOW_RUN_TIMING_KIND_DURATION",
+        "text": "6m 54s"
+      },
+      "commit_url": "/bubth720/JARVIS-SERVICES/commit/c2c129850143aa4f8187666dc5dea4520a0843ab"
+    },
+    {
+      "id": "38917701595",
+      "runUrl": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/38917701595",
+      "title": "test(002a): record Android qualification and process restart evidence",
+      "state": {
+        "status": "WORKFLOW_RUN_STATUS_COMPLETED",
+        "conclusion": "WORKFLOW_RUN_CONCLUSION_FAILURE"
+      },
+      "timing": {
+        "kind": "WORKFLOW_RUN_TIMING_KIND_DURATION",
+        "text": "31s"
+      },
+      "commit_url": "/bubth720/JARVIS-SERVICES/commit/34ab1c2147c439b205b9a49383f3b4f0c6368d43"
+    },
+    {
+      "id": "38917116774",
+      "runUrl": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/38917116774",
+      "title": "ci(android): add isolated instrumentation and immutable action refere\u2026",
+      "state": {
+        "status": "WORKFLOW_RUN_STATUS_COMPLETED",
+        "conclusion": "WORKFLOW_RUN_CONCLUSION_FAILURE"
+      },
+      "timing": {
+        "kind": "WORKFLOW_RUN_TIMING_KIND_DURATION",
+        "text": "30s"
+      },
+      "commit_url": "/bubth720/JARVIS-SERVICES/commit/767ac376e03011a79cf6061a5f088b77f478282d"
+    }
+  ]
+}

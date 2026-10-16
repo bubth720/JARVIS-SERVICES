@@ -1,0 +1,306 @@
+{
+  "recorded_at_utc": "2026-10-16T15:06:48.163362+00:00",
+  "counts": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cases": [
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "permissionsFailClosed()",
+      "seconds": "0.189"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "symbolicLinkRejected()",
+      "seconds": "0.01"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "destructiveDowngradeRefused()",
+      "seconds": "0.014"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "backupRestoreRebuildsSearch()",
+      "seconds": "0.014"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "integrityAndRestart()",
+      "seconds": "0.009"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "transactionRollsBack()",
+      "seconds": "0.005"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "traversalAndAbsoluteRejected()",
+      "seconds": "0.008"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "confirmationBindsExactContent()",
+      "seconds": "0.009"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "confirmationOneShot()",
+      "seconds": "0.011"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "confirmationBindsIdentity()",
+      "seconds": "0.017"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "auditDoesNotStoreContent()",
+      "seconds": "0.013"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "singleHeavyTaskAndRelease()",
+      "seconds": "0.008"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "malformedRequestRejected()",
+      "seconds": "0.007"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "cancellationAndDeadline()",
+      "seconds": "0.017"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "migrationRoundtrip()",
+      "seconds": "0.008"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "malformedBackupDoesNotDelete()",
+      "seconds": "0.006"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "progressSequence()",
+      "seconds": "0.004"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "unknownProtocolRejected()",
+      "seconds": "0.005"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "malformedXmlIsRejected()",
+      "seconds": "0.041"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "dtdIsRejectedForUtf8AndUtf16()",
+      "seconds": "0.013"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "utf16AndBuiltInEntitiesRemainSupported()",
+      "seconds": "0.003"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "extractedTextIsBounded()",
+      "seconds": "0.02"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "jsonFilterSortNormalizeAggregate()",
+      "seconds": "0.019"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "cancelledWorkflowCreatesNoFile()",
+      "seconds": "0.024"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "bridgeIdentityCapabilitiesAndDisconnect()",
+      "seconds": "0.015"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "recoveryIncludesOriginalsAndMetadata()",
+      "seconds": "0.031"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "memoryRequiresExactConfirmationAndPersists()",
+      "seconds": "0.018"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "multiBatchCorpusKeepsEverySource()",
+      "seconds": "0.077"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "protectedExportDenied()",
+      "seconds": "0.007"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "realPdfImportSearch()",
+      "seconds": "0.363"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "incrementalIndexAndDelete()",
+      "seconds": "0.024"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "vectorBaselineProvenance()",
+      "seconds": "0.009"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "representativeWorkflowWithNetworkDenied()",
+      "seconds": "0.037"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "corruptBackupRefused()",
+      "seconds": "0.016"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "ftsSpecialCharactersAreLiteral()",
+      "seconds": "0.01"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystMultiDocumentMockAndOfflineFallback()",
+      "seconds": "0.028"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "importsTextAndMetadata()",
+      "seconds": "0.007"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "limitedSemanticSynonyms()",
+      "seconds": "0.009"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "noArbitraryToolOrDocumentInstructions()",
+      "seconds": "0.008"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "cancelledImportLeavesNoOriginal()",
+      "seconds": "0.006"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystRejectsInventedCitation()",
+      "seconds": "0.006"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "crashedWorkflowIsUnknownNotReplayed()",
+      "seconds": "0.007"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "memoryRetention()",
+      "seconds": "0.132"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "scannedPdfReportsOcrRequired()",
+      "seconds": "0.008"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "memoryRectificationDeletion()",
+      "seconds": "0.008"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "diagnosticsOfflineAndEightModules()",
+      "seconds": "0.005"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystCoordinatesKnowledgeDocumentsDataAndModel()",
+      "seconds": "0.009"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "coreMockCorrelationAndPermission()",
+      "seconds": "0.006"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "malformedCsvAndNumbers()",
+      "seconds": "0.004"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "xxeInDocxRejected()",
+      "seconds": "0.004"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "csvExactDedupAndStatistics()",
+      "seconds": "0.004"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "backupRestoreRequiresConfirmation()",
+      "seconds": "0.006"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "boundsAndExtensions()",
+      "seconds": "0.006"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "importsCsvJson()",
+      "seconds": "0.006"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "docxRoundtripAndNoOverwrite()",
+      "seconds": "0.011"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "workflowCreatesDocxAndRejectsReplay()",
+      "seconds": "0.022"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "csvQuotedMultilineRoundtrip()",
+      "seconds": "0.002"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystCalculationsDeterministic()",
+      "seconds": "0.003"
+    },
+    {
+      "class": "fr.jarvis.services.BundledStorageTest",
+      "name": "bundledDriverSupportsFts5AndRollback()",
+      "seconds": "0.116"
+    }
+  ]
+}

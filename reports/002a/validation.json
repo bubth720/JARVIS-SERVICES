@@ -584,5 +584,11 @@
     "pid": 24727,
     "requested": true,
     "state_after": "exited"
+  },
+  "latest_recheck": {
+    "report": "recheck/REPORT.md",
+    "validation": "recheck/validation.json",
+    "code_commit": "c2c129850143aa4f8187666dc5dea4520a0843ab",
+    "historical_fields_note": "All other fields retain initial-campaign evidence; see latest_recheck for current CI and cold-cache results."
   }
 }
