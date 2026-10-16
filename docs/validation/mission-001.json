@@ -1,0 +1,152 @@
+{
+  "module": "JARVIS SERVICES",
+  "mission": "001 FOUNDATION V1",
+  "date": "2026-10-16",
+  "repository": "bubth720/JARVIS-SERVICES",
+  "branch": "mission-001-services-foundation",
+  "tested_source_commit": "494d33d7a170801b58707fde031f848858d9e09e",
+  "platform": "Linux x86_64, JDK 21.0.12.1, Gradle 8.13, Android compileSdk35/AGP8.9.2",
+  "command": "scripts/cloud-gradle.sh --offline -PwithAndroid :desktop:test :android:assembleDebug :android:assembleAndroidTest :android:lintDebug --no-daemon",
+  "exit_code": 0,
+  "tests": [
+    {
+      "suite": "fr.jarvis.services.BundledStorageTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "runner_timestamp": "2026-10-16T09:07:06.231Z",
+      "cases": [
+        "bundledDriverSupportsFts5AndRollback()"
+      ]
+    },
+    {
+      "suite": "fr.jarvis.services.FoundationTest",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "runner_timestamp": "2026-10-16T09:07:06.338Z",
+      "cases": [
+        "permissionsFailClosed()",
+        "symbolicLinkRejected()",
+        "destructiveDowngradeRefused()",
+        "backupRestoreRebuildsSearch()",
+        "integrityAndRestart()",
+        "transactionRollsBack()",
+        "traversalAndAbsoluteRejected()",
+        "confirmationBindsExactContent()",
+        "confirmationOneShot()",
+        "confirmationBindsIdentity()",
+        "auditDoesNotStoreContent()",
+        "singleHeavyTaskAndRelease()",
+        "malformedRequestRejected()",
+        "cancellationAndDeadline()",
+        "migrationRoundtrip()",
+        "malformedBackupDoesNotDelete()",
+        "progressSequence()",
+        "unknownProtocolRejected()"
+      ]
+    },
+    {
+      "suite": "fr.jarvis.services.ModulesTest",
+      "tests": 36,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "runner_timestamp": "2026-10-16T09:07:06.658Z",
+      "cases": [
+        "jsonFilterSortNormalizeAggregate()",
+        "cancelledWorkflowCreatesNoFile()",
+        "bridgeIdentityCapabilitiesAndDisconnect()",
+        "recoveryIncludesOriginalsAndMetadata()",
+        "memoryRequiresExactConfirmationAndPersists()",
+        "multiBatchCorpusKeepsEverySource()",
+        "protectedExportDenied()",
+        "realPdfImportSearch()",
+        "incrementalIndexAndDelete()",
+        "vectorBaselineProvenance()",
+        "representativeWorkflowWithNetworkDenied()",
+        "corruptBackupRefused()",
+        "ftsSpecialCharactersAreLiteral()",
+        "analystMultiDocumentMockAndOfflineFallback()",
+        "importsTextAndMetadata()",
+        "limitedSemanticSynonyms()",
+        "noArbitraryToolOrDocumentInstructions()",
+        "cancelledImportLeavesNoOriginal()",
+        "analystRejectsInventedCitation()",
+        "crashedWorkflowIsUnknownNotReplayed()",
+        "memoryRetention()",
+        "scannedPdfReportsOcrRequired()",
+        "memoryRectificationDeletion()",
+        "diagnosticsOfflineAndEightModules()",
+        "analystCoordinatesKnowledgeDocumentsDataAndModel()",
+        "coreMockCorrelationAndPermission()",
+        "malformedCsvAndNumbers()",
+        "xxeInDocxRejected()",
+        "csvExactDedupAndStatistics()",
+        "backupRestoreRequiresConfirmation()",
+        "boundsAndExtensions()",
+        "importsCsvJson()",
+        "docxRoundtripAndNoOverwrite()",
+        "workflowCreatesDocxAndRejectsReplay()",
+        "csvQuotedMultilineRoundtrip()",
+        "analystCalculationsDeterministic()"
+      ]
+    }
+  ],
+  "totals": {
+    "tests": 55,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": [
+    {
+      "severity": "Warning",
+      "id": "DataExtractionRules",
+      "count": 1
+    },
+    {
+      "severity": "Warning",
+      "id": "SetTextI18n",
+      "count": 10
+    },
+    {
+      "severity": "Warning",
+      "id": "TrustAllX509TrustManager",
+      "count": 1
+    }
+  ],
+  "apk_artifacts": [
+    {
+      "path": "android/build/outputs/apk/debug/android-debug.apk",
+      "bytes": 22094293,
+      "sha256": "19b69a5bffff69739f0f7fa82b108ce0da1be44edf7936a35a3ab91c9796b633"
+    },
+    {
+      "path": "android/build/outputs/apk/androidTest/debug/android-debug-androidTest.apk",
+      "bytes": 887311,
+      "sha256": "3063ff100c01dcd9da629fa0d49abbdd06229e60db65c0e74059b55ec31e780c"
+    }
+  ],
+  "apk_signature": "apksigner verify successful, v2 debug signature, one signer",
+  "apk_permissions": [],
+  "instrumentation": {
+    "tests": 3,
+    "compiled": true,
+    "executed": false,
+    "reason": "No preinstalled emulator, /dev/kvm or attached device in selected cloud machine"
+  },
+  "github_ci": "Workflow delivered; remote result not observed",
+  "integration": {
+    "core": "in-process facade simulated; no real IPC",
+    "llm": "deterministic mock and unavailable adapter, no model",
+    "bridge": "local echo simulator; no hardware"
+  },
+  "publication": {
+    "source_push_confirmed": "285c3bcfabbb1c16a5d85d53e35442884bed3e39",
+    "main_observed": "c9f94ad2fa219a5e09cda92fb451aca606ee1646",
+    "main_modified": false
+  }
+}
