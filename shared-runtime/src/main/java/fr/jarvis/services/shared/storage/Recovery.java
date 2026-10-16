@@ -31,7 +31,7 @@ public final class Recovery {
           packageData.put("sha256", Guard.digest(snapshot));
           Map<String, Object> originals = new LinkedHashMap<>();
           long total = 0;
-          for (Map<String, Object> doc : store.all("documents")) {
+          for (Map<String, Object> doc : store.scan("documents")) {
             task.check();
             String name = (String) doc.get("original");
             Path path = guard.path(ctx, "storage.backup", name);

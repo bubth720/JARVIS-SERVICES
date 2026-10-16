@@ -113,7 +113,12 @@ public final class Knowledge {
 
   public List<Map<String, String>> lexical(Context ctx, String query, int limit) {
     guard.require(ctx, "knowledge.read");
-    return store.search(query, limit);
+    List<Map<String, String>> hits = store.search(query, limit);
+    for (Map<String, String> hit : hits) {
+      Map<String, Object> record = store.get("knowledge", hit.get("id"));
+      if (record != null) hit.put("source_revision", (String) record.get("sha256"));
+    }
+    return hits;
   }
 
   public List<Map<String, Object>> vector(Context ctx, String query, int limit, Task task) {
@@ -123,7 +128,7 @@ public final class Knowledge {
         () -> {
           double[] q = embeddings.embed(query);
           List<Map<String, Object>> out = new ArrayList<>();
-          for (Map<String, Object> r : store.all("knowledge")) {
+          for (Map<String, Object> r : store.scan("knowledge")) {
             task.check();
             if (!embeddings.version().equals(r.get("embedding_version"))) continue;
             List<?> stored = (List<?>) r.get("vector");
@@ -137,6 +142,7 @@ public final class Knowledge {
             }
             Map<String, Object> hit = new LinkedHashMap<>();
             hit.put("source_id", r.get("id"));
+            hit.put("source_revision", r.get("sha256"));
             hit.put("score", aa * bb == 0 ? 0 : dot / Math.sqrt(aa * bb));
             hit.put("embedding_version", embeddings.version());
             hit.put(
@@ -167,7 +173,7 @@ public final class Knowledge {
     guard.require(ctx, "knowledge.write");
     task.heavy(
         () -> {
-          for (Map<String, Object> r : store.all("knowledge")) {
+          for (Map<String, Object> r : store.scan("knowledge")) {
             task.check();
             r.put("embedding_version", embeddings.version());
             r.put("vector", embeddings.embed((String) r.get("text")));

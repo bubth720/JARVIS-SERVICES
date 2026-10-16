@@ -56,7 +56,7 @@ public final class Memory {
   public List<Map<String, Object>> search(Context ctx, String query) {
     guard.require(ctx, "memory.read");
     List<Map<String, Object>> out = new ArrayList<>();
-    for (Map<String, Object> r : store.all("memory"))
+    for (Map<String, Object> r : store.scan("memory"))
       if (((Number) r.get("expires_at")).longValue() > System.currentTimeMillis()
           && ((String) r.get("text")).contains(query)) out.add(r);
     return out;
@@ -70,7 +70,7 @@ public final class Memory {
   public int purgeExpired(Context ctx) {
     guard.require(ctx, "memory.write");
     int count = 0;
-    for (Map<String, Object> r : store.all("memory"))
+    for (Map<String, Object> r : store.scan("memory"))
       if (((Number) r.get("expires_at")).longValue() <= System.currentTimeMillis()) {
         store.delete("memory", (String) r.get("id"));
         count++;

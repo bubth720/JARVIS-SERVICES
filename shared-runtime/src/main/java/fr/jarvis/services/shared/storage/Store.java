@@ -58,6 +58,46 @@ public final class Store {
     return out;
   }
 
+  /** Keyset cursor, at most eight document bodies decoded at a time. */
+  public Iterable<Map<String, Object>> scan(String namespace) {
+    return () ->
+        new Iterator<Map<String, Object>>() {
+          private String cursor;
+          private List<Map<String, String>> page = Collections.emptyList();
+          private int position;
+          private boolean finished;
+
+          public boolean hasNext() {
+            if (position < page.size()) return true;
+            if (finished) return false;
+            page = scanPage(namespace, cursor);
+            position = 0;
+            if (page.isEmpty()) {
+              finished = true;
+              return false;
+            }
+            return true;
+          }
+
+          @SuppressWarnings("unchecked")
+          public Map<String, Object> next() {
+            if (!hasNext()) throw new NoSuchElementException();
+            Map<String, String> row = page.get(position++);
+            cursor = row.get("id");
+            return json.fromJson(row.get("body"), Map.class);
+          }
+        };
+  }
+
+  private synchronized List<Map<String, String>> scanPage(String namespace, String cursor) {
+    return cursor == null
+        ? db.query("SELECT id,body FROM entries WHERE namespace=? ORDER BY id LIMIT 8", namespace)
+        : db.query(
+            "SELECT id,body FROM entries WHERE namespace=? AND id>? ORDER BY id LIMIT 8",
+            namespace,
+            cursor);
+  }
+
   public synchronized int count(String ns) {
     return Integer.parseInt(
         db.query("SELECT count(*) AS n FROM entries WHERE namespace=?", ns).get(0).get("n"));

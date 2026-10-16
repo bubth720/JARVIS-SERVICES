@@ -113,10 +113,19 @@ public final class Documents {
     if (query == null || query.isEmpty() || query.length() > 500)
       throw new Failure("INVALID_INPUT");
     List<Map<String, Object>> out = new ArrayList<>();
-    for (Map<String, Object> d : store.all("documents"))
-      if (((String) d.get("text"))
-          .toLowerCase(Locale.ROOT)
-          .contains(query.toLowerCase(Locale.ROOT))) out.add(d);
+    String needle = query.toLowerCase(Locale.ROOT);
+    for (Map<String, Object> d : store.scan("documents")) {
+      String text = (String) d.get("text");
+      if (text.toLowerCase(Locale.ROOT).contains(needle)) {
+        Map<String, Object> hit = new LinkedHashMap<>();
+        hit.put("id", d.get("id"));
+        hit.put("name", d.get("name"));
+        hit.put("source_revision", d.get("text_sha256"));
+        hit.put("excerpt", text.substring(0, Math.min(300, text.length())));
+        out.add(hit);
+        if (out.size() == 50) break;
+      }
+    }
     return out;
   }
 

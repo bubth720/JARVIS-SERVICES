@@ -546,4 +546,19 @@ class ModulesTest {
     assertEquals("0.3", ((Map<?, ?>) calculation.get("statistics")).get("sum"));
     assertEquals(5, ((List<?>) report.get("executed_plan")).size());
   }
+
+  @Test
+  void multiBatchCorpusKeepsEverySource() {
+    for (int i = 0; i < 10; i++) {
+      Map<String, Object> d = doc("batch evidence " + i);
+      runtime.knowledge.index(owner, d, task());
+    }
+    runtime.knowledge.rebuild(owner, task());
+    assertEquals(10, runtime.documents.search(owner, "batch").size());
+    assertFalse(runtime.documents.search(owner, "batch").get(0).containsKey("text"));
+    assertEquals(10, runtime.knowledge.vector(owner, "evidence", 50, task()).size());
+    assertTrue(
+        runtime.knowledge.lexical(owner, "evidence", 10).stream()
+            .allMatch(hit -> hit.get("source_revision").length() == 64));
+  }
 }

@@ -106,7 +106,7 @@ public final class Actions {
 
   public void recover(Context ctx) {
     guard.require(ctx, "actions.run");
-    for (Map<String, Object> r : store.all("actions"))
+    for (Map<String, Object> r : store.scan("actions"))
       if (Arrays.asList("launched", "confirmed").contains(r.get("status"))) {
         r.put("status", "unknown");
         store.put("actions", (String) r.get("id"), r);
