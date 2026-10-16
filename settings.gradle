@@ -1,0 +1,5 @@
+pluginManagement { repositories { maven { url 'https://dl.google.com/dl/android/maven2/' }; gradlePluginPortal(); mavenCentral() } }
+dependencyResolutionManagement { repositories { mavenCentral(); maven { url 'https://dl.google.com/dl/android/maven2/' } } }
+rootProject.name = 'jarvis-services'
+include ':shared-runtime', ':desktop'
+if (providers.gradleProperty('withAndroid').isPresent()) { include ':android' }

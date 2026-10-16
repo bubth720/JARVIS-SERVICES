@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "module": {
+      "enum": [
+        "documents",
+        "knowledge",
+        "data",
+        "actions",
+        "memory",
+        "analyst",
+        "guard",
+        "bridge"
+      ]
+    },
+    "action": {
+      "type": "string",
+      "pattern": "^[a-z_]{1,40}$"
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "permission_context": {
+      "type": "object",
+      "properties": {
+        "transport": {
+          "const": "trusted_in_process"
+        }
+      },
+      "required": [
+        "transport"
+      ],
+      "additionalProperties": false
+    },
+    "timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 90000
+    }
+  },
+  "required": [
+    "request_id",
+    "schema_version",
+    "module",
+    "action",
+    "parameters",
+    "permission_context",
+    "timeout"
+  ],
+  "additionalProperties": false
+}
