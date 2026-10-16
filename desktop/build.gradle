@@ -9,5 +9,5 @@ dependencies {
 }
 // Compile and exercise the exact Android SQL adapter on the JVM bundled driver.
 sourceSets.test.java.srcDir '../android/src/main/java/fr/jarvis/services/android'
-sourceSets.test.java.exclude 'MainActivity.java', 'AndroidPdfText.java'
+sourceSets.test.java.exclude 'MainActivity.java', 'AndroidPdfText.java', 'DocumentAccess.java'
 test { useJUnitPlatform(); maxHeapSize = '512m'; jvmArgs '-Djava.security.manager=allow' }

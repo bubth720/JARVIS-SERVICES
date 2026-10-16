@@ -1,0 +1,8 @@
+<resources>
+    <string name="initializing">Initialisation locale — aucun modèle chargé</string>
+    <string name="profile_status">Profil %1$s — un travail lourd maximum</string>
+    <string name="busy">BUSY ou initialisation en cours</string>
+    <string name="contract_status">Contrats %1$s — %2$s — local</string>
+    <string name="error_status">Erreur : %1$s</string>
+    <string name="sample_csv" translatable="false">name,value\na,0.1\na,0.1\nb,0.2</string>
+</resources>

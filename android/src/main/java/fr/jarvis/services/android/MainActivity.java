@@ -2,10 +2,8 @@ package fr.jarvis.services.android;
 
 import android.app.*;
 import android.content.*;
-import android.database.Cursor;
 import android.net.Uri;
 import android.os.*;
-import android.provider.OpenableColumns;
 import android.widget.*;
 import com.google.gson.GsonBuilder;
 import com.tom_roush.pdfbox.android.PDFBoxResourceLoader;
@@ -19,7 +17,6 @@ import fr.jarvis.services.shared.api.Contracts.Failure;
 import fr.jarvis.services.shared.api.Runtime;
 import fr.jarvis.services.shared.tasks.Task;
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -52,7 +49,7 @@ public final class MainActivity extends Activity {
     scroll.addView(layout);
     setContentView(scroll);
     status = new TextView(this);
-    status.setText("Initialisation locale — aucun modèle chargé");
+    status.setText(R.string.initializing);
     layout.addView(status);
     output = new TextView(this);
     output.setTextIsSelectable(true);
@@ -61,14 +58,14 @@ public final class MainActivity extends Activity {
     layout.addView(query);
     csv = new EditText(this);
     csv.setHint("CSV à transformer");
-    csv.setText("name,value\na,0.1\na,0.1\nb,0.2");
+    csv.setText(R.string.sample_csv);
     layout.addView(csv);
     button(
         "Profil ÉCO / ÉQUILIBRÉ / AUTO",
         () -> {
           profile =
               profile.equals("ECO") ? "BALANCED" : profile.equals("BALANCED") ? "AUTO" : "ECO";
-          status.setText("Profil " + profile + " — un travail lourd maximum");
+          status.setText(getString(R.string.profile_status, profile));
         });
     button("États, capacités et journaux", () -> submit(() -> runtime.diagnostics.report(owner)));
     button(
@@ -281,7 +278,7 @@ public final class MainActivity extends Activity {
 
   private void submit(Work work) {
     if (runtime == null || !busy.compareAndSet(false, true)) {
-      output.setText("BUSY ou initialisation en cours");
+      output.setText(R.string.busy);
       return;
     }
     running = new Task(30000);
@@ -305,7 +302,7 @@ public final class MainActivity extends Activity {
     runOnUiThread(
         () -> {
           if (!isFinishing() && !isDestroyed()) {
-            status.setText("Contrats " + Contracts.VERSION + " — " + profile + " — local");
+            status.setText(getString(R.string.contract_status, Contracts.VERSION, profile));
             output.setText(text);
           }
         });
@@ -315,7 +312,8 @@ public final class MainActivity extends Activity {
     String code = e instanceof Failure ? ((Failure) e).code : "PROCESSING_ERROR";
     runOnUiThread(
         () -> {
-          if (!isFinishing() && !isDestroyed()) output.setText("Erreur : " + code);
+          if (!isFinishing() && !isDestroyed())
+            output.setText(getString(R.string.error_status, code));
         });
   }
 
@@ -327,26 +325,11 @@ public final class MainActivity extends Activity {
     if (request == 1)
       submit(
           () -> {
-            String name = "import.txt";
-            try (Cursor c =
-                getContentResolver()
-                    .query(uri, new String[] {OpenableColumns.DISPLAY_NAME}, null, null, null)) {
-              if (c != null && c.moveToFirst()) name = c.getString(0);
-            }
-            ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-            try (InputStream in = getContentResolver().openInputStream(uri)) {
-              if (in == null) throw new Failure("READ_FAILED");
-              byte[] b = new byte[8192];
-              int n;
-              while ((n = in.read(b)) != -1) {
-                running.check();
-                int byteLimit = profile.equals("BALANCED") ? Documents.MAX_BYTES : 512 * 1024;
-                if (bytes.size() + n > byteLimit) throw new Failure("INPUT_TOO_LARGE");
-                bytes.write(b, 0, n);
-              }
-            }
+            int byteLimit = profile.equals("BALANCED") ? Documents.MAX_BYTES : 512 * 1024;
+            DocumentAccess.Imported source =
+                DocumentAccess.read(getContentResolver(), uri, byteLimit, running);
             Map<String, Object> doc =
-                runtime.documents.importBytes(owner, name, bytes.toByteArray(), running);
+                runtime.documents.importBytes(owner, source.name, source.bytes, running);
             runtime.knowledge.index(owner, doc, running);
             selectedId = (String) doc.get("id");
             imported.add(selectedId);
@@ -359,15 +342,8 @@ public final class MainActivity extends Activity {
     if (request == 2)
       submit(
           () -> {
-            String report =
-                new GsonBuilder()
-                    .setPrettyPrinting()
-                    .create()
-                    .toJson(runtime.diagnostics.report(owner));
-            try (OutputStream out = getContentResolver().openOutputStream(uri, "w")) {
-              if (out == null) throw new Failure("WRITE_FAILED");
-              out.write(report.getBytes(StandardCharsets.UTF_8));
-            }
+            DocumentAccess.writeTechnicalReport(
+                getContentResolver(), uri, runtime.diagnostics, owner, running);
             return "Rapport exporté sans contenu documentaire";
           });
   }

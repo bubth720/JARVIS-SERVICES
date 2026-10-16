@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <!-- Test APK only: two synthetic fixtures, no arbitrary path or production data access. -->
+    <provider android:name="fr.jarvis.services.android.SyntheticDocumentProvider"
+      android:authorities="fr.jarvis.services.diagnostic.test.synthetic"
+      android:exported="true" android:grantUriPermissions="true"/>
+  </application>
+</manifest>

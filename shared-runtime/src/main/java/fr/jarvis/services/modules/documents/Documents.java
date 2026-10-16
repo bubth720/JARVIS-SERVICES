@@ -11,8 +11,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.*;
 import java.util.zip.*;
-import javax.xml.parsers.DocumentBuilderFactory;
-import org.w3c.dom.*;
 
 public final class Documents {
   public interface PdfText {
@@ -196,21 +194,7 @@ public final class Documents {
           if (out.size() + n > MAX_BYTES) throw new Failure("INPUT_TOO_LARGE");
           out.write(buffer, 0, n);
         }
-        DocumentBuilderFactory f = DocumentBuilderFactory.newInstance();
-        f.setNamespaceAware(true);
-        f.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
-        f.setFeature("http://xml.org/sax/features/external-general-entities", false);
-        f.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
-        f.setXIncludeAware(false);
-        f.setExpandEntityReferences(false);
-        Document d = f.newDocumentBuilder().parse(new ByteArrayInputStream(out.toByteArray()));
-        NodeList paragraphs =
-            d.getElementsByTagNameNS(
-                "http://schemas.openxmlformats.org/wordprocessingml/2006/main", "p");
-        StringBuilder text = new StringBuilder();
-        for (int i = 0; i < paragraphs.getLength(); i++)
-          text.append(paragraphs.item(i).getTextContent()).append('\n');
-        return text.toString();
+        return DocxXml.extract(out.toByteArray());
       }
     }
     throw new Failure("INVALID_DOCX");
