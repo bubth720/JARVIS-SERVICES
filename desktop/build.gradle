@@ -5,5 +5,9 @@ dependencies {
  implementation 'org.xerial:sqlite-jdbc:3.46.1.0'
  implementation 'org.apache.pdfbox:pdfbox:2.0.33'
  testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+ testImplementation 'androidx.sqlite:sqlite-bundled-jvm:2.5.0'
 }
-test { useJUnitPlatform(); maxHeapSize = '512m' }
+// Compile and exercise the exact Android SQL adapter on the JVM bundled driver.
+sourceSets.test.java.srcDir '../android/src/main/java/fr/jarvis/services/android'
+sourceSets.test.java.exclude 'MainActivity.java', 'AndroidPdfText.java'
+test { useJUnitPlatform(); maxHeapSize = '512m'; jvmArgs '-Djava.security.manager=allow' }
