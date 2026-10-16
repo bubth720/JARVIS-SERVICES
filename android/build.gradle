@@ -1,0 +1,16 @@
+plugins { id 'com.android.application' version '8.9.2' }
+android {
+ namespace 'fr.jarvis.services.android'
+ compileSdk 35
+ defaultConfig { applicationId 'fr.jarvis.services.diagnostic'; minSdk 26; targetSdk 35; versionCode 1; versionName '1.0.0'; testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner' }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+ packaging { resources.excludes += ['META-INF/DEPENDENCIES','META-INF/LICENSE','META-INF/NOTICE'] }
+ lint { abortOnError true }
+}
+dependencies {
+ androidTestImplementation 'androidx.test:runner:1.6.2'
+ androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+ implementation project(':shared-runtime')
+ implementation 'androidx.sqlite:sqlite-bundled:2.5.0'
+ implementation 'com.tom-roush:pdfbox-android:2.0.27.0'
+}

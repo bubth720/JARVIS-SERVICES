@@ -1,0 +1,42 @@
+name: SERVICES foundation
+on:
+  push:
+    branches: [mission-001-services-foundation]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  jvm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: ./gradlew :desktop:test --no-daemon
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jvm-results
+          path: desktop/build/test-results/test/
+  android-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - run: ./gradlew -PwithAndroid :android:assembleDebug :android:assembleAndroidTest :android:lintDebug --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diagnostic-debug-apks
+          path: android/build/outputs/apk/
