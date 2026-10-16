@@ -1,0 +1,27 @@
+{
+  "base": "075158b755000f8c6d8e37747cec9de8221daa72",
+  "branch_start": "da762b3",
+  "adr_source": {
+    "repository": "bubth720/JARVIS-UNIFIED",
+    "sha": "e0e6f69c4908a152da4e43864a08fef0c8f7a7af",
+    "file": "docs/DECISIONS/ADR-001-CORE-LLM-UNIFIED.md",
+    "read_in_full": true,
+    "source_modified": false
+  },
+  "responsibilities": {
+    "core": "decisions_permissions_confirmations",
+    "nexus": "future_confirmed_knowledge_and_memory_storage",
+    "llm": "existing_inference_and_response_catalogue",
+    "services": "reusable_functions_and_isolated_diagnostic_only"
+  },
+  "scope_exclusions": [
+    "real_CORE_LLM_connection",
+    "legacy_migration",
+    "new_OCR_XLSX_ZIM",
+    "hardware_BRIDGE",
+    "actual_PC_phone_watch_sync",
+    "personal_device_deployment"
+  ],
+  "overlap_noted": "Local knowledge/memory/confirmation are standalone diagnostic facilities; not production authority or a NEXUS competitor. No competing production service introduced; targeted DOCUMENTS compatibility fix is justified by native test evidence.",
+  "scope_correction": "Verified Android26 DOCX failure required portable SAX hardening in DOCUMENTS only. Other seven module implementations and all contracts remain unchanged; no responsibility moved."
+}

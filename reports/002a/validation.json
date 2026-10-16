@@ -1,0 +1,588 @@
+{
+  "module": "JARVIS SERVICES",
+  "mission": "002A Android qualification",
+  "branch": "mission-002a-android-qualification",
+  "foundation_base_sha": "075158b755000f8c6d8e37747cec9de8221daa72",
+  "branch_start_sha": "da762b3e3204707b5a3a05ec7a4946ec1aad2d64",
+  "final_tested_source_sha": "767ac376e03011a79cf6061a5f088b77f478282d",
+  "final_sha": "767ac376e03011a79cf6061a5f088b77f478282d",
+  "final_sha_scope": "Tested code and CI commit; later proof/documentation commit is identified in Git history and delivery response.",
+  "status": "qualified_on_API26_x86_emulator_only",
+  "captured_at_utc": "2026-10-16T14:24:20.281788+00:00",
+  "compatibility_audit": "compatibility-audit.json",
+  "jvm": {
+    "totals": {
+      "tests": 59,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "original_55_preserved": true,
+    "suites": [
+      {
+        "suite": "fr.jarvis.services.BundledStorageTest",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timestamp": "2026-10-16T14:19:03.221Z",
+        "cases": [
+          "bundledDriverSupportsFts5AndRollback()"
+        ]
+      },
+      {
+        "suite": "fr.jarvis.services.DocxSecurityTest",
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timestamp": "2026-10-16T14:19:03.335Z",
+        "cases": [
+          "malformedXmlIsRejected()",
+          "dtdIsRejectedForUtf8AndUtf16()",
+          "utf16AndBuiltInEntitiesRemainSupported()",
+          "extractedTextIsBounded()"
+        ]
+      },
+      {
+        "suite": "fr.jarvis.services.FoundationTest",
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timestamp": "2026-10-16T14:19:03.448Z",
+        "cases": [
+          "permissionsFailClosed()",
+          "symbolicLinkRejected()",
+          "destructiveDowngradeRefused()",
+          "backupRestoreRebuildsSearch()",
+          "integrityAndRestart()",
+          "transactionRollsBack()",
+          "traversalAndAbsoluteRejected()",
+          "confirmationBindsExactContent()",
+          "confirmationOneShot()",
+          "confirmationBindsIdentity()",
+          "auditDoesNotStoreContent()",
+          "singleHeavyTaskAndRelease()",
+          "malformedRequestRejected()",
+          "cancellationAndDeadline()",
+          "migrationRoundtrip()",
+          "malformedBackupDoesNotDelete()",
+          "progressSequence()",
+          "unknownProtocolRejected()"
+        ]
+      },
+      {
+        "suite": "fr.jarvis.services.ModulesTest",
+        "tests": 36,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timestamp": "2026-10-16T14:19:03.749Z",
+        "cases": [
+          "jsonFilterSortNormalizeAggregate()",
+          "cancelledWorkflowCreatesNoFile()",
+          "bridgeIdentityCapabilitiesAndDisconnect()",
+          "recoveryIncludesOriginalsAndMetadata()",
+          "memoryRequiresExactConfirmationAndPersists()",
+          "multiBatchCorpusKeepsEverySource()",
+          "protectedExportDenied()",
+          "realPdfImportSearch()",
+          "incrementalIndexAndDelete()",
+          "vectorBaselineProvenance()",
+          "representativeWorkflowWithNetworkDenied()",
+          "corruptBackupRefused()",
+          "ftsSpecialCharactersAreLiteral()",
+          "analystMultiDocumentMockAndOfflineFallback()",
+          "importsTextAndMetadata()",
+          "limitedSemanticSynonyms()",
+          "noArbitraryToolOrDocumentInstructions()",
+          "cancelledImportLeavesNoOriginal()",
+          "analystRejectsInventedCitation()",
+          "crashedWorkflowIsUnknownNotReplayed()",
+          "memoryRetention()",
+          "scannedPdfReportsOcrRequired()",
+          "memoryRectificationDeletion()",
+          "diagnosticsOfflineAndEightModules()",
+          "analystCoordinatesKnowledgeDocumentsDataAndModel()",
+          "coreMockCorrelationAndPermission()",
+          "malformedCsvAndNumbers()",
+          "xxeInDocxRejected()",
+          "csvExactDedupAndStatistics()",
+          "backupRestoreRequiresConfirmation()",
+          "boundsAndExtensions()",
+          "importsCsvJson()",
+          "docxRoundtripAndNoOverwrite()",
+          "workflowCreatesDocxAndRejectsReplay()",
+          "csvQuotedMultilineRoundtrip()",
+          "analystCalculationsDeterministic()"
+        ]
+      }
+    ]
+  },
+  "android": {
+    "api": 26,
+    "abi": "x86",
+    "emulator": "37.3.4 build16555280",
+    "engine": "TCG software, no KVM access or OS security changes",
+    "required_three": {
+      "diagnosticActivityInitializesAllModules": {
+        "numtests": "11",
+        "stream": ".",
+        "id": "AndroidJUnitRunner",
+        "test": "diagnosticActivityInitializesAllModules",
+        "class": "fr.jarvis.services.android.OfflineSmokeTest",
+        "current": "9",
+        "status_code": 0
+      },
+      "bundledFts5AndMigration": {
+        "numtests": "11",
+        "stream": ".",
+        "id": "AndroidJUnitRunner",
+        "test": "bundledFts5AndMigration",
+        "class": "fr.jarvis.services.android.OfflineSmokeTest",
+        "current": "11",
+        "status_code": 0
+      },
+      "noInternetPermission": {
+        "numtests": "11",
+        "stream": ".",
+        "id": "AndroidJUnitRunner",
+        "test": "noInternetPermission",
+        "class": "fr.jarvis.services.android.OfflineSmokeTest",
+        "current": "10",
+        "status_code": 0
+      }
+    },
+    "final_run": {
+      "host": "127.0.0.1",
+      "port": 5581,
+      "expected_tests": 11,
+      "apk": [
+        {
+          "kind": "app",
+          "sha256": "173f142a6fbf68cf3e4b3a52b27d473c2d799ca6e885842910ce88678070d04b",
+          "bytes": 14324635
+        },
+        {
+          "kind": "tests",
+          "sha256": "88888285dba3336c6c050cee590559578008e031ff9c4068944a3b4ce337e65c",
+          "bytes": 895604
+        }
+      ],
+      "emulator_identity": {
+        "qemu": true,
+        "api": 26,
+        "boot_completed": true
+      },
+      "phase": "instrumentation",
+      "command": "am instrument -w -r fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner",
+      "cases": [
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "nativeDocxRejectsDtdForUtf8AndUtf16",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "1",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "guardAndWorkflowFailureAreSafe",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "2",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "resolverRejectsUnboundedCancelledAndFileUris",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "3",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "bridgeSimulatorDisconnectsSafely",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "4",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "nativePdfFtsAndNonDestructiveDocx",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "5",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "isolatedRecoveryPreservesIntegrity",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "6",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "resolverImportsPdfAndExportsPrivateFreeReport",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "7",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "exactCsvAndMemoryAfterReopen",
+          "class": "fr.jarvis.services.android.LocalQualificationTest",
+          "current": "8",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "diagnosticActivityInitializesAllModules",
+          "class": "fr.jarvis.services.android.OfflineSmokeTest",
+          "current": "9",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "noInternetPermission",
+          "class": "fr.jarvis.services.android.OfflineSmokeTest",
+          "current": "10",
+          "status_code": 0
+        },
+        {
+          "numtests": "11",
+          "stream": ".",
+          "id": "AndroidJUnitRunner",
+          "test": "bundledFts5AndMigration",
+          "class": "fr.jarvis.services.android.OfflineSmokeTest",
+          "current": "11",
+          "status_code": 0
+        }
+      ],
+      "metrics": [
+        {
+          "metric_pss_kib": "21143",
+          "metric_scenario": "nativeDocxRejectsDtdForUtf8AndUtf16",
+          "metric_vm_hwm": "75816 kB",
+          "metric_duration_ms": "357"
+        },
+        {
+          "metric_pss_kib": "22034",
+          "metric_scenario": "guardAndWorkflowFailureAreSafe",
+          "metric_vm_hwm": "77812 kB",
+          "metric_duration_ms": "1302"
+        },
+        {
+          "metric_pss_kib": "21701",
+          "metric_scenario": "resolverRejectsUnboundedCancelledAndFileUris",
+          "metric_vm_hwm": "78084 kB",
+          "metric_duration_ms": "1153"
+        },
+        {
+          "metric_pss_kib": "20457",
+          "metric_scenario": "bridgeSimulatorDisconnectsSafely",
+          "metric_vm_hwm": "78504 kB",
+          "metric_duration_ms": "399"
+        },
+        {
+          "metric_pss_kib": "27488",
+          "metric_scenario": "nativePdfFtsAndNonDestructiveDocx",
+          "metric_vm_hwm": "86040 kB",
+          "metric_duration_ms": "8839"
+        },
+        {
+          "metric_pss_kib": "28203",
+          "metric_scenario": "isolatedRecoveryPreservesIntegrity",
+          "metric_vm_hwm": "86980 kB",
+          "metric_duration_ms": "1059"
+        },
+        {
+          "metric_pss_kib": "28792",
+          "metric_scenario": "resolverImportsPdfAndExportsPrivateFreeReport",
+          "metric_vm_hwm": "87580 kB",
+          "metric_duration_ms": "1432"
+        },
+        {
+          "metric_pss_kib": "29059",
+          "metric_scenario": "exactCsvAndMemoryAfterReopen",
+          "metric_vm_hwm": "87824 kB",
+          "metric_duration_ms": "1252"
+        }
+      ],
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "complete": true,
+      "success": true,
+      "elapsed_host_seconds": 108.974
+    },
+    "previous_fixed_run": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "proof": "instrumentation-after-fix.json"
+    },
+    "earlier_failures": {
+      "extended_run": {
+        "passed": 9,
+        "failed": 1,
+        "proof": "expanded-instrumentation-first.json"
+      },
+      "diagnostic_run": {
+        "passed": 0,
+        "failed": 1,
+        "cause": "Android Harmony XML factory does not recognize Xerces disallow-doctype-decl",
+        "proof": "docx-diagnosis.json"
+      }
+    },
+    "transport_failure": "original-three-instrumented.json; no JUnit cases executed in that attempt"
+  },
+  "lint": {
+    "before": {
+      "SetTextI18n": 10,
+      "DataExtractionRules": 1,
+      "TrustAllX509TrustManager": 1
+    },
+    "after": {
+      "errors": 0,
+      "warnings": 1,
+      "severity_reduced": false,
+      "issues": [
+        {
+          "id": "TrustAllX509TrustManager",
+          "severity": "Warning",
+          "message": "`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers",
+          "dependency": [
+            "bcpkix-jdk15to18-1.86.jar"
+          ]
+        }
+      ]
+    },
+    "severity_reduced": false
+  },
+  "artifacts": {
+    "source_commit": "767ac376e03011a79cf6061a5f088b77f478282d",
+    "tracked_tree_dirty": true,
+    "build_type": "debug",
+    "artifacts": [
+      {
+        "path": "android/build/outputs/apk/androidTest/debug/android-debug-androidTest.apk",
+        "bytes": 895604,
+        "sha256": "88888285dba3336c6c050cee590559578008e031ff9c4068944a3b4ce337e65c"
+      },
+      {
+        "path": "android/build/outputs/apk/debug/android-debug.apk",
+        "bytes": 14324635,
+        "sha256": "173f142a6fbf68cf3e4b3a52b27d473c2d799ca6e885842910ce88678070d04b"
+      }
+    ]
+  },
+  "apk_signature": "debug v2 verified, apk-signature.log",
+  "apk_permissions": [],
+  "resources": {
+    "provenance": "Instrumentation metrics from final API26 TCG run; synthetic fixtures only",
+    "checkpoints": 8,
+    "max_observed_end_scenario_pss_kib": 29059,
+    "max_kernel_rss_hwm_at_checkpoints_kib": 87824,
+    "scenario_durations_ms": {
+      "nativeDocxRejectsDtdForUtf8AndUtf16": 357,
+      "guardAndWorkflowFailureAreSafe": 1302,
+      "resolverRejectsUnboundedCancelledAndFileUris": 1153,
+      "bridgeSimulatorDisconnectsSafely": 399,
+      "nativePdfFtsAndNonDestructiveDocx": 8839,
+      "isolatedRecoveryPreservesIntegrity": 1059,
+      "resolverImportsPdfAndExportsPrivateFreeReport": 1432,
+      "exactCsvAndMemoryAfterReopen": 1252
+    },
+    "limitations": "PSS sampled at end; VmHWM cumulative process high-water through each checkpoint. Not a hardware energy or thermal measurement. Original UI-only tests do not emit these checkpoints.",
+    "physical_hardware": "not_measured"
+  },
+  "ci": {
+    "workflow": ".github/workflows/verify.yml",
+    "structure_checked_locally": true,
+    "actions_pinned": "action-pins.json",
+    "remote_result": "not_observed",
+    "blocker": "HTTPS proxy tunnel to api.github.com explicitly denied HTTP403",
+    "results_urls": [],
+    "observation": "ci-initial.json",
+    "workflow_url": "https://github.com/bubth720/JARVIS-SERVICES/actions"
+  },
+  "commands": [
+    {
+      "command": "scripts/cloud-gradle.sh --offline -PwithAndroid :desktop:test :android:assembleDebug :android:assembleAndroidTest :android:lintDebug --rerun-tasks --no-daemon",
+      "exit_code": 0,
+      "proof": "final-build.log"
+    },
+    {
+      "command": "PYTHONPATH=/tmp/jarvis-tools/adb-python python3 scripts/run-isolated-android.py --app android/build/outputs/apk/debug/android-debug.apk --tests android/build/outputs/apk/androidTest/debug/android-debug-androidTest.apk --expected 11 --output reports/002a/instrumentation-final.log",
+      "exit_code": 0,
+      "proof": "instrumentation-final.log"
+    },
+    {
+      "command": "apksigner verify --verbose android/build/outputs/apk/debug/android-debug.apk",
+      "exit_code": 0,
+      "proof": "apk-signature.log"
+    },
+    {
+      "command": "aapt dump permissions android/build/outputs/apk/debug/android-debug.apk",
+      "exit_code": 0,
+      "proof": "apk-permissions.log"
+    }
+  ],
+  "not_qualified": [
+    "physical_POCO_Redmi_or_watch",
+    "other_Android_API_levels_or_ARM_execution",
+    "system_SAF_picker_UI",
+    "hardware_energy_battery_and_thermal_limits",
+    "remote_GitHub_Actions_result",
+    "real_CORE_NEXUS_LLM_connections",
+    "real_PC_phone_watch_sync",
+    "whole_device_reboot (actual application-process restart was tested)"
+  ],
+  "scope": {
+    "contracts_changed": false,
+    "other_jarvis_repositories_modified": false,
+    "personal_devices_installed": false,
+    "main_merged": false,
+    "documented_overlap": "Isolated diagnostic knowledge/memory; CORE/NEXUS/LLM authority unchanged."
+  },
+  "delivery_commits": [
+    "6ff384b",
+    "767ac37"
+  ],
+  "changed_files": [
+    ".github/workflows/verify.yml",
+    "README.md",
+    "android/src/androidTest/AndroidManifest.xml",
+    "android/src/androidTest/assets/sample.pdf",
+    "android/src/androidTest/java/fr/jarvis/services/android/LocalQualificationTest.java",
+    "android/src/androidTest/java/fr/jarvis/services/android/SyntheticDocumentProvider.java",
+    "android/src/main/AndroidManifest.xml",
+    "android/src/main/java/fr/jarvis/services/android/DocumentAccess.java",
+    "android/src/main/java/fr/jarvis/services/android/MainActivity.java",
+    "android/src/main/res/values/strings.xml",
+    "android/src/main/res/xml/backup_rules.xml",
+    "desktop/build.gradle",
+    "desktop/src/test/java/fr/jarvis/services/DocxSecurityTest.java",
+    "docs/002A_COMPATIBILITY.md",
+    "docs/002A_QUALIFICATION.md",
+    "docs/BUILD_ANDROID.md",
+    "reports/002a/REPORT.md",
+    "reports/002a/action-pins.json",
+    "reports/002a/adb-client-install.log",
+    "reports/002a/android-dependencies.log",
+    "reports/002a/apk-manifest.json",
+    "reports/002a/apk-permissions.log",
+    "reports/002a/apk-signature.log",
+    "reports/002a/baseline-build.log",
+    "reports/002a/baseline-validation.json",
+    "reports/002a/bouncycastle-lint-analysis.txt",
+    "reports/002a/ci-initial.json",
+    "reports/002a/compatibility-audit.json",
+    "reports/002a/docx-diagnosis-build.log",
+    "reports/002a/docx-diagnosis.json",
+    "reports/002a/docx-diagnosis.log",
+    "reports/002a/docx-fix-build.log",
+    "reports/002a/emulator-boot.log",
+    "reports/002a/emulator-config.ini",
+    "reports/002a/emulator-readiness.log",
+    "reports/002a/emulator-shutdown.json",
+    "reports/002a/emulator-software.log",
+    "reports/002a/expanded-instrumentation-first.json",
+    "reports/002a/expanded-instrumentation-first.log",
+    "reports/002a/final-build.log",
+    "reports/002a/instrumentation-after-fix.json",
+    "reports/002a/instrumentation-after-fix.log",
+    "reports/002a/instrumentation-final.json",
+    "reports/002a/instrumentation-final.log",
+    "reports/002a/jvm-final.json",
+    "reports/002a/lint-after.json",
+    "reports/002a/lint-final.json",
+    "reports/002a/original-three-instrumented.json",
+    "reports/002a/original-three-retry.json",
+    "reports/002a/original-three-retry.log",
+    "reports/002a/packaging.json",
+    "reports/002a/process-restart-attempt-1.json",
+    "reports/002a/process-restart-attempt-2.json",
+    "reports/002a/process-restart.json",
+    "reports/002a/qualification-build.log",
+    "reports/002a/sdk-provenance.json",
+    "reports/002a/tooling-attempts.md",
+    "reports/002a/validation.json",
+    "reports/002a/workflow-local-check.json",
+    "scripts/probe-emulator-memory.py",
+    "scripts/run-isolated-android.py",
+    "scripts/write-apk-manifest.py",
+    "shared-runtime/src/main/java/fr/jarvis/services/modules/documents/Documents.java",
+    "shared-runtime/src/main/java/fr/jarvis/services/modules/documents/DocxXml.java"
+  ],
+  "additional_ui_probe": {
+    "result": {
+      "fixture": "synthetic_only",
+      "target": "verified_loopback_emulator",
+      "steps": [
+        "Exact synthetic preference confirmed through diagnostic UI"
+      ],
+      "success": true,
+      "pid_before": "4210",
+      "pid_after": "4409",
+      "assertions": [
+        "confirmation_content_visible",
+        "distinct_process_pids",
+        "confirmed_memory_present_after_restart"
+      ]
+    },
+    "evidence": "process-restart.json",
+    "not_counted_as_junit": true,
+    "attempts": [
+      {
+        "evidence": "process-restart-attempt-1.json",
+        "result": "incomplete; SystemUI ANR obscured widgets"
+      },
+      {
+        "evidence": "process-restart-attempt-2.json",
+        "result": "incomplete synthetic input; exact confirmation correctly refused"
+      },
+      {
+        "evidence": "process-restart.json",
+        "result": "passed; explicit exact content, distinct process PIDs, memory present after restart"
+      }
+    ]
+  },
+  "publication": {
+    "source_commit_confirmed_on_mission_branch": "767ac376e03011a79cf6061a5f088b77f478282d",
+    "main_observed_unchanged": "c9f94ad2fa219a5e09cda92fb451aca606ee1646",
+    "proof_documentation_commit": "See branch history and final delivery response; no executable source changes after tested commit."
+  },
+  "source_tree_assertion": {
+    "application_code_matches_final_tested_sha": true,
+    "only_tracked_documentation_changed_after_source_commit": [
+      "README.md",
+      "docs/BUILD_ANDROID.md"
+    ]
+  },
+  "emulator_shutdown": {
+    "pid": 24727,
+    "requested": true,
+    "state_after": "exited"
+  }
+}

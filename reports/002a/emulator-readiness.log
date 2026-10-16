@@ -1,0 +1,6 @@
+{"attempt": 0, "elapsed_poll_seconds": 0, "properties": ["1", "26"]}
+{"attempt": 1, "elapsed_poll_seconds": 10, "properties": ["1", "26"]}
+{"attempt": 2, "elapsed_poll_seconds": 20, "properties": ["1", "26"]}
+{"attempt": 3, "elapsed_poll_seconds": 30, "properties": ["1", "26"]}
+{"attempt": 4, "elapsed_poll_seconds": 40, "properties": ["1", "26"]}
+{"attempt": 5, "elapsed_poll_seconds": 50, "properties": ["1", "1", "26"]}

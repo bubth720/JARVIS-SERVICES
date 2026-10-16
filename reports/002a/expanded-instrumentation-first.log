@@ -1,0 +1,203 @@
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.LocalQualificationTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=guardAndWorkflowFailureAreSafe
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=19890
+INSTRUMENTATION_STATUS: metric_scenario=guardAndWorkflowFailureAreSafe
+INSTRUMENTATION_STATUS: metric_vm_hwm=75160 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=1521
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=guardAndWorkflowFailureAreSafe
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverRejectsUnboundedCancelledAndFileUris
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=19842
+INSTRUMENTATION_STATUS: metric_scenario=resolverRejectsUnboundedCancelledAndFileUris
+INSTRUMENTATION_STATUS: metric_vm_hwm=76280 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=568
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverRejectsUnboundedCancelledAndFileUris
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bridgeSimulatorDisconnectsSafely
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=19946
+INSTRUMENTATION_STATUS: metric_scenario=bridgeSimulatorDisconnectsSafely
+INSTRUMENTATION_STATUS: metric_vm_hwm=76280 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=210
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bridgeSimulatorDisconnectsSafely
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=25308
+INSTRUMENTATION_STATUS: metric_scenario=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: metric_vm_hwm=85048 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=6890
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+Error in nativePdfFtsAndNonDestructiveDocx(fr.jarvis.services.android.LocalQualificationTest):
+fr.jarvis.services.shared.api.Contracts$Failure: PROCESSING_ERROR
+	at fr.jarvis.services.shared.tasks.Task.heavy(Task.java:54)
+	at fr.jarvis.services.modules.documents.Documents.importBytes(Documents.java:38)
+	at fr.jarvis.services.android.LocalQualificationTest.nativePdfFtsAndNonDestructiveDocx(LocalQualificationTest.java:54)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: stack=fr.jarvis.services.shared.api.Contracts$Failure: PROCESSING_ERROR
+	at fr.jarvis.services.shared.tasks.Task.heavy(Task.java:54)
+	at fr.jarvis.services.modules.documents.Documents.importBytes(Documents.java:38)
+	at fr.jarvis.services.android.LocalQualificationTest.nativePdfFtsAndNonDestructiveDocx(LocalQualificationTest.java:54)
+
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=isolatedRecoveryPreservesIntegrity
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=26191
+INSTRUMENTATION_STATUS: metric_scenario=isolatedRecoveryPreservesIntegrity
+INSTRUMENTATION_STATUS: metric_vm_hwm=85464 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=947
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=isolatedRecoveryPreservesIntegrity
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverImportsPdfAndExportsPrivateFreeReport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=26776
+INSTRUMENTATION_STATUS: metric_scenario=resolverImportsPdfAndExportsPrivateFreeReport
+INSTRUMENTATION_STATUS: metric_vm_hwm=86228 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=1110
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverImportsPdfAndExportsPrivateFreeReport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=exactCsvAndMemoryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=27059
+INSTRUMENTATION_STATUS: metric_scenario=exactCsvAndMemoryAfterReopen
+INSTRUMENTATION_STATUS: metric_vm_hwm=86552 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=405
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=exactCsvAndMemoryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.OfflineSmokeTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=diagnosticActivityInitializesAllModules
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=diagnosticActivityInitializesAllModules
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=noInternetPermission
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=noInternetPermission
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bundledFts5AndMigration
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bundledFts5AndMigration
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 21.5
+There was 1 failure:
+1) nativePdfFtsAndNonDestructiveDocx(fr.jarvis.services.android.LocalQualificationTest)
+fr.jarvis.services.shared.api.Contracts$Failure: PROCESSING_ERROR
+	at fr.jarvis.services.shared.tasks.Task.heavy(Task.java:54)
+	at fr.jarvis.services.modules.documents.Documents.importBytes(Documents.java:38)
+	at fr.jarvis.services.android.LocalQualificationTest.nativePdfFtsAndNonDestructiveDocx(LocalQualificationTest.java:54)
+
+FAILURES!!!
+Tests run: 10,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,15 @@
+{
+  "fixture": "synthetic_only",
+  "target": "verified_loopback_emulator",
+  "steps": [
+    "SystemUI ANR observed on TCG; selected normal Wait dialog"
+  ],
+  "success": false,
+  "error_type": "AssertionError",
+  "error": "Exact synthetic content must be displayed",
+  "diagnosis": {
+    "expected_synthetic_input": "JARVIS_002A_SYNTHETIC_RESTART",
+    "observed_dialog_input": "JARVIS_002A_SYNTHETI",
+    "action": "Confirmation correctly not executed because the exact fixture content was absent; UI injection was incomplete on TCG."
+  }
+}

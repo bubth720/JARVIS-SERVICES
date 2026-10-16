@@ -1,0 +1,46 @@
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.LocalQualificationTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=25657
+INSTRUMENTATION_STATUS: metric_scenario=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: metric_vm_hwm=82780 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=7756
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Error in nativePdfFtsAndNonDestructiveDocx(fr.jarvis.services.android.LocalQualificationTest):
+javax.xml.parsers.ParserConfigurationException: http://apache.org/xml/features/disallow-doctype-decl
+	at org.apache.harmony.xml.parsers.DocumentBuilderFactoryImpl.setFeature(DocumentBuilderFactoryImpl.java:101)
+	at fr.jarvis.services.modules.documents.Documents.readDocx(Documents.java:201)
+	at fr.jarvis.services.android.LocalQualificationTest.nativePdfFtsAndNonDestructiveDocx(LocalQualificationTest.java:54)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: stack=javax.xml.parsers.ParserConfigurationException: http://apache.org/xml/features/disallow-doctype-decl
+	at org.apache.harmony.xml.parsers.DocumentBuilderFactoryImpl.setFeature(DocumentBuilderFactoryImpl.java:101)
+	at fr.jarvis.services.modules.documents.Documents.readDocx(Documents.java:201)
+	at fr.jarvis.services.android.LocalQualificationTest.nativePdfFtsAndNonDestructiveDocx(LocalQualificationTest.java:54)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 8.181
+There was 1 failure:
+1) nativePdfFtsAndNonDestructiveDocx(fr.jarvis.services.android.LocalQualificationTest)
+javax.xml.parsers.ParserConfigurationException: http://apache.org/xml/features/disallow-doctype-decl
+	at org.apache.harmony.xml.parsers.DocumentBuilderFactoryImpl.setFeature(DocumentBuilderFactoryImpl.java:101)
+	at fr.jarvis.services.modules.documents.Documents.readDocx(Documents.java:201)
+	at fr.jarvis.services.android.LocalQualificationTest.nativePdfFtsAndNonDestructiveDocx(LocalQualificationTest.java:54)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

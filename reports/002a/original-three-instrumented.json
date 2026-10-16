@@ -1,0 +1,21 @@
+{
+  "host": "127.0.0.1",
+  "port": 5581,
+  "expected_tests": 3,
+  "apk": [
+    {
+      "kind": "app",
+      "sha256": "8691aa9f5e1387ab8b6ffdc40b3c44e8efb91ff822363e8b9beecbb922938339",
+      "bytes": 14338339
+    }
+  ],
+  "emulator_identity": {
+    "qemu": true,
+    "api": 26,
+    "boot_completed": true
+  },
+  "success": false,
+  "error_type": "TcpTimeoutException",
+  "error": "Reading from 127.0.0.1:5581 timed out (30 seconds)",
+  "elapsed_host_seconds": 32.034
+}

@@ -1,0 +1,14 @@
+{
+  "error_count": 0,
+  "warning_count": 1,
+  "issues": [
+    {
+      "id": "TrustAllX509TrustManager",
+      "severity": "Warning",
+      "message": "`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers",
+      "locations": [
+        "bcpkix-jdk15to18-1.86.jar"
+      ]
+    }
+  ]
+}

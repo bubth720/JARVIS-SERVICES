@@ -1,0 +1,50 @@
+{
+  "host": "127.0.0.1",
+  "port": 5581,
+  "expected_tests": 1,
+  "apk": [
+    {
+      "kind": "app",
+      "sha256": "8691aa9f5e1387ab8b6ffdc40b3c44e8efb91ff822363e8b9beecbb922938339",
+      "bytes": 14338339
+    },
+    {
+      "kind": "tests",
+      "sha256": "3f6ed446a321f1c445a52fb1ab6c02ec4e54b73dc4b93a1c4123f27e74fe707d",
+      "bytes": 897638
+    }
+  ],
+  "emulator_identity": {
+    "qemu": true,
+    "api": 26,
+    "boot_completed": true
+  },
+  "phase": "instrumentation",
+  "command": "am instrument -w -r -e class fr.jarvis.services.android.LocalQualificationTest#nativePdfFtsAndNonDestructiveDocx fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner",
+  "cases": [
+    {
+      "numtests": "1",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "nativePdfFtsAndNonDestructiveDocx",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "stack": "javax.xml.parsers.ParserConfigurationException: http://apache.org/xml/features/disallow-doctype-decl",
+      "current": "1",
+      "status_code": -2
+    }
+  ],
+  "metrics": [
+    {
+      "metric_pss_kib": "25657",
+      "metric_scenario": "nativePdfFtsAndNonDestructiveDocx",
+      "metric_vm_hwm": "82780 kB",
+      "metric_duration_ms": "7756"
+    }
+  ],
+  "passed": 0,
+  "failed": 1,
+  "skipped": 0,
+  "complete": true,
+  "success": false,
+  "elapsed_host_seconds": 57.564
+}

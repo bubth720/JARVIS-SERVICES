@@ -49,3 +49,5 @@ CORE/LLM restent indisponibles. Aucun modèle LLM n'est intégré.
 [Architecture et contrats](docs/ARCHITECTURE.md) · [Sécurité](docs/SECURITY.md) ·
 [Stockage/récupération](docs/STORAGE.md) · [Audit des contrats connexes](docs/CONTRACT_AUDIT.md) ·
 [Dépendances](docs/DEPENDENCIES.md)
+
+Qualification 002A : [rapport et preuves](reports/002a/REPORT.md), 59 tests JVM et 11 tests instrumentés exécutés sur émulateur API26 x86 ; matériel physique et résultat CI distant non qualifiés.

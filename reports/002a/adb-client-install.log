@@ -1,0 +1,33 @@
+Collecting adb-shell==0.4.4
+  Downloading adb_shell-0.4.4.tar.gz (61 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting cryptography (from adb-shell==0.4.4)
+  Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+Collecting pyasn1 (from adb-shell==0.4.4)
+  Downloading pyasn1-0.6.4-py3-none-any.whl.metadata (8.4 kB)
+Collecting rsa (from adb-shell==0.4.4)
+  Downloading rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting cffi>=2.0.0 (from cryptography->adb-shell==0.4.4)
+  Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography->adb-shell==0.4.4)
+  Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 19.1 MB/s  0:00:00
+Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Downloading pyasn1-0.6.4-py3-none-any.whl (84 kB)
+Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+Downloading rsa-4.9.1-py3-none-any.whl (34 kB)
+Building wheels for collected packages: adb-shell
+  Building wheel for adb-shell (pyproject.toml): started
+  Building wheel for adb-shell (pyproject.toml): finished with status 'done'
+  Created wheel for adb-shell: filename=adb_shell-0.4.4-py3-none-any.whl size=54614 sha256=b7b2207655db8835422cf6b66be2662b381330d8e1dc3aa4b682a2775e908649
+  Stored in directory: /tmp/jarvis-tools/pip-cache/wheels/b8/58/ca/fe652a6ed39f15ab8dc4440db7521e85f23e9456550ebbb814
+Successfully built adb-shell
+Installing collected packages: pycparser, pyasn1, rsa, cffi, cryptography, adb-shell
+
+Successfully installed adb-shell-0.4.4 cffi-2.1.1 cryptography-50.0.2 pyasn1-0.6.4 pycparser-3.11 rsa-4.9.1

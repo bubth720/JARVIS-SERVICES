@@ -1,0 +1,10 @@
+{
+  "yaml_parsed": true,
+  "jobs": [
+    "jvm",
+    "android-build",
+    "android-instrumented"
+  ],
+  "action_references_are_immutable_sha": true,
+  "remote_execution_validated": false
+}

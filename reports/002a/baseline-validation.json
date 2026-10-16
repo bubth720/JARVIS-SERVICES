@@ -1,0 +1,34 @@
+{
+  "source": "da762b3",
+  "base": "075158b755000f8c6d8e37747cec9de8221daa72",
+  "build_exit_code": 0,
+  "jvm": [
+    {
+      "suite": "fr.jarvis.services.FoundationTest",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "fr.jarvis.services.ModulesTest",
+      "tests": 36,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "fr.jarvis.services.BundledStorageTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "lint_before": {
+    "SetTextI18n": 10,
+    "DataExtractionRules": 1,
+    "TrustAllX509TrustManager": 1
+  },
+  "instrumentation_at_baseline": "pending_execution"
+}

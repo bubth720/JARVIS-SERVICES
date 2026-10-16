@@ -38,10 +38,11 @@ Pour l'instrumentation, utiliser un émulateur de test déjà autorisé :
 ./gradlew -PwithAndroid :android:connectedDebugAndroidTest
 ```
 
-Le Cloud de cette session ne fournit ni émulateur préinstallé ni /dev/kvm ni appareil
-attaché. Trois tests d'instrumentation sont livrés et compilés, pas exécutés. L'adaptateur
-SQL Android exact est également testé sur la bibliothèque native JVM ; ce n'est
-pas un test du JNI Android, du cycle de vie, de SAF ou des protections thermiques.
+État historique Mission001 : trois tests compilés mais non exécutés, sans émulateur
+préinstallé. En 002A, un émulateur API26 logiciel isolé a été préparé et les mêmes
+cas ont réellement été exécutés. Voir [la procédure et ses limites](002A_QUALIFICATION.md)
+et [les preuves 002A](../reports/002a/REPORT.md). Cela ne qualifie ni un téléphone
+physique, ni les autres versions Android, ni le raccordement CORE/LLM.
 
 Le diagnostic démarre sans modèle et sans calcul lourd. Toute interaction lourde
 passe par un worker unique, avec admission RAM/batterie/température et annulation

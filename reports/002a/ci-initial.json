@@ -1,0 +1,8 @@
+{
+  "status": "error",
+  "reason": "URLError",
+  "diagnosis": "GitHub API HTTPS tunnel explicitly refused with 403 Forbidden by session proxy; Git operations still accessible. No policy bypass attempted.",
+  "requested_url": "https://api.github.com/repos/bubth720/JARVIS-SERVICES/actions/runs?per_page=10",
+  "upstream_ci_status": "not_observed",
+  "denial_layer": "session HTTPS proxy tunnel, HTTP403"
+}

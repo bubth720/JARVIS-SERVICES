@@ -1,0 +1,8 @@
+{
+  "fixture": "synthetic_only",
+  "target": "verified_loopback_emulator",
+  "steps": [],
+  "success": false,
+  "error_type": "StopIteration",
+  "error": ""
+}

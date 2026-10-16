@@ -1,0 +1,110 @@
+{
+  "totals": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "original_55_preserved": true,
+  "suites": [
+    {
+      "suite": "fr.jarvis.services.BundledStorageTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timestamp": "2026-10-16T14:19:03.221Z",
+      "cases": [
+        "bundledDriverSupportsFts5AndRollback()"
+      ]
+    },
+    {
+      "suite": "fr.jarvis.services.DocxSecurityTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timestamp": "2026-10-16T14:19:03.335Z",
+      "cases": [
+        "malformedXmlIsRejected()",
+        "dtdIsRejectedForUtf8AndUtf16()",
+        "utf16AndBuiltInEntitiesRemainSupported()",
+        "extractedTextIsBounded()"
+      ]
+    },
+    {
+      "suite": "fr.jarvis.services.FoundationTest",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timestamp": "2026-10-16T14:19:03.448Z",
+      "cases": [
+        "permissionsFailClosed()",
+        "symbolicLinkRejected()",
+        "destructiveDowngradeRefused()",
+        "backupRestoreRebuildsSearch()",
+        "integrityAndRestart()",
+        "transactionRollsBack()",
+        "traversalAndAbsoluteRejected()",
+        "confirmationBindsExactContent()",
+        "confirmationOneShot()",
+        "confirmationBindsIdentity()",
+        "auditDoesNotStoreContent()",
+        "singleHeavyTaskAndRelease()",
+        "malformedRequestRejected()",
+        "cancellationAndDeadline()",
+        "migrationRoundtrip()",
+        "malformedBackupDoesNotDelete()",
+        "progressSequence()",
+        "unknownProtocolRejected()"
+      ]
+    },
+    {
+      "suite": "fr.jarvis.services.ModulesTest",
+      "tests": 36,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timestamp": "2026-10-16T14:19:03.749Z",
+      "cases": [
+        "jsonFilterSortNormalizeAggregate()",
+        "cancelledWorkflowCreatesNoFile()",
+        "bridgeIdentityCapabilitiesAndDisconnect()",
+        "recoveryIncludesOriginalsAndMetadata()",
+        "memoryRequiresExactConfirmationAndPersists()",
+        "multiBatchCorpusKeepsEverySource()",
+        "protectedExportDenied()",
+        "realPdfImportSearch()",
+        "incrementalIndexAndDelete()",
+        "vectorBaselineProvenance()",
+        "representativeWorkflowWithNetworkDenied()",
+        "corruptBackupRefused()",
+        "ftsSpecialCharactersAreLiteral()",
+        "analystMultiDocumentMockAndOfflineFallback()",
+        "importsTextAndMetadata()",
+        "limitedSemanticSynonyms()",
+        "noArbitraryToolOrDocumentInstructions()",
+        "cancelledImportLeavesNoOriginal()",
+        "analystRejectsInventedCitation()",
+        "crashedWorkflowIsUnknownNotReplayed()",
+        "memoryRetention()",
+        "scannedPdfReportsOcrRequired()",
+        "memoryRectificationDeletion()",
+        "diagnosticsOfflineAndEightModules()",
+        "analystCoordinatesKnowledgeDocumentsDataAndModel()",
+        "coreMockCorrelationAndPermission()",
+        "malformedCsvAndNumbers()",
+        "xxeInDocxRejected()",
+        "csvExactDedupAndStatistics()",
+        "backupRestoreRequiresConfirmation()",
+        "boundsAndExtensions()",
+        "importsCsvJson()",
+        "docxRoundtripAndNoOverwrite()",
+        "workflowCreatesDocxAndRejectsReplay()",
+        "csvQuotedMultilineRoundtrip()",
+        "analystCalculationsDeterministic()"
+      ]
+    }
+  ]
+}

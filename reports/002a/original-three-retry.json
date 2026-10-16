@@ -1,0 +1,60 @@
+{
+  "host": "127.0.0.1",
+  "port": 5581,
+  "expected_tests": 3,
+  "apk": [
+    {
+      "kind": "app",
+      "sha256": "8691aa9f5e1387ab8b6ffdc40b3c44e8efb91ff822363e8b9beecbb922938339",
+      "bytes": 14338339
+    },
+    {
+      "kind": "tests",
+      "sha256": "2069e0497f8df11a150f8459aa2ba2565a2fdbc0f7fa64ce6beb7a9928a48255",
+      "bytes": 897621
+    }
+  ],
+  "emulator_identity": {
+    "qemu": true,
+    "api": 26,
+    "boot_completed": true
+  },
+  "phase": "instrumentation",
+  "command": "am instrument -w -r -e class fr.jarvis.services.android.OfflineSmokeTest fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner",
+  "cases": [
+    {
+      "numtests": "3",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "diagnosticActivityInitializesAllModules",
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "current": "1",
+      "status_code": 0
+    },
+    {
+      "numtests": "3",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "noInternetPermission",
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "current": "2",
+      "status_code": 0
+    },
+    {
+      "numtests": "3",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "bundledFts5AndMigration",
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "current": "3",
+      "status_code": 0
+    }
+  ],
+  "metrics": [],
+  "passed": 3,
+  "failed": 0,
+  "skipped": 0,
+  "complete": true,
+  "success": true,
+  "elapsed_host_seconds": 66.69
+}

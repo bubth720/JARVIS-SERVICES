@@ -1,0 +1,15 @@
+{
+  "fixture": "synthetic_only",
+  "target": "verified_loopback_emulator",
+  "steps": [
+    "Exact synthetic preference confirmed through diagnostic UI"
+  ],
+  "success": true,
+  "pid_before": "4210",
+  "pid_after": "4409",
+  "assertions": [
+    "confirmation_content_visible",
+    "distinct_process_pids",
+    "confirmed_memory_present_after_restart"
+  ]
+}
