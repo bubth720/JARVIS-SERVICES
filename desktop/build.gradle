@@ -11,3 +11,7 @@ dependencies {
 sourceSets.test.java.srcDir '../android/src/main/java/fr/jarvis/services/android'
 sourceSets.test.java.exclude 'MainActivity.java', 'AndroidPdfText.java', 'DocumentAccess.java'
 test { useJUnitPlatform(); maxHeapSize = '512m'; jvmArgs '-Djava.security.manager=allow' }
+tasks.register('toolsDemo', JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  mainClass = 'fr.jarvis.services.demo.ToolsDemo'
+}
