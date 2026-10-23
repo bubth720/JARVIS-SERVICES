@@ -34,7 +34,8 @@ Versions : Java11, Gson2.11.0, PDFBox2.0.33 ; SQLiteJDBC3.46.1.0 pour la CLI/tes
 ## Validation réellement exécutée
 
 - `./scripts/cloud-gradle.sh :desktop:test --no-daemon --max-workers=2` :
-  **77 tests, 0 échec, 0 erreur, 0 ignoré** (59 historiques, 10 SERV-01, 8 pipeline).
+  **84 tests, 0 échec, 0 erreur, 0 ignoré** (59 historiques, 10 SERV-01,
+  8 pipeline, 7 protocole SAF).
 - Vrais PDF à deux pages + CSV synthétiques : citations, somme exacte0.30,
   Markdown et DOCX relus, corruption/XXE, UTF-8 invalide, cancellation, provenance,
   refus sans permission, non-écrasement et rejeu testés.
@@ -48,15 +49,34 @@ Versions : Java11, Gson2.11.0, PDFBox2.0.33 ; SQLiteJDBC3.46.1.0 pour la CLI/tes
 - Aucun test instrumenté exécuté dans cet environnement ; compiler son APK ne
   constitue pas une exécution. Aucun appareil, modèle, JNI, audio ou profil privé.
 
-## Limite explicite
+## SAF livré et qualification distincte
 
-L'export transactionnel actuel vise le stockage privé local. L'export vers une URI
-SAF choisie par l'utilisateur n'est pas encore qualifié/livré : les providers ne
-sont pas présumés offrir un rename atomique ou un rollback fiable. DocumentAccess
-historique reste intact et ne constitue pas cette nouvelle garantie. SERV-02 est
-**partiellement livrée** tant que ce parcours manque ; la capacité d'extraction
-readonly testée est livrée indépendamment et débloque ce prérequis NEX-02.
-Aucune interface Android nouvelle ni connexion CORE n'est déclarée opérationnelle.
+SafExportWriter et SafUriPort ajoutent un protocole de document frais : cible
+opaque liée à la sélection hôte, confirmation exacte incluant la requête, fichier
+privé temporaire encodé par Documents existant, écriture, relecture SHA-256 puis
+publication logique. SelectedTreeExportPort Android exige un arbre content://
+explicitement choisi et les grants lecture/écriture déjà présents ; il n'obtient
+aucune permission. Les identifiants préexistants sont recensés et jamais ouverts
+pour écriture ou suppression. Le nom final inclut le UUID de requête, affichable
+par destinationName avant confirmation.
+
+Un échec supprime uniquement le document fraîchement créé si le provider confirme
+ce rollback ; perte d'ACK de création, nettoyage incertain ou effet final ambigu
+conservent UNKNOWN et interdisent un succès/rejeu implicite. Cette transaction par
+rollback **ne promet pas une visibilité atomique SAF** : un document partiel peut
+être visible avant validation. L'export privé hard-link, lui, reste atomique.
+
+Les sept tests JVM du protocole utilisent des doubles explicites de provider :
+relecture, DOCX réel, corruption, rollback, perte d'ACK, autorisation et annulation.
+L'adaptateur Android et trois tests d'instrumentation sont compilés ; aucun provider
+SAF Android n'a été exécuté dans cet environnement. La qualification de terrain
+reste ouverte. Aucun test double n'est présenté comme une preuve SAF Android.
+Le code logiciel est livré ; disponibilité opérationnelle Android non présumée.
+
+Dernière commande combinée -PwithAndroid :desktop:test :android:assembleDebug
+:android:assembleAndroidTest :android:lintDebug : BUILD SUCCESSFUL, 72 tâches,
+23 octobre 2026, log /workspace/.services-tools/serv02-final.log. Lint reste à
+0 erreur et 1 avertissement tiers ; aucun seuil abaissé.
 
 ## Démonstration
 
@@ -67,7 +87,7 @@ ces données générées ; un hôte utilisateur doit obtenir la décision réell
 
 ## Suite
 
-Terminer le port SAF avec refus conservateur et tests de provider/rollback.
-SERV-03 ne doit pas considérer le parcours SAF comme disponible ; les composants
-workflow locaux peuvent employer seulement les capacités effectivement livrées.
+Qualifier le provider SAF Android réel sur un environnement autorisé. SERV-03
+peut employer les capacités privées et de lecture testées ; le parcours SAF ne
+devient pas qualifié par sa compilation seule.
 Aucun main fusionné, permission, signature, migration, JNI ou budget modifié.

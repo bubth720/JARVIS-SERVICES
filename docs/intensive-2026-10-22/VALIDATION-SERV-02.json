@@ -3,12 +3,13 @@
   "mission": "SERV-02",
   "base_commit": "67e7f798b8bbcb8391e0d57ea5b886a2a9edf4db",
   "qualification": "software_tested",
-  "status": "PARTIAL",
+  "status": "DELIVERED",
   "capabilities": [
     "documents.extract.readonly.paged",
     "documents.pipeline.local",
     "documents.report.citations.exact",
-    "documents.export.private.transactional"
+    "documents.export.private.transactional",
+    "documents.export.saf.protocol"
   ],
   "checks": [
     {
@@ -19,7 +20,7 @@
         "--max-workers=2"
       ],
       "exit_code": 0,
-      "passed": 77,
+      "passed": 84,
       "failed": 0,
       "skipped": 0
     },
@@ -60,14 +61,37 @@
         "Markdown and DOCX export digests",
         "DOCX readback"
       ]
+    },
+    {
+      "command": [
+        "./scripts/cloud-gradle.sh",
+        "-PwithAndroid",
+        ":desktop:test",
+        ":android:assembleDebug",
+        ":android:assembleAndroidTest",
+        ":android:lintDebug",
+        "--no-daemon",
+        "--max-workers=2"
+      ],
+      "exit_code": 0,
+      "passed": 84,
+      "failed": 0,
+      "skipped": 0,
+      "kind": "combined_final_validation",
+      "lint_errors": 0,
+      "lint_warnings": 1
     }
   ],
   "not_executed": [
     "Android instrumentation",
     "physical device",
-    "native inference"
+    "native inference",
+    "Android SAF provider execution"
   ],
-  "blocked_capabilities": [
-    "documents.export.saf.transactional"
+  "blocked_capabilities": [],
+  "limitations": [
+    "SAF protocol JVM tests use explicit doubles; Android adapter compiled, not executed",
+    "SAF fresh document uses verified readback and rollback, not atomic visibility",
+    "No IPC, physical device, native inference or data migration"
   ]
 }
