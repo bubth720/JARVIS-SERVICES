@@ -1,0 +1,73 @@
+{
+  "format": "jarvis.campaign-validation/1",
+  "mission": "SERV-02",
+  "base_commit": "67e7f798b8bbcb8391e0d57ea5b886a2a9edf4db",
+  "qualification": "software_tested",
+  "status": "PARTIAL",
+  "capabilities": [
+    "documents.extract.readonly.paged",
+    "documents.pipeline.local",
+    "documents.report.citations.exact",
+    "documents.export.private.transactional"
+  ],
+  "checks": [
+    {
+      "command": [
+        "./scripts/cloud-gradle.sh",
+        ":desktop:test",
+        "--no-daemon",
+        "--max-workers=2"
+      ],
+      "exit_code": 0,
+      "passed": 77,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": [
+        "./scripts/cloud-gradle.sh",
+        "-PwithAndroid",
+        ":android:assembleDebug",
+        ":android:assembleAndroidTest",
+        ":android:lintDebug",
+        "--no-daemon",
+        "--max-workers=2"
+      ],
+      "exit_code": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "kind": "build_lint",
+      "lint_errors": 0,
+      "lint_warnings": 1
+    },
+    {
+      "command": [
+        "./scripts/cloud-gradle.sh",
+        ":desktop:pipelineDemo",
+        "--no-daemon",
+        "--max-workers=2"
+      ],
+      "exit_code": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "kind": "functional_demo",
+      "observed": [
+        "real synthetic PDF+CSV",
+        "two exact citations",
+        "exact decimal sum0.30",
+        "Markdown and DOCX export digests",
+        "DOCX readback"
+      ]
+    }
+  ],
+  "not_executed": [
+    "Android instrumentation",
+    "physical device",
+    "native inference"
+  ],
+  "blocked_capabilities": [
+    "documents.export.saf.transactional"
+  ]
+}

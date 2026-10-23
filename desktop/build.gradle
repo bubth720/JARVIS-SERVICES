@@ -15,3 +15,7 @@ tasks.register('toolsDemo', JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
   mainClass = 'fr.jarvis.services.demo.ToolsDemo'
 }
+tasks.register('pipelineDemo', JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  mainClass = 'fr.jarvis.services.demo.PipelineDemo'
+}
