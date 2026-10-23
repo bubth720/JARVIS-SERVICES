@@ -1,0 +1,9 @@
+{
+  "repository": "bubth720/JARVIS-UNIFIED",
+  "commit": "d947dadf73f8dec91543a3f86a1aa2ffef0b0d2f",
+  "scope": "Desktop lab only, no automatic Android or production IPC integration",
+  "files": {
+    "desktop/src/main/java/org/jarvis/contracts/v1/RequestEnvelope.java": "d3df58d89506594ff35eba06b2c64a6423e429cb41bc8734f30f9b7762d414bb",
+    "desktop/src/main/java/org/jarvis/contracts/v1/ContractSupport.java": "0ffead1f4f0977e81345ab2dcc579b827e25614bb158bf1d5ca062f0375bb90d"
+  }
+}

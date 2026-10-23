@@ -25,6 +25,13 @@ public final class ToolRegistry {
     Map<String, Object> metadata = new TreeMap<>(d.metadata()); metadata.put("digest", d.digest());
     store.put("tool_registry", d.id, metadata); entries.put(d.id, new Entry(d, adapter));
   }
+  /** Host-side metadata lookup, never a grant or executable object from serialized input. */
+  public synchronized ToolDescriptor descriptor(String toolId, String version) {
+    Entry entry = entries.get(toolId);
+    if (entry == null) throw new Failure("TOOL_UNAVAILABLE");
+    if (!entry.descriptor.version.equals(version)) throw new Failure("INCOMPATIBLE_TOOL");
+    return entry.descriptor;
+  }
   synchronized Entry resolve(ToolInvocation invocation) {
     Entry entry = entries.get(invocation.toolId);
     if (entry == null) throw new Failure("TOOL_UNAVAILABLE");

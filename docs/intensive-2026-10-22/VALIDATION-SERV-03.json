@@ -1,0 +1,73 @@
+{
+  "format": "jarvis.campaign-validation/1",
+  "mission": "SERV-03",
+  "base_commit": "f7681707e7308d4b967e642d2f807f3e354209cc",
+  "qualification": "software_tested",
+  "status": "DELIVERED",
+  "dependencies": {
+    "SERV-01": "d300642a4f10b53bdc988a43e0d7abb05c0d2253",
+    "SERV-02": "f7681707e7308d4b967e642d2f807f3e354209cc",
+    "UNI-01": "d947dadf73f8dec91543a3f86a1aa2ffef0b0d2f"
+  },
+  "capabilities": [
+    "services.workflow.local.dag",
+    "services.workflow.sqlite.resume",
+    "services.workflow.unknown.fail_closed",
+    "services.workflow.temporary.compensation",
+    "services.bridge.outbox.inbox",
+    "services.bridge.synthetic.process.loopback"
+  ],
+  "checks": [
+    {
+      "command": [
+        "./scripts/cloud-gradle.sh",
+        "-PwithAndroid",
+        ":desktop:test",
+        ":desktop:workflowLabDemo",
+        ":android:assembleDebug",
+        ":android:assembleAndroidTest",
+        ":android:lintDebug",
+        "--no-daemon",
+        "--max-workers=2"
+      ],
+      "exit_code": 0,
+      "passed": 92,
+      "failed": 0,
+      "skipped": 0,
+      "lint_errors": 0,
+      "lint_warnings": 1,
+      "observed": [
+        "three real tools across two clean JVM exits",
+        "DOCX output read back",
+        "completed step executed once",
+        "loopback receiver child JVM with real SQLite",
+        "duplicate message acknowledged with one durable inbox entry"
+      ]
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-services-contract-lock.py"
+      ],
+      "exit_code": 0,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "kind": "static_hash_check"
+    }
+  ],
+  "not_executed": [
+    "Android instrumentation",
+    "Android SAF provider",
+    "personal device",
+    "mid-write power failure",
+    "production IPC/pairing/encryption",
+    "LLM native inference"
+  ],
+  "limitations": [
+    "Loopback is stdio between fixed local synthetic JVM processes; no production authentication",
+    "Incoming requests are validated opaque references; no remote tool executes",
+    "UNKNOWN effects are never automatically retried",
+    "Cumulative test totals include earlier missions"
+  ]
+}

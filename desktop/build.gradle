@@ -19,3 +19,7 @@ tasks.register('pipelineDemo', JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
   mainClass = 'fr.jarvis.services.demo.PipelineDemo'
 }
+tasks.register('workflowLabDemo', JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  mainClass = 'fr.jarvis.services.demo.WorkflowLabDemo'
+}
