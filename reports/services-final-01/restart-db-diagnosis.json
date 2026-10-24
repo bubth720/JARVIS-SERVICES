@@ -1,0 +1,80 @@
+{
+  "live": {
+    "bytes": 315392,
+    "header_hex": "53514c69746520666f726d61742033001000010100402020",
+    "integrity": [
+      [
+        "ok"
+      ]
+    ],
+    "tables": [
+      [
+        "schema_meta"
+      ],
+      [
+        "entries"
+      ],
+      [
+        "sqlite_autoindex_entries_1"
+      ],
+      [
+        "search"
+      ],
+      [
+        "search_data"
+      ],
+      [
+        "search_idx"
+      ],
+      [
+        "search_content"
+      ],
+      [
+        "search_docsize"
+      ],
+      [
+        "search_config"
+      ]
+    ],
+    "jobs": 13
+  },
+  "stopped": {
+    "bytes": 315392,
+    "header_hex": "53514c69746520666f726d61742033001000010100402020",
+    "integrity": [
+      [
+        "ok"
+      ]
+    ],
+    "tables": [
+      [
+        "schema_meta"
+      ],
+      [
+        "entries"
+      ],
+      [
+        "sqlite_autoindex_entries_1"
+      ],
+      [
+        "search"
+      ],
+      [
+        "search_data"
+      ],
+      [
+        "search_idx"
+      ],
+      [
+        "search_content"
+      ],
+      [
+        "search_docsize"
+      ],
+      [
+        "search_config"
+      ]
+    ],
+    "jobs": 13
+  }
+}

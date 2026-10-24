@@ -1,0 +1,9 @@
+{
+  "instrumentation_elapsed_host_seconds": 146.965,
+  "native_checkpoints": 8,
+  "physical_battery_thermal": "not measured",
+  "jvm_benchmarks": "benchmarks.json",
+  "measurement_scope": "PSS sampled after legacy native scenarios; VmHWM cumulative process RSS, not per-operation allocation; SAF UI times are in instrumentation log",
+  "max_checkpoint_pss_kib": 44397,
+  "max_process_vmhwm_kib": 121876
+}

@@ -1,0 +1,23 @@
+{
+  "fixture": "synthetic FIN01 only",
+  "target": "verified isolated emulator",
+  "started_at_utc": "2026-10-24T23:32:57.330758+00:00",
+  "observations": [],
+  "device_app_sha256": "3c8b19a8c6ba5b84eee56bed3a8481568345c09f757876c247b585152effc6f9",
+  "before_restart": {
+    "pid": "5462",
+    "job_id": "20027f43-460e-418d-b902-3dbd1ba07e13",
+    "workflow": "PENDING",
+    "steps": {
+      "publish": "PENDING",
+      "verify": "SUCCEEDED"
+    },
+    "sequence": 3,
+    "verification_runs": 1,
+    "snapshot": "stopped database plus any sidecars; integrity_check ok"
+  },
+  "success": false,
+  "error_type": "RuntimeError",
+  "error": "Resumed native UI did not expose the expected persisted job",
+  "finished_at_utc": "2026-10-24T23:36:28.714186+00:00"
+}

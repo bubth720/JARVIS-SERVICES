@@ -1,0 +1,36 @@
+{
+  "fixture": "synthetic FIN01 only",
+  "target": "verified isolated emulator",
+  "started_at_utc": "2026-10-24T23:07:36.480668+00:00",
+  "observations": [],
+  "before_restart": {
+    "pid": "4135",
+    "job_id": "00f3ed4b-8c25-4f5f-a2bd-43fe1d63a20b",
+    "workflow": "PENDING",
+    "steps": {
+      "publish": "PENDING",
+      "verify": "SUCCEEDED"
+    },
+    "sequence": 3,
+    "verification_runs": 1
+  },
+  "after_restart": {
+    "pid": "4403",
+    "job_id": "00f3ed4b-8c25-4f5f-a2bd-43fe1d63a20b",
+    "steps": {
+      "publish": "PENDING",
+      "verify": "SUCCEEDED"
+    },
+    "sequence": 3,
+    "verification_runs": 1
+  },
+  "final": {
+    "workflow": "SUCCEEDED",
+    "verification_runs": 1,
+    "output_bytes": 853,
+    "output_sha256": "a4131760bd68511e1ca07b51f5003b50b926fc4089918962e9366ab97d9f982a",
+    "docx_text_readback_verified": true
+  },
+  "success": true,
+  "finished_at_utc": "2026-10-24T23:09:43.278662+00:00"
+}

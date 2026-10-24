@@ -1,0 +1,53 @@
+{
+  "host": "127.0.0.1",
+  "port": 5581,
+  "expected_tests": 2,
+  "apk": [
+    {
+      "kind": "app",
+      "sha256": "9fe1170baf925594ce61e8f4d14e6dfcf3c3affbe3bfafdb1bd0b94dbfa176ef",
+      "bytes": 14418954
+    },
+    {
+      "kind": "tests",
+      "sha256": "ff5a87819199fd5f974d2ffd4ca464fee67ac4ba55ac20e7ca20c9fc91cd5981",
+      "bytes": 920109
+    }
+  ],
+  "emulator_identity": {
+    "qemu": true,
+    "api": 26,
+    "boot_completed": true
+  },
+  "phase": "instrumentation",
+  "command": "am instrument -w -r -e class fr.jarvis.services.android.FinalSafWorkflowTest fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner",
+  "cases": [
+    {
+      "numtests": "2",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "stack": "java.lang.AssertionError: Not clickable: source.csv",
+      "current": "1",
+      "status_code": -2
+    },
+    {
+      "numtests": "2",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "pdfToSourcedDocxReadsBothActualSafInputAndOutput",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "stack": "java.lang.AssertionError: Not clickable: sample.pdf",
+      "current": "2",
+      "status_code": -2
+    }
+  ],
+  "metrics": [],
+  "passed": 0,
+  "failed": 2,
+  "skipped": 0,
+  "complete": true,
+  "success": false,
+  "elapsed_host_seconds": 59.819
+}

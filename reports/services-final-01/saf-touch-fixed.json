@@ -1,0 +1,51 @@
+{
+  "host": "127.0.0.1",
+  "port": 5581,
+  "expected_tests": 2,
+  "apk": [
+    {
+      "kind": "app",
+      "sha256": "7c588993d8f1b85370c03f0284475868e0e9cd869ea55edeb3f0ac988ecd3053",
+      "bytes": 14447359
+    },
+    {
+      "kind": "tests",
+      "sha256": "e2d43023f5c7d4a7fbfaf41d3df1134829782ab96b97657b8265d327dddcf7ef",
+      "bytes": 920787
+    }
+  ],
+  "emulator_identity": {
+    "qemu": true,
+    "api": 26,
+    "boot_completed": true
+  },
+  "phase": "instrumentation",
+  "command": "am instrument -w -r -e class fr.jarvis.services.android.FinalSafWorkflowTest fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner",
+  "cases": [
+    {
+      "numtests": "2",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "current": "1",
+      "status_code": 0
+    },
+    {
+      "numtests": "2",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "pdfToSourcedDocxReadsBothActualSafInputAndOutput",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "current": "2",
+      "status_code": 0
+    }
+  ],
+  "metrics": [],
+  "passed": 2,
+  "failed": 0,
+  "skipped": 0,
+  "complete": true,
+  "success": true,
+  "elapsed_host_seconds": 89.191
+}

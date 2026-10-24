@@ -1,0 +1,31 @@
+Picked up JAVA_TOOL_OPTIONS:  -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :shared-runtime:compileJava
+> Task :desktop:compileJava
+> Task :desktop:processResources NO-SOURCE
+> Task :desktop:classes
+> Task :desktop:compileTestJava
+> Task :desktop:processTestResources NO-SOURCE
+> Task :desktop:testClasses
+> Task :shared-runtime:processResources NO-SOURCE
+> Task :shared-runtime:classes
+> Task :shared-runtime:jar
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by fr.jarvis.services.ModulesTest (file:/workspace/JARVIS-SERVICES/desktop/build/classes/java/test/)
+WARNING: Please consider reporting this to the maintainers of fr.jarvis.services.ModulesTest
+WARNING: System::setSecurityManager will be removed in a future release
+
+> Task :desktop:test
+Picked up JAVA_TOOL_OPTIONS:  -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+[Incubating] Problems report is available at: file:///workspace/JARVIS-SERVICES/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 8s
+5 actionable tasks: 5 executed

@@ -1,0 +1,229 @@
+{
+  "observed_at_utc": "2026-10-24T23:28:40.931780+00:00",
+  "source_url": "https://github.com/bubth720/JARVIS-SERVICES/actions?query=branch%3Afeat%2Fservices-final-01",
+  "method": "public GitHub HTML, not a simulated CI result",
+  "code_commit": "edfa044321ff09697ae9bec40a6e31aa76a77370",
+  "run": {
+    "id": "40142362407",
+    "runUrl": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40142362407",
+    "title": "test(android): scroll to visible SAF fixtures across repeated runs",
+    "state": {
+      "status": "WORKFLOW_RUN_STATUS_COMPLETED",
+      "conclusion": "WORKFLOW_RUN_CONCLUSION_SUCCESS"
+    },
+    "timing": {
+      "kind": "WORKFLOW_RUN_TIMING_KIND_DURATION",
+      "text": "7m 12s"
+    }
+  },
+  "jobs": [
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40142362407/job/121016576338",
+      "steps": [
+        {
+          "data-name": "Set up job",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:00Z",
+          "data-completed-at": "2026-10-24T23:21:02Z"
+        },
+        {
+          "data-name": "Run actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:02Z",
+          "data-completed-at": "2026-10-24T23:21:02Z"
+        },
+        {
+          "data-name": "Run actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:02Z",
+          "data-completed-at": "2026-10-24T23:21:03Z"
+        },
+        {
+          "data-name": "Contract provenance",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:03Z",
+          "data-completed-at": "2026-10-24T23:21:03Z"
+        },
+        {
+          "data-name": "JVM regressions",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:03Z",
+          "data-completed-at": "2026-10-24T23:21:26Z"
+        },
+        {
+          "data-name": "Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:26Z",
+          "data-completed-at": "2026-10-24T23:21:28Z"
+        },
+        {
+          "data-name": "Post Run actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:28Z",
+          "data-completed-at": "2026-10-24T23:21:28Z"
+        },
+        {
+          "data-name": "Post Run actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:28Z",
+          "data-completed-at": "2026-10-24T23:21:28Z"
+        },
+        {
+          "data-name": "Complete job",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:28Z",
+          "data-completed-at": "2026-10-24T23:21:28Z"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40142362407/job/121016576445",
+      "steps": [
+        {
+          "data-name": "Set up job",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:01Z",
+          "data-completed-at": "2026-10-24T23:21:02Z"
+        },
+        {
+          "data-name": "Run actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:03Z",
+          "data-completed-at": "2026-10-24T23:21:04Z"
+        },
+        {
+          "data-name": "Run actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:04Z",
+          "data-completed-at": "2026-10-24T23:21:04Z"
+        },
+        {
+          "data-name": "Run android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:04Z",
+          "data-completed-at": "2026-10-24T23:21:17Z"
+        },
+        {
+          "data-name": "SDK prerequisites",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:17Z",
+          "data-completed-at": "2026-10-24T23:21:19Z"
+        },
+        {
+          "data-name": "Build diagnostic APK",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:19Z",
+          "data-completed-at": "2026-10-24T23:22:57Z"
+        },
+        {
+          "data-name": "Build instrumentation APK",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:22:58Z",
+          "data-completed-at": "2026-10-24T23:23:23Z"
+        },
+        {
+          "data-name": "Android Lint (no suppression or severity reduction)",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:23:23Z",
+          "data-completed-at": "2026-10-24T23:23:56Z"
+        },
+        {
+          "data-name": "Artifact provenance",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:23:56Z",
+          "data-completed-at": "2026-10-24T23:23:56Z"
+        },
+        {
+          "data-name": "Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:23:56Z",
+          "data-completed-at": "2026-10-24T23:23:58Z"
+        },
+        {
+          "data-name": "Post Run actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:23:58Z",
+          "data-completed-at": "2026-10-24T23:23:58Z"
+        },
+        {
+          "data-name": "Post Run actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:23:58Z",
+          "data-completed-at": "2026-10-24T23:23:58Z"
+        },
+        {
+          "data-name": "Complete job",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:23:58Z",
+          "data-completed-at": "2026-10-24T23:23:58Z"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40142362407/job/121016576484",
+      "steps": [
+        {
+          "data-name": "Set up job",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:01Z",
+          "data-completed-at": "2026-10-24T23:21:04Z"
+        },
+        {
+          "data-name": "Run actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:04Z",
+          "data-completed-at": "2026-10-24T23:21:05Z"
+        },
+        {
+          "data-name": "Run actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:05Z",
+          "data-completed-at": "2026-10-24T23:21:05Z"
+        },
+        {
+          "data-name": "Run android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:05Z",
+          "data-completed-at": "2026-10-24T23:21:16Z"
+        },
+        {
+          "data-name": "SDK prerequisites",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:16Z",
+          "data-completed-at": "2026-10-24T23:21:18Z"
+        },
+        {
+          "data-name": "Execute real Android instrumentation on an isolated CI emulator",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:21:18Z",
+          "data-completed-at": "2026-10-24T23:28:02Z"
+        },
+        {
+          "data-name": "Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:28:02Z",
+          "data-completed-at": "2026-10-24T23:28:03Z"
+        },
+        {
+          "data-name": "Post Run actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:28:03Z",
+          "data-completed-at": "2026-10-24T23:28:03Z"
+        },
+        {
+          "data-name": "Post Run actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:28:03Z",
+          "data-completed-at": "2026-10-24T23:28:03Z"
+        },
+        {
+          "data-name": "Complete job",
+          "data-conclusion": "success",
+          "data-started-at": "2026-10-24T23:28:03Z",
+          "data-completed-at": "2026-10-24T23:28:03Z"
+        }
+      ]
+    }
+  ],
+  "public_summary": "Triggered via push October 24, 2026 23:20 bubth720 pushed edfa044 feat/services-final-01 Status Success Total duration 7m 12s Artifacts 3 verify.yml on: push jvm 29s jvm android-build 3m 0s android-build android-instrumented 7m 5s android-instrumented Oh hello! Nice to see you. Made with \u2764\ufe0f by humans.txt Fit to window Zoom out Zoom in Artifacts Produced during runtime Name Size Digest android-instrumented-edfa044321ff09697ae9bec40a6e31aa76a77370 43 KB sha256:5b3df90ea60a8bf1d3eecf79105e6c59d91f8d5cded370c1230a0c7fafd4c81d diagnostic-debug-edfa044321ff09697ae9bec40a6e31aa76a77370 10.6 MB sha256:50824e5251f895e7ea65aae46043589ec40d2805d21f64c9687e396f1c1980d7 jvm-results-edfa044321ff09697ae9bec40a6e31aa76a77370 13.6 KB sha256:5b4c1d80b3742e76c0e5e60f1c7c3dcfed5184c5a8e1345de9bee4559877aa2b html { scroll-behavior: smooth } You can\u2019t perform that action at this time. "
+}

@@ -1,0 +1,373 @@
+{
+  "tests": 92,
+  "cases": [
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "jsonFilterSortNormalizeAggregate()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "cancelledWorkflowCreatesNoFile()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "bridgeIdentityCapabilitiesAndDisconnect()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "recoveryIncludesOriginalsAndMetadata()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "memoryRequiresExactConfirmationAndPersists()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "multiBatchCorpusKeepsEverySource()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "protectedExportDenied()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "realPdfImportSearch()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "incrementalIndexAndDelete()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "vectorBaselineProvenance()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "representativeWorkflowWithNetworkDenied()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "corruptBackupRefused()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "ftsSpecialCharactersAreLiteral()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystMultiDocumentMockAndOfflineFallback()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "importsTextAndMetadata()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "limitedSemanticSynonyms()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "noArbitraryToolOrDocumentInstructions()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "cancelledImportLeavesNoOriginal()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystRejectsInventedCitation()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "crashedWorkflowIsUnknownNotReplayed()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "memoryRetention()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "scannedPdfReportsOcrRequired()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "memoryRectificationDeletion()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "diagnosticsOfflineAndEightModules()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystCoordinatesKnowledgeDocumentsDataAndModel()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "coreMockCorrelationAndPermission()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "malformedCsvAndNumbers()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "xxeInDocxRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "csvExactDedupAndStatistics()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "backupRestoreRequiresConfirmation()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "boundsAndExtensions()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "importsCsvJson()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "docxRoundtripAndNoOverwrite()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "workflowCreatesDocxAndRejectsReplay()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "csvQuotedMultilineRoundtrip()"
+    },
+    {
+      "class": "fr.jarvis.services.ModulesTest",
+      "name": "analystCalculationsDeterministic()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "restartInvalidatesPendingReceiptWithoutDeletingJournal()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "collisionAndVersionsAreRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "threeRealAdaptersAndReadableDocx()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "journalContainsNoArgumentsOrPaths()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "contentPrincipalAndRequestCannotBeChanged()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "persistentRegistryDoesNotMakeAdaptersExecutable()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "permissionRefusedBeforeAdapterReadsAnything()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "cancelAndDeadlineArePropagatedAndQueuedWorkNeverRuns()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "absentApprovalAndUnsafePathNeverCreateFile()"
+    },
+    {
+      "class": "fr.jarvis.services.ToolDispatcherTest",
+      "name": "receiptCannotBeReplayedAndConsumptionIsDurable()"
+    },
+    {
+      "class": "fr.jarvis.services.SafExportWriterTest",
+      "name": "verifiedMarkdownCommitsOnlyAfterReadbackAndCannotReplay()"
+    },
+    {
+      "class": "fr.jarvis.services.SafExportWriterTest",
+      "name": "docxUsesExistingSecureEncoderAndReader()"
+    },
+    {
+      "class": "fr.jarvis.services.SafExportWriterTest",
+      "name": "cancellationBeforeWriteCreatesNothing()"
+    },
+    {
+      "class": "fr.jarvis.services.SafExportWriterTest",
+      "name": "corruptReadbackRollsBackFreshOutputAndRefusesSuccess()"
+    },
+    {
+      "class": "fr.jarvis.services.SafExportWriterTest",
+      "name": "lostCreationAcknowledgementRemainsUnknown()"
+    },
+    {
+      "class": "fr.jarvis.services.SafExportWriterTest",
+      "name": "foreignTargetOrMissingPermissionCannotTouchProvider()"
+    },
+    {
+      "class": "fr.jarvis.services.SafExportWriterTest",
+      "name": "writeFailureAndFailedCleanupRemainUnknown()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "cancellationAndMissingPermissionsAreRefused()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "maliciousDocxXmlIsRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "sourceCitationCannotClaimMissingText()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "pdfAndCsvProduceVerifiedMarkdownAndDocx()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "malformedUtf8AndPdfAreRejectedWithoutPersistence()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "unicodeSegmentsRemainExactAndCsvRejectsInvalidNumbers()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "safePathsAndExactApprovalRemainMandatory()"
+    },
+    {
+      "class": "fr.jarvis.services.PipelineFixtureTest",
+      "name": "atomicExportDoesNotReplaceOriginalAndRefusesReplay()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "permissionsFailClosed()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "symbolicLinkRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "destructiveDowngradeRefused()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "backupRestoreRebuildsSearch()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "integrityAndRestart()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "transactionRollsBack()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "traversalAndAbsoluteRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "confirmationBindsExactContent()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "confirmationOneShot()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "confirmationBindsIdentity()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "auditDoesNotStoreContent()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "singleHeavyTaskAndRelease()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "malformedRequestRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "cancellationAndDeadline()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "migrationRoundtrip()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "malformedBackupDoesNotDelete()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "progressSequence()"
+    },
+    {
+      "class": "fr.jarvis.services.FoundationTest",
+      "name": "unknownProtocolRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "malformedXmlIsRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "dtdIsRejectedForUtf8AndUtf16()"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "utf16AndBuiltInEntitiesRemainSupported()"
+    },
+    {
+      "class": "fr.jarvis.services.DocxSecurityTest",
+      "name": "extractedTextIsBounded()"
+    },
+    {
+      "class": "fr.jarvis.services.BundledStorageTest",
+      "name": "bundledDriverSupportsFts5AndRollback()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "realTwoProcessLabTransferDeduplicatesAndAcknowledges()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "cyclesChangedDefinitionsAndUnknownDependenciesAreRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "inFlightRecoveryStaysUnknownAndCannotAutoRetry()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "gapsVectorRegressionTamperAndWrongContractAreRejected()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "permissionsAreCheckedBeforeWorkflowDispatch()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "realThreeStepWorkflowResumesWithoutReplayingCompletedSteps()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "missingOrFalseAckAndDisabledTransportNeverBecomeSuccess()"
+    },
+    {
+      "class": "fr.jarvis.services.WorkflowBridgeTest",
+      "name": "compensationOwnsOnlyFreshTemporaryAndRefusesChangedContent()"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.FinalSafWorkflowTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+Error in csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(fr.jarvis.services.android.FinalSafWorkflowTest):
+java.lang.AssertionError: Not clickable: source.csv
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:81)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:50)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(FinalSafWorkflowTest.java:33)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Not clickable: source.csv
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:81)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:50)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(FinalSafWorkflowTest.java:33)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=pdfToSourcedDocxReadsBothActualSafInputAndOutput
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+Error in pdfToSourcedDocxReadsBothActualSafInputAndOutput(fr.jarvis.services.android.FinalSafWorkflowTest):
+java.lang.AssertionError: Not clickable: sample.pdf
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:81)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:50)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.pdfToSourcedDocxReadsBothActualSafInputAndOutput(FinalSafWorkflowTest.java:42)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=pdfToSourcedDocxReadsBothActualSafInputAndOutput
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Not clickable: sample.pdf
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:81)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:50)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.pdfToSourcedDocxReadsBothActualSafInputAndOutput(FinalSafWorkflowTest.java:42)
+
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 27.39
+There were 2 failures:
+1) csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(fr.jarvis.services.android.FinalSafWorkflowTest)
+java.lang.AssertionError: Not clickable: source.csv
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:81)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:50)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(FinalSafWorkflowTest.java:33)
+2) pdfToSourcedDocxReadsBothActualSafInputAndOutput(fr.jarvis.services.android.FinalSafWorkflowTest)
+java.lang.AssertionError: Not clickable: sample.pdf
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:81)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:50)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.pdfToSourcedDocxReadsBothActualSafInputAndOutput(FinalSafWorkflowTest.java:42)
+
+FAILURES!!!
+Tests run: 2,  Failures: 2
+
+
+INSTRUMENTATION_CODE: -1

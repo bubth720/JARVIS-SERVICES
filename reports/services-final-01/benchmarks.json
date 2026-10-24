@@ -1,0 +1,86 @@
+{
+  "measurement": "one timed pass per generated file; includes file read/write and output validation; not a statistical performance claim",
+  "physical_battery_thermal": "not measured",
+  "platform": "JVM Linux, not Android hardware",
+  "process_cumulative_rss_high_water_mark": "VmHWM:\t  174852 kB",
+  "samples": [
+    {
+      "elapsed_ms": 20.072417,
+      "input": {
+        "bytes": 20819,
+        "name": "benchmark-100.csv",
+        "sha256": "4624bc4e6240f9fb0534e524bed9c8a9590b428054c95886c83d7681a2c12566"
+      },
+      "input_rows": 100,
+      "kind": "CSV",
+      "output": {
+        "bytes": 1746,
+        "name": "benchmark-100-result.csv",
+        "sha256": "9210f8ea7447b899e91264832731b93de8fc207bb1c8b9bef209716f03f0b212"
+      },
+      "output_rows": 8
+    },
+    {
+      "elapsed_ms": 23.174068,
+      "input": {
+        "bytes": 208019,
+        "name": "benchmark-1000.csv",
+        "sha256": "1aa98e87d8b37ca31006000866204012b68e837ae97e91155c999f925dd3e2b6"
+      },
+      "input_rows": 1000,
+      "kind": "CSV",
+      "output": {
+        "bytes": 1746,
+        "name": "benchmark-1000-result.csv",
+        "sha256": "9210f8ea7447b899e91264832731b93de8fc207bb1c8b9bef209716f03f0b212"
+      },
+      "output_rows": 8
+    },
+    {
+      "elapsed_ms": 91.135147,
+      "input": {
+        "bytes": 1040019,
+        "name": "benchmark-5000.csv",
+        "sha256": "aef6bd075601d47dcc02f3d061578b1d74feec765c6f3b45a7d06acb03ebbcd2"
+      },
+      "input_rows": 5000,
+      "kind": "CSV",
+      "output": {
+        "bytes": 1746,
+        "name": "benchmark-5000-result.csv",
+        "sha256": "9210f8ea7447b899e91264832731b93de8fc207bb1c8b9bef209716f03f0b212"
+      },
+      "output_rows": 8
+    },
+    {
+      "elapsed_ms": 35.059212,
+      "input": {
+        "bytes": 859,
+        "name": "benchmark-1.pdf",
+        "sha256": "3c662829d8d234fe83cad29cd97d2c4c5e83fe9f2b54c00b31784f84537b1a57"
+      },
+      "kind": "PDF",
+      "pages": 1
+    },
+    {
+      "elapsed_ms": 13.122361,
+      "input": {
+        "bytes": 4667,
+        "name": "benchmark-10.pdf",
+        "sha256": "dae00aa86170fb5b11078219a9189b33c2d078197dcc4d0fad7017589893bc5a"
+      },
+      "kind": "PDF",
+      "pages": 10
+    },
+    {
+      "elapsed_ms": 41.073577,
+      "input": {
+        "bytes": 21885,
+        "name": "benchmark-50.pdf",
+        "sha256": "1a10756860620e20a8d54800cd74cafe598b8cf0f1ed331aef562e79cc64930d"
+      },
+      "kind": "PDF",
+      "pages": 50
+    }
+  ]
+}

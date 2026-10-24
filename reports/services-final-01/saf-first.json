@@ -1,0 +1,53 @@
+{
+  "host": "127.0.0.1",
+  "port": 5581,
+  "expected_tests": 2,
+  "apk": [
+    {
+      "kind": "app",
+      "sha256": "e01cec1253520341b223738b01bfa2c534c726e229ae83e6b02772e232f6aa3d",
+      "bytes": 14393755
+    },
+    {
+      "kind": "tests",
+      "sha256": "599a667e060502db8ac55a04f46655ba5afce9a01b6dbc86c6a52e2001200e1c",
+      "bytes": 920067
+    }
+  ],
+  "emulator_identity": {
+    "qemu": true,
+    "api": 26,
+    "boot_completed": true
+  },
+  "phase": "instrumentation",
+  "command": "am instrument -w -r -e class fr.jarvis.services.android.FinalSafWorkflowTest fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner",
+  "cases": [
+    {
+      "numtests": "2",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "stack": "java.lang.AssertionError: Missing UI label: S\u00e9lectionner un fichier local; UI=Atelier local pr\u00eat \u2014 hors ligne",
+      "current": "1",
+      "status_code": -2
+    },
+    {
+      "numtests": "2",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "pdfToSourcedDocxReadsBothActualSafInputAndOutput",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "stack": "java.lang.AssertionError: Missing UI label: S\u00e9lectionner un fichier local; UI=Atelier local pr\u00eat \u2014 hors ligne",
+      "current": "2",
+      "status_code": -2
+    }
+  ],
+  "metrics": [],
+  "passed": 0,
+  "failed": 2,
+  "skipped": 0,
+  "complete": true,
+  "success": false,
+  "elapsed_host_seconds": 87.732
+}

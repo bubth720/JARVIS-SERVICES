@@ -1,0 +1,18 @@
+{
+  "errors": 0,
+  "warnings": 1,
+  "issues": [
+    {
+      "id": "TrustAllX509TrustManager",
+      "severity": "Warning",
+      "message": "`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers",
+      "category": "Security",
+      "priority": "6",
+      "summary": "Insecure TLS/SSL trust manager",
+      "explanation": "This check looks for X509TrustManager implementations whose `checkServerTrusted` or `checkClientTrusted` methods do nothing (thus trusting any certificate chain) which could result in insecure network traffic caused by trusting arbitrary TLS/SSL certificates presented by peers.",
+      "url": "https://goo.gle/TrustAllX509TrustManager",
+      "urls": "https://goo.gle/TrustAllX509TrustManager"
+    }
+  ],
+  "application_warnings": 0
+}

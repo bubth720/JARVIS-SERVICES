@@ -1,0 +1,13 @@
+{
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "unified_desktop_codec_in_apk": false,
+  "new_application_dependencies": false,
+  "permission_dump": "apk-permissions.log",
+  "network_permissions_requested": false,
+  "production_transport_enabled": false
+}

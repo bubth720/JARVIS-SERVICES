@@ -1,0 +1,42 @@
+{
+  "fixture": "synthetic FIN01 only",
+  "target": "verified isolated emulator",
+  "started_at_utc": "2026-10-24T23:38:36.923498+00:00",
+  "observations": [
+    "Fresh UI hierarchy unavailable; waited before retry",
+    "On-screen keyboard dismissed with normal Back action before inspection",
+    "On-screen keyboard dismissed with normal Back action before inspection"
+  ],
+  "device_app_sha256": "3c8b19a8c6ba5b84eee56bed3a8481568345c09f757876c247b585152effc6f9",
+  "before_restart": {
+    "pid": "6282",
+    "job_id": "a10d685a-b17d-4c89-8ba5-80f8bccaf48e",
+    "workflow": "PENDING",
+    "steps": {
+      "publish": "PENDING",
+      "verify": "SUCCEEDED"
+    },
+    "sequence": 3,
+    "verification_runs": 1,
+    "snapshot": "stopped database plus any sidecars; integrity_check ok"
+  },
+  "after_restart": {
+    "pid": "6611",
+    "job_id": "a10d685a-b17d-4c89-8ba5-80f8bccaf48e",
+    "steps": {
+      "publish": "PENDING",
+      "verify": "SUCCEEDED"
+    },
+    "sequence": 3.0,
+    "verification_runs": 1
+  },
+  "final": {
+    "workflow": "SUCCEEDED",
+    "verification_runs": 1,
+    "output_bytes": 853,
+    "output_sha256": "a2903fad66e0a44ad69cb9efb70f278c685739b85bdd63ff8bdf62d09fca8010",
+    "docx_text_readback_verified": true
+  },
+  "success": true,
+  "finished_at_utc": "2026-10-24T23:41:22.902869+00:00"
+}

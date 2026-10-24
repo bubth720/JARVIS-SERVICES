@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.FinalServicesTest" tests="26" skipped="0" failures="1" errors="0" timestamp="2026-10-24T23:01:52.847Z" hostname="5b9b528af301" time="1.301">
+  <properties/>
+  <testcase name="changedSourceIsRefusedBeforeConfirmation()" classname="fr.jarvis.services.FinalServicesTest" time="0.293"/>
+  <testcase name="invalidXmlCharactersAreRefused()" classname="fr.jarvis.services.FinalServicesTest" time="0.033"/>
+  <testcase name="sourceAndWorkspaceQuotaAreBounded()" classname="fr.jarvis.services.FinalServicesTest" time="0.032"/>
+  <testcase name="inFlightStepRecoversUnknownAndNeverReplays()" classname="fr.jarvis.services.FinalServicesTest" time="0.052"/>
+  <testcase name="unconfirmedOrUnauthorizedActionIsRefusedAndAudited()" classname="fr.jarvis.services.FinalServicesTest" time="0.019"/>
+  <testcase name="pdfToSourcedDocxUsesRealFilesAndPreservesOriginal()" classname="fr.jarvis.services.FinalServicesTest" time="0.28"/>
+  <testcase name="csvCleanupDiffExactAnalysisAndJsonRoundtrip()" classname="fr.jarvis.services.FinalServicesTest" time="0.051"/>
+  <testcase name="dispatcherRefusalHasDurableMetadataWithoutArgumentContent()" classname="fr.jarvis.services.FinalServicesTest" time="0.012"/>
+  <testcase name="changedPreviewCannotBeApproved()" classname="fr.jarvis.services.FinalServicesTest" time="0.021"/>
+  <testcase name="incoherencesAreSourcedAndDoNotEchoInvalidValues()" classname="fr.jarvis.services.FinalServicesTest" time="0.01"/>
+  <testcase name="cancellationLeavesNoPreparedJob()" classname="fr.jarvis.services.FinalServicesTest" time="0.011"/>
+  <testcase name="changedEncodedDocxIsRefusedBeforePublicWrite()" classname="fr.jarvis.services.FinalServicesTest" time="0.033"/>
+  <testcase name="adapterReusesExistingFtsContractAndRejectsStaleRevision()" classname="fr.jarvis.services.FinalServicesTest" time="0.015">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;Object.equals(Object)&quot; because &quot;o&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;Object.equals(Object)&quot; because &quot;o&quot; is null
+	at java.base/java.util.ImmutableCollections$Map1.containsValue(ImmutableCollections.java:1132)
+	at fr.jarvis.services.finalization.ExistingKnowledgeAdapter.&lt;init&gt;(ExistingKnowledgeAdapter.java:35)
+	at fr.jarvis.services.FinalServicesTest.adapterReusesExistingFtsContractAndRejectsStaleRevision(FinalServicesTest.java:458)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="recipeCodecRejectsDuplicatesUnknownOperatorsAndAmbiguousSchema()" classname="fr.jarvis.services.FinalServicesTest" time="0.009"/>
+  <testcase name="localMemoryRequiresExactConsentAndNeverWritesCentralStore()" classname="fr.jarvis.services.FinalServicesTest" time="0.013"/>
+  <testcase name="successfulSafReadbackAndDuplicateExportIsRefused()" classname="fr.jarvis.services.FinalServicesTest" time="0.036"/>
+  <testcase name="lostSafOutcomeRemainsUnknownAcrossRestart()" classname="fr.jarvis.services.FinalServicesTest" time="0.047"/>
+  <testcase name="safCorruptionRollsBackFreshOutputWithoutDeletingOriginal()" classname="fr.jarvis.services.FinalServicesTest" time="0.028"/>
+  <testcase name="optionalSearchAdapterCannotInventProvenance()" classname="fr.jarvis.services.FinalServicesTest" time="0.008"/>
+  <testcase name="templateAndLiteralReplacementAreBoundedAndEscapeXml()" classname="fr.jarvis.services.FinalServicesTest" time="0.021"/>
+  <testcase name="versionedCatalogueRendersAndSavesLocalMemoryOnlyWithExactApproval()" classname="fr.jarvis.services.FinalServicesTest" time="0.024"/>
+  <testcase name="successfulVerificationIsNotReplayedAfterDatabaseRestart()" classname="fr.jarvis.services.FinalServicesTest" time="0.024"/>
+  <testcase name="confirmationCannotBeReusedAndExistingOutputIsNotOverwritten()" classname="fr.jarvis.services.FinalServicesTest" time="0.018"/>
+  <testcase name="unitsTypesAndInexactMeanAreExplicit()" classname="fr.jarvis.services.FinalServicesTest" time="0.005"/>
+  <testcase name="fullExecutionJournalRefusesActionBeforeAnyOutput()" classname="fr.jarvis.services.FinalServicesTest" time="0.174"/>
+  <testcase name="filtersGroupsAndSortAreDeterministic()" classname="fr.jarvis.services.FinalServicesTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Oct 24, 2026 11:01:53 PM org.apache.pdfbox.pdmodel.font.PDType1Font <init>
+WARNING: Using fallback font LiberationSans for base font Symbol
+]]></system-err>
+</testsuite>

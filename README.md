@@ -1,4 +1,27 @@
-# JARVIS SERVICES — Foundation V1
+# JARVIS SERVICES — atelier local autonome
+
+SERVICES-FINAL-01 finalise les huit domaines avec un catalogue de 17 outils,
+des workflows résumables, une interface Android autonome, des exports confirmés
+et un protocole BRIDGE de fichiers authentifiés sans transport réseau activé.
+CORE conserve les décisions et permissions; aucune mémoire centrale concurrente
+n'est créée. Les fonctions historiques restent accessibles au diagnostic avancé.
+
+[Guide utilisateur](docs/services-final-01/USER_GUIDE.md) ·
+[Contrats et responsabilités](docs/services-final-01/CONTRACTS.md) ·
+[Exemples PDF/DOCX/CSV](examples/services-final-01/) ·
+[Rapport et preuves](reports/services-final-01/REPORT.md)
+
+```sh
+./gradlew :desktop:test :desktop:finalScenariosDemo
+./gradlew -PwithAndroid :android:assembleDebug :android:assembleAndroidTest :android:lintDebug
+```
+
+APK debug : `android/build/outputs/apk/debug/android-debug.apk`.
+Le workflow de la branche `feat/services-final-01` publie aussi les APK et résultats
+comme artefacts GitHub Actions. Aucun appareil personnel n'est installé automatiquement.
+
+## Historique FOUNDATION
+
 
 Huit bibliothèques locales et une application Android de diagnostic. Branche de travail :
 `mission-001-services-foundation`. Aucun service cloud, télémétrie ou téléchargement de

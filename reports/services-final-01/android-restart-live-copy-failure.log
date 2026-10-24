@@ -1,0 +1,22 @@
+{
+  "fixture": "synthetic FIN01 only",
+  "target": "verified isolated emulator",
+  "started_at_utc": "2026-10-24T23:24:54.956839+00:00",
+  "observations": [],
+  "device_app_sha256": "3c8b19a8c6ba5b84eee56bed3a8481568345c09f757876c247b585152effc6f9",
+  "before_restart": {
+    "pid": "5058",
+    "job_id": "42874090-595c-4082-87b5-102b92094348",
+    "workflow": "PENDING",
+    "steps": {
+      "publish": "PENDING",
+      "verify": "SUCCEEDED"
+    },
+    "sequence": 3,
+    "verification_runs": 1
+  },
+  "success": false,
+  "error_type": "DatabaseError",
+  "error": "database disk image is malformed",
+  "finished_at_utc": "2026-10-24T23:26:29.033054+00:00"
+}

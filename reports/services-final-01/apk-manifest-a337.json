@@ -1,0 +1,17 @@
+{
+  "source_commit": "a3372a4fd5e6239190257f423a73df7017752e29",
+  "tracked_tree_dirty": false,
+  "build_type": "debug",
+  "artifacts": [
+    {
+      "path": "android/build/outputs/apk/androidTest/debug/android-debug-androidTest.apk",
+      "bytes": 921463,
+      "sha256": "03d19ce70a365634862340457685b8277b0a4ab184bd30f9dda48bb7aef77106"
+    },
+    {
+      "path": "android/build/outputs/apk/debug/android-debug.apk",
+      "bytes": 14423733,
+      "sha256": "3c8b19a8c6ba5b84eee56bed3a8481568345c09f757876c247b585152effc6f9"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://download.oracle.com/java/21/archive/jdk-21.0.8_linux-x64_bin.tar.gz",
+  "sha256": "d87272944278713fc7a120cf024d2818d136b5debc750aa17045e3c6f045b867",
+  "publisher_checksum_matches": true,
+  "directory": "jdk-21.0.8"
+}

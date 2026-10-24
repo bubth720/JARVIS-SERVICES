@@ -1,0 +1,324 @@
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.FinalSafWorkflowTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=modelFieldsUseRealDocxAndFreshSafExport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+Error in modelFieldsUseRealDocxAndFreshSafExport(fr.jarvis.services.android.FinalSafWorkflowTest):
+java.lang.AssertionError: Not clickable: template.docx
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:244)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:111)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.modelFieldsUseRealDocxAndFreshSafExport(FinalSafWorkflowTest.java:86)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=modelFieldsUseRealDocxAndFreshSafExport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Not clickable: template.docx
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:244)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:111)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.modelFieldsUseRealDocxAndFreshSafExport(FinalSafWorkflowTest.java:86)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+Error in csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(fr.jarvis.services.android.FinalSafWorkflowTest):
+java.lang.AssertionError: Not clickable: source.csv
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:244)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:111)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(FinalSafWorkflowTest.java:51)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Not clickable: source.csv
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:244)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:111)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(FinalSafWorkflowTest.java:51)
+
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=pdfToSourcedDocxReadsBothActualSafInputAndOutput
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=pdfToSourcedDocxReadsBothActualSafInputAndOutput
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.FinalSafWorkflowTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.LocalQualificationTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativeDocxRejectsDtdForUtf8AndUtf16
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=40547
+INSTRUMENTATION_STATUS: metric_scenario=nativeDocxRejectsDtdForUtf8AndUtf16
+INSTRUMENTATION_STATUS: metric_vm_hwm=117460 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=226
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativeDocxRejectsDtdForUtf8AndUtf16
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=guardAndWorkflowFailureAreSafe
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=41039
+INSTRUMENTATION_STATUS: metric_scenario=guardAndWorkflowFailureAreSafe
+INSTRUMENTATION_STATUS: metric_vm_hwm=118116 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=649
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=guardAndWorkflowFailureAreSafe
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverRejectsUnboundedCancelledAndFileUris
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=41175
+INSTRUMENTATION_STATUS: metric_scenario=resolverRejectsUnboundedCancelledAndFileUris
+INSTRUMENTATION_STATUS: metric_vm_hwm=118152 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=97
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverRejectsUnboundedCancelledAndFileUris
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bridgeSimulatorDisconnectsSafely
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=41292
+INSTRUMENTATION_STATUS: metric_scenario=bridgeSimulatorDisconnectsSafely
+INSTRUMENTATION_STATUS: metric_vm_hwm=118164 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=153
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bridgeSimulatorDisconnectsSafely
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=36969
+INSTRUMENTATION_STATUS: metric_scenario=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: metric_vm_hwm=118624 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=749
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=nativePdfFtsAndNonDestructiveDocx
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=isolatedRecoveryPreservesIntegrity
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=37639
+INSTRUMENTATION_STATUS: metric_scenario=isolatedRecoveryPreservesIntegrity
+INSTRUMENTATION_STATUS: metric_vm_hwm=118624 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=345
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=isolatedRecoveryPreservesIntegrity
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverImportsPdfAndExportsPrivateFreeReport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=38243
+INSTRUMENTATION_STATUS: metric_scenario=resolverImportsPdfAndExportsPrivateFreeReport
+INSTRUMENTATION_STATUS: metric_vm_hwm=118624 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=455
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=resolverImportsPdfAndExportsPrivateFreeReport
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=exactCsvAndMemoryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: metric_pss_kib=38518
+INSTRUMENTATION_STATUS: metric_scenario=exactCsvAndMemoryAfterReopen
+INSTRUMENTATION_STATUS: metric_vm_hwm=118624 kB
+INSTRUMENTATION_STATUS: metric_duration_ms=216
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=exactCsvAndMemoryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.LocalQualificationTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.OfflineSmokeTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=diagnosticActivityInitializesAllModules
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=diagnosticActivityInitializesAllModules
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=noInternetPermission
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=noInternetPermission
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bundledFts5AndMigration
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=bundledFts5AndMigration
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.OfflineSmokeTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.PipelineAndroidTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=fileUriCannotConstructASafTarget
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.PipelineAndroidTest
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=fileUriCannotConstructASafTarget
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.PipelineAndroidTest
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=ungrantedTreeCannotConstructASafTarget
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.PipelineAndroidTest
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=ungrantedTreeCannotConstructASafTarget
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.PipelineAndroidTest
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=readonlyTextPreservesUnicodeAndUsesNoDocumentStore
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.PipelineAndroidTest
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=17
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=readonlyTextPreservesUnicodeAndUsesNoDocumentStore
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.PipelineAndroidTest
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 68.637
+There were 2 failures:
+1) modelFieldsUseRealDocxAndFreshSafExport(fr.jarvis.services.android.FinalSafWorkflowTest)
+java.lang.AssertionError: Not clickable: template.docx
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:244)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:111)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.modelFieldsUseRealDocxAndFreshSafExport(FinalSafWorkflowTest.java:86)
+2) csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(fr.jarvis.services.android.FinalSafWorkflowTest)
+java.lang.AssertionError: Not clickable: source.csv
+	at fr.jarvis.services.android.FinalSafWorkflowTest.click(FinalSafWorkflowTest.java:244)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.selectSource(FinalSafWorkflowTest.java:111)
+	at fr.jarvis.services.android.FinalSafWorkflowTest.csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport(FinalSafWorkflowTest.java:51)
+
+FAILURES!!!
+Tests run: 17,  Failures: 2
+
+
+INSTRUMENTATION_CODE: -1

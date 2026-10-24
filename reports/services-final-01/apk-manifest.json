@@ -1,0 +1,23 @@
+{
+  "source_commit": "edfa044321ff09697ae9bec40a6e31aa76a77370",
+  "tracked_tree_dirty": true,
+  "build_type": "debug",
+  "artifacts": [
+    {
+      "path": "android/build/outputs/apk/androidTest/debug/android-debug-androidTest.apk",
+      "bytes": 921730,
+      "sha256": "7f529a672e347c401924664d5479cbbb010546492386f7113970fe622de12702"
+    },
+    {
+      "path": "android/build/outputs/apk/debug/android-debug.apk",
+      "bytes": 14423733,
+      "sha256": "3c8b19a8c6ba5b84eee56bed3a8481568345c09f757876c247b585152effc6f9"
+    }
+  ],
+  "dirty_tracked_paths": [
+    "README.md",
+    "scripts/probe-final-restart.py"
+  ],
+  "application_and_test_sources_match_commit": true,
+  "note": "Only documentation and cloud restart-proof helper changed after code commit; APK hashes match final 17-test instrumentation."
+}

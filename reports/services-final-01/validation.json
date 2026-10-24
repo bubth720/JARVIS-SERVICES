@@ -1,0 +1,253 @@
+{
+  "mission": "SERVICES-FINAL-01",
+  "repository": "bubth720/JARVIS-SERVICES",
+  "branch": "feat/services-final-01",
+  "base_commit": "3decdc47d82f9b43713c48cab244762941770a81",
+  "foundation_commit": "b71bffdaacbbabec4200ee57e4c59644c191941b",
+  "application_commit": "a3372a4fd5e6239190257f423a73df7017752e29",
+  "code_and_native_test_commit": "edfa044321ff09697ae9bec40a6e31aa76a77370",
+  "delivery_commit_scope": "Later docs/examples/proofs/cloud-helper-only commit identified in Git history and delivery response; application unchanged.",
+  "captured_at_utc": "2026-10-24T23:45:10.220736+00:00",
+  "status": "qualified_on_cloud_API26_x86_emulator_and_JVM",
+  "tool_catalogue": {
+    "count": 17,
+    "domains": [
+      "DOCUMENTS",
+      "KNOWLEDGE",
+      "DATA",
+      "ACTIONS",
+      "MEMORY",
+      "ANALYST",
+      "GUARD",
+      "BRIDGE"
+    ],
+    "version": "1.0.0",
+    "path": "contracts/services-final/v1/tool-catalogue.json"
+  },
+  "jvm": {
+    "executed": true,
+    "tests": 129,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "original_92_present_and_passing": true,
+    "source": "jvm-final.json"
+  },
+  "android": {
+    "executed_on": "isolated API26 x86 emulator, software rendering",
+    "passed": 17,
+    "failed": 0,
+    "skipped": 0,
+    "legacy_cases": 14,
+    "real_saf_workflows": 3,
+    "provider_scope": "Test APK fixture provider, real Android DocumentsUI and real URI grants",
+    "source": "android-scroll-fixed.json",
+    "raw_log": "android-scroll-fixed.log"
+  },
+  "android_restart": {
+    "executed": true,
+    "real_force_stop": true,
+    "consistent_snapshot": "application stopped plus SQLite sidecars; integrity_check verified; live native UI checked after restart",
+    "before_pid": "6282",
+    "after_pid": "6611",
+    "same_job": true,
+    "verification_runs": 1,
+    "docx_readback_verified": true,
+    "source": "android-restart.json",
+    "power_failure_mid_write_tested": false
+  },
+  "builds": {
+    "jvm_and_apks_and_lint_exit": 0,
+    "log": "release-candidate-build.log",
+    "final_test_harness_build_exit": 0,
+    "harness_log": "saf-scroll-build.log"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 1,
+    "issues": [
+      {
+        "id": "TrustAllX509TrustManager",
+        "severity": "Warning",
+        "message": "`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers",
+        "category": "Security",
+        "priority": "6",
+        "summary": "Insecure TLS/SSL trust manager",
+        "explanation": "This check looks for X509TrustManager implementations whose `checkServerTrusted` or `checkClientTrusted` methods do nothing (thus trusting any certificate chain) which could result in insecure network traffic caused by trusting arbitrary TLS/SSL certificates presented by peers.",
+        "url": "https://goo.gle/TrustAllX509TrustManager",
+        "urls": "https://goo.gle/TrustAllX509TrustManager"
+      }
+    ],
+    "application_warnings": 0
+  },
+  "artifacts": {
+    "source_commit": "edfa044321ff09697ae9bec40a6e31aa76a77370",
+    "tracked_tree_dirty": true,
+    "build_type": "debug",
+    "artifacts": [
+      {
+        "path": "android/build/outputs/apk/androidTest/debug/android-debug-androidTest.apk",
+        "bytes": 921730,
+        "sha256": "7f529a672e347c401924664d5479cbbb010546492386f7113970fe622de12702"
+      },
+      {
+        "path": "android/build/outputs/apk/debug/android-debug.apk",
+        "bytes": 14423733,
+        "sha256": "3c8b19a8c6ba5b84eee56bed3a8481568345c09f757876c247b585152effc6f9"
+      }
+    ],
+    "dirty_tracked_paths": [
+      "README.md",
+      "scripts/probe-final-restart.py"
+    ],
+    "application_and_test_sources_match_commit": true,
+    "note": "Only documentation and cloud restart-proof helper changed after code commit; APK hashes match final 17-test instrumentation."
+  },
+  "packaging": {
+    "native_abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "unified_desktop_codec_in_apk": false,
+    "new_application_dependencies": false,
+    "permission_dump": "apk-permissions.log",
+    "network_permissions_requested": false,
+    "production_transport_enabled": false
+  },
+  "scenario_proof": "scenarios.json",
+  "benchmark_proof": "benchmarks.json",
+  "resources": {
+    "instrumentation_elapsed_host_seconds": 146.965,
+    "native_checkpoints": 8,
+    "physical_battery_thermal": "not measured",
+    "jvm_benchmarks": "benchmarks.json",
+    "measurement_scope": "PSS sampled after legacy native scenarios; VmHWM cumulative process RSS, not per-operation allocation; SAF UI times are in instrumentation log",
+    "max_checkpoint_pss_kib": 44397,
+    "max_process_vmhwm_kib": 121876
+  },
+  "ci": {
+    "executed_remotely": true,
+    "code_commit": "edfa044321ff09697ae9bec40a6e31aa76a77370",
+    "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40142362407",
+    "state": {
+      "status": "WORKFLOW_RUN_STATUS_COMPLETED",
+      "conclusion": "WORKFLOW_RUN_CONCLUSION_SUCCESS"
+    },
+    "three_jobs_succeeded": true,
+    "proof": "ci.json",
+    "run_of_future_documentation_commit_not_claimed": true
+  },
+  "simulations_and_injections": [
+    "Synthetic datasets and synthetic fixture confirmations",
+    "BRIDGE file exchange between local JVM participants with ephemeral test pairing; no real mini-PC",
+    "Injected RUNNING/UNKNOWN, corrupted outputs and lost ACK/rollback-failure ports in JVM tests"
+  ],
+  "not_performed": [
+    "Physical phone/tablet/watch installation or qualification",
+    "Other Android API/ABI runtime qualification",
+    "Physical energy or thermal measurement",
+    "Actual mid-write power cut",
+    "Real CORE/NEXUS/LLM/VOICE integration",
+    "Production network/discovery/remote execution or pairing deployment",
+    "Migration/backup of new workspace journals through historical Recovery snapshot"
+  ],
+  "preservation": {
+    "original_92_tests": true,
+    "historical_diagnostic_and_tools": true,
+    "unified_codec_unchanged": true,
+    "bridge_transport_default_disabled": true,
+    "main_observed_sha": "c9f94ad2fa219a5e09cda92fb451aca606ee1646",
+    "other_repositories_modified": false,
+    "personal_devices_used": false
+  },
+  "failures_preserved": {
+    "setup_logs": [
+      "baseline.log",
+      "workspace-build.log"
+    ],
+    "jvm_adversarial_test": "jvm-adapter-failure.xml",
+    "native_attempts": [
+      "saf-first.json",
+      "saf-case-fixed.json",
+      "android-release-candidate.json"
+    ],
+    "external_probe_attempts": [
+      "android-restart-live-copy-failure.json",
+      "android-restart-viewport-failure.json"
+    ],
+    "database_diagnosis": "restart-db-diagnosis.json"
+  },
+  "blockers": [],
+  "next_actions": [
+    "User-authorized physical ARM64 qualification if desired",
+    "Any central integration or BRIDGE production transport requires separate approved contract/authorization"
+  ],
+  "evidence_sha256": {
+    "adapter-fixed-build.log": "4def7f5d9e916096034d4d0ca960d027a8854865f7554d7f939743cd31eecfb5",
+    "android-final.json": "655bcb4327e86a8a5ca3c6eb1e742a0b0c59c4cb805f87f64e3138dd1dc03d18",
+    "android-final.log": "58d765bbbb52d2f065d70a12b39b8307e423c912a42ee8d92a1ecb750bcdab8d",
+    "android-full.json": "4f6a77e20286aa789aea6cf4c9cc0ec63752ae6b3558dad0df4dee47abc6bad6",
+    "android-full.log": "95bee5bb20882d473919e967d0c1fd5f7ea0a71bd2ddb0a1de581e0627ef061c",
+    "android-release-candidate.json": "542573fdcd1e442e73a91e31c5f83124ede9f0698580afca53d5ba3a07536953",
+    "android-release-candidate.log": "c42e72e5bbfccd7d62f174d31284c118cf034350c591f44840293ec9924a7266",
+    "android-restart-first.json": "3704cc83f5bd0f6c9f3ca22f72dfb2d94813f8f12fdf75dc2dd233cbeec0cd64",
+    "android-restart-live-copy-failure.json": "ed476f42dbdd22d3f38640b9aa3c0786f1acceab00b4caa83cced931ba0d347a",
+    "android-restart-live-copy-failure.log": "ed476f42dbdd22d3f38640b9aa3c0786f1acceab00b4caa83cced931ba0d347a",
+    "android-restart-probe-final.log": "f38eea20046a09b81b710a58932155954f6ed4b9f28cd73d969d95b922791d29",
+    "android-restart-probe-first.log": "3704cc83f5bd0f6c9f3ca22f72dfb2d94813f8f12fdf75dc2dd233cbeec0cd64",
+    "android-restart-probe.log": "3704cc83f5bd0f6c9f3ca22f72dfb2d94813f8f12fdf75dc2dd233cbeec0cd64",
+    "android-restart-viewport-failure.json": "71e1d14415d8ba7f6b5a424fb09196ee0130c7551c5e989c4fa7a96a463b90b7",
+    "android-restart-viewport-failure.log": "71e1d14415d8ba7f6b5a424fb09196ee0130c7551c5e989c4fa7a96a463b90b7",
+    "android-restart.json": "f38eea20046a09b81b710a58932155954f6ed4b9f28cd73d969d95b922791d29",
+    "android-saf-build.log": "4704458e9cba18ad9b8167194b41cda9db49de287e11a415c92065abbb694e61",
+    "android-scroll-fixed.json": "a10515da51e7f9ef02153a74e6e594b57f86cdd2d785acce2ea0098a48b62662",
+    "android-scroll-fixed.log": "8826f752370ac4862f36599710a7bde741d57f4e9de61634ddbf3489e450bc95",
+    "android-sdk-fixed.log": "a27271e75516bab04b35358d731a9b8d087f2f5b9d05133e027230e20d397b62",
+    "apk-manifest-a337.json": "6653360bc502fa3574010e1329a9864acff1d8fe791e3e7713867b0f8a016539",
+    "apk-manifest.json": "6c4af2c0f15e9f64c09fd9347557709c18d024ba458f5ca88a974893ce7e4be4",
+    "apk-permissions.log": "e7c149ab0121c8967daa2a88a8c94116e73113d7ac5e84bd5fa152234f482561",
+    "apk-signature.log": "4190c22171707a6619a22ba6304856c5759aacebe8f2223f47b34fa153d95973",
+    "baseline-92.json": "079f6fc0f523a9b02371ad3af99f0efbca0a1a5d31792cc9f512578094ccf8be",
+    "baseline-jdk-fixed.log": "3950bf71928bc32d3841b3e83a6bbf082770abdeb3356212136fad4f1cff3395",
+    "baseline.log": "0f37c7ef23fb50cb6b3a57b32fb3cdd2a54e9761c47c0aa18a2c362ed83a49f7",
+    "benchmarks.json": "52461eb511cb1c0601fb05ee4c5169079f884acb62ad607c4dd10e2e458acc70",
+    "catalogue-and-picker-build.log": "13c94b6099e27e63c9b41360dfff36a90ab5acbc0956a224e229785e01bae87f",
+    "catalogue-eight-domains.log": "21f74331c7e50dd308babf44077ddf30af35333042fc10799904564d9d1d8a9d",
+    "ci-a337-superseded.json": "847b3d84b4f37fd6c7b6f69af30ea221e24d873a036a89572f0963126b021b14",
+    "ci.json": "143b6bcf9c46de91897f11bcc403319e6eee183bee0c8f517068ee2ecceff532",
+    "emulator-provenance.json": "11247da221c7b17c3938f72d7bc016e7236aef40c41ffdf1a23a9407d3c19719",
+    "emulator-shutdown.json": "f5fd941df8972ee0078bd60268dcd838960501aa5b8b15b0d3f92b892ac1081d",
+    "emulator.log": "0328499a32a314fc54fe5c604a1b16002fe61e1d9e153c67f6cc54c03bb90c55",
+    "engine-build.log": "bc4c5c88e89da6f2e61bd4f4dff983071a770721b5b30aa2408ecea2b95e90c7",
+    "final-build.log": "8f9d4a094f1320354b2f44d0eba669abef53026fee7adc8e90c67a56410d8eb6",
+    "final-demo.log": "b29d5fff86e4939998f3ea549aca41215bb1f52f6f9cb2ec7ec0799db7330702",
+    "formatter-provenance.json": "983f6952a310b5b4105e773e08ef345af03dabec473bf6c2a2b5654c2ba3da0b",
+    "full-qualified-build.log": "1e4b651289bf56f9e7028981abda11aeaa9176e819560007652226fca796797e",
+    "jdk-provenance.json": "72c238fd2af381854d514188871fb6adf2c9b82af223ae2a66934220d409d7ef",
+    "journal-and-saf-build.log": "b8290bc99913d70b771f19ddc57c4771abe443ff7f86e949fa2dc5b850fbdf87",
+    "jvm-adapter-failure.xml": "fd7bd09c55d9d866231d8517d90c856ca685df695e0a05baef971651cdb7c820",
+    "jvm-final.json": "92b04b0e68f334a19db78dd09e3482bc4bebd2a091e4572706a4c587830e7b3e",
+    "jvm-new-tests.log": "a73239e58e5632bf1a24a7038333a576867f172b3fe7390ba2450d6594fd685a",
+    "lint-final.json": "9f6ab65189f28f3333aa72461f5f568ff1f2c7ad5850bcc76dd1c9685a3c3f3f",
+    "packaging.json": "f79ee3767e7e681cbef5c8fe34106a4a8bc7dea876bb584478f433e5671665ce",
+    "qualified-engine.log": "1d4e0c7b30e729df57aa3aca8ba0f8a760fdf0c018bf9384e3404481452571b4",
+    "release-candidate-build.log": "888278a4b126d6fdd66abccf905948119c21d3de38430a7b83a844bd78396bcb",
+    "resources.json": "204898f4dea16cde28c80dd1bcb1de6e05826eb795ab90c675027a6f35f71797",
+    "restart-db-diagnosis.json": "e3631e21ea1a6fc333cfe02cebf2f29a466f916b2d98cb5533999451467a4593",
+    "saf-case-fixed.json": "2224825aa9bb81707c26862c9a05f94c13d51b80e7a00a616991d1d81299a199",
+    "saf-case-fixed.log": "4caffc414588ef78d635f568da44155de11390e886acec565be99c3654016da4",
+    "saf-first.json": "bebd61130d43b5a8114a0934fedaab4d22fb67f5eae9d57e59adc4bf45b6e1fd",
+    "saf-first.log": "38eb5914bc3548dca8faa163cdd7f731a6b92353df3cb65c8eb8cad861bdca69",
+    "saf-scroll-build.log": "3ccb3c9cc04c357c55010caf072ab33930686358458c9c88ad28ec685a689c07",
+    "saf-touch-fixed.json": "837090e16c2081d267d2eedd1fb10f851dfe77d0ff4a4bdecdc2d959b5c135eb",
+    "saf-touch-fixed.log": "d49e0b2e80466556f1e31b2cb86bd928301f0b6f966cc646c5ca7ab767f9c80c",
+    "scenarios-demo.log": "7ef4a4031ce86d0102ad9b4cf352fa3d06abf08f3b52886d05377e9de74a1f27",
+    "scenarios.json": "569485fa92b7751bf2642afa47fb5761107fb56fab9ab3bb9ef5ec189b4071d1",
+    "sdk-provenance.json": "d3d261d8ee2678bafceaaebd8694a9690e848d5aae8f1bcb1fe031154078cf80",
+    "source-inventory.json": "6fcca15ba6cbee724e53e726ab21a977aa8742612044cd1288d30b72daf86e74",
+    "template-qualified-build.log": "7309ea5a71046170a373452a39319684aab08806f34e66d33daa8a44d1e257a0",
+    "workspace-build.log": "8b7fef1839f692325ec0559688adcfd425cbfe84555aaed939b2b9411f927e8c"
+  }
+}

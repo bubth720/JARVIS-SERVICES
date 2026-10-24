@@ -1,0 +1,168 @@
+{
+  "base": "3decdc47d82f9b43713c48cab244762941770a81",
+  "code_commit": "edfa044321ff09697ae9bec40a6e31aa76a77370",
+  "files": [
+    {
+      "status": "M",
+      "path": ".github/workflows/verify.yml",
+      "sha256": "3f1a78feba1662e9309faf14172c073b45cc7ee7b67199af2a52194ca4c9c72e"
+    },
+    {
+      "status": "M",
+      "path": "android/src/androidTest/AndroidManifest.xml",
+      "sha256": "8b8fbc11bcd7f83f57f2c6cb65aad5f8c4f84219e0e766ab43324300a4559dd2"
+    },
+    {
+      "status": "A",
+      "path": "android/src/androidTest/assets/template.docx",
+      "sha256": "b922f4f8de2cd15b7492bed9271bed42e8f1c4c95c8057bde46e963384bf9464"
+    },
+    {
+      "status": "A",
+      "path": "android/src/androidTest/java/fr/jarvis/services/android/FinalDocumentsProvider.java",
+      "sha256": "615f30894c68c7e08ca670cc3d17a913dc9036c8b58bd71d187baa569466756b"
+    },
+    {
+      "status": "A",
+      "path": "android/src/androidTest/java/fr/jarvis/services/android/FinalSafWorkflowTest.java",
+      "sha256": "7f5fb719bd00220117e0e477e4aad8169f1f1e81de2de9e9c3e773309d188f7e"
+    },
+    {
+      "status": "M",
+      "path": "android/src/main/AndroidManifest.xml",
+      "sha256": "e57c70617ce52f868d9a225acab147312abc6d6c89b2dd2b35a85eb400d831b2"
+    },
+    {
+      "status": "A",
+      "path": "android/src/main/java/fr/jarvis/services/android/WorkspaceActivity.java",
+      "sha256": "8641d679890736337f454baa958d7b61b54534761033098963958fa042436391"
+    },
+    {
+      "status": "M",
+      "path": "android/src/main/res/values/strings.xml",
+      "sha256": "fb1966b9e873bc7dee33a2757e7ab2b4a3ce43fe478c9bef1244b0e502a85fd1"
+    },
+    {
+      "status": "A",
+      "path": "contracts/services-final/v1/bridge-ack.schema.json",
+      "sha256": "7e440e3a762b0aa9170f1f991309899b4ad0010500b4cef253f9d333c4c7599f"
+    },
+    {
+      "status": "A",
+      "path": "contracts/services-final/v1/bridge-data.schema.json",
+      "sha256": "fdee5ed319f67f4a9db212315bae87ba182f3026807894a5e263c9913119633b"
+    },
+    {
+      "status": "A",
+      "path": "contracts/services-final/v1/data-recipe.schema.json",
+      "sha256": "8711bd08488baa4264c397f782628f431abe7cdbbb43e19aeba0ef6a0cfb5cfe"
+    },
+    {
+      "status": "A",
+      "path": "contracts/services-final/v1/tool-arguments.schema.json",
+      "sha256": "ac64e2c7da3c3a23786f7cf23dad1a0ec8124189acf8e27f46e1780645df75aa"
+    },
+    {
+      "status": "A",
+      "path": "contracts/services-final/v1/tool-catalogue.json",
+      "sha256": "9f3cd175d24a3930f21bee3c7e31f898005c28eeb5ec6b0508212624b1c11429"
+    },
+    {
+      "status": "M",
+      "path": "desktop/build.gradle",
+      "sha256": "6f7933554218d2cbea6b06d040c684e7fb1f54e79a61cbbce98a9353e1044ce2"
+    },
+    {
+      "status": "A",
+      "path": "desktop/src/main/java/fr/jarvis/services/demo/FinalScenariosDemo.java",
+      "sha256": "e332c766b0e1d11870c8d1c51ba5d9d8bfc035bd6f8c357914fd59d783bf21a1"
+    },
+    {
+      "status": "A",
+      "path": "desktop/src/test/java/fr/jarvis/services/FinalServicesTest.java",
+      "sha256": "bb878a12f56bc8ce595eae09fd3e1c613a47d5dba0c1aace15d73ba937e29e46"
+    },
+    {
+      "status": "A",
+      "path": "desktop/src/test/java/fr/jarvis/services/OfflineBridgeSecurityTest.java",
+      "sha256": "ec33c58f1c9e8d5f8e790892ced397277e259bfd41322a0f81eb1352c0e77e69"
+    },
+    {
+      "status": "A",
+      "path": "docs/services-final-01/CONTRACTS.md",
+      "sha256": "cac518f000089bdb47039eedff7e92325951a3eb66b195f0f68c9c37697d915a"
+    },
+    {
+      "status": "A",
+      "path": "scripts/probe-final-restart.py",
+      "sha256": "a5d629a8583c9cb4573a7e35a2c1bca4383f1318e0662ca38ad29ea5103a42cd"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/bridge/OfflineBridge.java",
+      "sha256": "fa3c3277547f9e5537f8f92e7a9951fd11a8d35922a76b33a5aa3b933bf27d98"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/ConsultationService.java",
+      "sha256": "d51879866d118a70c6fd2773727e87388b59336aeaca8061fa89a25512f1ab1b"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/DocumentService.java",
+      "sha256": "377f17d3d90d5c75dd314bb0cd8b83236a8fc224c0dc94cf204a15eccb3ec125"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/ExistingKnowledgeAdapter.java",
+      "sha256": "3b3a3075ee2a3e3c0d36a5ab0a5720c4c956c197566ff225de11979ba7baafb9"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/FinalToolCatalogue.java",
+      "sha256": "15392433535621940fd6687feda6288aa1dbc160b21bb5f101619a9a65926d4a"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/LocalJobs.java",
+      "sha256": "643103aba6442670aed8d72a79e6eec4ab651d245bec93f5d59e4e77fb2b5bf9"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/Recipes.java",
+      "sha256": "7810b26c2f1b86d52d31b560ec8d2a39da742504f7ac520a005df422f53273c6"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/StructuredAnalyst.java",
+      "sha256": "4bf31936ce61ab06c5f4ee826be712bbdc7e08d6ff6f4cf192775df08b85cf67"
+    },
+    {
+      "status": "A",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/finalization/TableService.java",
+      "sha256": "560a76a23bf278d2681aba216e9bd10dbad4387c61234e29ab5d2aa68a640947"
+    },
+    {
+      "status": "M",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/modules/memory/Memory.java",
+      "sha256": "50967a60bad13258d0b5a264ef0ba4ca0ec6d837f232bc6662703dd2025208d5"
+    },
+    {
+      "status": "M",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/tools/ToolDispatcher.java",
+      "sha256": "397dd608cada7602013877092ee0247048bdd3ce8dd75c384267c65cf68bafa1"
+    },
+    {
+      "status": "M",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/tools/ToolInvocation.java",
+      "sha256": "5cf74f6be5c792a13a0468c080c303861f5ecd329ed40175ede7f040f14eb7f2"
+    },
+    {
+      "status": "M",
+      "path": "shared-runtime/src/main/java/fr/jarvis/services/workflow/WorkflowEngine.java",
+      "sha256": "7cb72908c9515af2c6b8e2f5974d3bd8d87baa45dd0487f959416cdacaf40bd6"
+    }
+  ],
+  "delivery_qualification_helper": "scripts/probe-final-restart.py",
+  "delivery_helper_sha256": "494d6dda0113607d57112a6d74cc30c8dd78aabbe327ac6d1e62dc3adc1950f6"
+}

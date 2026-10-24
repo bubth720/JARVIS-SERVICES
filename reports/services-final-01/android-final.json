@@ -1,0 +1,235 @@
+{
+  "host": "127.0.0.1",
+  "port": 5581,
+  "expected_tests": 17,
+  "apk": [
+    {
+      "kind": "app",
+      "sha256": "d65d07b6141a4cc0cb0362386aa7889c450fb60ded915271d3208db16d13c6fd",
+      "bytes": 14423508
+    },
+    {
+      "kind": "tests",
+      "sha256": "03d19ce70a365634862340457685b8277b0a4ab184bd30f9dda48bb7aef77106",
+      "bytes": 921463
+    }
+  ],
+  "emulator_identity": {
+    "qemu": true,
+    "api": 26,
+    "boot_completed": true
+  },
+  "phase": "instrumentation",
+  "command": "am instrument -w -r fr.jarvis.services.diagnostic.test/androidx.test.runner.AndroidJUnitRunner",
+  "cases": [
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "modelFieldsUseRealDocxAndFreshSafExport",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "current": "1",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "csvUsesActualPickerGrantPreviewConfirmationAndFreshTreeExport",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "current": "2",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "pdfToSourcedDocxReadsBothActualSafInputAndOutput",
+      "class": "fr.jarvis.services.android.FinalSafWorkflowTest",
+      "current": "3",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "nativeDocxRejectsDtdForUtf8AndUtf16",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "4",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "guardAndWorkflowFailureAreSafe",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "5",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "resolverRejectsUnboundedCancelledAndFileUris",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "6",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "bridgeSimulatorDisconnectsSafely",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "7",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "nativePdfFtsAndNonDestructiveDocx",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "8",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "isolatedRecoveryPreservesIntegrity",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "9",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "resolverImportsPdfAndExportsPrivateFreeReport",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "10",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "exactCsvAndMemoryAfterReopen",
+      "class": "fr.jarvis.services.android.LocalQualificationTest",
+      "current": "11",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "diagnosticActivityInitializesAllModules",
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "current": "12",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "noInternetPermission",
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "current": "13",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "bundledFts5AndMigration",
+      "class": "fr.jarvis.services.android.OfflineSmokeTest",
+      "current": "14",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "fileUriCannotConstructASafTarget",
+      "class": "fr.jarvis.services.android.PipelineAndroidTest",
+      "current": "15",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "ungrantedTreeCannotConstructASafTarget",
+      "class": "fr.jarvis.services.android.PipelineAndroidTest",
+      "current": "16",
+      "status_code": 0
+    },
+    {
+      "numtests": "17",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "readonlyTextPreservesUnicodeAndUsesNoDocumentStore",
+      "class": "fr.jarvis.services.android.PipelineAndroidTest",
+      "current": "17",
+      "status_code": 0
+    }
+  ],
+  "metrics": [
+    {
+      "metric_pss_kib": "39473",
+      "metric_scenario": "nativeDocxRejectsDtdForUtf8AndUtf16",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "169"
+    },
+    {
+      "metric_pss_kib": "40000",
+      "metric_scenario": "guardAndWorkflowFailureAreSafe",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "663"
+    },
+    {
+      "metric_pss_kib": "39988",
+      "metric_scenario": "resolverRejectsUnboundedCancelledAndFileUris",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "76"
+    },
+    {
+      "metric_pss_kib": "40022",
+      "metric_scenario": "bridgeSimulatorDisconnectsSafely",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "168"
+    },
+    {
+      "metric_pss_kib": "40857",
+      "metric_scenario": "nativePdfFtsAndNonDestructiveDocx",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "700"
+    },
+    {
+      "metric_pss_kib": "41552",
+      "metric_scenario": "isolatedRecoveryPreservesIntegrity",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "407"
+    },
+    {
+      "metric_pss_kib": "37740",
+      "metric_scenario": "resolverImportsPdfAndExportsPrivateFreeReport",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "635"
+    },
+    {
+      "metric_pss_kib": "38024",
+      "metric_scenario": "exactCsvAndMemoryAfterReopen",
+      "metric_vm_hwm": "119244 kB",
+      "metric_duration_ms": "176"
+    }
+  ],
+  "passed": 17,
+  "failed": 0,
+  "skipped": 0,
+  "complete": true,
+  "success": true,
+  "elapsed_host_seconds": 140.691
+}
