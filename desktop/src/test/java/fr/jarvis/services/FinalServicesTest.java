@@ -488,6 +488,99 @@ class FinalServicesTest {
     assertFalse(result.toString().contains("not-a-number"));
   }
 
+  @Test
+  void actualDocxTemplateInputProducesDerivedFileAndPreservesOriginal() throws Exception {
+    Documents writer = new Documents(jobs.guard, jobs.store, new PdfBoxText());
+    String template = "template-" + UUID.randomUUID() + ".docx";
+    writer.export(host, template, "docx", "Bonjour {{name}}. Montant {{amount}}.", task());
+    Path input = root.resolve("files").resolve(template);
+    byte[] bytes = Files.readAllBytes(input);
+    String before = Guard.digest(bytes);
+    String id =
+        jobs.prepareDocument(
+            host,
+            "template.docx",
+            bytes,
+            "",
+            Map.of("name", "Alice & Bob", "amount", "0.30 EUR"),
+            null,
+            null,
+            task());
+    complete(id);
+    String text = Documents.readDocx(Files.readAllBytes(output(id)));
+    assertTrue(text.contains("Alice & Bob"));
+    assertTrue(text.contains("0.30 EUR"));
+    assertFalse(text.contains("{{name}}"));
+    assertEquals(before, Guard.digest(Files.readAllBytes(input)));
+  }
+
+  @Test
+  void workflowStatusToolPreservesStateAndAllEightDomainsRemainAvailable() throws Exception {
+    String id = jobs.prepareText(host, "status only", task());
+    String digest = (String) jobs.job(host, id).get("plan_digest");
+    Object before = jobs.states.snapshot(id);
+    ToolInvocation invocation =
+        new ToolInvocation(
+            UUID.randomUUID().toString(),
+            "actions.workflow.status",
+            "1.0.0",
+            Map.of("job", id, "digest", digest),
+            3000,
+            null);
+    assertEquals(
+        ToolDispatcher.Status.SUCCESS,
+        jobs.dispatcher.dispatch(host, invocation).result.get().status);
+    assertEquals(before, jobs.states.snapshot(id));
+    assertEquals(
+        ToolDispatcher.Status.REFUSED,
+        jobs.dispatcher
+            .dispatch(new Guard.Context("read-only", Set.of("documents.read")), invocation)
+            .result
+            .get()
+            .status);
+    Set<Object> domains = new HashSet<>();
+    for (var entry : jobs.registry.catalogue()) domains.add(entry.get("module"));
+    assertEquals(
+        Set.of("documents", "knowledge", "data", "actions", "memory", "analyst", "guard", "bridge"),
+        domains);
+  }
+
+  @Test
+  void localMemoryQuotaRefusesNewRecordsWithoutReplacingOldOnes() {
+    for (int i = 0; i < 256; i++)
+      jobs.store.put(
+          "memory",
+          "prior-" + i,
+          Map.of(
+              "id",
+              "prior-" + i,
+              "text",
+              "prior",
+              "expires_at",
+              System.currentTimeMillis() + 60000));
+    Memory memory = new Memory(jobs.store, jobs.guard);
+    long expires = System.currentTimeMillis() + 60000;
+    String exact = memory.exact("new", "preference", "new", "test", expires);
+    String token = jobs.guard.confirm(host, "memory.write", exact);
+    Failure refused =
+        assertThrows(
+            Failure.class,
+            () -> memory.save(host, "new", "preference", "new", "test", expires, token));
+    assertEquals("MEMORY_LIMIT", refused.code);
+    assertEquals(256, jobs.store.count("memory"));
+    assertNull(jobs.store.get("memory", "new"));
+  }
+
+  @Test
+  void derivedExactSumsMayExceedInputDigitLimitWithoutBecomingApproximate() {
+    var table = new fr.jarvis.services.modules.data.Data().csv("amount\n1E100\n1E100\n1E100\n");
+    var report = new StructuredAnalyst().analyze(table, SCHEMA, task());
+    assertTrue(report.toString().contains(new java.math.BigDecimal("3E100").toPlainString()));
+    assertEquals(
+        "0",
+        new StructuredAnalyst().compare(table, table, "amount", "EUR", "EUR").get("sum_delta"));
+  }
+
   static final class DiskPort implements SafUriPort {
     final Path dir;
     final boolean corrupt, lost;

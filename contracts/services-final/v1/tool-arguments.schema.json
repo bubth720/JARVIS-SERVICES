@@ -1,0 +1,337 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Exact string argument schemas for local tools",
+  "$defs": {
+    "actions.workflow.status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "digest",
+        "job"
+      ],
+      "properties": {
+        "digest": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "job": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission actions.run; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "analyst.table.inspect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "csv",
+        "schema"
+      ],
+      "properties": {
+        "csv": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "schema": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission analyst.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "analyst.table.report": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "csv",
+        "schema"
+      ],
+      "properties": {
+        "csv": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "schema": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission analyst.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "bridge.offline.capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [],
+      "properties": {},
+      "$comment": "Version 1.0.0; host permission bridge.file; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "data.csv.normalize": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "csv"
+      ],
+      "properties": {
+        "csv": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission data.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "data.table.transform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "csv",
+        "format",
+        "recipe",
+        "schema"
+      ],
+      "properties": {
+        "csv": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "format": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "recipe": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "schema": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission data.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "documents.docx.export": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "text"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.export; EXACT_CONTENT_SINGLE_USE; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "documents.search": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "query"
+      ],
+      "properties": {
+        "query": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "documents.template.render": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fields",
+        "template"
+      ],
+      "properties": {
+        "fields": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "template": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "documents.text.replace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "literal",
+        "replacement",
+        "text"
+      ],
+      "properties": {
+        "literal": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "replacement": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "guard.workspace.validate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relative"
+      ],
+      "properties": {
+        "relative": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "knowledge.selected.consult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "query",
+        "text"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "query": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission knowledge.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "memory.local.read": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "query"
+      ],
+      "properties": {
+        "query": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission memory.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "memory.local.save": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "expires",
+        "id",
+        "source",
+        "text",
+        "type"
+      ],
+      "properties": {
+        "expires": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "id": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "source": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "type": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission memory.write; EXACT_CONTENT_SINGLE_USE; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "workspace.publish": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "digest",
+        "job"
+      ],
+      "properties": {
+        "digest": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "job": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.export; EXACT_CONTENT_SINGLE_USE; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "workspace.saf.export": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "digest",
+        "job",
+        "target_ref"
+      ],
+      "properties": {
+        "digest": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "job": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "target_ref": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.export; EXACT_CONTENT_SINGLE_USE; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    },
+    "workspace.verify": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "digest",
+        "job"
+      ],
+      "properties": {
+        "digest": {
+          "type": "string",
+          "maxLength": 2097152
+        },
+        "job": {
+          "type": "string",
+          "maxLength": 2097152
+        }
+      },
+      "$comment": "Version 1.0.0; host permission documents.read; HOST_GRANT; aggregate UTF-8 input bytes <= 2097152 at runtime."
+    }
+  }
+}

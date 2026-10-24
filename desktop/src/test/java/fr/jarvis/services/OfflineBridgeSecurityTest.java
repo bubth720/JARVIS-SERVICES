@@ -118,4 +118,22 @@ class OfflineBridgeSecurityTest {
         Failure.class,
         () -> receiver.receive(host, wire.replaceFirst("\\{", "{\"kind\":\"DATA\",")));
   }
+
+  @Test
+  void senderUnknownStateSurvivesRestartAndRequiresExplicitAck() {
+    String id = sender.queue(host, "diagnostic.ping", UUID.randomUUID().toString());
+    String frame = sender.frame(host, id);
+    sender.interrupted(host, id);
+    sender.close();
+    a.close();
+    a = new JdbcDatabase(root.resolve("a.sqlite"));
+    sa = new Store(a);
+    ga = new Guard(root.resolve("afiles"), sa);
+    sender = new OfflineBridge(sa, ga, "phone", "pc", session, key);
+    assertEquals("UNKNOWN", sender.state(host, id));
+    assertEquals(frame, sender.frame(host, id));
+    assertEquals("UNKNOWN", sender.state(host, id));
+    sender.acknowledge(host, receiver.receive(host, frame));
+    assertEquals("ACKED", sender.state(host, id));
+  }
 }

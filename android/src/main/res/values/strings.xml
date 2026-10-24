@@ -1,8 +1,54 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
     <string name="initializing">Initialisation locale — aucun modèle chargé</string>
     <string name="profile_status">Profil %1$s — un travail lourd maximum</string>
     <string name="busy">BUSY ou initialisation en cours</string>
     <string name="contract_status">Contrats %1$s — %2$s — local</string>
     <string name="error_status">Erreur : %1$s</string>
     <string name="sample_csv" translatable="false">name,value\na,0.1\na,0.1\nb,0.2</string>
+
+ <string name="workspace_initializing">Initialisation de l’atelier local…</string>
+ <string name="workspace_ready">Atelier local prêt — hors ligne</string>
+ <string name="workspace_working">Traitement local en cours…</string>
+ <string name="workspace_query">Recherche, texte, champs JSON du modèle ou texte à remplacer</string>
+ <string name="workspace_replacement">Texte de remplacement (outil Remplacer)</string>
+ <string name="workspace_filter_column">Colonne du filtre exact (facultatif)</string>
+ <string name="workspace_filter_value">Valeur exacte du filtre</string>
+ <string name="workspace_numeric_column">Colonne à trier ou calculer</string>
+ <string name="workspace_group_column">Colonne de regroupement (facultatif)</string>
+ <string name="workspace_normalize">Nettoyer espaces et Unicode</string>
+ <string name="workspace_deduplicate">Supprimer les lignes exactement identiques</string>
+ <string name="workspace_select">Sélectionner un fichier local</string>
+ <string name="workspace_prepare">Préparer et prévisualiser</string>
+ <string name="workspace_advance">Étape suivante / reprendre</string>
+ <string name="workspace_export">Exporter dans un dossier choisi</string>
+ <string name="workspace_history">Historique et reprise</string>
+ <string name="workspace_close">Fermer</string>
+ <string name="workspace_cancel">Annuler</string>
+ <string name="workspace_confirm">Confirmer cette opération</string>
+ <string name="workspace_memory_save">Mémoriser dans cet atelier</string>
+ <string name="workspace_memory_export">Préparer un export de la mémoire locale</string>
+ <string name="workspace_memory_scope">Mémoire de cet atelier uniquement, sans écriture dans une mémoire centrale. Conservation : 30 jours.</string>
+ <string name="workspace_diagnostics">Diagnostic avancé et fonctions historiques</string>
+ <string name="workspace_source_selected">Fichier sélectionné : %1$s. Choisissez un outil puis préparez l’aperçu.</string>
+ <string name="workspace_private_confirmation">Créer une nouvelle sortie privée : %1$s
+L’original sera conservé.
+
+Contenu exact :
+%2$s</string>
+ <string name="workspace_public_confirmation">Créer un nouveau fichier dans le dossier sélectionné : %1$s
+Nom : %2$s
+Aucun original ne sera remplacé.
+
+Contenu exact :
+%3$s</string>
+ <string-array name="workspace_tools"><item>PDF / consultation sourcée → DOCX</item><item>Remplir un modèle texte / DOCX</item><item>Remplacer un texte → nouveau DOCX</item><item>CSV / JSON → tableau et calculs</item><item>Créer un DOCX à partir du texte saisi</item></string-array>
+ <string-array name="workspace_sort"><item>Conserver l’ordre</item><item>Tri texte par colonne</item><item>Tri numérique par colonne</item></string-array>
+ <string-array name="workspace_units"><item></item><item>EUR</item><item>USD</item><item>kg</item><item>g</item><item>m</item><item>cm</item><item>s</item><item>ms</item><item>%</item><item>1</item></string-array>
+ <string-array name="workspace_formats"><item>csv</item><item>json</item></string-array>
+ <string name="workspace_sort_column">Colonne du tri (si un tri est choisi)</string>
+ <string name="workspace_template_fields">Champs du modèle</string>
+ <string name="workspace_find">Texte exact à remplacer dans le document</string>
+ <string name="workspace_text">Texte du nouveau DOCX</string>
+ <string name="workspace_unknown">Résultat incertain : vérifiez les fichiers et le journal avant toute nouvelle opération. Cette action ne sera jamais rejouée automatiquement.</string>
+ <string name="workspace_fill_model">Remplir les champs du modèle</string>
 </resources>

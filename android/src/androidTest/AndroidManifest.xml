@@ -4,5 +4,11 @@
     <provider android:name="fr.jarvis.services.android.SyntheticDocumentProvider"
       android:authorities="fr.jarvis.services.diagnostic.test.synthetic"
       android:exported="true" android:grantUriPermissions="true"/>
+    <provider android:name="fr.jarvis.services.android.FinalDocumentsProvider"
+      android:authorities="fr.jarvis.services.diagnostic.test.finalfiles"
+      android:exported="true" android:grantUriPermissions="true"
+      android:permission="android.permission.MANAGE_DOCUMENTS">
+      <intent-filter><action android:name="android.content.action.DOCUMENTS_PROVIDER"/></intent-filter>
+    </provider>
   </application>
 </manifest>

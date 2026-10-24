@@ -1,7 +1,7 @@
 name: SERVICES foundation and Android qualification
 on:
   push:
-    branches: [mission-001-services-foundation, mission-002a-android-qualification, feat/serv-01-services, feat/serv-02-services, feat/serv-03-services]
+    branches: [mission-001-services-foundation, mission-002a-android-qualification, feat/serv-01-services, feat/serv-02-services, feat/serv-03-services, feat/services-final-01]
   pull_request:
   workflow_dispatch:
 permissions:
@@ -21,6 +21,8 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
+      - name: Contract provenance
+        run: python3 scripts/check-services-contract-lock.py
       - name: JVM regressions
         run: ./gradlew :desktop:test --no-daemon
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6

@@ -42,7 +42,7 @@ public final class StructuredAnalyst {
         stats.put("unit", e.getValue().unit);
         if (!table.rows.isEmpty()) {
           stats.putAll(table.stats(e.getKey()));
-          BigDecimal sum = TableService.decimal((String) stats.get("sum"));
+          BigDecimal sum = new BigDecimal((String) stats.get("sum"));
           stats.put("exact_mean_fraction", sum.toPlainString() + "/" + table.rows.size());
           try {
             stats.put(
@@ -63,8 +63,8 @@ public final class StructuredAnalyst {
   public Map<String, String> compare(
       Data.Table a, Data.Table b, String column, String unitA, String unitB) {
     if (unitA == null || !unitA.equals(unitB)) throw new Failure("UNIT_MISMATCH");
-    BigDecimal left = TableService.decimal(a.stats(column).get("sum")),
-        right = TableService.decimal(b.stats(column).get("sum"));
+    BigDecimal left = new BigDecimal(a.stats(column).get("sum")),
+        right = new BigDecimal(b.stats(column).get("sum"));
     Map<String, String> result = new TreeMap<>();
     result.put("left_sha256", Guard.digest(a.csv()));
     result.put("right_sha256", Guard.digest(b.csv()));

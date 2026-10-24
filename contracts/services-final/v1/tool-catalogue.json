@@ -1,0 +1,275 @@
+[
+  {
+    "consent": "HOST_GRANT",
+    "id": "actions.workflow.status",
+    "input_fields": [
+      "digest",
+      "job"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "actions",
+    "output_schema": "workflow_state_v1",
+    "permission": "actions.run",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "analyst.table.inspect",
+    "input_fields": [
+      "csv",
+      "schema"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "analyst",
+    "output_schema": "schema_inconsistencies_v1",
+    "permission": "analyst.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "analyst.table.report",
+    "input_fields": [
+      "csv",
+      "schema"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "analyst",
+    "output_schema": "sourced_calculation_v1",
+    "permission": "analyst.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "bridge.offline.capabilities",
+    "input_fields": [],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "bridge",
+    "output_schema": "offline_protocol_capabilities_v1",
+    "permission": "bridge.file",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "data.csv.normalize",
+    "input_fields": [
+      "csv"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "data",
+    "output_schema": "csv_table",
+    "permission": "data.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "data.table.transform",
+    "input_fields": [
+      "csv",
+      "format",
+      "recipe",
+      "schema"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "data",
+    "output_schema": "table_preview_v1",
+    "permission": "data.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "EXACT_CONTENT_SINGLE_USE",
+    "id": "documents.docx.export",
+    "input_fields": [
+      "path",
+      "text"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "ACTION",
+    "module": "documents",
+    "output_schema": "file_digest",
+    "permission": "documents.export",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "documents.search",
+    "input_fields": [
+      "query"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "documents",
+    "output_schema": "document_hits",
+    "permission": "documents.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "documents.template.render",
+    "input_fields": [
+      "fields",
+      "template"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "documents",
+    "output_schema": "derived_text_v1",
+    "permission": "documents.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "documents.text.replace",
+    "input_fields": [
+      "literal",
+      "replacement",
+      "text"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "documents",
+    "output_schema": "derived_text_v1",
+    "permission": "documents.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "guard.workspace.validate",
+    "input_fields": [
+      "relative"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "guard",
+    "output_schema": "safe_destination_v1",
+    "permission": "documents.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "knowledge.selected.consult",
+    "input_fields": [
+      "name",
+      "query",
+      "text"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "knowledge",
+    "output_schema": "verified_passages_v1",
+    "permission": "knowledge.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "memory.local.read",
+    "input_fields": [
+      "query"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "memory",
+    "output_schema": "local_memory_v1",
+    "permission": "memory.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "EXACT_CONTENT_SINGLE_USE",
+    "id": "memory.local.save",
+    "input_fields": [
+      "expires",
+      "id",
+      "source",
+      "text",
+      "type"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "ACTION",
+    "module": "memory",
+    "output_schema": "local_memory_receipt_v1",
+    "permission": "memory.write",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "EXACT_CONTENT_SINGLE_USE",
+    "id": "workspace.publish",
+    "input_fields": [
+      "digest",
+      "job"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "ACTION",
+    "module": "documents",
+    "output_schema": "private_file_v1",
+    "permission": "documents.export",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "EXACT_CONTENT_SINGLE_USE",
+    "id": "workspace.saf.export",
+    "input_fields": [
+      "digest",
+      "job",
+      "target_ref"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "ACTION",
+    "module": "documents",
+    "output_schema": "verified_fresh_document_v1",
+    "permission": "documents.export",
+    "requires_network": false,
+    "version": "1.0.0"
+  },
+  {
+    "consent": "HOST_GRANT",
+    "id": "workspace.verify",
+    "input_fields": [
+      "digest",
+      "job"
+    ],
+    "input_type": "exact_string_object",
+    "memory_bytes": 2097152,
+    "mode": "READ",
+    "module": "documents",
+    "output_schema": "verified_plan_v1",
+    "permission": "documents.read",
+    "requires_network": false,
+    "version": "1.0.0"
+  }
+]

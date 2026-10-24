@@ -102,6 +102,21 @@ public final class LocalJobs implements AutoCloseable {
     dispatcher = new ToolDispatcher(registry, guard, approvals, store);
     states = new WorkflowStateStore(store);
     workflows = new WorkflowEngine(states, guard, registry, dispatcher);
+    registry.register(
+        ServicesTools.descriptor(
+            "actions.workflow.status",
+            "actions",
+            "actions.run",
+            false,
+            "workflow_state_v1",
+            "job",
+            "digest"),
+        (ctx, args, task) -> {
+          task.check();
+          Map<String, Object> row = job(ctx, args.get("job"));
+          if (!args.get("digest").equals(row.get("plan_digest"))) throw new Failure("CORRUPT_PLAN");
+          return states.snapshot(args.get("job"));
+        });
   }
 
   public String prepareDocument(

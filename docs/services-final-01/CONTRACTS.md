@@ -65,7 +65,8 @@ exception d'action, même lorsqu'un rollback ultérieur est confirmé `FAILED` d
 le journal de publication.
 
 Les nouveaux journaux sont bornés et non purgés automatiquement : 64 jobs,
-64 MiB de fichiers privés, 4096 événements d'exécution, et bornes SERV-03 conservées
+64 MiB de fichiers privés, 4096 événements d'exécution, 256 souvenirs locaux
+durables (10 000 caractères chacun) et 128 entrées volatiles, et bornes SERV-03 conservées
 pour workflows/approbations. La saturation refuse de nouvelles opérations.
 Ils ne sont pas ajoutés au snapshot historique `Recovery` : la sauvegarde ou
 migration de ces journaux n'est pas revendiquée. Les refus GUARD historiques
