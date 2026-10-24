@@ -259,6 +259,7 @@ public class FinalSafWorkflowTest {
     if (n == null) return false;
     n.performAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SHOW_ON_SCREEN.getId());
     SystemClock.sleep(150);
+    if (!n.refresh()) return false;
     android.graphics.Rect bounds = new android.graphics.Rect();
     n.getBoundsInScreen(bounds);
     if (bounds.isEmpty()
@@ -301,7 +302,17 @@ public class FinalSafWorkflowTest {
     int attempts = 0;
     while (SystemClock.uptimeMillis() < deadline) {
       AccessibilityNodeInfo n = find(label, false);
-      if (n != null) return n;
+      if (n != null) {
+        n.performAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SHOW_ON_SCREEN.getId());
+        SystemClock.sleep(100);
+        n.refresh();
+        android.graphics.Rect bounds = new android.graphics.Rect();
+        n.getBoundsInScreen(bounds);
+        if (n.isVisibleToUser()
+            && !bounds.isEmpty()
+            && bounds.centerY() >= 0
+            && bounds.centerY() < context.getResources().getDisplayMetrics().heightPixels) return n;
+      }
       AccessibilityNodeInfo root = ui.getRootInActiveWindow();
       scroll(
           root,

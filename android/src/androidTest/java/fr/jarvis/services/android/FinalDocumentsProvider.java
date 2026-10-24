@@ -93,7 +93,11 @@ public final class FinalDocumentsProvider extends DocumentsProvider {
     MatrixCursor cursor = new MatrixCursor(projection == null ? DOC_COLUMNS : projection);
     File[] files = root.listFiles();
     if (files == null) throw new FileNotFoundException();
-    Arrays.sort(files, Comparator.comparing(File::getName));
+    // Keep immutable inputs visible even when repeated qualification leaves many outputs.
+    Arrays.sort(
+        files,
+        Comparator.comparing((File f) -> f.getName().startsWith("result-"))
+            .thenComparing(File::getName));
     for (File f : files) add(cursor, f.getName());
     return cursor;
   }
