@@ -51,3 +51,9 @@ CORE/LLM restent indisponibles. Aucun modèle LLM n'est intégré.
 [Dépendances](docs/DEPENDENCIES.md)
 
 Qualification 002A : [rapport et preuves](reports/002a/REPORT.md), 59 tests JVM et 11 tests instrumentés exécutés sur émulateur API26 x86 ; matériel physique et résultat CI distant non qualifiés.
+
+SERV-04A : [bibliothèque Android API24, réception et limites](docs/intensive-2026-10-22/REPORT-SERV-04A.md).
+`services-portable-api` partage les algorithmes et garde les entrées JVM dans
+`shared-runtime`. `services-android-adapter` fournit recherche de pages sélectionnées,
+CSV et permissions en processus ; son export DOCX reste explicitement désactivé.
+Le diagnostic Android historique conserve minSdk26. Aucun raccordement CORE n'est activé.

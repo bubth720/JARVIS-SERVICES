@@ -84,6 +84,6 @@ final class DocxXml extends DefaultHandler2 {
   }
 
   private void bounded() {
-    if (text.length() > Documents.MAX_TEXT) throw new Failure("TEXT_TOO_LARGE");
+    if (text.length() > DocumentContent.MAX_TEXT) throw new Failure("TEXT_TOO_LARGE");
   }
 }

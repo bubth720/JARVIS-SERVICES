@@ -1,6 +1,6 @@
 package fr.jarvis.services.tools;
 
-import fr.jarvis.services.modules.guard.Guard.Context;
+import fr.jarvis.services.modules.guard.AccessGuard.Context;
 import fr.jarvis.services.shared.api.Contracts.Failure;
 import fr.jarvis.services.shared.storage.Store;
 import fr.jarvis.services.shared.tasks.Task;

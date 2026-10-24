@@ -1,0 +1,89 @@
+{
+  "format": "jarvis.campaign-validation/1",
+  "mission": "SERV-04A",
+  "repository": "bubth720/JARVIS-SERVICES",
+  "branch": "feat/serv-04a-android-tool-port",
+  "base_commit": "3decdc47d82f9b43713c48cab244762941770a81",
+  "qualification": "software_tested",
+  "status": "DELIVERED",
+  "dependencies": {
+    "SERV-01": "d300642a4f10b53bdc988a43e0d7abb05c0d2253",
+    "SERV-02": "f7681707e7308d4b967e642d2f807f3e354209cc",
+    "SERV-03": "3decdc47d82f9b43713c48cab244762941770a81"
+  },
+  "capabilities": [
+    "services.android24.selected_document_search",
+    "services.android24.csv_normalize_deduplicate",
+    "services.android24.host_permissions",
+    "services.android24.private_receipt_journal",
+    "services.android24.unknown_no_replay",
+    "services.android24.async_observed_close"
+  ],
+  "checks": [
+    {
+      "kind": "JVM (92 historiques + 2 reçus/lifecycle)",
+      "exit_code": 0,
+      "passed": 94,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "Robolectric SDK24/25/26/35 (simulation hôte)",
+      "exit_code": 0,
+      "passed": 40,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "API24 official SDK compile",
+      "source_files": 22,
+      "exit_code": 0,
+      "boot_android_jar_sha256": "4c438bf1b3d4e6104faccc62e1ffe95ef197b88055497b540a871349e93c8685"
+    },
+    {
+      "kind": "Android library AAR + SDK instrumentation APK + historical APK + historical instrumentation APK",
+      "exit_code": 0,
+      "instrumentation_executed": false
+    },
+    {
+      "kind": "Android24 SDK Lint + historical Android26 Lint",
+      "exit_code": 0,
+      "errors_each": 0,
+      "warnings_each": 1,
+      "warning": "existing BC TrustAllX509TrustManager"
+    },
+    {
+      "kind": "UNI-01 Services contract lock hashes",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0
+    }
+  ],
+  "artifacts": {
+    "services-portable-api/build/libs/services-portable-api-1.0.0.jar": {
+      "sha256": "48825ba64e35f97f1ba0bc02a983964be6964af0e8de9348e6ff15755878cb31",
+      "delivery": "local build / prepared GitHub Actions artifact, not committed binaries"
+    },
+    "services-android-adapter/build/outputs/aar/services-android-adapter-debug.aar": {
+      "sha256": "38215f417202de03729255ecf758e6b9ee81705adc9ea323d91590d499b4b6a3",
+      "delivery": "local build / prepared GitHub Actions artifact, not committed binaries"
+    }
+  },
+  "not_executed": [
+    "physical Android",
+    "isolated emulator instrumentation",
+    "real SAF provider export",
+    "hardware RAM thermal battery qualification",
+    "CORE integration"
+  ],
+  "limitations": [
+    "Android SDK DOCX export explicitly SAF_EXPORT_UNQUALIFIED; historical export retained",
+    "Selected read-only page projection, no independent NEXUS index or global FTS",
+    "Host owns session and actual CORE permissions; no IPC authority",
+    "Task cancellation is cooperative; no native LLM release attestation",
+    "Robolectric simulation cannot establish physical Android readiness",
+    "JVM API consumers need recompilation after Guard/AccessGuard extraction",
+    "CORE-03A remains waiting; no CORE changes"
+  ]
+}

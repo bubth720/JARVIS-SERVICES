@@ -1,7 +1,7 @@
 name: SERVICES foundation and Android qualification
 on:
   push:
-    branches: [mission-001-services-foundation, mission-002a-android-qualification, feat/serv-01-services, feat/serv-02-services, feat/serv-03-services]
+    branches: [mission-001-services-foundation, mission-002a-android-qualification, feat/serv-01-services, feat/serv-02-services, feat/serv-03-services, feat/serv-04a-android-tool-port]
   pull_request:
   workflow_dispatch:
 permissions:
@@ -45,13 +45,17 @@ jobs:
         with:
           packages: platform-tools
       - name: SDK prerequisites
-        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+        run: sdkmanager 'platforms;android-24' 'platforms;android-35' 'build-tools;35.0.0'
       - name: Build diagnostic APK
         run: ./gradlew -PwithAndroid :android:assembleDebug --no-daemon
       - name: Build instrumentation APK
         run: ./gradlew -PwithAndroid :android:assembleAndroidTest --no-daemon
       - name: Android Lint (no suppression or severity reduction)
         run: ./gradlew -PwithAndroid :android:lintDebug --no-daemon
+      - name: SERV-04A Android24 adapter regressions and library
+        run: ./gradlew -PwithAndroid :services-android-adapter:testDebugUnitTest :services-android-adapter:assembleDebug :services-android-adapter:assembleAndroidTest :services-android-adapter:lintDebug --no-daemon --max-workers=2
+      - name: Compile shared and Android sources against API24 boot classes
+        run: python3 scripts/check-api24-compile.py --sdk "$ANDROID_HOME" --dependency-cache "$HOME/.gradle/caches/modules-2/files-2.1" --output build/serv04a-api24
       - name: Artifact provenance
         run: python3 scripts/write-apk-manifest.py --output android/build/outputs/apk/manifest.json
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
@@ -61,6 +65,12 @@ jobs:
           path: |
             android/build/outputs/apk/
             android/build/reports/lint-results-debug.*
+            services-android-adapter/build/outputs/aar/
+            services-android-adapter/build/outputs/apk/androidTest/
+            services-android-adapter/build/test-results/testDebugUnitTest/
+            services-android-adapter/build/reports/lint-results-debug.*
+            build/serv04a-api24/result.json
+            build/serv04a-api24/compile.log
             build/reports/dependency-verification/
   android-instrumented:
     runs-on: ubuntu-24.04

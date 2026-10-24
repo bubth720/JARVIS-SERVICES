@@ -1,7 +1,7 @@
 package fr.jarvis.services.pipeline;
 
-import fr.jarvis.services.modules.documents.Documents;
-import fr.jarvis.services.modules.guard.Guard;
+import fr.jarvis.services.modules.documents.DocumentContent;
+import fr.jarvis.services.modules.guard.AccessGuard;
 import fr.jarvis.services.shared.api.Contracts.Failure;
 import fr.jarvis.services.shared.tasks.Task;
 import java.nio.*;
@@ -18,9 +18,9 @@ public final class DocumentTextExtractor {
     public Page(String name, String sourceSha256, int page, String text) {
       if (name == null || name.isEmpty() || name.length() > 200 || page < 0 || page > 100
           || sourceSha256 == null || !sourceSha256.matches("[0-9a-f]{64}") || text == null
-          || text.length() > Documents.MAX_TEXT) throw new Failure("INVALID_SOURCE");
+          || text.length() > DocumentContent.MAX_TEXT) throw new Failure("INVALID_SOURCE");
       this.sourceId = sourceSha256; this.sourceName = name; this.sourceSha256 = sourceSha256;
-      this.page = page; this.text = text; this.textSha256 = Guard.digest(text);
+      this.page = page; this.text = text; this.textSha256 = AccessGuard.digest(text);
     }
   }
   private final PdfPages pdf;
@@ -28,8 +28,8 @@ public final class DocumentTextExtractor {
   public List<Page> extract(String name, byte[] source, Task task) {
     task.check();
     if (name == null || name.isEmpty() || name.length() > 200 || source == null
-        || source.length > Documents.MAX_BYTES) throw new Failure("INPUT_TOO_LARGE");
-    byte[] bytes = source.clone(); String digest = Guard.digest(bytes);
+        || source.length > DocumentContent.MAX_BYTES) throw new Failure("INPUT_TOO_LARGE");
+    byte[] bytes = source.clone(); String digest = AccessGuard.digest(bytes);
     String ext = name.substring(name.lastIndexOf('.') + 1).toLowerCase(Locale.ROOT);
     try {
       List<String> texts;
@@ -37,7 +37,7 @@ public final class DocumentTextExtractor {
         if (pdf == null) throw new Failure("PDF_UNAVAILABLE");
         texts = pdf.extractPages(bytes);
         if (texts == null || texts.isEmpty() || texts.size() > 100) throw new Failure("INVALID_PDF");
-      } else if (ext.equals("docx")) texts = Collections.singletonList(Documents.readDocx(bytes));
+      } else if (ext.equals("docx")) texts = Collections.singletonList(DocumentContent.readDocx(bytes));
       else if (Arrays.asList("txt", "md", "csv").contains(ext)) {
         String text = StandardCharsets.UTF_8.newDecoder().onMalformedInput(CodingErrorAction.REPORT)
             .onUnmappableCharacter(CodingErrorAction.REPORT).decode(ByteBuffer.wrap(bytes)).toString();
@@ -46,7 +46,7 @@ public final class DocumentTextExtractor {
       List<Page> pages = new ArrayList<>(); long chars = 0;
       for (int i = 0; i < texts.size(); i++) {
         task.check(); String text = texts.get(i); if (text == null) throw new Failure("INVALID_SOURCE");
-        chars += text.length(); if (chars > Documents.MAX_TEXT) throw new Failure("TEXT_TOO_LARGE");
+        chars += text.length(); if (chars > DocumentContent.MAX_TEXT) throw new Failure("TEXT_TOO_LARGE");
         pages.add(new Page(name, digest, ext.equals("pdf") ? i + 1 : 0, text));
       }
       if (pages.stream().allMatch(p -> p.text.trim().isEmpty())) throw new Failure(ext.equals("pdf") ? "OCR_REQUIRED" : "EMPTY_DOCUMENT");

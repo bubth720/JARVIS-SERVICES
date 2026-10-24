@@ -7,10 +7,17 @@ import java.util.*;
 /** Modules use this repository, never raw shared table handles. */
 public final class Store {
   private final Database db;
+  private final boolean fullTextSearch;
   private final Gson json = new Gson();
 
-  public Store(Database db) {
+  public Store(Database db) { this(db, true); }
+
+  /** Dedicated entry journal only; never open a historical corpus with this mode. */
+  public static Store journal(Database db) { return new Store(db, false); }
+
+  private Store(Database db, boolean fullTextSearch) {
     this.db = db;
+    this.fullTextSearch = fullTextSearch;
     migrate(1);
   }
 
@@ -28,11 +35,11 @@ public final class Store {
             db.execute(
                 "CREATE TABLE entries(namespace TEXT NOT NULL,id TEXT NOT NULL,body TEXT NOT"
                     + " NULL,PRIMARY KEY(namespace,id))");
-            db.execute("CREATE VIRTUAL TABLE search USING fts5(id UNINDEXED,text)");
+            if (fullTextSearch) db.execute("CREATE VIRTUAL TABLE search USING fts5(id UNINDEXED,text)");
           } else if (version == 1 && target == 0) {
             if (!db.query("SELECT id FROM entries LIMIT 1").isEmpty())
               throw new Failure("BACKUP_REQUIRED");
-            db.execute("DROP TABLE search");
+            if (fullTextSearch) db.execute("DROP TABLE search");
             db.execute("DROP TABLE entries");
           }
           db.execute("UPDATE schema_meta SET version=?", target);
@@ -108,6 +115,7 @@ public final class Store {
   }
 
   public synchronized void index(String id, String text) {
+    requireSearch();
     db.transaction(
         () -> {
           db.execute("DELETE FROM search WHERE id=?", id);
@@ -116,10 +124,12 @@ public final class Store {
   }
 
   public synchronized void unindex(String id) {
+    requireSearch();
     db.execute("DELETE FROM search WHERE id=?", id);
   }
 
   public synchronized List<Map<String, String>> search(String term, int limit) {
+    requireSearch();
     if (term == null || term.length() > 500 || limit < 1 || limit > 50)
       throw new Failure("INVALID_INPUT");
     String literal = "\"" + term.replace("\"", "\"\"") + "\"";
@@ -145,6 +155,8 @@ public final class Store {
     return db.query("PRAGMA integrity_check").get(0).values().iterator().next();
   }
 
+  private void requireSearch() { if (!fullTextSearch) throw new Failure("FTS_UNAVAILABLE"); }
+
   public synchronized String exportSnapshot() {
     Map<String, Object> snapshot = new TreeMap<>();
     for (String ns : Arrays.asList("documents", "knowledge", "memory", "actions", "audit"))
@@ -153,6 +165,7 @@ public final class Store {
   }
 
   public synchronized void restoreSnapshot(String snapshot) {
+    requireSearch();
     Map<?, ?> parsed = json.fromJson(snapshot, Map.class);
     if (parsed == null
         || !parsed

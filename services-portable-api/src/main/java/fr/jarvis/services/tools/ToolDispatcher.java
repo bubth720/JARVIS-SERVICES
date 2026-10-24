@@ -1,7 +1,7 @@
 package fr.jarvis.services.tools;
 
-import fr.jarvis.services.modules.guard.Guard;
-import fr.jarvis.services.modules.guard.Guard.Context;
+import fr.jarvis.services.modules.guard.AccessGuard;
+import fr.jarvis.services.modules.guard.AccessGuard.Context;
 import fr.jarvis.services.shared.api.Contracts.Failure;
 import fr.jarvis.services.shared.tasks.Task;
 import java.util.concurrent.*;
@@ -20,18 +20,36 @@ public final class ToolDispatcher implements AutoCloseable {
     Handle(Task task) { this.task = task; }
     public void cancel() { task.cancel(); }
   }
+  @FunctionalInterface public interface ResultObserver { void beforeDelivery(Result result); }
+  private final CompletableFuture<Void> drained = new CompletableFuture<>();
+  private final ResultObserver observer;
   private final ToolRegistry registry;
-  private final Guard guard;
+  private final AccessGuard guard;
   private final ApprovalGate approvals;
   private final ThreadPoolExecutor executor = new ThreadPoolExecutor(1, 1, 0, TimeUnit.SECONDS,
-      new ArrayBlockingQueue<>(8), r -> { Thread t = new Thread(r, "services-tools"); t.setDaemon(true); return t; });
-  public ToolDispatcher(ToolRegistry registry, Guard guard, ApprovalGate approvals) {
-    this.registry = registry; this.guard = guard; this.approvals = approvals;
+      new ArrayBlockingQueue<>(8), r -> { Thread t = new Thread(r, "services-tools"); t.setDaemon(true); return t; }) {
+        @Override protected void terminated() { drained.complete(null); }
+      };
+  public ToolDispatcher(ToolRegistry registry, AccessGuard guard, ApprovalGate approvals) {
+    this(registry, guard, approvals, result -> {});
   }
+  /** Receipt persistence runs before public completion; a failed receipt is never success. */
+  public ToolDispatcher(ToolRegistry registry, AccessGuard guard, ApprovalGate approvals, ResultObserver observer) {
+    this.registry = registry; this.guard = guard; this.approvals = approvals; this.observer = observer;
+  }
+  private void finish(Handle handle, Result result) {
+    try { observer.beforeDelivery(result); }
+    catch (RuntimeException failedReceipt) {
+      result = new Result(result.requestId, Status.UNKNOWN, null, "RECEIPT_UNCONFIRMED");
+    }
+    handle.result.complete(result);
+  }
+  /** Callback is executed only after all queued workers and synchronous result observers finish. */
+  public void closeWhenDrained(Runnable callback) { drained.thenRun(callback); close(); }
   public Handle dispatch(Context host, ToolInvocation invocation) {
     Handle handle = new Handle(new Task(invocation.timeoutMs));
     try { executor.execute(() -> execute(host, invocation, handle)); }
-    catch (RejectedExecutionException e) { handle.result.complete(new Result(invocation.requestId, Status.REFUSED, null, "BUSY")); }
+    catch (RejectedExecutionException e) { finish(handle, new Result(invocation.requestId, Status.REFUSED, null, "BUSY")); }
     return handle;
   }
   private void execute(Context host, ToolInvocation invocation, Handle handle) {
@@ -48,14 +66,14 @@ public final class ToolDispatcher implements AutoCloseable {
       handle.task.check();
       guard.audit("tool." + entry.descriptor.id, "success");
       if (actionStarted) approvals.outcome(invocation, "SUCCESS");
-      handle.result.complete(new Result(invocation.requestId, Status.SUCCESS, output, null));
+      finish(handle, new Result(invocation.requestId, Status.SUCCESS, output, null));
     } catch (RuntimeException e) {
       if (actionStarted) { try { approvals.outcome(invocation, "UNKNOWN"); } catch (RuntimeException ignored) {} }
       String code = e instanceof Failure ? ((Failure) e).code : "PROCESSING_ERROR";
       Status status = actionStarted ? Status.UNKNOWN : (e instanceof Failure ? Status.REFUSED : Status.FAILED);
       // No arguments, principal, paths or exception message in the journal.
       try { guard.audit("tool.dispatch", status.name()); } catch (RuntimeException ignored) { /* Result remains fail-closed if audit storage fails. */ }
-      handle.result.complete(new Result(invocation.requestId, status, null, code));
+      finish(handle, new Result(invocation.requestId, status, null, code));
     }
   }
   /** Does not interrupt a running operation or imply resource cleanup. Queued tasks drain. */

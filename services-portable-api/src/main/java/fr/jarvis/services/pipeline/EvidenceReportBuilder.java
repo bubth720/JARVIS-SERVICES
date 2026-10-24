@@ -1,7 +1,7 @@
 package fr.jarvis.services.pipeline;
 
-import fr.jarvis.services.modules.documents.Documents;
-import fr.jarvis.services.modules.guard.Guard;
+import fr.jarvis.services.modules.documents.DocumentContent;
+import fr.jarvis.services.modules.guard.AccessGuard;
 import fr.jarvis.services.shared.api.Contracts.Failure;
 import java.util.*;
 
@@ -19,7 +19,7 @@ public final class EvidenceReportBuilder {
     }
     public void verify(DocumentTextExtractor.Page source) {
       if (!sourceId.equals(source.sourceId) || page != source.page || !sourceSha256.equals(source.sourceSha256)
-          || !textSha256.equals(Guard.digest(source.text)) || end > source.text.length()
+          || !textSha256.equals(AccessGuard.digest(source.text)) || end > source.text.length()
           || !quote.equals(source.text.substring(start, end))) throw new Failure("INVALID_CITATION");
     }
   }
@@ -48,7 +48,7 @@ public final class EvidenceReportBuilder {
           .append("```csv\n").append(result.table.csv().replace("```", "` ` `")).append("```\n");
       for (Map<String,String> summary : result.summaries) md.append(summary.toString()).append("\n");
     }
-    if (md.length() > Documents.MAX_TEXT) throw new Failure("REPORT_TOO_LARGE");
+    if (md.length() > DocumentContent.MAX_TEXT) throw new Failure("REPORT_TOO_LARGE");
     return new Report(citations, md.toString());
   }
   private static String escape(String text) { return text.replace("\n", " ").replace("\r", " ").replace("#", "\\#").replace("[", "\\[").replace("]", "\\]"); }

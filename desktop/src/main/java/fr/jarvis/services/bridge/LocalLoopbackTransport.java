@@ -21,7 +21,7 @@ public final class LocalLoopbackTransport implements TransportPort {
   }
   private static String childClasspath() throws Exception {
     java.util.Set<String> entries = new java.util.LinkedHashSet<>();
-    for (Class<?> type : new Class<?>[]{LoopbackReceiver.class, fr.jarvis.services.shared.storage.Store.class,
+    for (Class<?> type : new Class<?>[]{LoopbackReceiver.class, Guard.class, fr.jarvis.services.shared.storage.Store.class,
         com.google.gson.Gson.class, org.sqlite.JDBC.class, org.slf4j.LoggerFactory.class})
       entries.add(Paths.get(type.getProtectionDomain().getCodeSource().getLocation().toURI()).toString());
     return String.join(java.io.File.pathSeparator, entries);

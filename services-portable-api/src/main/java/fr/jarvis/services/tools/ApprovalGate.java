@@ -1,7 +1,7 @@
 package fr.jarvis.services.tools;
 
-import fr.jarvis.services.modules.guard.Guard;
-import fr.jarvis.services.modules.guard.Guard.Context;
+import fr.jarvis.services.modules.guard.AccessGuard;
+import fr.jarvis.services.modules.guard.AccessGuard.Context;
 import fr.jarvis.services.shared.api.Contracts.Failure;
 import fr.jarvis.services.shared.storage.Store;
 import java.util.*;
@@ -11,9 +11,9 @@ import java.util.*;
  */
 public final class ApprovalGate {
   private final Store store;
-  private final Guard guard;
+  private final AccessGuard guard;
   private final String hostEpoch = UUID.randomUUID().toString();
-  public ApprovalGate(Store store, Guard guard) { this.store = store; this.guard = guard; }
+  public ApprovalGate(Store store, AccessGuard guard) { this.store = store; this.guard = guard; }
 
   public String confirm(Context host, ToolDescriptor descriptor, ToolInvocation invocation) {
     guard.require(host, "confirm"); guard.require(host, descriptor.permission);
@@ -24,7 +24,7 @@ public final class ApprovalGate {
     String token = UUID.randomUUID().toString();
     Map<String, Object> row = new TreeMap<>();
     row.put("id", token); row.put("state", "APPROVED"); row.put("host_epoch", hostEpoch);
-    row.put("principal_digest", Guard.digest(host.principal)); row.put("tool", descriptor.id);
+    row.put("principal_digest", AccessGuard.digest(host.principal)); row.put("tool", descriptor.id);
     row.put("descriptor_digest", descriptor.digest()); row.put("content_digest", invocation.contentDigest());
     row.put("request_id", invocation.requestId);
     row.put("deadline_nanos", Long.toString(System.nanoTime() + 60_000_000_000L));
@@ -39,7 +39,7 @@ public final class ApprovalGate {
       Map<String, Object> row = store.get("tool_approvals", invocation.approval);
       if (row == null || !"APPROVED".equals(row.get("state"))
           || !hostEpoch.equals(row.get("host_epoch"))
-          || !Guard.digest(host.principal).equals(row.get("principal_digest"))
+          || !AccessGuard.digest(host.principal).equals(row.get("principal_digest"))
           || !descriptor.digest().equals(row.get("descriptor_digest"))
           || !invocation.contentDigest().equals(row.get("content_digest"))
           || !invocation.requestId.equals(row.get("request_id"))

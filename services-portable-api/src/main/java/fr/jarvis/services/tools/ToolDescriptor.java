@@ -2,7 +2,7 @@ package fr.jarvis.services.tools;
 
 import fr.jarvis.services.shared.api.Contracts;
 import fr.jarvis.services.shared.api.Contracts.Failure;
-import fr.jarvis.services.modules.guard.Guard;
+import fr.jarvis.services.modules.guard.AccessGuard;
 import java.util.*;
 
 /** Host-owned capability metadata. A descriptor is not an authorization. */
@@ -36,5 +36,5 @@ public final class ToolDescriptor {
     return Collections.unmodifiableMap(out);
   }
 
-  public String digest() { return Guard.digest(new com.google.gson.Gson().toJson(metadata())); }
+  public String digest() { return AccessGuard.digest(new com.google.gson.Gson().toJson(metadata())); }
 }

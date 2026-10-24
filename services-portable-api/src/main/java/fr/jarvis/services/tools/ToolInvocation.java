@@ -2,7 +2,7 @@ package fr.jarvis.services.tools;
 
 import com.google.gson.Gson;
 import fr.jarvis.services.shared.api.Contracts.Failure;
-import fr.jarvis.services.modules.guard.Guard;
+import fr.jarvis.services.modules.guard.AccessGuard;
 import java.util.*;
 
 /** Public arguments contain no host Context and cannot manufacture grants. */
@@ -28,6 +28,6 @@ public final class ToolInvocation {
     this.timeoutMs = timeoutMs; this.approval = approval;
   }
   public String contentDigest() {
-    return Guard.digest(toolId + "\n" + version + "\n" + new Gson().toJson(arguments));
+    return AccessGuard.digest(toolId + "\n" + version + "\n" + new Gson().toJson(arguments));
   }
 }
