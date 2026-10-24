@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SERVICES offline v1 ACK; MAC and original outbox digest must match",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol",
+    "kind",
+    "session",
+    "from",
+    "to",
+    "id",
+    "digest",
+    "mac"
+  ],
+  "properties": {
+    "protocol": {
+      "const": "services-offline-1"
+    },
+    "session": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "from": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]{1,40}$"
+    },
+    "to": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]{1,40}$"
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "mac": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "kind": {
+      "const": "ACK"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

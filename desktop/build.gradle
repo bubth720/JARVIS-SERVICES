@@ -9,7 +9,7 @@ dependencies {
 }
 // Compile and exercise the exact Android SQL adapter on the JVM bundled driver.
 sourceSets.test.java.srcDir '../android/src/main/java/fr/jarvis/services/android'
-sourceSets.test.java.exclude 'MainActivity.java', 'AndroidPdfText.java', 'DocumentAccess.java', 'SelectedTreeExportPort.java'
+sourceSets.test.java.exclude 'MainActivity.java', 'AndroidPdfText.java', 'DocumentAccess.java', 'SelectedTreeExportPort.java', 'WorkspaceActivity.java'
 test { useJUnitPlatform(); maxHeapSize = '512m'; jvmArgs '-Djava.security.manager=allow' }
 tasks.register('toolsDemo', JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
@@ -22,4 +22,8 @@ tasks.register('pipelineDemo', JavaExec) {
 tasks.register('workflowLabDemo', JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
   mainClass = 'fr.jarvis.services.demo.WorkflowLabDemo'
+}
+tasks.register('finalScenariosDemo', JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  mainClass = 'fr.jarvis.services.demo.FinalScenariosDemo'
 }
