@@ -23,6 +23,9 @@ dependencies {
 }
 tasks.withType(Test).configureEach {
     maxHeapSize = '768m'
+    // Robolectric needs a writable lock/cache directory in read-only cloud home environments.
+    systemProperty 'user.home', layout.buildDirectory.dir('robolectric-home').get().asFile.absolutePath
+    doFirst { layout.buildDirectory.dir('robolectric-home').get().asFile.mkdirs() }
     systemProperty 'robolectric.logging.enabled', 'false'
     systemProperty 'robolectric.offline', System.getProperty('robolectric.offline', 'false')
     ['http.proxyHost','http.proxyPort','https.proxyHost','https.proxyPort','javax.net.ssl.trustStore','robolectric.dependency.repo.url','robolectric.dependency.dir'].each { key ->

@@ -1,0 +1,185 @@
+{
+  "observed_at": "2026-10-26T07:31:17.324898+00:00",
+  "repositories_read_only": {
+    "JARVIS-SERVICES": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/feat/serv-01-services": "d300642a4f10b53bdc988a43e0d7abb05c0d2253",
+        "refs/heads/feat/serv-02-services": "f7681707e7308d4b967e642d2f807f3e354209cc",
+        "refs/heads/feat/serv-03-services": "3decdc47d82f9b43713c48cab244762941770a81",
+        "refs/heads/feat/serv-04a-android-tool-port": "f00091a639612b91eca1a301580c8f531249f1e3",
+        "refs/heads/feat/services-final-01": "d16dd84f27881460ec9f02d2a54d9ddff23187dc",
+        "refs/heads/main": "c9f94ad2fa219a5e09cda92fb451aca606ee1646",
+        "refs/heads/mission-001-services-foundation": "075158b755000f8c6d8e37747cec9de8221daa72",
+        "refs/heads/mission-002a-android-qualification": "0f462c8ad5529ba974cefa17fe6562c8d8461d26",
+        "refs/heads/plan/intensive-2026-10-22": "67e7f798b8bbcb8391e0d57ea5b886a2a9edf4db"
+      },
+      "error": ""
+    },
+    "JARVIS-UNIFIED": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/audit/d4-02c-core-llm-convergence": "0dbb978994994fa3210124f1e150ca23426d410d",
+        "refs/heads/audit/mission-001": "004b89d1f86135962e452fb644b489f69fc177d1",
+        "refs/heads/decision/d4-02d-v1-v5-approved-2026-10-17": "8ddac8fe8a1861a27d3abeca81eb4ab8f110c3a9",
+        "refs/heads/decision/identity-001-approved-2026-10-17": "1748cb0706fa4b0cfac2df963d82a14195b9d25a",
+        "refs/heads/decision/identity-001b-d4-02e-approved-2026-10-17": "275eca892c20b6dae3bfa20b241099542fd4ced6",
+        "refs/heads/design-004-sync-expressions": "db1592a76ba6a10b9798f4803e4e4247bbf89c01",
+        "refs/heads/design/d4-02-ownership-mapping": "52a44fb6cf01623a8c5d96edc5d2bbac76abd9a1",
+        "refs/heads/design/d4-02d-bootstrap-recovery": "27e674057a348f8074a86851f4e2c11a933162e9",
+        "refs/heads/design/d4-02e-f1-f2-recovery-clarification": "49dd4027d2ccb54bf330f591d3ee17f5dc577132",
+        "refs/heads/design/identity-001-constitution": "db63719c09435fd2e7863dd72e7bec0e055fa32e",
+        "refs/heads/design/identity-001b-contract-freeze": "d7c90785ae4263892a6c96e140cfa88206cb4197",
+        "refs/heads/docs/adr-001-approved-2026-10-15": "e0e6f69c4908a152da4e43864a08fef0c8f7a7af",
+        "refs/heads/feat/fusion-01-integration-lock": "3caa57d91ce0dba31043e7cb6373a5e2df8b9fa4",
+        "refs/heads/feat/uni-01-tooling": "bd283dad3a57effa276f7f4441901839d2834d5c",
+        "refs/heads/feat/uni-02-tooling": "329f304115c9bc5b6dd6ccc2d68d19bf455b5e6c",
+        "refs/heads/main": "e4435f4bd60c5fdc5595c411cc8cab9da7ef020b",
+        "refs/heads/mission-001-architecture-unified": "d74730a4b5ed817de1cdd163a96c3bdf72a1e4d8",
+        "refs/heads/mission-001f-closure": "4f06ef43ae98cf093dcc1601d0c95016d89e8ffd",
+        "refs/heads/mission-001g-maintenance": "41f53501fb18fe727d5fd453dd715f0811d2e897",
+        "refs/heads/mission-002-backup": "55680bcfe1f793618c79eb1bdc7b2b8c847b369e",
+        "refs/heads/mission-003-central-registry": "f7b7a5ad96527bc43bd5349b97b7834667da9f03",
+        "refs/heads/plan/intensive-2026-10-22": "ef1592e9598e14d2245539e2453bf26d7f26969d"
+      },
+      "error": ""
+    },
+    "JAVIS-Local-v2": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/design/alpha1-002-jni-review": "d2a677bb35e63ee94db9dfa4edcaa97036b45dce",
+        "refs/heads/design/alpha1-003a-library-patch-review": "7f591f0e041159bb773011d69fdd2b1fe94b5b88",
+        "refs/heads/design/alpha1-003b1-r-corrections": "1539b332fba7e487fe85013cc41890c8a09052d6",
+        "refs/heads/docs/mission-002-project-knowledge": "e0417e1609b478073e7cd019a25f8146a25a0fb8",
+        "refs/heads/feat/core-01-intensive": "b98bd1c4722cd053021d4021717b73ff595d5fed",
+        "refs/heads/feat/core-02-intensive": "e86107b8213b0aeaf9d22025cf6bef91a8e544a5",
+        "refs/heads/feat/core-03-intensive": "aea5ac859ac551d54fe16187c1883a487dbee9d6",
+        "refs/heads/feat/core-voice-pilot": "7426665f2794cba83646008fa0f342d102141201",
+        "refs/heads/feat/fusion-01-core-integration": "36761cea101b5f88b87cd4136dc075d28a1adb96",
+        "refs/heads/feat/id-01-intensive": "9b04ecd8794da54e571d95f28a1de02512e86b5d",
+        "refs/heads/feat/id-02-intensive": "283423cb8b9d567539f33cf7f2f1fafa602cf974",
+        "refs/heads/feat/mem-01-intensive": "e46ba56163e54bc03d7a2321b0fcb51449e68973",
+        "refs/heads/feat/mem-02-intensive": "49ad428e94edd75c2a1d115c8c2504f26609eace",
+        "refs/heads/feature/alpha1-001-text-lab": "b2ec98238f70e89edc636c1c671f2ddf1b957d74",
+        "refs/heads/feature/alpha1-003-native-validation": "84571ae6058518e75d63077dfda15a0ef60a0e46",
+        "refs/heads/feature/alpha1-003b1-isolated-native-build": "d63462bcaffca8d84e42ca9987a2ad22a27dd102",
+        "refs/heads/feature/identity-002-core-runtime": "8adec3e0e8dfdce685a33ef796fc3150facc7f0a",
+        "refs/heads/feature/identity-002t-tokenizer-port": "71831913a772bcc51b20885b52b965f5d3e9f61b",
+        "refs/heads/feature/mvp-001-local-conversation": "7368f41bbcec389e4b76c99ea27819645d94a50d",
+        "refs/heads/feature/mvp-002-unified-interaction": "c7fec293791dc0b30c83d712e0fae0bbf59736a0",
+        "refs/heads/fix/api-24-25-time-reply": "d7e51b4ac55b0726e5289b7f062478903fb7aa67",
+        "refs/heads/fix/sqlite-data-preservation": "7a5b53e3247dc7132eb9e5648ecf4169a4054d62",
+        "refs/heads/fixture/004c-p2-client": "da40ed7155409b85860a22c1dbbfe35029cea29a",
+        "refs/heads/main": "226e2e8cc3eebd479805b89d035eb5c1cbcad540",
+        "refs/heads/mission-004a-core-stability": "306a89b7cc33803aba9b7af9c6a553f1bc40f08f",
+        "refs/heads/mission-004b-core-backend-lifecycle": "29646448c80568d868a702192df761fc9d7a896d",
+        "refs/heads/mission-004b-inference-contract": "07cd282603205d57f3d2ded1b14d5d95e68989e2",
+        "refs/heads/plan/intensive-2026-10-22": "1b7ac9b35b5e6e133167fcaf1873e58b9db7288e",
+        "refs/heads/release/mvp-003-android-candidate": "90215258ad3914cd6576971334ecb8ca48db74ff",
+        "refs/heads/release/preview-001-android": "86ea8bfa94deea0bab94914cd7214bc395a83f9b",
+        "refs/heads/test/mvp-004-native-qualification": "a6f13dd101990c6b5e3992be506c9a5b99873621"
+      },
+      "error": ""
+    },
+    "JARVIS-NEXUS": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/feat/fusion-01-nexus-integration": "9d6928cd8651f83fa5091bdb474b33761d366412",
+        "refs/heads/feat/nex-01-moteur-local-de-connaissances-": "c25d401dff6865657b75d320361ae81811363fa8",
+        "refs/heads/feat/nex-02-chaine-d-import-local-extracti": "bfa46e1fe08d4943fe864ac53d0c0ba56109ea9c",
+        "refs/heads/feat/nex-03-recherche-de-connaissances-cit": "777e6afa75ecb99b85e52d68837cb0fefcf161cd",
+        "refs/heads/feat/nex-05-sauvegarde-chiffrable-restaura": "3acec55616ff8e3b1666091780fca59261377e18",
+        "refs/heads/feat/nex-06a-android-api24": "374ea2e2fd640e78f2f5e12e60e75b493420e504",
+        "refs/heads/feat/nexus-final-01": "d903bf04f497ab0dc7f40e9708ed057e4f24c6ee",
+        "refs/heads/main": "b27df0b84d8f0082d17ca6278549298aaaf97926",
+        "refs/heads/plan/intensive-2026-10-22": "e4b2018383a35106cd326848fab597ef07a50157",
+        "refs/heads/work/nex-04-zim-readonly": "bbccac2ff2cc052f897c7f5015f234507e047b95"
+      },
+      "error": ""
+    },
+    "JARVIS-LLM": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/design/003f-f3b-worker-connection": "8f1c2f5a936d6c01874d7be6bb987f4459b83374",
+        "refs/heads/feat/003f-f3-native-observation": "aa85ad4b506bb655dbe5b50ec4b125d19b48e81e",
+        "refs/heads/feat/fusion-01-llm-integration": "e0b781442b21034a251f6af450396faabc5f667d",
+        "refs/heads/feat/llm-01-runtime": "062054edcbf47ba96408f751f25189d86b0b023d",
+        "refs/heads/feat/llm-02-runtime": "895a067ffc860d56a2dbb1ce22cb274096f8e3a2",
+        "refs/heads/feat/llm-03-runtime": "2efb3f7aa6205062ab71f570212019fd1d9885b6",
+        "refs/heads/fix/003f-d4-02e1-commit": "1ce24405b04a50f97cf30078b9716c7d00c593fc",
+        "refs/heads/fixture/003e-p2-secure-endpoint": "030152a5f3d888017ad7a7fe8026f2e2c48e8fd5",
+        "refs/heads/fixture/003f-bootstrap-attestation": "111be993e970051686bd5c27b3115320513a4be7",
+        "refs/heads/main": "917e3351f9b525857b6aa019e98d07872d8f6e76",
+        "refs/heads/mission-002-prototype": "aa6b3d37c9109dc3da1296bc00214839bb218e39",
+        "refs/heads/mission-002b-memory": "204c6c9a117501286aac54202c6e7dd1365c48b5",
+        "refs/heads/mission-002c-tablet": "fbda51f3ed762d8e63d5397618daf052567002d6",
+        "refs/heads/mission-003-catalogue": "0b5eba7a37d9304e2a33e66ab6e84a0f70e02a2a",
+        "refs/heads/mission-003b-resources": "1756e29557287550b5cfdffdd911cada2a302db6",
+        "refs/heads/mission-003c-device-qualification": "43503f59f530f2bb48955bce9d7d71e2470fb668",
+        "refs/heads/mission-003d-core-generation-contract": "c4e7611eebb64a96a796164bc3d4c961dbc7dcba",
+        "refs/heads/mission-003d-p2-core-contract": "daa46432e847ed9613dc403045498e27281eff42",
+        "refs/heads/plan/intensive-2026-10-22": "fdb71605d91b69484a38fcf0df283365a2493f38"
+      },
+      "error": ""
+    },
+    "JARVIS-VOICE": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/feat/android-pocket-cloning": "a5e2c056a3e98bee7132aa8e50dcf0d5ec18d387",
+        "refs/heads/feat/android-pocket-cloning-005d": "9429a9ebf0f21909ac6c59a07491fa2bca027493",
+        "refs/heads/feat/android-pocket-probe": "de38598faf7a3a09c2d0f53d86a150725c953f01",
+        "refs/heads/feat/android-tts-foundation": "2aad62625121fa436e5af84bbd9d01f00aafceed",
+        "refs/heads/feat/pocket-tts-cpu-prototype": "6d8a04bfb49f0d08ac948c8bb981fc6a92f2e7c4",
+        "refs/heads/feat/voice-01-intensive": "99d4073426896c992141bc010a69bb2690e03e71",
+        "refs/heads/feat/voice-02-intensive": "3ffb28011506abcc94b5d4ee71d6c79fc278333b",
+        "refs/heads/feat/voice-04-speed-longform-emotions": "b1e9c9400072650443cc3c2ccd48bfa810d40a3e",
+        "refs/heads/feat/voice-05-voice-delivery": "1a9f713dff28f6e4fb145728815e9ed118f5a929",
+        "refs/heads/feat/voice-06-voice-delivery": "0e9e31553e15cc24b64f9edc8196344cf2b2d5f6",
+        "refs/heads/feat/voice-07-voice-delivery": "40cb27b1e27567ae1841e4cfb3dd2c57a7b57820",
+        "refs/heads/feat/voice-bridge-pilot": "04c4ca1c050c16e097d27b08831544b66121128c",
+        "refs/heads/feat/voice-core-bridge-005k": "6a86d847ff57fd9f695ee87eb5bff21c0c8862ca",
+        "refs/heads/feat/voice-expression-005i": "f917ef15ce74a045564ddabdc407ccde4b595ba6",
+        "refs/heads/feat/voice-final-01": "fe57452fcb33f5b6870070f30ba6c5f1d349c4ba",
+        "refs/heads/feat/voice-identity-005h": "1d0285ea19fa84c052ab5ce3b2f08146bcf30976",
+        "refs/heads/feat/voice-performance-core-contract-005k": "824ae2b1c083b8165ad02ef24ad1cda02cc2d68c",
+        "refs/heads/feat/voice-studio-005j": "cce9a4549c35e721ee37daff014d427ef3656b2a",
+        "refs/heads/main": "b80b1728c481200b3b0e11c0843f1a268a184fa1",
+        "refs/heads/plan/intensive-2026-10-22": "31a0087381db14a9d2256e6e64373ef45b38b616"
+      },
+      "error": ""
+    },
+    "JARVIS-INTERFACE": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/development/mission-002": "d1c0931c4507e9af8f1aa60951947c23f4394b56",
+        "refs/heads/feat/ava-01-ui-avatar": "0c6d8a1bdeabe8f23fe8f98263cfe88d8c3c216e",
+        "refs/heads/feat/ava-03-athena-premium": "ab0a3f5a992a90ca53dc20c9c56d3bd8a0c2b3a0",
+        "refs/heads/feat/ava-04-delivery": "283ed2f3cd361d5b0b6bc927432bf836af8db1f6",
+        "refs/heads/feat/interface-final-01": "db459ba388a3fea992d80320c3989be0edda8500",
+        "refs/heads/feat/ui-01-ui-avatar": "48db1ecbb40dfa5b90a8e696fe6c2a62228f5ce9",
+        "refs/heads/feat/ui-02-delivery": "4842ef1f47ac2a1efc29e77408dbdb3ec42768bb",
+        "refs/heads/feat/ui-03-delivery": "0869b3959d3636deab3c938e6cb98b7e555f19af",
+        "refs/heads/feature/interface-avatar-001": "139bfdc4aac5d2fc9b841c5b804c3b89bfc57ec6",
+        "refs/heads/feature/interface-dashboard-004": "d2a0ca05723c205e4351d03a3eeb5f2ce898f3a8",
+        "refs/heads/feature/interface-storage-005": "037e2cbe2e100eb06136e9899b815a4e8351fd72",
+        "refs/heads/fix/athena-premium-default": "1d0a89f3d92cba64122db08cc7b326239f85c08d",
+        "refs/heads/fix/interface-ci-003": "4fe7b19ec7d637dda28cd517ec5f87a186407d0d",
+        "refs/heads/plan/intensive-2026-10-22": "50f5f61708d5ce6b141dec98fe0c73d89eaf00e3",
+        "refs/heads/test/interface-device-006": "ebd6c5fc873054d3f04bb2388d53e407dc73b7b7"
+      },
+      "error": ""
+    },
+    "JARVIS-VOLUTION-": {
+      "exit": 0,
+      "heads": {
+        "refs/heads/feat/evol-01-telemetrie-locale-et-observate": "9cc6288b537d71743fbb634a8d098ce304441464",
+        "refs/heads/feat/evol-02-moteur-de-diagnostic-et-recomm": "0abd5f96caa27ee1e73a623d538e48555a02ce76",
+        "refs/heads/feat/evol-03-atelier-de-correctifs-isoles-e": "c0180181804338d21f3bf9d4b537b709595902f7",
+        "refs/heads/feat/evolution-final-01": "c0180181804338d21f3bf9d4b537b709595902f7",
+        "refs/heads/main": "a67d3b6d39aa7d30ad38e9b1c9230b4e07180eb0",
+        "refs/heads/plan/intensive-2026-10-22": "36d09339aa93869c36c0981800918cde818637ac"
+      },
+      "error": ""
+    }
+  }
+}
