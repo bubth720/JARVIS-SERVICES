@@ -605,7 +605,40 @@ public class FusionSafInstrumentedTest {
     }
   }
 
+  /**
+   * DocumentsUI on software-emulated API35 can return to the launcher or leave
+   * its provider list unpopulated. Repeat the REAL system picker at most once:
+   * no direct provider URI, injected grant, fabricated result or test skip.
+   * Both attempts must obtain the actual Activity result and validate it.
+   */
   Uri pick(boolean tree, String name) throws Exception {
+    AssertionError firstFailure = null;
+    for (int attempt = 0; attempt < 2; attempt++) {
+      try {
+        return pickOnce(tree, name);
+      } catch (AssertionError failure) {
+        if (attempt > 0) {
+          if (firstFailure != null) failure.addSuppressed(firstFailure);
+          throw failure;
+        }
+        firstFailure = failure;
+        System.out.println("FUSION-SAF picker attempt 1 failed; retrying real DocumentsUI once: "
+            + failure.getMessage());
+        long now = SystemClock.uptimeMillis();
+        boolean down = ui.injectInputEvent(new android.view.KeyEvent(
+            now, now, android.view.KeyEvent.ACTION_DOWN,
+            android.view.KeyEvent.KEYCODE_BACK, 0), true);
+        boolean up = ui.injectInputEvent(new android.view.KeyEvent(
+            now, now + 20, android.view.KeyEvent.ACTION_UP,
+            android.view.KeyEvent.KEYCODE_BACK, 0), true);
+        assertTrue("Cannot safely return from first SAF picker attempt", down && up);
+        SystemClock.sleep(500);
+      }
+    }
+    throw firstFailure;
+  }
+
+  private Uri pickOnce(boolean tree, String name) throws Exception {
     FusionPickerActivity.results.clear();
     Intent i =
         new Intent(context, FusionPickerActivity.class)
