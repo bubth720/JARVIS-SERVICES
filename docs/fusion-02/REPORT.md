@@ -47,7 +47,8 @@ Le nouveau POM parent Guava33.3.1-jre était **absent** du verrou, pas une empre
 | Instrumentation API24 | **15/15**,0 échec/ignoré | Vrai Android, logs terminaux et APK figés |
 | Instrumentation API25 | **15/15**,0 échec/ignoré | Vrai Android, logs terminaux et APK figés |
 | Instrumentation API26 | **15/15**,0 échec/ignoré | Vrai Android, logs terminaux et APK figés |
-| Instrumentation API35 locale | NOT_RUN | Matrice CI préparée, aucune extrapolation API26→35 |
+| Instrumentation API35 en CI | **15/15**, gate XML obligatoire, job vert | Vrai émulateur x86_64/KVM du run10cd ; artefact publié, XML distant non téléchargé ici |
+| Instrumentation API35 locale | **NOT_RUN / BOOT_BLOCKED** | Zéro test installé/exécuté, limite de démarrage TCG sans KVM ; logs OS distincts |
 | Appareil physique/production | **NOT_RUN** | Aucune installation utilisateur autorisée/exécutée |
 
 Les15mêmes cas ont été exécutés sur chacun des trois SDK, soit45 exécutions natives locales. Les fixtures sont TXT/PDF réel de2 pages, CSV réel (`0.10 + 0.20 = 0.30`) et DOCX généré/relu. Les métadonnées instrumentées assertent des UID distincts pour provider/worker. Les hashes APK lient chaque campagne à ses vrais binaires. Le runner n'accepte que localhost:5581, qemu, API exacte et boot achevé ; il ne découvre aucun appareil.
@@ -97,7 +98,11 @@ Première CI FUSION-02 au code51da6fa : [run40287588184](https://github.com/bubt
 
 CI au code5bc53de : FAILURE,12m09, ports26/35 en échec. CI863f822 : FAILURE,15m10, annotations de vrais échecs maintenant accessibles publiquement (source.txt invisible26, racines du picker35). CI1bbcdbc : étape de readiness35 en échec avant qualification (raison détaillée non accessible dans les logs authentifiés). La revue du garde d'identité a relevé sa propriété legacy ; la source AOSP Build.java utilise `ro.boot.qemu` (preuve et URL archivées) ; le garde choisit désormais cette propriété pour35, en conservant qemu/API exacte/boot/serialCI. Les diagnostics de readiness sont publiés en annotations.
 
-Réexécution au dernier code de CI corrigé : état exact et SHA dans VALIDATION.json. L'existence du workflow ne prouve aucun PASS. CORE run40215604539 est SUCCESS ; UNIFIED40214722427 échoue **avant exécution**, syntaxe YAML ligne48 ; NEXUS40115049468 échoue, logs détaillés non accessibles. Autres dépôts laissés intacts.
+La CI finale est **SUCCESS au commit10cdce58fe3cf451c7a1b4220081cece1b82a948**, **7 jobs réussis en 8 min 20 s** : [run40348805777](https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777). Les quatre jobs de ports24/25/26/35 passent la même validation XML obligatoire 15 cas,0 échec/ignoré. Les identifiants/statuts des sept jobs et les digests d'artefacts annoncés par GitHub sont conservés dans ci-final-fusion02.json. Les XML/captures CI sont publiés en artefacts ; leur archive n'a pas été téléchargée/recalculée ici (API authentifiée indisponible). Le commit documentaire final ne reçoit pas automatiquement la CI du code10cd.
+
+Correction finale : KVM fourni par le runner Ubuntu rendu accessible au seul UID éphémère pour API35, puis `emulator -accel-check` obligatoire. Méthode conforme à la recommandation de l'action, sans règle world-write ni modification du sandbox Codex, des permissions produit ou d'un appareil personnel. Pas de chargement natif/SQLite dans l'application. Les autres jobs préexistants restent inchangés.
+
+État exact et SHA dans VALIDATION.json. L'existence du workflow ne prouve aucun PASS. CORE run40215604539 est SUCCESS ; UNIFIED40214722427 échoue **avant exécution**, syntaxe YAML ligne48 ; NEXUS40115049468 échoue, logs détaillés non accessibles. Autres dépôts laissés intacts.
 
 La création de PR brouillon via `gh pr create --draft` est refusée par l'accès API GraphQL (`Forbidden`). Branche/commits accessibles par le proxy Git. PR-DRAFT.md contient le texte prêt à l'emploi, base conseillée `feat/serv-04a-android-tool-port`. Aucune PR non brouillon ni fusion tentée.
 
@@ -107,6 +112,7 @@ La création de PR brouillon via `gh pr create --draft` est refusée par l'accè
 - Gate NEXUS FTS5/API24 et composition CORE : dépendances externes, pas de ANDROID_MULTI_MODULE_GO déclaré. Les succès d'outils SERVICES ne prouvent pas une application CORE composée.
 - Les15 outils finaux non raccordés demandent une réconciliation des signatures/Path/quotas/minSdk et une compilation consommateurs ; ni fusion du catalogue ni abaissement forcé de minSdk de l'atelier.
 - Le contrôle de mode avion en shell demande le setting1 mais le broadcast protégé peut être refusé. Sa sortie est conservée : **pas de preuve complète de radio arrêtée**. Les manifests sans INTERNET et l'absence de transport restent vérifiés ; pas de téléchargement produit.
+- API35 local : image officielle35r2 vérifiée, aucun KVM sur ce Cloud. Démarrage resté incomplet/ANR System UI au délai ;0test produit et aucune installation de ses APK. Les avertissements TCG AVX/F16C sont conservés comme contraintes observées, pas présentés comme cause unique prouvée. RAM demandée1536MiB, portée automatiquement à2560MiB par l'émulateur officiel. L'émulateur a été arrêté ; le succès API35 est **celui de CI avec KVM**, distinct de cette tentative locale. Seules des copies compressées de nos outils déjà installés et une ancienne extraction inutilisée ont été retirées pour l'espace, avec hashes ; aucun fichier de dépôt/utilisateur supprimé.
 - Pas de mesure physique batterie/thermique, performance ARM64 ou PSS de pic. Les durées du runner incluent installation/IO hôte et ne sont pas des benchmarks produit. Les limites2 Mio/100pages/250kcaractères ne prouvent pas un plafond de RAM PDFBox.
 - Données/DB personnelles, migrations, signatures de production, réseau/IPC/BRIDGE, JNI/SQLite externe, main et autres dépôts : inchangés. Les bases du laboratoire sont exclusivement synthétiques.
 - Avant activation : revue inter-dépôts, qualification provider externe et lifecycle/kill, intégration CORE derrière flagOFF, puis autorisation distincte si étape sensible ou appareil personnel.

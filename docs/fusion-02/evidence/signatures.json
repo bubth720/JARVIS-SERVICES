@@ -4,7 +4,7 @@
     "certificate": "Signer #1 certificate DN: C=US, O=Android, CN=Android Debug\nSigner #1 certificate SHA-256 digest: 80c38e7531eadd980746209f5fd8f2a04866b9dc7e530dacfe7661d2fb97f1f3\nSigner #1 certificate SHA-1 digest: 7e2e59b7b8cefa877a978816983449f4a2f1c911\nSigner #1 certificate MD5 digest: de85475f25e718590af665918be26506\n"
   },
   "tests": {
-    "sha256": "7cb3d2072059a32be376c745d8ecf46df72cc2dcfeafda62ccee747dfd632b9e",
+    "sha256": "bab7d98c14be1a0dd07a650430363afc5be39e2f5438151340c67eba77020bed",
     "certificate": "Signer #1 certificate DN: C=US, O=Android, CN=Android Debug\nSigner #1 certificate SHA-256 digest: 80c38e7531eadd980746209f5fd8f2a04866b9dc7e530dacfe7661d2fb97f1f3\nSigner #1 certificate SHA-1 digest: 7e2e59b7b8cefa877a978816983449f4a2f1c911\nSigner #1 certificate MD5 digest: de85475f25e718590af665918be26506\n"
   }
 }

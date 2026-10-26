@@ -8,6 +8,7 @@ def check(root=ROOT/'docs/fusion-02'):
     v=json.loads((root/'VALIDATION.json').read_text())
     assert v['verdict']=='PARTIAL', 'Unreviewed production integration cannot be READY'
     assert v['production_export_enabled'] is False
+    assert v['production_authority_fence_activated'] is False and v['central_contract_approved'] is False
     for name,digest in v['evidence_sha256'].items():
         path=(root/name).resolve()
         assert path.is_relative_to(root.resolve()), 'Unsafe evidence path'
@@ -30,6 +31,10 @@ def check(root=ROOT/'docs/fusion-02'):
         cases=[case for suite in suites for case in suite.iter('testcase')]
         assert sum(int(s.get('tests',0)) for s in suites)==expected and len(cases)==expected
         assert all(case.find('failure') is None and case.find('error') is None and case.find('skipped') is None for case in cases)
+    if v['instrumentation']['35']['status']=='CI_PASS':
+        ci=json.loads((root/'evidence/ci-final-fusion02.json').read_text())
+        assert ci['status']=='Success' and len(ci['jobs'])==7 and all(j['status']=='SUCCESS' for j in ci['jobs'])
+        assert ci['sha']==v['ci_configuration_commit'] and v['ci']['status']=='Success'
     assert v['jvm']['tests']==100 and v['jvm']['failures']==0 and v['jvm']['errors']==0 and v['jvm']['skipped']==0
     assert v['robolectric']['tests']==40 and v['robolectric']['failures']==0 and v['robolectric']['errors']==0 and v['robolectric']['skipped']==0
     print('FUSION-02 evidence consistent; PARTIAL, production activation blocked')

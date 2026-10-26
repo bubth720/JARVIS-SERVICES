@@ -1,0 +1,13 @@
+{
+  "api": 35,
+  "host": "127.0.0.1",
+  "port": 5581,
+  "apk_sha256": "bab7d98c14be1a0dd07a650430363afc5be39e2f5438151340c67eba77020bed",
+  "expected": 15,
+  "cases": [],
+  "uid_metrics": [],
+  "success": false,
+  "error": "Emulator boot deadline",
+  "error_type": "RuntimeError",
+  "elapsed_host_seconds": 784.22
+}

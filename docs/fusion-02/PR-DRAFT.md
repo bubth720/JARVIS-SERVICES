@@ -10,7 +10,7 @@ la corruption sans utiliser le gestionnaire Android susceptible de supprimer les
 reçus. Le POM parent Guava manquant est vérifié et ajouté au verrou SHA256.
 Les jobs historiques sont conservés et la CI ajoute la matrice native24/25/26/35.
 
-Validation locale :100 tests JVM (94 historiques conservés),40 Robolectric et15 tests instrumentés par API24/25/26. Les129 tests de la référence FINAL17 ont été relancés séparément. API35, CI exacte, simulations et limites sont distinguées dans le rapport.
+Validation locale :100 tests JVM (94 historiques conservés),40 Robolectric et15 tests instrumentés par API24/25/26. Les129 tests de la référence FINAL17 ont été relancés séparément. La CI au code10cdce5 est verte (7jobs), dont15cas natifs API35 avec KVM. Simulations et limites restent distinguées dans le rapport.
 
 Les résultats, échecs initiaux, limites et preuves sont dans docs/fusion-02/REPORT.md,
 VALIDATION.json et PROVENANCE.json. La branche finale à17outils est conservée

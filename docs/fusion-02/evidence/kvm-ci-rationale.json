@@ -1,0 +1,7 @@
+{
+  "source": "https://raw.githubusercontent.com/ReactiveCircus/android-emulator-runner/main/README.md",
+  "source_sha256": "3464e2ba42c8fa4454047b0fe82ae470d5db70fe520bdec7e0be4dd3a2d4d289",
+  "relevant_lines": "13-22",
+  "recommendation": "Enable provided KVM permissions before the emulator action on hosted Ubuntu.",
+  "implementation": "For API35 only, give the ephemeral runner UID ownership of existing /dev/kvm and check acceleration. No world-write rule, kernel module install, Codex sandbox change, personal device or product permission."
+}

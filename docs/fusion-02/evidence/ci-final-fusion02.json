@@ -1,29 +1,29 @@
 {
-  "run": "40343243699",
-  "sha": "b0f26ae23986d8736dd31caefda8aed717889c4e",
-  "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40343243699",
-  "status": "In progress",
-  "observed_at": "2026-10-26T14:57:15.631835+00:00",
+  "run": "40348805777",
+  "sha": "10cdce58fe3cf451c7a1b4220081cece1b82a948",
+  "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777",
+  "status": "Success",
+  "observed_at": "2026-10-26T15:35:38.244517+00:00",
   "summary": [
     "Status",
-    "In progress",
+    "Success",
     "Total duration",
-    "\u2013",
+    "8m 20s",
     "Artifacts",
-    "5",
+    "7",
     "verify.yml",
     "on: push",
     "jvm",
-    "35s",
+    "39s",
     "jvm",
     "android-build",
-    "4m 55s",
+    "4m 26s",
     "android-build",
     "android-instrumented",
-    "7m 22s",
+    "7m 1s",
     "android-instrumented",
     "Matrix: services-port-instrumented",
-    "2/4\n              jobs completed",
+    "4\n              jobs completed",
     "Show all jobs",
     "Oh hello! Nice to see you.",
     "Made with \u2764\ufe0f by",
@@ -36,24 +36,91 @@
     "Name",
     "Size",
     "Digest",
-    "android-instrumented-b0f26ae23986d8736dd31caefda8aed717889c4e",
-    "30.7 KB",
-    "sha256:b158d19b0d32846a3cfe1ea66ef3d712cbe6eb40563c31c0aba5200ac2a428b6",
-    "diagnostic-debug-b0f26ae23986d8736dd31caefda8aed717889c4e",
+    "android-instrumented-10cdce58fe3cf451c7a1b4220081cece1b82a948",
+    "30.8 KB",
+    "sha256:f9b2a9c708954665d46b4bb88a1932b8dff24c3b03448c4f036f832d67616c54",
+    "diagnostic-debug-10cdce58fe3cf451c7a1b4220081cece1b82a948",
     "17.8 MB",
-    "sha256:33ac43df1ed9daabe9b93f91a0e5003a47bc5d95a363c52d6aa75e3ae7fde45a",
-    "jvm-results-b0f26ae23986d8736dd31caefda8aed717889c4e",
-    "11.7 KB",
-    "sha256:11cd78bc0f247f08f309e96e0ec7e0d108278b227287ca1330825d3f98eab738",
-    "services-port-api24-b0f26ae23986d8736dd31caefda8aed717889c4e",
+    "sha256:c8ce30c733bc3210f789422ecfe1b557926d7e76d27bc07531e6c8783ce8481b",
+    "jvm-results-10cdce58fe3cf451c7a1b4220081cece1b82a948",
+    "11.8 KB",
+    "sha256:99b0de6b235ebd0e2bd321fd644ce101e8ae03cf340009405658be6baaffc290",
+    "services-port-api24-10cdce58fe3cf451c7a1b4220081cece1b82a948",
     "7.35 MB",
-    "sha256:eb6f8db1b15cdc401a8b6656b3ece54d772d70c7b1750c2302880f1d470abd1f",
-    "services-port-api25-b0f26ae23986d8736dd31caefda8aed717889c4e",
+    "sha256:0a135c050a51b313e4930516b06daba15101e6ae0fe18f39fa135ce16e81c46c",
+    "services-port-api25-10cdce58fe3cf451c7a1b4220081cece1b82a948",
     "7.4 MB",
-    "sha256:5dbc5d4c3be0fafaa02f71b8a21cdc615d7ac7ba54665f82be448b46265f4224",
+    "sha256:4a8d3834ad6356688d00869589734142604387454c2a4cc34c2416b3dfd2b168",
+    "services-port-api26-10cdce58fe3cf451c7a1b4220081cece1b82a948",
+    "7.41 MB",
+    "sha256:7e950225cf7fe594c797962b0a06195136090bc74abe8208cac6b43fa00c1116",
+    "services-port-api35-10cdce58fe3cf451c7a1b4220081cece1b82a948",
+    "7.69 MB",
+    "sha256:8d41cd73d5234f6d26a0efb316793bfab8d4d7074412d4af02f245d34949ec98",
     "html { scroll-behavior: smooth }",
     "You can\u2019t perform that action at this time."
   ],
-  "annotations": [],
-  "detailed_ci_xml_downloaded": false
+  "jobs": [
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777/job/121662904479",
+      "text": [
+        "jvm",
+        "39s"
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777/job/121662904921",
+      "text": [
+        "android-build",
+        "4m 26s"
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777/job/121662977697",
+      "text": [
+        "android-instrumented",
+        "7m 1s"
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777/job/121662904803",
+      "text": [
+        "services-port-instrumented (24, x86)",
+        "8m 13s"
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777/job/121662904947",
+      "text": [
+        "services-port-instrumented (25, x86)",
+        "7m 30s"
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777/job/121662905123",
+      "text": [
+        "services-port-instrumented (26, x86)",
+        "8m 16s"
+      ],
+      "status": "SUCCESS"
+    },
+    {
+      "url": "https://github.com/bubth720/JARVIS-SERVICES/actions/runs/40348805777/job/121662992900",
+      "text": [
+        "services-port-instrumented (35, x86_64)",
+        "4m 13s"
+      ],
+      "status": "SUCCESS"
+    }
+  ],
+  "expected_cases_per_port_job": 15,
+  "exact_counts_enforced_by_mandatory_xml_step": true,
+  "raw_ci_xml_downloaded": false,
+  "artifact_digests_are_server_reported_not_recomputed": true,
+  "android35_is_emulator_not_phone": true
 }

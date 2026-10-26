@@ -1,0 +1,26 @@
+{
+  "api": 35,
+  "type": "local_android_boot_refused_before_product_tests",
+  "tests_executed": 0,
+  "test_apks_installed_by_runner": false,
+  "boot_gate_error": "Emulator boot deadline",
+  "elapsed_host_seconds": 784.22,
+  "configured_guest_ram_mib": 1536,
+  "emulator_effective_ram_mib": 2560,
+  "acceleration": "TCG; /dev/kvm absent on this cloud machine",
+  "platform_evidence": [
+    "10-26 15:21:59.708   642  1595 E ActivityManager: ANR in com.android.systemui",
+    "10-26 15:22:00.532   642  1595 E ActivityManager: ANR in com.android.phone",
+    "10-26 15:24:31.374  1999  2421 I ActivityManager:   Free RAM: 1,774,404K",
+    "10-26 15:24:31.374  1999  2421 I ActivityManager:   Used RAM:   722,941K",
+    "10-26 15:24:32.615  1999  2550 I ActivityManager: Collecting stacks for pid 2363 into temporary file temp_anr_3551327154658204626.txt"
+  ],
+  "emulator_capability_evidence": [
+    "INFO         | Increasing RAM size to 2560MB",
+    "TCG doesn't support requested feature: CPUID.01H:ECX.avx [bit 28]",
+    "TCG doesn't support requested feature: CPUID.01H:ECX.f16c [bit 29]",
+    "TCG doesn't support requested feature: CPUID.01H:ECX.avx [bit 28]",
+    "TCG doesn't support requested feature: CPUID.01H:ECX.f16c [bit 29]"
+  ],
+  "not_a_SERVICES_test_failure": true
+}

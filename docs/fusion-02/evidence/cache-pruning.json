@@ -1,0 +1,42 @@
+[
+  {
+    "owned_download_cache": "emulator-linux_x64-16555280.zip",
+    "bytes": 353505482,
+    "sha256": "53bd73bc0d654cb3f458cafbfb6d8e5312cb92df626c1fe9cf6c749653a4d789",
+    "action": "removed compressed copy only; verified installed tool/image retained"
+  },
+  {
+    "owned_download_cache": "jdk.tar.gz",
+    "bytes": 197018367,
+    "sha256": "d87272944278713fc7a120cf024d2818d136b5debc750aa17045e3c6f045b867",
+    "action": "removed compressed copy only; verified installed tool/image retained"
+  },
+  {
+    "owned_download_cache": "x86-26_r01.zip",
+    "bytes": 350195807,
+    "sha256": "3177b721ab4d616fcc05d5e5eb2c175e20fe4d2afd1f4ea5ef62cc4d347c7a0f",
+    "action": "removed compressed copy only; verified installed tool/image retained"
+  },
+  {
+    "owned_download_cache": "build-tools_r35_linux.zip",
+    "bytes": 61958799,
+    "sha256": "bd3a4966912eb8b30ed0d00b0cda6b6543b949d5ffe00bea54c04c81e1561d88",
+    "action": "removed compressed copy only; installed official platform/build-tools retained"
+  },
+  {
+    "owned_download_cache": "platform-24_r02.zip",
+    "bytes": 82648154,
+    "sha256": "f268f5945c6ece7ea95c1c252067280854d2a20da924e22ae4720287df8bdbc9",
+    "action": "removed compressed copy only; installed official platform/build-tools retained"
+  },
+  {
+    "owned_download_cache": "platform-35-ext15_r01.zip",
+    "bytes": 64492044,
+    "sha256": "a93712aedd4f851d9cf1f7281f7c4fe5581ce03a9df37ffc8c53a487eadf311f",
+    "action": "removed compressed copy only; installed official platform/build-tools retained"
+  },
+  {
+    "owned_download_cache": "platform-ext15-unused",
+    "action": "removed unused wrong-variant extraction from prior setup; active android-35 base platform untouched"
+  }
+]
