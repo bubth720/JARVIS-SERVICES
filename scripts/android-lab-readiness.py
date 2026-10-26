@@ -13,7 +13,9 @@ def adb(*args,timeout=40):
     if r.returncode:raise RuntimeError(r.stderr.decode(errors='replace')[:400])
     return r.stdout
 try:
-    identity=adb('shell','getprop ro.kernel.qemu; getprop ro.build.version.sdk; getprop sys.boot_completed').decode().strip().splitlines()
+    emulator_property='ro.boot.qemu' if a.api>=35 else 'ro.kernel.qemu'
+    identity=adb('shell','getprop '+emulator_property+'; getprop ro.build.version.sdk; getprop sys.boot_completed').decode().strip().splitlines()
+    record['emulator_property']=emulator_property;record['identity_observed']=identity
     assert identity==['1',str(a.api),'1'],'Not the requested booted CI emulator'
     record['identity']=identity
     if not a.capture_only:adb('shell','input keyevent KEYCODE_WAKEUP; input keyevent KEYCODE_MENU')
@@ -42,5 +44,8 @@ try:
     if not record['success']:raise RuntimeError('OS readiness not established')
 except Exception as error:record['error']=str(error)
 finally:(a.output/'readiness.json').write_text(json.dumps(record,indent=2)+'\n')
+if not record['success']:
+    error=('Android OS readiness API'+str(a.api)+': '+str(record.get('error'))+'; observed='+str(record.get('identity_observed'))).replace('%','%25').replace('\r','%0D').replace('\n','%0A')
+    print('::error::'+error)
 print(json.dumps({'success':record['success'],'os_anr_wait_acknowledged':record['os_anr_wait_acknowledged'],'error':record.get('error')}))
 raise SystemExit(0 if record['success'] else 1)

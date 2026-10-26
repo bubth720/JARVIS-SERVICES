@@ -28,12 +28,14 @@ try:
  for attempt in range(180):
   try:
    d.connect(auth_timeout_s=3)
-   identity=d.shell('getprop ro.kernel.qemu; getprop ro.build.version.sdk; getprop sys.boot_completed',timeout_s=60,read_timeout_s=60).strip().splitlines()
+   emulator_property='ro.boot.qemu' if a.api>=35 else 'ro.kernel.qemu'
+   identity=d.shell('getprop '+emulator_property+'; getprop ro.build.version.sdk; getprop sys.boot_completed',timeout_s=60,read_timeout_s=60).strip().splitlines()
    if len(identity)>=2 and (identity[0]!='1' or identity[1]!=str(a.api)):raise RuntimeError('Identity mismatch')
    if identity==['1',str(a.api),'1']:break
   except (OSError,ConnectionError,AdbTimeoutError,TcpTimeoutException):pass
   time.sleep(2)
  else:raise RuntimeError('Emulator boot deadline')
+ r['emulator_property']=emulator_property
  r['identity']=identity;print('Verified isolated API'+str(a.api),flush=True)
  r['fingerprint']=d.shell('getprop ro.build.fingerprint',timeout_s=60,read_timeout_s=60).strip()
  r['airplane_request_output']=d.shell('settings put global airplane_mode_on 1; am broadcast -a android.intent.action.AIRPLANE_MODE --ez state true',timeout_s=60,read_timeout_s=60)
