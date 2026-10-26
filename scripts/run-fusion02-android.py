@@ -10,6 +10,7 @@ from adb_shell.exceptions import AdbTimeoutError, TcpTimeoutException
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--apk',required=True,type=Path)
 p.add_argument('--fixture',required=True,type=Path)
+p.add_argument('--port',type=int,choices=[5581,5583],default=5581)
 p.add_argument('--api',required=True,type=int,choices=[24,25,26,35])
 p.add_argument('--class-name')
 p.add_argument('--expected',type=int,default=15)
@@ -21,8 +22,8 @@ snapshot.write(payload);snapshot.close()
 fixture_payload=a.fixture.read_bytes()
 fixture_snapshot=tempfile.NamedTemporaryFile(prefix='fusion-provider-',suffix='.apk',dir='/tmp',delete=False)
 fixture_snapshot.write(fixture_payload);fixture_snapshot.close()
-d=AdbDeviceTcp('127.0.0.1',5581,default_transport_timeout_s=300)
-r={'api':a.api,'host':'127.0.0.1','port':5581,'apk_sha256':hashlib.sha256(payload).hexdigest(),'expected':a.expected,'cases':[],'uid_metrics':[]};start=time.monotonic()
+d=AdbDeviceTcp('127.0.0.1',a.port,default_transport_timeout_s=300)
+r={'api':a.api,'host':'127.0.0.1','port':a.port,'apk_sha256':hashlib.sha256(payload).hexdigest(),'expected':a.expected,'cases':[],'uid_metrics':[]};start=time.monotonic()
 try:
  for attempt in range(180):
   try:
