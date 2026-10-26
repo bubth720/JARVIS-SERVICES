@@ -622,8 +622,7 @@ public class FusionSafInstrumentedTest {
           throw failure;
         }
         firstFailure = failure;
-        System.out.println("FUSION-SAF picker attempt 1 failed; retrying real DocumentsUI once: "
-            + failure.getMessage());
+        System.out.println("FUSION-SAF picker attempt 1 failed; retrying real DocumentsUI once (synthetic fixture)");
         long now = SystemClock.uptimeMillis();
         boolean down = ui.injectInputEvent(new android.view.KeyEvent(
             now, now, android.view.KeyEvent.ACTION_DOWN,
