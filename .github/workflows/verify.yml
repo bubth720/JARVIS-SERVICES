@@ -149,9 +149,7 @@ jobs:
           emulator-boot-timeout: 900
           disable-linux-hw-accel: auto
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -no-metrics
-          script: |
-            python3 scripts/android-lab-readiness.py --api ${{ matrix.api }} --output build/fusion02-readiness
-            ./gradlew -PwithAndroid :services-saf-fixture:installDebug :services-android-adapter:connectedDebugAndroidTest --no-daemon --max-workers=2
+          script: bash scripts/run-fusion02-ci.sh ${{ matrix.api }}
       - name: Publish exact test counts and failure annotations
         if: always()
         run: python3 scripts/summarize-android-tests.py --directory services-android-adapter/build/outputs/androidTest-results/connected --expected 15 --output build/fusion02-instrumentation.json
@@ -162,6 +160,8 @@ jobs:
           path: |
             build/fusion02-instrumentation.json
             build/fusion02-readiness/
+            build/fusion02-final-ui/
+            build/fusion02-command.json
             services-android-adapter/build/outputs/androidTest-results/
             services-android-adapter/build/reports/androidTests/
             services-android-adapter/build/outputs/apk/androidTest/

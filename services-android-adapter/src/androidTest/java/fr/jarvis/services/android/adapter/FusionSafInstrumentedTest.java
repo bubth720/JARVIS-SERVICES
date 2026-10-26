@@ -636,6 +636,7 @@ public class FusionSafInstrumentedTest {
 
   void clickAny(String[] labels, long timeout) {
     long end = SystemClock.uptimeMillis() + timeout;
+    int attempts = 0;
     while (SystemClock.uptimeMillis() < end) {
       for (String label : labels) {
         AccessibilityNodeInfo n = find(ui.getRootInActiveWindow(), label);
@@ -702,9 +703,27 @@ public class FusionSafInstrumentedTest {
           }
         }
       }
+      if (Arrays.stream(labels).anyMatch(label -> label.contains("."))) {
+        scroll(
+            ui.getRootInActiveWindow(),
+            attempts++ % 20 < 10
+                ? AccessibilityNodeInfo.ACTION_SCROLL_FORWARD
+                : AccessibilityNodeInfo.ACTION_SCROLL_BACKWARD);
+      }
       SystemClock.sleep(150);
     }
-    throw new AssertionError("Missing SAF control " + Arrays.toString(labels));
+    throw new AssertionError(
+        "Missing SAF control "
+            + Arrays.toString(labels)
+            + "; UI="
+            + texts(ui.getRootInActiveWindow()));
+  }
+
+  boolean scroll(AccessibilityNodeInfo n, int direction) {
+    if (n == null) return false;
+    if (n.isScrollable() && n.performAction(direction)) return true;
+    for (int i = 0; i < n.getChildCount(); i++) if (scroll(n.getChild(i), direction)) return true;
+    return false;
   }
 
   String texts(AccessibilityNodeInfo n) {

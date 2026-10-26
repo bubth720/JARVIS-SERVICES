@@ -5,9 +5,9 @@ No permission grants, root, ANR disabling, app install or personal-device discov
 """
 import argparse,json,os,re,subprocess,time,xml.etree.ElementTree as ET
 from pathlib import Path
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('--api',type=int,required=True,choices=[24,25,26,35]);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser(description=__doc__);p.add_argument('--api',type=int,required=True,choices=[24,25,26,35]);p.add_argument('--output',type=Path,required=True);p.add_argument('--capture-only',action='store_true');a=p.parse_args()
 if os.environ.get('GITHUB_ACTIONS')!='true':raise SystemExit('CI-only: refusing access outside GitHub Actions')
-a.output.mkdir(parents=True,exist_ok=True);record={'api':a.api,'serial':'emulator-5554','os_anr_wait_acknowledged':False,'attempts':[],'success':False}
+a.output.mkdir(parents=True,exist_ok=True);record={'api':a.api,'serial':'emulator-5554','os_anr_wait_acknowledged':False,'attempts':[],'success':False,'capture_only':a.capture_only}
 def adb(*args,timeout=40):
     r=subprocess.run(['adb','-s','emulator-5554',*args],capture_output=True,timeout=timeout)
     if r.returncode:raise RuntimeError(r.stderr.decode(errors='replace')[:400])
@@ -16,7 +16,7 @@ try:
     identity=adb('shell','getprop ro.kernel.qemu; getprop ro.build.version.sdk; getprop sys.boot_completed').decode().strip().splitlines()
     assert identity==['1',str(a.api),'1'],'Not the requested booted CI emulator'
     record['identity']=identity
-    adb('shell','input keyevent KEYCODE_WAKEUP; input keyevent KEYCODE_MENU')
+    if not a.capture_only:adb('shell','input keyevent KEYCODE_WAKEUP; input keyevent KEYCODE_MENU')
     for attempt in range(4):
         adb('shell','rm -f /data/local/tmp/fusion-readiness.xml')
         adb('shell','uiautomator dump /data/local/tmp/fusion-readiness.xml')
@@ -25,6 +25,7 @@ try:
         (a.output/f'ui-{attempt}.png').write_bytes(adb('exec-out','screencap -p'))
         tree=ET.fromstring(raw);nodes=list(tree.iter('node'));texts=[n.get('text','') for n in nodes]
         record['attempts'].append({'attempt':attempt,'texts':texts})
+        if a.capture_only:record['success']=True;break
         anr=any('responding' in t.lower() for t in texts)
         if not anr:
             if not nodes:raise RuntimeError('No UI hierarchy; readiness not demonstrated')
