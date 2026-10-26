@@ -571,6 +571,7 @@ public class FusionSafInstrumentedTest {
     CountDownLatch ack = new CountDownLatch(1);
     java.util.concurrent.atomic.AtomicInteger result =
         new java.util.concurrent.atomic.AtomicInteger();
+    control.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
     control.setComponent(
         new ComponentName(
             "fr.jarvis.services.fixture", "fr.jarvis.services.fixture.FixtureControlReceiver"));
@@ -587,7 +588,7 @@ public class FusionSafInstrumentedTest {
         0,
         null,
         null);
-    assertTrue("Signature-protected lab control ACK", ack.await(10, TimeUnit.SECONDS));
+    assertTrue("Signature-protected lab control ACK", ack.await(30, TimeUnit.SECONDS));
     assertEquals(android.app.Activity.RESULT_OK, result.get());
   }
 

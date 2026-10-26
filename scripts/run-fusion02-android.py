@@ -6,6 +6,7 @@ Requires adb-shell==0.4.4, exactly selected API and qemu identity; keep TLS for 
 import argparse, hashlib, json, re, sys, time, tempfile
 from pathlib import Path
 from adb_shell.adb_device import AdbDeviceTcp
+from adb_shell.exceptions import AdbTimeoutError, TcpTimeoutException
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--apk',required=True,type=Path)
 p.add_argument('--fixture',required=True,type=Path)
@@ -29,7 +30,7 @@ try:
    identity=d.shell('getprop ro.kernel.qemu; getprop ro.build.version.sdk; getprop sys.boot_completed',timeout_s=60,read_timeout_s=60).strip().splitlines()
    if len(identity)>=2 and (identity[0]!='1' or identity[1]!=str(a.api)):raise RuntimeError('Identity mismatch')
    if identity==['1',str(a.api),'1']:break
-  except (OSError,ConnectionError):pass
+  except (OSError,ConnectionError,AdbTimeoutError,TcpTimeoutException):pass
   time.sleep(2)
  else:raise RuntimeError('Emulator boot deadline')
  r['identity']=identity;print('Verified isolated API'+str(a.api),flush=True)
