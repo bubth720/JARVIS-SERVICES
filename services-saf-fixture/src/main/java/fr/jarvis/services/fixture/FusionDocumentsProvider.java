@@ -1,4 +1,4 @@
-package fr.jarvis.services.android.adapter;
+package fr.jarvis.services.fixture;
 
 import android.database.*;
 import android.os.*;
@@ -8,18 +8,15 @@ import java.util.*;
 
 /** Real DocumentsProvider in the test APK only. Android DocumentsUI alone grants access. */
 public final class FusionDocumentsProvider extends DocumentsProvider {
-  public static final String AUTHORITY = "fr.jarvis.services.android.adapter.test.fusionfiles";
+  public static final String AUTHORITY = "fr.jarvis.services.fixture.documents";
   private File root;
   private static volatile boolean corruptReadback, deny;
 
-  @Override
-  public Bundle call(String method, String arg, Bundle extras) {
-    if ("fixture.mode".equals(method)) {
-      corruptReadback = "corrupt".equals(arg);
-      deny = "deny".equals(arg);
-      return new Bundle();
-    }
-    return super.call(method, arg, extras);
+  static void setMode(String mode) {
+    if (!Arrays.asList("normal", "corrupt", "deny").contains(mode))
+      throw new IllegalArgumentException("MODE");
+    corruptReadback = "corrupt".equals(mode);
+    deny = "deny".equals(mode);
   }
 
   @Override

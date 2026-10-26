@@ -22,6 +22,7 @@ final class LabSafExporter implements AutoCloseable {
   private final RandomAccessFile leaseFile;
   private final java.nio.channels.FileLock lease;
   static final int LIMIT = 32;
+  static final String AUTHORITY = "fr.jarvis.services.fixture.documents";
 
   LabSafExporter(Context c) throws Exception {
     context = c;
@@ -99,8 +100,8 @@ final class LabSafExporter implements AutoCloseable {
         || tree == null
         || !"content".equals(source.getScheme())
         || !"content".equals(tree.getScheme())
-        || !FusionDocumentsProvider.AUTHORITY.equals(source.getAuthority())
-        || !FusionDocumentsProvider.AUTHORITY.equals(tree.getAuthority())
+        || !LabSafExporter.AUTHORITY.equals(source.getAuthority())
+        || !LabSafExporter.AUTHORITY.equals(tree.getAuthority())
         || !DocumentsContract.isTreeUri(tree)
         || !name.matches("result-[a-z0-9-]{36}\\.(csv|docx)")
         || !p.operation.equals("export." + name.substring(name.lastIndexOf('.') + 1))

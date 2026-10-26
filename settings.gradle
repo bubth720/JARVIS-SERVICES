@@ -4,3 +4,5 @@ rootProject.name = 'jarvis-services'
 include ':services-portable-api', ':shared-runtime', ':desktop'
 if (providers.gradleProperty('withAndroid').isPresent()) { include ':services-android-adapter' }
 if (providers.gradleProperty('withAndroid').isPresent()) { include ':android' }
+
+if (providers.gradleProperty('withAndroid').isPresent()) { include ':services-saf-fixture' }

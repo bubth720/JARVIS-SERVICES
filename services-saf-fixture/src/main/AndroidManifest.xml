@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <permission android:name="fr.jarvis.services.fixture.CONTROL" android:protectionLevel="signature" />
+  <queries><package android:name="fr.jarvis.services.android.adapter.test" /></queries>
+  <application android:label="FUSION SAF laboratory" android:testOnly="true" android:allowBackup="false" android:usesCleartextTraffic="false">
+    <receiver android:name="fr.jarvis.services.fixture.FixtureControlReceiver" android:exported="true" android:permission="fr.jarvis.services.fixture.CONTROL" />
+    <provider android:name="fr.jarvis.services.fixture.FusionDocumentsProvider"
+        android:authorities="fr.jarvis.services.fixture.documents"
+        android:exported="true" android:grantUriPermissions="true"
+        android:permission="android.permission.MANAGE_DOCUMENTS">
+      <intent-filter><action android:name="android.content.action.DOCUMENTS_PROVIDER" /></intent-filter>
+    </provider>
+  </application>
+</manifest>

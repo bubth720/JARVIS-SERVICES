@@ -38,21 +38,30 @@ pas une preuve de coupure électrique réelle.
 
 ## Laboratoire livré
 
-`LabSafExporter`, `FusionPickerActivity`, `FusionDocumentsProvider` et l'autorité
-synthétique sont exclusivement sous `src/androidTest` ; ils ne figurent pas dans
-l'AAR. Le provider MANAGE_DOCUMENTS n'est pas ajouté au manifeste de production.
-Le sélecteur système choisit réellement les sources et l'arbre de destination.
-Seule l'autorité du provider de fixtures est admise par l'exporteur ; celui-ci
-crée un nom UUID nouveau après confirmation. Pas de suppression de sortie ni de
-rollback annoncé sur un provider externe. Quota journal 32, entrée 2 Mio,
-verrou de fichier inter-instances et sérialisation du worker. Le journal est
-une base laboratoire neuve, sans migration ni accès aux DB historiques.
+`LabSafExporter`, `FusionPickerActivity` et l'autorité synthétique sont
+exclusivement sous `src/androidTest`. `FusionDocumentsProvider` est dans un
+APK séparé `services-saf-fixture`, min24, `testOnly=true`, distinct par UID.
+Aucun de ces composants ne figure dans l'AAR ou le diagnostic historique.
+Le provider conserve MANAGE_DOCUMENTS. Un receiver de contrôle des fautes,
+protégé par une permission **signature de laboratoire**, permet uniquement
+normal/corrupt/deny ; cette permission est demandée par l'APK AndroidTest seul.
+Aucune permission de production n'est ajoutée, aucune signature existante changée.
 
-La fixture de refus d'accès est une décision du provider, **pas** une révocation
-OS inter-UID démontrée : activité et provider sont dans le même APK de test.
-La qualification d'un provider externe, des URI aliases, du close bloqué,
-des lifecycle/rotation et d'une vraie interruption en cours de mutation est un
-prochain gate, avant tout raccord sensible.
+Le sélecteur système choisit réellement les sources et l'arbre de destination,
+avec concessions persistantes entre UID distincts. Seule l'autorité du provider
+de fixtures est admise par l'exporteur ; celui-ci crée un nom UUID nouveau après
+confirmation. Pas de suppression de sortie ni de rollback annoncé sur un provider
+externe. Quota journal32, entrée2Mio, verrou de fichier inter-instances et
+sérialisation du worker. Le journal est une base laboratoire neuve, sans migration
+ni accès aux DB historiques. La révocation OS des concessions persistables est
+un scénario distinct de la fixture qui refuse ses propres lectures.
+
+Les campagnes et leurs résultats réels sont détaillés dans REPORT.md et
+VALIDATION.json ; l'existence d'un test ne prouve pas sa réussite. La qualification
+d'un provider utilisateur arbitraire, des URI aliases, du close bloqué,
+des lifecycle/rotation et d'une vraie interruption en cours de mutation reste un
+prochain gate avant tout raccord sensible. Le scénario de reçu abandonné est une
+injection de fenêtre de crash, pas une coupure physique de processus pendant IO.
 
 ## Décision demandée aux propriétaires (sans activation implicite)
 

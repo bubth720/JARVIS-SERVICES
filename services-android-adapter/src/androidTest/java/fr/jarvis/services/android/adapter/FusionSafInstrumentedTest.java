@@ -27,16 +27,18 @@ public class FusionSafInstrumentedTest {
   UiAutomation ui;
 
   @Before
-  public void setup() {
+  public void setup() throws Exception {
     context = InstrumentationRegistry.getInstrumentation().getContext();
     ui = InstrumentationRegistry.getInstrumentation().getUiAutomation();
-    context
-        .getContentResolver()
-        .call(
-            Uri.parse("content://" + FusionDocumentsProvider.AUTHORITY),
-            "fixture.mode",
-            "normal",
-            null);
+    int providerUid =
+        context.getPackageManager().getApplicationInfo("fr.jarvis.services.fixture", 0).uid;
+    assertNotEquals(
+        "SAF provider must have a distinct UID", android.os.Process.myUid(), providerUid);
+    Bundle metrics = new Bundle();
+    metrics.putString("worker_uid", String.valueOf(android.os.Process.myUid()));
+    metrics.putString("fixture_provider_uid", String.valueOf(providerUid));
+    InstrumentationRegistry.getInstrumentation().sendStatus(2, metrics);
+    setMode("normal");
     context.deleteDatabase("fusion_lab_exports.db");
   }
 
@@ -171,26 +173,14 @@ public class FusionSafInstrumentedTest {
       CommitAuthorization.Preview p = preview(source, tree, name, bytes, e);
       id = p.request;
       Authority a = new Authority();
-      context
-          .getContentResolver()
-          .call(
-              Uri.parse("content://" + FusionDocumentsProvider.AUTHORITY),
-              "fixture.mode",
-              "corrupt",
-              null);
+      setMode("corrupt");
       try {
         e.export(p, a.confirm(p), a, source, tree, name, bytes);
         fail("fake ACK");
       } catch (java.io.IOException expected) {
       }
       assertEquals("UNKNOWN", e.state(id));
-      context
-          .getContentResolver()
-          .call(
-              Uri.parse("content://" + FusionDocumentsProvider.AUTHORITY),
-              "fixture.mode",
-              "normal",
-              null);
+      setMode("normal");
       try {
         e.export(p, a.confirm(p), a, source, tree, name, bytes);
         fail("retry");
@@ -360,25 +350,13 @@ public class FusionSafInstrumentedTest {
         fail("unsafe URI");
       } catch (SecurityException expected) {
       }
-      context
-          .getContentResolver()
-          .call(
-              Uri.parse("content://" + FusionDocumentsProvider.AUTHORITY),
-              "fixture.mode",
-              "deny",
-              null);
+      setMode("deny");
       try {
         e.export(p, a.confirm(p), a, source, tree, name, bytes);
         fail("provider denial");
       } catch (java.io.FileNotFoundException expected) {
       }
-      context
-          .getContentResolver()
-          .call(
-              Uri.parse("content://" + FusionDocumentsProvider.AUTHORITY),
-              "fixture.mode",
-              "normal",
-              null);
+      setMode("normal");
       assertEquals(before, count(tree));
       assertNull(e.state(p.request));
     }
@@ -517,7 +495,11 @@ public class FusionSafInstrumentedTest {
           d.close();
           fail("corrupt accepted");
         } catch (RuntimeException expected) {
-          assertFalse(expected instanceof java.nio.channels.OverlappingFileLockException);
+          if (expected instanceof fr.jarvis.services.shared.api.Contracts.Failure)
+            assertEquals(
+                "CORRUPT_JOURNAL_NO_RESET",
+                ((fr.jarvis.services.shared.api.Contracts.Failure) expected).code);
+          else assertTrue(expected instanceof android.database.sqlite.SQLiteException);
         }
         try (java.io.InputStream in = new java.io.FileInputStream(path)) {
           byte[] b = new byte[corrupt.length];
@@ -528,6 +510,85 @@ public class FusionSafInstrumentedTest {
     } finally {
       context.deleteDatabase(name);
     }
+  }
+
+  @Test
+  public void realPersistedGrantRevocationAndHostFenceRefuse() throws Exception {
+    Uri source = pick(false, "source.txt"), tree = pick(true, null);
+    assertTrue(
+        context.getContentResolver().getPersistedUriPermissions().stream()
+            .anyMatch(g -> g.getUri().equals(tree) && g.isWritePermission()));
+    try (LabSafExporter e = new LabSafExporter(context)) {
+      byte[] bytes = DocumentContent.docx("revoked grant");
+      String name = "result-" + UUID.randomUUID() + ".docx";
+      CommitAuthorization.Preview p = preview(source, tree, name, bytes, e);
+      Authority a = new Authority();
+      Authority.Token token = a.confirm(p);
+      int before = count(tree);
+      revokeGrant(tree);
+      assertEquals(
+          android.content.pm.PackageManager.PERMISSION_DENIED,
+          context.checkUriPermission(
+              tree,
+              android.os.Process.myPid(),
+              android.os.Process.myUid(),
+              Intent.FLAG_GRANT_WRITE_URI_PERMISSION));
+      a.revoke();
+      try {
+        e.export(p, token, a, source, tree, name, bytes);
+        fail("revoked before commit");
+      } catch (SecurityException expected) {
+      }
+      assertEquals("REFUSED", e.state(p.request));
+      Uri explicitlyRegranted = pick(true, null);
+      assertEquals(before, count(explicitlyRegranted));
+      revokeGrant(source);
+      ServicesAndroidToolPort port =
+          new ServicesAndroidToolPort(
+              context, "revoked-source-native", Collections.singleton("documents.read"));
+      try {
+        try {
+          port.selectSource(source, new Task(10000));
+          fail("revoked source");
+        } catch (fr.jarvis.services.shared.api.Contracts.Failure expected) {
+          assertEquals("URI_DENIED", expected.code);
+        }
+      } finally {
+        port.closeAsync().toCompletableFuture().get(10, TimeUnit.SECONDS);
+      }
+    }
+  }
+
+  void setMode(String mode) throws Exception {
+    labControl(new Intent("fr.jarvis.services.fixture.MODE").putExtra("mode", mode));
+  }
+
+  void revokeGrant(Uri uri) throws Exception {
+    labControl(new Intent("fr.jarvis.services.fixture.REVOKE").putExtra("uri", uri.toString()));
+  }
+
+  void labControl(Intent control) throws Exception {
+    CountDownLatch ack = new CountDownLatch(1);
+    java.util.concurrent.atomic.AtomicInteger result =
+        new java.util.concurrent.atomic.AtomicInteger();
+    control.setComponent(
+        new ComponentName(
+            "fr.jarvis.services.fixture", "fr.jarvis.services.fixture.FixtureControlReceiver"));
+    context.sendOrderedBroadcast(
+        control,
+        null,
+        new BroadcastReceiver() {
+          public void onReceive(Context c, Intent i) {
+            result.set(getResultCode());
+            ack.countDown();
+          }
+        },
+        new Handler(Looper.getMainLooper()),
+        0,
+        null,
+        null);
+    assertTrue("Signature-protected lab control ACK", ack.await(10, TimeUnit.SECONDS));
+    assertEquals(android.app.Activity.RESULT_OK, result.get());
   }
 
   int count(Uri tree) throws Exception {
@@ -560,7 +621,14 @@ public class FusionSafInstrumentedTest {
     if (tree)
       clickAny(new String[] {"SELECT", "Select", "USE THIS FOLDER", "Use this folder"}, 12000);
     else clickAny(new String[] {name}, 12000);
-    Uri uri = FusionPickerActivity.results.poll(15, TimeUnit.SECONDS);
+    Uri uri = null;
+    long selectionDeadline = SystemClock.uptimeMillis() + 15000;
+    while (uri == null && SystemClock.uptimeMillis() < selectionDeadline) {
+      uri = FusionPickerActivity.results.poll(200, TimeUnit.MILLISECONDS);
+      // Newer DocumentsUI versions require an additional explicit grant dialog.
+      if (uri == null && tree && find(ui.getRootInActiveWindow(), "Allow") != null)
+        clickAny(new String[] {"Allow"}, 5000);
+    }
     assertNotNull("SAF selection; UI=" + texts(ui.getRootInActiveWindow()), uri);
     return uri;
   }
@@ -582,10 +650,36 @@ public class FusionSafInstrumentedTest {
         n.performAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SHOW_ON_SCREEN.getId());
         SystemClock.sleep(100);
         if (!n.refresh()) continue;
-        // API24 grid cards have non-clickable nameplates: tap the containing card.
+        // Activate the nearest focusable document row/card with the real platform
+        // keyboard path. Grid and list have different nameplate ancestry on API24.
         if (label.contains(".")) {
-          AccessibilityNodeInfo parent = n.getParent();
-          if (parent != null && parent.getParent() != null) n = parent.getParent();
+          AccessibilityNodeInfo row = n;
+          for (int depth = 0; row != null && depth < 5; depth++, row = row.getParent()) {
+            if (row.isScrollable()) break;
+            if (row.isFocusable() && row.performAction(AccessibilityNodeInfo.ACTION_FOCUS)) {
+              boolean accepted =
+                  ui.injectInputEvent(
+                          new android.view.KeyEvent(
+                              SystemClock.uptimeMillis(),
+                              SystemClock.uptimeMillis(),
+                              android.view.KeyEvent.ACTION_DOWN,
+                              android.view.KeyEvent.KEYCODE_ENTER,
+                              0),
+                          true)
+                      && ui.injectInputEvent(
+                          new android.view.KeyEvent(
+                              SystemClock.uptimeMillis(),
+                              SystemClock.uptimeMillis(),
+                              android.view.KeyEvent.ACTION_UP,
+                              android.view.KeyEvent.KEYCODE_ENTER,
+                              0),
+                          true);
+              if (accepted) {
+                SystemClock.sleep(300);
+                return;
+              }
+            }
+          }
         }
         android.graphics.Rect b = new android.graphics.Rect();
         n.getBoundsInScreen(b);

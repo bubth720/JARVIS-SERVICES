@@ -1,0 +1,9 @@
+plugins { id 'com.android.application' version '8.9.2' }
+android {
+    namespace 'fr.jarvis.services.fixture'
+    compileSdk 35
+    defaultConfig { applicationId 'fr.jarvis.services.fixture'; minSdk 24; targetSdk 35; versionCode 1; versionName 'lab-1' }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+    lint { abortOnError true }
+    adbOptions { installOptions '-t' } // This APK is intentionally testOnly.
+}

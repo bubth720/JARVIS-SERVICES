@@ -67,6 +67,7 @@ jobs:
             android/build/reports/lint-results-debug.*
             services-android-adapter/build/outputs/aar/
             services-android-adapter/build/outputs/apk/androidTest/
+            services-saf-fixture/build/outputs/apk/
             services-android-adapter/build/test-results/testDebugUnitTest/
             services-android-adapter/build/reports/lint-results-debug.*
             build/serv04a-api24/result.json
@@ -148,7 +149,7 @@ jobs:
           emulator-boot-timeout: 900
           disable-linux-hw-accel: auto
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -no-metrics
-          script: ./gradlew -PwithAndroid :services-android-adapter:connectedDebugAndroidTest --no-daemon --max-workers=2
+          script: ./gradlew -PwithAndroid :services-saf-fixture:installDebug :services-android-adapter:connectedDebugAndroidTest --no-daemon --max-workers=2
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         if: always()
         with:
@@ -157,3 +158,4 @@ jobs:
             services-android-adapter/build/outputs/androidTest-results/
             services-android-adapter/build/reports/androidTests/
             services-android-adapter/build/outputs/apk/androidTest/
+            services-saf-fixture/build/outputs/apk/
