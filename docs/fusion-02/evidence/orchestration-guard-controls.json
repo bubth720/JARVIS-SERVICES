@@ -1,0 +1,6 @@
+{
+  "ci_script_outside_GitHub_refused": true,
+  "unsupported_ADB_port_refused": true,
+  "device_commands_executed": 0,
+  "application_tests_added": 0
+}

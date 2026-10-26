@@ -1,0 +1,348 @@
+--------- beginning of system
+10-26 13:56:30.602  1598  1598 I ActivityManager: Memory class: 384
+10-26 13:56:54.117  1598  1598 I ActivityManager: Config changes=1df8 {1.0 ?mcc?mnc [en_US] ldltr sw480dp w480dp h800dp 160dpi lrg long port ?uimode ?night -touch -keyb/h/h -nav/h s.2}
+10-26 13:56:54.181  1598  1777 I ActivityManager: Config changes=478 {1.0 ?mcc?mnc [en_US] ldltr sw480dp w480dp h776dp 160dpi lrg long port ?uimode ?night finger qwerty/v/v tball/v s.3}
+10-26 13:56:54.292  1598  1598 I ActivityManager: Config changes=200 {1.0 ?mcc?mnc [en_US] ldltr sw480dp w480dp h776dp 160dpi lrg long port finger qwerty/v/v tball/v s.4}
+10-26 13:57:05.356  1598  1598 I ActivityManager: System now ready
+10-26 13:57:06.145  1598  1598 W ActivityManager: Slow operation: 160ms so far, now at startProcess: returned from zygote!
+10-26 13:57:06.145  1598  1598 W ActivityManager: Slow operation: 160ms so far, now at startProcess: done updating battery stats
+10-26 13:57:06.146  1598  1598 W ActivityManager: Slow operation: 161ms so far, now at startProcess: building log message
+10-26 13:57:06.147  1598  1598 I ActivityManager: Start proc 1873:com.android.inputmethod.latin/u0a41 for service com.android.inputmethod.latin/.LatinIME
+10-26 13:57:06.147  1598  1598 W ActivityManager: Slow operation: 162ms so far, now at startProcess: starting to update pids map
+10-26 13:57:06.147  1598  1598 W ActivityManager: Slow operation: 162ms so far, now at startProcess: done updating pids map
+10-26 13:57:06.147  1598  1598 W ActivityManager: Slow operation: 162ms so far, now at startProcess: done starting proc!
+10-26 13:57:06.195  1598  1629 I ActivityManager: Force stopping com.android.providers.media appid=10010 user=-1: vold reset
+10-26 13:57:06.665  1598  1598 W ActivityManager: Slow operation: 73ms so far, now at startProcess: returned from zygote!
+10-26 13:57:06.665  1598  1598 W ActivityManager: Slow operation: 73ms so far, now at startProcess: done updating battery stats
+10-26 13:57:06.665  1598  1598 W ActivityManager: Slow operation: 73ms so far, now at startProcess: building log message
+10-26 13:57:06.665  1598  1598 I ActivityManager: Start proc 1893:WebViewLoader-x86/1037 [android.webkit.WebViewFactory$RelroFileCreator] for 
+10-26 13:57:06.665  1598  1598 W ActivityManager: Slow operation: 73ms so far, now at startProcess: starting to update pids map
+10-26 13:57:06.665  1598  1598 W ActivityManager: Slow operation: 73ms so far, now at startProcess: done updating pids map
+10-26 13:57:06.665  1598  1598 W ActivityManager: Slow operation: 115ms so far, now at startProcess: done starting proc!
+10-26 13:57:06.705  1598  1598 I ActivityManager: Start proc 1898:com.android.systemui/u0a21 for service com.android.systemui/.SystemUIService
+--------- beginning of main
+10-26 13:57:10.019  1598  1629 W BroadcastQueue: Timeout of broadcast BroadcastRecord{88de9b1 u-1 android.intent.action.TIME_TICK} - receiver=android.app.LoadedApk$ReceiverDispatcher$InnerReceiver@44b24b1, started 10001ms ago
+10-26 13:57:10.078  1598  1629 W BroadcastQueue: Receiver during timeout: BroadcastFilter{4c29d17 u0 ReceiverList{b12bd96 1598 system/1000/u0 local:44b24b1}}
+10-26 13:57:12.063  1598  1598 W ActivityManager: Slow operation: 97ms so far, now at startProcess: returned from zygote!
+10-26 13:57:12.063  1598  1598 W ActivityManager: Slow operation: 97ms so far, now at startProcess: done updating battery stats
+10-26 13:57:12.064  1598  1598 W ActivityManager: Slow operation: 98ms so far, now at startProcess: building log message
+10-26 13:57:12.064  1598  1598 I ActivityManager: Start proc 2018:com.android.phone/1001 for added application com.android.phone
+10-26 13:57:12.064  1598  1598 W ActivityManager: Slow operation: 98ms so far, now at startProcess: starting to update pids map
+10-26 13:57:12.064  1598  1598 W ActivityManager: Slow operation: 98ms so far, now at startProcess: done updating pids map
+10-26 13:57:12.067  1598  1598 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.settings/.CryptKeeper} from uid 0 on display 0
+10-26 13:57:12.089  1598  1598 I ActivityManager: Loaded persisted task ids for user 0
+10-26 13:57:12.217  1598  1598 I ActivityManager: Start proc 2032:com.android.settings:CryptKeeper/1000 for activity com.android.settings/.CryptKeeper
+10-26 13:57:14.568  1598  1852 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.settings/.FallbackHome} from uid 0 on display 0
+10-26 13:57:15.028  1598  1852 W ActivityManager: Slow operation: 403ms so far, now at startProcess: returned from zygote!
+10-26 13:57:15.028  1598  1852 W ActivityManager: Slow operation: 403ms so far, now at startProcess: done updating battery stats
+10-26 13:57:15.029  1598  1852 W ActivityManager: Slow operation: 404ms so far, now at startProcess: building log message
+10-26 13:57:15.029  1598  1852 I ActivityManager: Start proc 2071:com.android.settings/1000 for activity com.android.settings/.FallbackHome
+10-26 13:57:15.029  1598  1852 W ActivityManager: Slow operation: 404ms so far, now at startProcess: starting to update pids map
+10-26 13:57:15.032  1598  1852 W ActivityManager: Slow operation: 407ms so far, now at startProcess: done updating pids map
+10-26 13:57:15.032  1598  1852 W ActivityManager: Slow operation: 408ms so far, now at startProcess: done starting proc!
+10-26 13:57:17.907  1598  2064 I ActivityManager: user 0 is still locked. Cannot load recents
+10-26 13:57:20.957  1598  1598 W ActivityManager: Slow operation: 53ms so far, now at startProcess: returned from zygote!
+10-26 13:57:20.957  1598  1598 W ActivityManager: Slow operation: 53ms so far, now at startProcess: done updating battery stats
+10-26 13:57:20.958  1598  1598 W ActivityManager: Slow operation: 54ms so far, now at startProcess: building log message
+10-26 13:57:20.958  1598  1598 I ActivityManager: Start proc 2167:com.android.cellbroadcastreceiver/u0a4 for broadcast com.android.cellbroadcastreceiver/.CellBroadcastReceiver
+10-26 13:57:20.958  1598  1598 W ActivityManager: Slow operation: 54ms so far, now at startProcess: starting to update pids map
+10-26 13:57:20.958  1598  1598 W ActivityManager: Slow operation: 54ms so far, now at startProcess: done updating pids map
+10-26 13:57:20.958  1598  1598 W ActivityManager: Slow operation: 55ms so far, now at startProcess: done starting proc!
+10-26 13:57:21.318  1598  1598 I ActivityManager: user 0 is still locked. Cannot load recents
+10-26 13:57:24.276  1598  1852 W ActivityManager: Slow operation: 79ms so far, now at startProcess: returned from zygote!
+10-26 13:57:24.276  1598  1852 W ActivityManager: Slow operation: 79ms so far, now at startProcess: done updating battery stats
+10-26 13:57:24.277  1598  1852 W ActivityManager: Slow operation: 80ms so far, now at startProcess: building log message
+10-26 13:57:24.277  1598  1852 I ActivityManager: Start proc 2234:com.android.deskclock/u0a31 for broadcast com.android.deskclock/.AlarmInitReceiver
+10-26 13:57:24.277  1598  1852 W ActivityManager: Slow operation: 80ms so far, now at startProcess: starting to update pids map
+10-26 13:57:24.277  1598  1852 W ActivityManager: Slow operation: 80ms so far, now at startProcess: done updating pids map
+10-26 13:57:24.277  1598  1852 W ActivityManager: Slow operation: 80ms so far, now at startProcess: done starting proc!
+10-26 13:57:25.114  1598  1649 W ActivityManager: Unable to mark boot complete for abi: x86 (Failed to execute markbootcomplete [x86]: -1)
+10-26 13:57:25.318  1598  1649 W ActivityManager: Slow operation: 58ms so far, now at startProcess: returned from zygote!
+10-26 13:57:25.318  1598  1649 W ActivityManager: Slow operation: 58ms so far, now at startProcess: done updating battery stats
+10-26 13:57:25.318  1598  1649 W ActivityManager: Slow operation: 58ms so far, now at startProcess: building log message
+10-26 13:57:25.318  1598  1649 I ActivityManager: Start proc 2255:android.ext.services/u0a12 for on-hold
+10-26 13:57:25.318  1598  1649 W ActivityManager: Slow operation: 58ms so far, now at startProcess: starting to update pids map
+10-26 13:57:25.318  1598  1649 W ActivityManager: Slow operation: 58ms so far, now at startProcess: done updating pids map
+10-26 13:57:25.358  1598  1649 D ActivityManager: Finishing user boot 0
+10-26 13:57:27.656  1598  1629 I ActivityManager: Loading recents for user 0 into memory.
+10-26 13:57:27.929  1598  2051 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.sdksetup/.DefaultActivity} from uid 0 on display 0
+10-26 13:57:28.016  1598  2051 I ActivityManager: Start proc 2304:com.android.sdksetup/u0a17 for activity com.android.sdksetup/.DefaultActivity
+10-26 13:57:28.423  1598  2252 I ActivityManager: Config changes=3 {1.0 310mcc260mnc [en_US] ldltr sw480dp w480dp h776dp 160dpi lrg long port finger qwerty/v/v tball/v s.5}
+10-26 13:57:31.676  2291  2291 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:57:31.724  2291  2291 D AndroidRuntime: CheckJNI is OFF
+10-26 13:57:32.688  1598  2061 W ActivityManager: Finishing task with all activities already finished
+10-26 13:57:32.689  1598  2061 W ActivityManager: Duplicate finish request for ActivityRecord{58822fa u0 com.android.sdksetup/.DefaultActivity t3 f}
+10-26 13:57:33.028  1598  2326 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launcher3/.Launcher} from uid 0 on display 0
+10-26 13:57:33.101  1598  2326 I ActivityManager: Start proc 2349:com.android.launcher3/u0a42 for activity com.android.launcher3/.Launcher
+10-26 13:57:34.614  1598  2051 W ActivityManager: Slow operation: 53ms so far, now at startProcess: returned from zygote!
+10-26 13:57:34.615  1598  2051 W ActivityManager: Slow operation: 53ms so far, now at startProcess: done updating battery stats
+10-26 13:57:34.615  1598  2051 W ActivityManager: Slow operation: 54ms so far, now at startProcess: building log message
+10-26 13:57:34.615  1598  2051 I ActivityManager: Start proc 2381:com.android.launcher3:wallpaper_chooser/u0a42 for service com.android.launcher3/.dynamicui.ColorExtractionService
+10-26 13:57:34.615  1598  2051 W ActivityManager: Slow operation: 54ms so far, now at startProcess: starting to update pids map
+10-26 13:57:34.615  1598  2051 W ActivityManager: Slow operation: 54ms so far, now at startProcess: done updating pids map
+10-26 13:57:34.615  1598  2051 W ActivityManager: Slow operation: 54ms so far, now at startProcess: done starting proc!
+10-26 13:57:34.934  2291  2291 D AndroidRuntime: Calling main entry com.android.commands.settings.SettingsCmd
+10-26 13:57:35.053  2291  2291 D AndroidRuntime: Shutting down VM
+10-26 13:57:36.465  1598  2127 W ActivityManager: Slow operation: 181ms so far, now at startProcess: returned from zygote!
+10-26 13:57:36.465  1598  2127 W ActivityManager: Slow operation: 182ms so far, now at startProcess: done updating battery stats
+10-26 13:57:36.466  1598  2127 W ActivityManager: Slow operation: 183ms so far, now at startProcess: building log message
+10-26 13:57:36.466  1598  2127 I ActivityManager: Start proc 2404:com.android.keychain/1000 for service com.android.keychain/.KeyChainService
+10-26 13:57:36.467  1598  2127 W ActivityManager: Slow operation: 183ms so far, now at startProcess: starting to update pids map
+10-26 13:57:36.467  1598  2127 W ActivityManager: Slow operation: 184ms so far, now at startProcess: done updating pids map
+10-26 13:57:36.467  1598  2127 W ActivityManager: Slow operation: 185ms so far, now at startProcess: done starting proc!
+10-26 13:57:36.529  1598  1663 I ActivityManager: Killing 2304:com.android.sdksetup/u0a17 (adj 199): change com.android.sdksetup
+10-26 13:57:36.537  1598  1663 D ActivityManager: cleanUpApplicationRecord -- 2304
+10-26 13:57:37.906  1598  1629 W ActivityManager: Launch timeout has expired, giving up wake lock!
+10-26 13:57:39.079  2398  2398 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:57:39.100  2398  2398 D AndroidRuntime: CheckJNI is OFF
+10-26 13:57:41.823  2398  2398 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-26 13:57:41.965  1598  2051 W ActivityManager: Permission Denial: not allowed to send broadcast android.intent.action.AIRPLANE_MODE from pid=2398, uid=2000
+10-26 13:57:42.053  2398  2398 I AndroidRuntime: VM exiting with result code 1.
+10-26 13:57:43.938  1598  1612 W ActivityManager: Slow operation: 108ms so far, now at startProcess: returned from zygote!
+10-26 13:57:43.938  1598  1612 W ActivityManager: Slow operation: 108ms so far, now at startProcess: done updating battery stats
+10-26 13:57:43.939  1598  1612 W ActivityManager: Slow operation: 109ms so far, now at startProcess: building log message
+10-26 13:57:43.939  1598  1612 I ActivityManager: Start proc 2443:com.android.carrierconfig/u0a3 for service com.android.carrierconfig/.DefaultCarrierConfigService
+10-26 13:57:43.939  1598  1612 W ActivityManager: Slow operation: 109ms so far, now at startProcess: starting to update pids map
+10-26 13:57:43.939  1598  1612 W ActivityManager: Slow operation: 109ms so far, now at startProcess: done updating pids map
+10-26 13:57:43.939  1598  1612 W ActivityManager: Slow operation: 110ms so far, now at startProcess: done starting proc!
+10-26 13:57:45.919  2440  2440 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:57:45.937  2440  2440 D AndroidRuntime: CheckJNI is OFF
+10-26 13:57:46.435  1598  1628 W ActivityManager: Slow operation: 108ms so far, now at startProcess: returned from zygote!
+10-26 13:57:46.435  1598  1628 W ActivityManager: Slow operation: 108ms so far, now at startProcess: done updating battery stats
+10-26 13:57:46.435  1598  1628 W ActivityManager: Slow operation: 109ms so far, now at startProcess: building log message
+10-26 13:57:46.435  1598  1628 I ActivityManager: Start proc 2461:com.android.printspooler/u0a51 for service com.android.printspooler/.model.PrintSpoolerService
+10-26 13:57:46.435  1598  1628 W ActivityManager: Slow operation: 109ms so far, now at startProcess: starting to update pids map
+10-26 13:57:46.435  1598  1628 W ActivityManager: Slow operation: 109ms so far, now at startProcess: done updating pids map
+10-26 13:57:46.435  1598  1628 W ActivityManager: Slow operation: 110ms so far, now at startProcess: done starting proc!
+10-26 13:57:48.010  2440  2440 D AndroidRuntime: Calling main entry com.android.commands.settings.SettingsCmd
+10-26 13:57:48.077  2440  2440 D AndroidRuntime: Shutting down VM
+10-26 13:57:50.105  1598  2051 W ActivityManager: Slow operation: 138ms so far, now at startProcess: returned from zygote!
+10-26 13:57:50.105  1598  2051 W ActivityManager: Slow operation: 138ms so far, now at startProcess: done updating battery stats
+10-26 13:57:50.105  1598  2051 W ActivityManager: Slow operation: 139ms so far, now at startProcess: building log message
+10-26 13:57:50.105  1598  2051 I ActivityManager: Start proc 2497:android.process.media/u0a10 for broadcast com.android.providers.downloads/.DownloadReceiver
+10-26 13:57:50.105  1598  2051 W ActivityManager: Slow operation: 139ms so far, now at startProcess: starting to update pids map
+10-26 13:57:50.105  1598  2051 W ActivityManager: Slow operation: 139ms so far, now at startProcess: done updating pids map
+10-26 13:57:50.106  1598  2051 W ActivityManager: Slow operation: 140ms so far, now at startProcess: done starting proc!
+10-26 13:57:51.390  2493  2493 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:57:51.408  2493  2493 D AndroidRuntime: CheckJNI is OFF
+10-26 13:57:52.743  2493  2493 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+10-26 13:57:54.393  1598  1663 W ActivityManager: Slow operation: 86ms so far, now at startProcess: returned from zygote!
+10-26 13:57:54.394  1598  1663 W ActivityManager: Slow operation: 86ms so far, now at startProcess: done updating battery stats
+10-26 13:57:54.394  1598  1663 W ActivityManager: Slow operation: 87ms so far, now at startProcess: building log message
+10-26 13:57:54.395  1598  1663 I ActivityManager: Start proc 2535:com.android.defcontainer/u0a7 for service com.android.defcontainer/.DefaultContainerService
+10-26 13:57:54.395  1598  1663 W ActivityManager: Slow operation: 87ms so far, now at startProcess: starting to update pids map
+10-26 13:57:54.395  1598  1663 W ActivityManager: Slow operation: 87ms so far, now at startProcess: done updating pids map
+10-26 13:57:54.395  1598  1663 W ActivityManager: Slow operation: 89ms so far, now at startProcess: done starting proc!
+10-26 13:57:57.156  1598  1615 W ActivityManager: Slow operation: 89ms so far, now at startProcess: returned from zygote!
+10-26 13:57:57.156  1598  1615 W ActivityManager: Slow operation: 90ms so far, now at startProcess: done updating battery stats
+10-26 13:57:57.156  1598  1615 W ActivityManager: Slow operation: 90ms so far, now at startProcess: building log message
+10-26 13:57:57.157  1598  1615 I ActivityManager: Start proc 2559:android.process.acore/u0a1 for broadcast com.android.providers.contacts/.PhoneAccountRegistrationReceiver
+10-26 13:57:57.157  1598  1615 W ActivityManager: Slow operation: 90ms so far, now at startProcess: starting to update pids map
+10-26 13:57:57.157  1598  1615 W ActivityManager: Slow operation: 90ms so far, now at startProcess: done updating pids map
+10-26 13:57:57.157  1598  1615 W ActivityManager: Slow operation: 91ms so far, now at startProcess: done starting proc!
+10-26 13:57:57.478  2493  2493 I AndroidRuntime: VM exiting with result code 0.
+10-26 13:57:58.669  1598  2061 W ActivityManager: Slow operation: 67ms so far, now at startProcess: returned from zygote!
+10-26 13:57:58.669  1598  2061 W ActivityManager: Slow operation: 67ms so far, now at startProcess: done updating battery stats
+10-26 13:57:58.669  1598  2061 W ActivityManager: Slow operation: 68ms so far, now at startProcess: building log message
+10-26 13:57:58.669  1598  2061 I ActivityManager: Start proc 2588:com.android.managedprovisioning/u0a14 for broadcast com.android.managedprovisioning/.PreBootListener
+10-26 13:57:58.669  1598  2061 W ActivityManager: Slow operation: 68ms so far, now at startProcess: starting to update pids map
+10-26 13:57:58.670  1598  2061 W ActivityManager: Slow operation: 68ms so far, now at startProcess: done updating pids map
+10-26 13:57:58.670  1598  2061 W ActivityManager: Slow operation: 68ms so far, now at startProcess: done starting proc!
+10-26 13:57:59.867  1598  2061 W ActivityManager: Slow operation: 167ms so far, now at startProcess: returned from zygote!
+10-26 13:57:59.867  1598  2061 W ActivityManager: Slow operation: 168ms so far, now at startProcess: done updating battery stats
+10-26 13:57:59.868  1598  2061 W ActivityManager: Slow operation: 168ms so far, now at startProcess: building log message
+10-26 13:57:59.868  1598  2061 I ActivityManager: Start proc 2603:com.android.messaging/u0a54 for broadcast com.android.messaging/.receiver.DefaultSmsSubscriptionChangeReceiver
+10-26 13:57:59.868  1598  2061 W ActivityManager: Slow operation: 168ms so far, now at startProcess: starting to update pids map
+10-26 13:57:59.868  1598  2061 W ActivityManager: Slow operation: 168ms so far, now at startProcess: done updating pids map
+10-26 13:57:59.868  1598  2061 W ActivityManager: Slow operation: 170ms so far, now at startProcess: done starting proc!
+10-26 13:58:00.949  2582  2582 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:58:00.974  2582  2582 D AndroidRuntime: CheckJNI is OFF
+10-26 13:58:02.020  2582  2582 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+10-26 13:58:02.047  1598  2061 I ActivityManager: Force stopping fr.jarvis.services.fixture appid=10063 user=0: clear data
+10-26 13:58:02.064  1598  1629 I ActivityManager: Force stopping fr.jarvis.services.fixture appid=10063 user=-1: clearApplicationUserData
+10-26 13:58:02.158  2582  2582 I AndroidRuntime: VM exiting with result code 0.
+10-26 13:58:02.953  1598  1615 I ActivityManager: Start proc 2637:com.android.gallery3d/u0a39 for broadcast com.android.gallery3d/.app.PackagesMonitor
+10-26 13:58:05.567  2642  2642 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:58:05.601  2642  2642 D AndroidRuntime: CheckJNI is OFF
+10-26 13:58:06.645  2642  2642 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+10-26 13:58:07.969  1598  2326 W ActivityManager: Slow operation: 52ms so far, now at startProcess: returned from zygote!
+10-26 13:58:07.969  1598  2326 W ActivityManager: Slow operation: 52ms so far, now at startProcess: done updating battery stats
+10-26 13:58:07.969  1598  2326 W ActivityManager: Slow operation: 53ms so far, now at startProcess: building log message
+10-26 13:58:07.969  1598  2326 I ActivityManager: Start proc 2672:com.svox.pico/u0a49 for broadcast com.svox.pico/.VoiceDataInstallerReceiver
+10-26 13:58:07.969  1598  2326 W ActivityManager: Slow operation: 53ms so far, now at startProcess: starting to update pids map
+10-26 13:58:07.969  1598  2326 W ActivityManager: Slow operation: 53ms so far, now at startProcess: done updating pids map
+10-26 13:58:07.969  1598  2326 W ActivityManager: Slow operation: 78ms so far, now at startProcess: done starting proc!
+10-26 13:58:08.404  1598  2326 I ActivityManager: Start proc 2692:com.android.providers.calendar/u0a2 for broadcast com.android.providers.calendar/.CalendarUpgradeReceiver
+10-26 13:58:14.845  1598  2326 W ActivityManager: Slow operation: 93ms so far, now at startProcess: returned from zygote!
+10-26 13:58:14.845  1598  2326 W ActivityManager: Slow operation: 94ms so far, now at startProcess: done updating battery stats
+10-26 13:58:14.846  1598  2326 W ActivityManager: Slow operation: 94ms so far, now at startProcess: building log message
+10-26 13:58:14.846  1598  2326 I ActivityManager: Start proc 2757:com.android.documentsui/u0a9 for broadcast com.android.documentsui/.PackageReceiver
+10-26 13:58:14.846  1598  2326 W ActivityManager: Slow operation: 94ms so far, now at startProcess: starting to update pids map
+10-26 13:58:14.846  1598  2326 W ActivityManager: Slow operation: 95ms so far, now at startProcess: done updating pids map
+10-26 13:58:14.846  1598  2326 W ActivityManager: Slow operation: 97ms so far, now at startProcess: done starting proc!
+10-26 13:58:16.857  1598  2327 I ActivityManager: Start proc 2792:com.android.externalstorage/u0a13 for content provider com.android.externalstorage/.ExternalStorageProvider
+10-26 13:58:16.857  1598  2327 W ActivityManager: Slow operation: 51ms so far, now at startProcess: done starting proc!
+10-26 13:58:16.858  1598  2327 W ActivityManager: Slow operation: 52ms so far, now at getContentProviderImpl: after start process
+10-26 13:58:16.858  1598  2327 W ActivityManager: Slow operation: 52ms so far, now at getContentProviderImpl: updating data structures
+10-26 13:58:16.858  1598  2327 W ActivityManager: Slow operation: 52ms so far, now at getContentProviderImpl: done!
+10-26 13:58:20.555  1598  2061 W ActivityManager: Slow operation: 97ms so far, now at getContentProviderImpl: before checkContentProviderPermission
+10-26 13:58:20.558  1598  2061 W ActivityManager: Slow operation: 102ms so far, now at getContentProviderImpl: after checkContentProviderPermission
+10-26 13:58:20.558  1598  2061 W ActivityManager: Slow operation: 102ms so far, now at getContentProviderImpl: incProviderCountLocked
+10-26 13:58:20.562  1598  2061 W ActivityManager: Slow operation: 106ms so far, now at getContentProviderImpl: before updateOomAdj
+10-26 13:58:20.562  1598  2061 W ActivityManager: Slow operation: 106ms so far, now at getContentProviderImpl: after updateOomAdj
+10-26 13:58:20.562  1598  2061 W ActivityManager: Slow operation: 106ms so far, now at getContentProviderImpl: done!
+10-26 13:58:22.384  1598  2327 W ActivityManager: Slow operation: 94ms so far, now at startProcess: returned from zygote!
+10-26 13:58:22.387  1598  2327 W ActivityManager: Slow operation: 97ms so far, now at startProcess: done updating battery stats
+10-26 13:58:22.387  1598  2327 W ActivityManager: Slow operation: 97ms so far, now at startProcess: building log message
+10-26 13:58:22.387  1598  2327 I ActivityManager: Start proc 2852:com.android.mtp/u0a10 for content provider com.android.mtp/.MtpDocumentsProvider
+10-26 13:58:22.387  1598  2327 W ActivityManager: Slow operation: 98ms so far, now at startProcess: starting to update pids map
+10-26 13:58:22.387  1598  2327 W ActivityManager: Slow operation: 98ms so far, now at startProcess: done updating pids map
+10-26 13:58:22.388  1598  2327 W ActivityManager: Slow operation: 100ms so far, now at startProcess: done starting proc!
+10-26 13:58:22.388  1598  2327 W ActivityManager: Slow operation: 101ms so far, now at getContentProviderImpl: after start process
+10-26 13:58:22.388  1598  2327 W ActivityManager: Slow operation: 101ms so far, now at getContentProviderImpl: updating data structures
+10-26 13:58:22.388  1598  2327 W ActivityManager: Slow operation: 101ms so far, now at getContentProviderImpl: done!
+10-26 13:58:22.744  1598  1615 I ActivityManager: Killing 2032:com.android.settings:CryptKeeper/1000 (adj 906): empty #17
+10-26 13:58:23.065  1598  1615 D ActivityManager: cleanUpApplicationRecord -- 2032
+10-26 13:58:37.906  1598  1852 I ActivityManager: Killing 2404:com.android.keychain/1000 (adj 906): empty #17
+10-26 13:58:37.907  1598  1852 I ActivityManager: Killing 2381:com.android.launcher3:wallpaper_chooser/u0a42 (adj 906): empty #18
+10-26 13:58:37.946  1598  2252 D ActivityManager: cleanUpApplicationRecord -- 2404
+10-26 13:58:37.951  1598  1615 D ActivityManager: cleanUpApplicationRecord -- 2381
+10-26 13:58:38.409  2642  2642 I AndroidRuntime: VM exiting with result code 0.
+10-26 13:58:40.761  2889  2889 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:58:40.778  2889  2889 D AndroidRuntime: CheckJNI is OFF
+10-26 13:58:41.239  2889  2889 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+10-26 13:58:41.263  1598  1612 I ActivityManager: Force stopping fr.jarvis.services.android.adapter.test appid=10064 user=0: clear data
+10-26 13:58:41.276  1598  1629 I ActivityManager: Force stopping fr.jarvis.services.android.adapter.test appid=10064 user=-1: clearApplicationUserData
+10-26 13:58:41.395  2889  2889 I AndroidRuntime: VM exiting with result code 0.
+10-26 13:58:42.722  2901  2901 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 13:58:42.738  2901  2901 D AndroidRuntime: CheckJNI is OFF
+10-26 13:58:43.173  2901  2901 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-26 13:58:43.206  1598  1615 I ActivityManager: Force stopping fr.jarvis.services.android.adapter.test appid=10064 user=0: start instr
+10-26 13:58:43.228  1598  1615 I ActivityManager: Start proc 2911:fr.jarvis.services.android.adapter.test/u0a64 for added application fr.jarvis.services.android.adapter.test
+10-26 13:59:07.041  1598  2326 I ActivityManager: Start proc 2934:com.android.calendar/u0a26 for broadcast com.android.calendar/.alerts.AlertReceiver
+10-26 13:59:08.500  1598  2327 W ActivityManager: Slow operation: 102ms so far, now at startProcess: returned from zygote!
+10-26 13:59:08.500  1598  2327 W ActivityManager: Slow operation: 102ms so far, now at startProcess: done updating battery stats
+10-26 13:59:08.501  1598  2327 W ActivityManager: Slow operation: 104ms so far, now at startProcess: building log message
+10-26 13:59:08.501  1598  2327 I ActivityManager: Start proc 2958:fr.jarvis.services.fixture/u0a63 for broadcast fr.jarvis.services.fixture/.FixtureControlReceiver
+10-26 13:59:08.501  1598  2327 W ActivityManager: Slow operation: 104ms so far, now at startProcess: starting to update pids map
+10-26 13:59:08.502  1598  2327 W ActivityManager: Slow operation: 104ms so far, now at startProcess: done updating pids map
+10-26 13:59:08.502  1598  2327 W ActivityManager: Slow operation: 105ms so far, now at startProcess: done starting proc!
+10-26 13:59:09.198  1598  2252 D ActivityManager: Sending BOOT_COMPLETE user #0
+10-26 13:59:09.540  1598  1615 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:09.762  1598  1598 I ActivityManager: Start proc 2983:com.android.dialer/u0a8 for broadcast com.android.dialer/.calllog.CallLogReceiver
+10-26 13:59:09.868  1598  2064 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:12.808  1598  1615 I ActivityManager: Start proc 3016:com.android.email/u0a34 for broadcast com.android.email/.service.EmailUpgradeBroadcastReceiver
+10-26 13:59:13.246  1598  1961 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:13.380  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +3s303ms (total +3s715ms)
+10-26 13:59:13.487  1598  2252 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:13.642  1598  2061 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:15.778  1598  1612 W ActivityManager: Unable to start service Intent { act=com.android.mail.action.BACKUP_DATA_CHANGED pkg=com.android.email } U=0: not found
+10-26 13:59:15.817  1598  2327 W ActivityManager: Unable to start service Intent { act=com.android.mail.action.BACKUP_DATA_CHANGED pkg=com.android.email } U=0: not found
+10-26 13:59:16.036  1598  1615 W ActivityManager: Unable to start service Intent { act=com.android.mail.action.BACKUP_DATA_CHANGED pkg=com.android.email } U=0: not found
+10-26 13:59:16.347  1598  1852 W ActivityManager: Unable to start service Intent { act=com.android.mail.action.BACKUP_DATA_CHANGED pkg=com.android.email } U=0: not found
+10-26 13:59:16.354  1598  2326 W ActivityManager: Unable to start service Intent { act=com.android.mail.action.BACKUP_DATA_CHANGED pkg=com.android.email } U=0: not found
+10-26 13:59:16.357  1598  2061 W ActivityManager: Unable to start service Intent { act=com.android.mail.action.BACKUP_DATA_CHANGED pkg=com.android.email } U=0: not found
+10-26 13:59:16.362  1598  1961 W ActivityManager: Unable to start service Intent { act=com.android.mail.action.BACKUP_DATA_CHANGED pkg=com.android.email } U=0: not found
+10-26 13:59:16.590  1598  1615 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:16.797  1598  2252 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+10-26 13:59:17.012  1598  2327 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+10-26 13:59:17.205  1598  1961 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:17.209  1598  1615 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:17.232  1598  2064 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@3750e7
+10-26 13:59:17.521  1598  2326 W ActivityManager: Unable to start service Intent { cmp=com.android.email/.service.AttachmentService } U=0: not found
+10-26 13:59:17.555  1598  2051 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:17.580  1598  2326 W ActivityManager: Unable to start service Intent { act=com.android.email.EXCHANGE_INTENT pkg=com.android.exchange } U=0: not found
+10-26 13:59:17.767  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 13:59:18.056  1598  1961 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:18.680  1598  2327 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:19.813  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +917ms (total +1s235ms)
+10-26 13:59:23.920  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 13:59:26.426  1598  1852 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:26.534  1598  2051 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:27.926  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s49ms (total +1s471ms)
+10-26 13:59:29.320  1598  1629 I ActivityManager: Waited long enough for: ServiceRecord{2328085 u0 com.android.calendar/.alerts.InitAlarmsService}
+10-26 13:59:30.920  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 13:59:31.355  1598  1615 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:32.082  1598  1852 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:33.745  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s361ms (total +1s775ms)
+10-26 13:59:34.279  1598  1629 I ActivityManager: Waited long enough for: ServiceRecord{9b16806 u0 com.android.providers.media/.MediaScannerService}
+10-26 13:59:37.105  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 13:59:38.367  1598  2051 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:38.644  1598  1629 I ActivityManager: Killing 2443:com.android.carrierconfig/u0a3 (adj 906): empty #17
+10-26 13:59:38.649  1598  2326 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:38.926  1598  1612 D ActivityManager: cleanUpApplicationRecord -- 2443
+10-26 13:59:40.259  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s521ms (total +1s790ms)
+10-26 13:59:43.079  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 13:59:43.891  1598  2051 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:44.089  1598  2051 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:44.536  1598  3078 W ActivityManager: Slow operation: 65ms so far, now at getContentProviderImpl: after updateOomAdj
+10-26 13:59:44.536  1598  3078 W ActivityManager: Slow operation: 65ms so far, now at getContentProviderImpl: done!
+10-26 13:59:45.104  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +734ms (total +1s65ms)
+10-26 13:59:48.966  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 13:59:50.252  1598  1612 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:50.552  1598  1612 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:52.306  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s522ms (total +1s884ms)
+10-26 13:59:55.226  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 13:59:55.664  1598  1615 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 13:59:55.780  1598  2326 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 13:59:57.231  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s155ms (total +1s503ms)
+10-26 14:00:00.813  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 14:00:01.623  1598  3078 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:01.826  1598  1961 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:03.462  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s493ms (total +1s665ms)
+10-26 14:00:06.097  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 14:00:06.550  1598  2051 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:06.801  1598  3078 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:06.939  1598  1629 I ActivityManager: Killing 2167:com.android.cellbroadcastreceiver/u0a4 (adj 906): empty #17
+10-26 14:00:07.268  1598  2252 D ActivityManager: cleanUpApplicationRecord -- 2167
+10-26 14:00:08.206  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s98ms (total +1s526ms)
+10-26 14:00:10.950  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/sample.pdf flg=0x43 }
+10-26 14:00:16.306  1598  2061 I ActivityManager: Killing 2792:com.android.externalstorage/u0a13 (adj 906): empty #17
+10-26 14:00:16.358  1598  1612 D ActivityManager: cleanUpApplicationRecord -- 2792
+10-26 14:00:16.491  1598  1961 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:16.578  1598  3078 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:17.179  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +477ms (total +659ms)
+10-26 14:00:19.638  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 14:00:20.105  1598  1615 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:20.274  1598  2064 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:22.051  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s615ms (total +1s856ms)
+10-26 14:00:24.804  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 14:00:25.740  1598  3078 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:25.859  1598  2252 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:27.064  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +1s88ms (total +1s253ms)
+10-26 14:00:29.679  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 14:00:30.067  1598  2326 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:30.210  1598  3078 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:31.128  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +762ms (total +967ms)
+10-26 14:00:33.574  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 14:00:34.667  1598  2327 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:34.794  1598  1961 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:35.791  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +920ms (total +1s70ms)
+10-26 14:00:38.405  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.csv flg=0x43 }
+10-26 14:00:38.757  1598  2327 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:38.879  1598  1852 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:39.725  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +729ms (total +914ms)
+10-26 14:00:42.277  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 14:00:44.174  1598  1961 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:44.251  1598  2326 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:44.940  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +583ms (total +745ms)
+10-26 14:00:47.689  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 14:00:48.038  1598  2051 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:48.231  1598  1961 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:49.255  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +932ms (total +1s75ms)
+10-26 14:00:51.708  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 14:00:53.213  1598  2061 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:53.345  1598  2064 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* flg=0x41 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:54.083  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +639ms (total +809ms)
+10-26 14:00:56.660  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/document/source.txt flg=0x43 }
+10-26 14:00:57.376  1598  2327 I ActivityManager: START u0 {flg=0x10000000 cmp=fr.jarvis.services.android.adapter.test/fr.jarvis.services.android.adapter.FusionPickerActivity (has extras)} from uid 10064 on display 0
+10-26 14:00:57.555  1598  3078 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE flg=0x43 cmp=com.android.documentsui/.DocumentsActivity} from uid 10064 on display 0
+10-26 14:00:58.676  1598  1649 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +989ms (total +1s166ms)
+10-26 14:01:01.209  2911  2911 I FUSION_PICKER: request=42 result=-1 data=Intent { dat=content://fr.jarvis.services.fixture.documents/tree/root flg=0xc3 }
+10-26 14:01:02.029  1598  2327 I ActivityManager: Force stopping fr.jarvis.services.android.adapter.test appid=10064 user=0: finished inst
+10-26 14:01:02.030  1598  2327 I ActivityManager: Killing 2911:fr.jarvis.services.android.adapter.test/u0a64 (adj 0): stop fr.jarvis.services.android.adapter.test
+10-26 14:01:02.031  1598  2327 D ActivityManager: cleanUpApplicationRecord -- 2911
+10-26 14:01:02.059  2901  2901 D AndroidRuntime: Shutting down VM
+10-26 14:01:02.331  1598  3112 I ActivityManager: Failure reporting to instrumentation watcher: comp=ComponentInfo{fr.jarvis.services.android.adapter.test/androidx.test.runner.AndroidJUnitRunner} results=Bundle[mParcelledData.dataSize=1376]
+10-26 14:02:00.007  1598  1598 I ActivityManager: Killing 2852:com.android.mtp/u0a10 (adj 906): empty #17
+10-26 14:02:00.148  1598  2061 D ActivityManager: cleanUpApplicationRecord -- 2852

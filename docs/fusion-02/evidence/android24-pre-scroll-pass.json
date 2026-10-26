@@ -1,0 +1,216 @@
+{
+  "api": 24,
+  "host": "127.0.0.1",
+  "port": 5583,
+  "apk_sha256": "7b80c374e0a2ddcf154534b73c4df2ae87fcc81aab2f9db2b98b046ebd4d7261",
+  "expected": 15,
+  "cases": [
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "csvAndPermissionsOnPlatformSQLite",
+      "class": "fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest",
+      "current": "1",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "realPersistedGrantRevocationAndHostFenceRefuse",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "2",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "abandonedCommitAndJournalQuotaFailClosed",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "3",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "revokeAtBarrierBeforeCommitHasNoEffect",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "4",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "deceptiveAckUnknownAndNoRetryAfterReopen",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "5",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "maliciousUriAndProviderDenialHaveNoEffect",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "6",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "realTxtAndTwoPagePdfViaPort",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "7",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "corruptLabJournalRefusesWithoutDeletingEvidenceOrLeakingLease",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "8",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "revokeAfterCommitReportsCommittedRatherThanRollback",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "9",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "lostAuthorityAckIsUnknownEvenWhenBytesCommitted",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "10",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "runtimeJournalCorruptionPreservesEvidenceAndReleasesLease",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "11",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "csvRealSafExportExactSumAndOriginalIntact",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "12",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "portablePermissionsAndUnqualifiedExportStillRefuse",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "13",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "docxNoConsentNoCreationThenConfirmedReadback",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "14",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "cancellationAndSecondWorkerRefused",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "15",
+      "status_code": 0
+    }
+  ],
+  "uid_metrics": [
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    },
+    {
+      "worker_uid": "10062",
+      "fixture_provider_uid": "10063"
+    }
+  ],
+  "identity": [
+    "1",
+    "24",
+    "1"
+  ],
+  "fingerprint": "Android/sdk_phone_x86/generic_x86:7.0/NYC/4174735:userdebug/test-keys",
+  "airplane_request_output": "Broadcasting: Intent { act=android.intent.action.AIRPLANE_MODE (has extras) }\njava.lang.SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.AIRPLANE_MODE from pid=2213, uid=2000\n\tat android.os.Parcel.readException(Parcel.java:1683)\n\tat android.os.Parcel.readException(Parcel.java:1636)\n\tat android.app.ActivityManagerProxy.broadcastIntent(ActivityManagerNative.java:3507)\n\tat com.android.commands.am.Am.sendBroadcast(Am.java:772)\n\tat com.android.commands.am.Am.onRun(Am.java:404)\n\tat com.android.internal.os.BaseCommand.run(BaseCommand.java:51)\n\tat com.android.commands.am.Am.main(Am.java:121)\n\tat com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)\n\tat com.android.internal.os.RuntimeInit.main(RuntimeInit.java:262)\n",
+  "airplane_mode_setting": "1",
+  "fixture_apk_sha256": "8a2db25dc150d918885d6a8e9dc1dcdfc429f54f672af55fc6ee00fdeb0a2b09",
+  "command": "am instrument -w -r fr.jarvis.services.android.adapter.test/androidx.test.runner.AndroidJUnitRunner",
+  "complete": true,
+  "passed": 15,
+  "success": true,
+  "elapsed_host_seconds": 271.942
+}

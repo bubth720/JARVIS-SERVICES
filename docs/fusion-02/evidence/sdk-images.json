@@ -1,0 +1,16 @@
+[
+  {
+    "api": 24,
+    "archive": "x86-24_r08.zip",
+    "sha256": "ef242578ed86f73fd4be27935d094d58f2c4b7ab53362b74978e2257a8df3bba",
+    "sha1": "c1cae7634b0216c0b5990f2c144eb8ca948e3511",
+    "bytes": 313489224
+  },
+  {
+    "api": 25,
+    "archive": "x86-25_r01.zip",
+    "sha256": "a9908b08e295e00cf03261f7f276744cf31ba8be6a065a063239e2a14a57b3da",
+    "sha1": "78ce7eb1387d598685633b9f7cbb300c3d3aeb5f",
+    "bytes": 316695942
+  }
+]

@@ -1,0 +1,47 @@
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.adapter.FusionSafInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Error in docxNoConsentNoCreationThenConfirmedReadback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;Grid view;Sort by;More options;sample.pdf;7:44 AM;source.csv;7:44 AM;source.txt;7:44 AM;template.docx;7:44 AM;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:564)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.docxNoConsentNoCreationThenConfirmedReadback(FusionSafInstrumentedTest.java:141)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;Grid view;Sort by;More options;sample.pdf;7:44 AM;source.csv;7:44 AM;source.txt;7:44 AM;template.docx;7:44 AM;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:564)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.docxNoConsentNoCreationThenConfirmedReadback(FusionSafInstrumentedTest.java:141)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 19.105
+There was 1 failure:
+1) docxNoConsentNoCreationThenConfirmedReadback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;Grid view;Sort by;More options;sample.pdf;7:44 AM;source.csv;7:44 AM;source.txt;7:44 AM;template.docx;7:44 AM;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:564)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.docxNoConsentNoCreationThenConfirmedReadback(FusionSafInstrumentedTest.java:141)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,170 @@
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvAndPermissionsOnPlatformSQLite
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvAndPermissionsOnPlatformSQLite
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.adapter.FusionSafInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=abandonedCommitAndJournalQuotaFailClosed
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+Error in abandonedCommitAndJournalQuotaFailClosed(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.abandonedCommitAndJournalQuotaFailClosed(FusionSafInstrumentedTest.java:100)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=abandonedCommitAndJournalQuotaFailClosed
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.abandonedCommitAndJournalQuotaFailClosed(FusionSafInstrumentedTest.java:100)
+
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=revokeAtBarrierBeforeCommitHasNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+Error in revokeAtBarrierBeforeCommitHasNoEffect(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAtBarrierBeforeCommitHasNoEffect(FusionSafInstrumentedTest.java:126)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=revokeAtBarrierBeforeCommitHasNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAtBarrierBeforeCommitHasNoEffect(FusionSafInstrumentedTest.java:126)
+
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=deceptiveAckUnknownAndNoRetryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+Error in deceptiveAckUnknownAndNoRetryAfterReopen(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.deceptiveAckUnknownAndNoRetryAfterReopen(FusionSafInstrumentedTest.java:85)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=deceptiveAckUnknownAndNoRetryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.deceptiveAckUnknownAndNoRetryAfterReopen(FusionSafInstrumentedTest.java:85)
+
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=maliciousUriAndProviderDenialHaveNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+Error in maliciousUriAndProviderDenialHaveNoEffect(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.maliciousUriAndProviderDenialHaveNoEffect(FusionSafInstrumentedTest.java:154)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=maliciousUriAndProviderDenialHaveNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.maliciousUriAndProviderDenialHaveNoEffect(FusionSafInstrumentedTest.java:154)
+
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=realTxtAndTwoPagePdfViaPort
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+Error in realTxtAndTwoPagePdfViaPort(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realTxtAndTwoPagePdfViaPort(FusionSafInstrumentedTest.java:110)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=realTxtAndTwoPagePdfViaPort
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: SAF selection
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:200)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realTxtAndTwoPagePdfViaPort(FusionSafInstrumentedTest.java:110)
+
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=11
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=revokeAfterCommitReportsCommittedRatherThanRollback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+INSTRUMENTATION_CODE: 0

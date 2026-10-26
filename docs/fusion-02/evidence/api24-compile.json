@@ -1,0 +1,12 @@
+{
+  "api": 24,
+  "type": "compile_only_no_runtime_or_device_claim",
+  "source_files": 23,
+  "exit_code": 0,
+  "sha256": {
+    "/tmp/jarvis-tools/android-sdk/platforms/android-24/android.jar": "4c438bf1b3d4e6104faccc62e1ffe95ef197b88055497b540a871349e93c8685",
+    "/tmp/jarvis-tools/android-sdk/build-tools/35.0.0/core-lambda-stubs.jar": "c8a21e0e653227d1fce74bd547c9e7278e17c016c405aa8e1f6c313b192ade31",
+    "/tmp/jarvis-tools/cache/caches/modules-2/files-2.1/com.google.code.gson/gson/2.11.0/527175ca6d81050b53bdd4c457a6d6e017626b0e/gson-2.11.0.jar": "57928d6e5a6edeb2abd3770a8f95ba44dce45f3b23b7a9dc2b309c581552a78b",
+    "/tmp/jarvis-tools/cache/caches/modules-2/files-2.1/com.tom-roush/pdfbox-android/2.0.27.0/65a2f2b106b3d4ee37c5044cfc72384138bd60d4/pdfbox-android-2.0.27.0.aar": "30277f879cfd571db2a137582c95516a0d4ea6778e945519bc58ca93d57d88c7"
+  }
+}

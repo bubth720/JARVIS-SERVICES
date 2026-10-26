@@ -1,0 +1,23 @@
+{
+  "JARVIS-UNIFIED": {
+    "sha": "6de738633586743b3cf3f54e41ab4180c2cf0fee",
+    "url": "https://raw.githubusercontent.com/bubth720/JARVIS-UNIFIED/6de738633586743b3cf3f54e41ab4180c2cf0fee/docs/fusion-02/REPORT.md",
+    "bytes": 6309,
+    "sha256": "c7fef20bd87b351eec3bf146391c2650c989183c9199b265bec375061f3793af",
+    "read_only": true
+  },
+  "JAVIS-Local-v2": {
+    "sha": "f6a3b2d0c280c69ef1570544fdbf5bcf5818810c",
+    "url": "https://raw.githubusercontent.com/bubth720/JAVIS-Local-v2/f6a3b2d0c280c69ef1570544fdbf5bcf5818810c/docs/fusion-02/REPORT.md",
+    "bytes": 15058,
+    "sha256": "8e0aaa5f4b319a7da998d0506e7dc7999771fd1dcb6270a09ffe4d4d6a61a416",
+    "read_only": true
+  },
+  "JARVIS-NEXUS": {
+    "sha": "06ccf98a7709364bf09cc1ecea1c35663d5787cf",
+    "url": "https://raw.githubusercontent.com/bubth720/JARVIS-NEXUS/06ccf98a7709364bf09cc1ecea1c35663d5787cf/docs/fusion-02/REPORT.md",
+    "bytes": 16990,
+    "sha256": "9ad0dec52e402161492b24f1e174aa32c72d6b268086036d735b6eed661bc689",
+    "read_only": true
+  }
+}

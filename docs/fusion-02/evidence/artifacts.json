@@ -1,0 +1,27 @@
+{
+  "aar": {
+    "path": "services-android-adapter/build/outputs/aar/services-android-adapter-debug.aar",
+    "sha256": "e1402a240793e1bb0811553fe998f4afb699544fad1f085eed8967df3bbfe5dc",
+    "bytes": 14773,
+    "manifest": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"fr.jarvis.services.android.adapter\" >\n\n    <uses-sdk android:minSdkVersion=\"24\" />\n\n</manifest>",
+    "laboratory_export_packaged": false,
+    "jni": []
+  },
+  "fixture_apk": {
+    "path": "services-saf-fixture/build/outputs/apk/debug/services-saf-fixture-debug.apk",
+    "sha256": "8a2db25dc150d918885d6a8e9dc1dcdfc429f54f672af55fc6ee00fdeb0a2b09",
+    "bytes": 19906,
+    "badging": "package: name='fr.jarvis.services.fixture' versionCode='1' versionName='lab-1' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'\nsdkVersion:'24'\ntargetSdkVersion:'35'\napplication: label='' icon=''\ntestOnly='-1'\napplication-debuggable\nfeature-group: label=''\n  uses-feature: name='android.hardware.faketouch'\n  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'\nprovides-component:'document-provider'\nother-receivers\nsupports-screens: 'small' 'normal' 'large' 'xlarge'\nsupports-any-density: 'true'\nlocales:\ndensities:\n"
+  },
+  "test_apk": {
+    "path": "services-android-adapter/build/outputs/apk/androidTest/debug/services-android-adapter-debug-androidTest.apk",
+    "sha256": "bab7d98c14be1a0dd07a650430363afc5be39e2f5438151340c67eba77020bed",
+    "bytes": 7665657,
+    "badging": "package: name='fr.jarvis.services.android.adapter.test' versionCode='' versionName='' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'\nsdkVersion:'24'\ntargetSdkVersion:'35'\nuses-permission: name='fr.jarvis.services.fixture.CONTROL'\nuses-permission: name='android.permission.REORDER_TASKS'\napplication: label='' icon=''\napplication-debuggable\nuses-library:'android.test.runner'\nfeature-group: label=''\n  uses-feature: name='android.hardware.faketouch'\n  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'\nother-activities\nsupports-screens: 'small' 'normal' 'large' 'xlarge'\nsupports-any-density: 'true'\nlocales: '--_--'\ndensities: '160'\n"
+  },
+  "portable_jar": {
+    "path": "services-portable-api/build/libs/services-portable-api-1.0.0.jar",
+    "sha256": "594f06dc23011d5bd95f3df863f3365b9b26d3ee5ca589ef89aee7fb3b00acb9",
+    "bytes": 65252
+  }
+}

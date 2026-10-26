@@ -1,0 +1,25 @@
+{
+  "controls": [
+    {
+      "case": "false_production_go",
+      "rejected": true,
+      "type": "validator_negative_control_not_application_test"
+    },
+    {
+      "case": "changed_output_bytes",
+      "rejected": true,
+      "type": "validator_negative_control_not_application_test"
+    },
+    {
+      "case": "forged_native_status",
+      "rejected": true,
+      "type": "validator_negative_control_not_application_test"
+    },
+    {
+      "case": "zero_junit_cases",
+      "rejected": true,
+      "type": "validator_negative_control_not_application_test"
+    }
+  ],
+  "production_or_native_executions_added": 0
+}

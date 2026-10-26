@@ -1,0 +1,70 @@
+[Inherited cloud proxy/CA configuration redacted; no TLS or dependency verification disabled]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :android
+Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+
+> Task :services-portable-api:compileJava
+Note: /workspace/JARVIS-SERVICES/services-portable-api/src/main/java/fr/jarvis/services/shared/storage/Store.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :shared-runtime:compileJava
+> Task :desktop:compileJava
+> Task :desktop:processResources NO-SOURCE
+> Task :desktop:classes
+> Task :desktop:compileTestJava
+> Task :desktop:processTestResources NO-SOURCE
+> Task :desktop:testClasses
+> Task :services-portable-api:processResources NO-SOURCE
+> Task :services-portable-api:classes
+> Task :services-portable-api:jar
+> Task :shared-runtime:processResources NO-SOURCE
+> Task :shared-runtime:classes
+> Task :shared-runtime:jar
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by fr.jarvis.services.ModulesTest (file:/workspace/JARVIS-SERVICES/desktop/build/classes/java/test/)
+WARNING: Please consider reporting this to the maintainers of fr.jarvis.services.ModulesTest
+WARNING: System::setSecurityManager will be removed in a future release
+
+> Task :desktop:test
+[Inherited cloud proxy/CA configuration redacted; no TLS or dependency verification disabled]
+
+> Task :services-android-adapter:preBuild UP-TO-DATE
+> Task :services-android-adapter:preDebugBuild UP-TO-DATE
+> Task :services-android-adapter:generateDebugResValues
+> Task :services-android-adapter:generateDebugResources
+> Task :services-android-adapter:packageDebugResources
+> Task :services-android-adapter:javaPreCompileDebug
+> Task :services-android-adapter:preDebugUnitTestBuild UP-TO-DATE
+> Task :services-android-adapter:javaPreCompileDebugUnitTest
+> Task :services-android-adapter:writeDebugAarMetadata
+> Task :services-android-adapter:parseDebugLocalResources
+> Task :services-android-adapter:checkDebugUnitTestAarMetadata FAILED
+
+[Incubating] Problems report is available at: file:///workspace/JARVIS-SERVICES/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':services-android-adapter:checkDebugUnitTestAarMetadata'.
+> Dependency verification failed for configuration ':services-android-adapter:debugUnitTestRuntimeClasspath'
+  One artifact failed verification: guava-parent-33.3.1-jre.pom (com.google.guava:guava-parent:33.3.1-jre) from repository MavenRepo
+  If the artifacts are trustworthy, you will need to update the gradle/verification-metadata.xml file. For more on how to do this, please refer to https://docs.gradle.org/8.13/userguide/dependency_verification.html#sec:troubleshooting-verification in the Gradle documentation.
+  
+  Open this report for more details: file:///workspace/JARVIS-SERVICES/build/reports/dependency-verification/at-1792966809525/dependency-verification-report.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 25s
+15 actionable tasks: 15 executed

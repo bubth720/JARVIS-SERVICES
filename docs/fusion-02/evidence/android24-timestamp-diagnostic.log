@@ -1,0 +1,54 @@
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.adapter.FusionSafInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Process crashed while executing docxNoConsentNoCreationThenConfirmedReadback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.SecurityException: No persistable permission grants found for UID 10062 and Uri 0 @ content://fr.jarvis.services.android.adapter.test.fusionfiles/document/source.txt
+	at android.os.Parcel.readException(Parcel.java:1683)
+	at android.os.Parcel.readException(Parcel.java:1636)
+	at android.app.ActivityManagerProxy.takePersistableUriPermission(ActivityManagerNative.java:4837)
+	at android.content.ContentResolver.takePersistableUriPermission(ContentResolver.java:1793)
+	at fr.jarvis.services.android.adapter.FusionPickerActivity.onActivityResult(FusionPickerActivity.java:39)
+	at android.app.Activity.dispatchActivityResult(Activity.java:6915)
+	at android.app.ActivityThread.deliverResults(ActivityThread.java:4049)
+	at android.app.ActivityThread.handleSendResult(ActivityThread.java:4096)
+	at android.app.ActivityThread.-wrap20(ActivityThread.java)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1516)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:154)
+	at android.app.ActivityThread.main(ActivityThread.java:6077)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.SecurityException: No persistable permission grants found for UID 10062 and Uri 0 @ content://fr.jarvis.services.android.adapter.test.fusionfiles/document/source.txt
+	at android.os.Parcel.readException(Parcel.java:1683)
+	at android.os.Parcel.readException(Parcel.java:1636)
+	at android.app.ActivityManagerProxy.takePersistableUriPermission(ActivityManagerNative.java:4837)
+	at android.content.ContentResolver.takePersistableUriPermission(ContentResolver.java:1793)
+	at fr.jarvis.services.android.adapter.FusionPickerActivity.onActivityResult(FusionPickerActivity.java:39)
+	at android.app.Activity.dispatchActivityResult(Activity.java:6915)
+	at android.app.ActivityThread.deliverResults(ActivityThread.java:4049)
+	at android.app.ActivityThread.handleSendResult(ActivityThread.java:4096)
+	at android.app.ActivityThread.-wrap20(ActivityThread.java)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1516)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:154)
+	at android.app.ActivityThread.main(ActivityThread.java:6077)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+INSTRUMENTATION_CODE: 0

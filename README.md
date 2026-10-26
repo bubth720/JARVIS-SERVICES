@@ -1,5 +1,13 @@
 # JARVIS SERVICES — Foundation V1
 
+## FUSION-02 — qualification du port Android
+
+Branche `feat/fusion-02-services`, verdict **PARTIAL** : exports SAF qualifiés en
+laboratoire, proposition de fence détenue par CORE ; export du port de production
+toujours désactivé. [Rapport et preuves](docs/fusion-02/REPORT.md),
+[contrat proposé](docs/fusion-02/COMMIT-CONTRACT.md), [reproduction](docs/fusion-02/RUNBOOK.md).
+L'atelier17outils demeure sur sa branche de référence, sans fusion implicite.
+
 Huit bibliothèques locales et une application Android de diagnostic. Branche de travail :
 `mission-001-services-foundation`. Aucun service cloud, télémétrie ou téléchargement de
 modèle au runtime. Ce dépôt ne modifie ni CORE ni LLM.

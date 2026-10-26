@@ -1,0 +1,7 @@
+{
+  "source": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/android-15.0.0_r1/core/java/android/os/Build.java",
+  "source_sha256": "ce3c4c46051d0f845491ab39b39d3291f4e3994cea1d2271aa2a91bf0713e8d9",
+  "line": 210,
+  "quote": "public static final boolean IS_EMULATOR = getString(\"ro.boot.qemu\").equals(\"1\");",
+  "purpose": "Use Android 15 emulator identity property; retain exact API/boot/CI serial guards."
+}

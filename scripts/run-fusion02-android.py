@@ -25,7 +25,8 @@ fixture_snapshot.write(fixture_payload);fixture_snapshot.close()
 d=AdbDeviceTcp('127.0.0.1',a.port,default_transport_timeout_s=300)
 r={'api':a.api,'host':'127.0.0.1','port':a.port,'apk_sha256':hashlib.sha256(payload).hexdigest(),'expected':a.expected,'cases':[],'uid_metrics':[]};start=time.monotonic()
 try:
- for attempt in range(180):
+ boot_deadline=time.monotonic()+900
+ while time.monotonic()<boot_deadline:
   try:
    d.connect(auth_timeout_s=3)
    emulator_property='ro.boot.qemu' if a.api>=35 else 'ro.kernel.qemu'

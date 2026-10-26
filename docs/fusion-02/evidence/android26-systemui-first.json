@@ -1,0 +1,227 @@
+{
+  "api": 26,
+  "host": "127.0.0.1",
+  "port": 5581,
+  "apk_sha256": "7b80c374e0a2ddcf154534b73c4df2ae87fcc81aab2f9db2b98b046ebd4d7261",
+  "expected": 15,
+  "cases": [
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "csvAndPermissionsOnPlatformSQLite",
+      "class": "fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest",
+      "current": "1",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "realPersistedGrantRevocationAndHostFenceRefuse",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "2",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "abandonedCommitAndJournalQuotaFailClosed",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "3",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "revokeAtBarrierBeforeCommitHasNoEffect",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "4",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "deceptiveAckUnknownAndNoRetryAfterReopen",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "5",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "maliciousUriAndProviderDenialHaveNoEffect",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "6",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "realTxtAndTwoPagePdfViaPort",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "7",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "corruptLabJournalRefusesWithoutDeletingEvidenceOrLeakingLease",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "8",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "revokeAfterCommitReportsCommittedRatherThanRollback",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "9",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "lostAuthorityAckIsUnknownEvenWhenBytesCommitted",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "10",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "runtimeJournalCorruptionPreservesEvidenceAndReleasesLease",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "11",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "csvRealSafExportExactSumAndOriginalIntact",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "12",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "portablePermissionsAndUnqualifiedExportStillRefuse",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "current": "13",
+      "status_code": 0
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "docxNoConsentNoCreationThenConfirmedReadback",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "14",
+      "status_code": -2
+    },
+    {
+      "numtests": "15",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "cancellationAndSecondWorkerRefused",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]",
+      "current": "15",
+      "status_code": -2
+    }
+  ],
+  "uid_metrics": [
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    },
+    {
+      "worker_uid": "10066",
+      "fixture_provider_uid": "10065"
+    }
+  ],
+  "identity": [
+    "1",
+    "26",
+    "1"
+  ],
+  "fingerprint": "Android/sdk_phone_x86/generic_x86:8.0.0/OSR1.180418.004/4931640:userdebug/test-keys",
+  "airplane_request_output": "Broadcasting: Intent { act=android.intent.action.AIRPLANE_MODE flg=0x400000 (has extras) }\nSecurity exception: Permission Denial: not allowed to send broadcast android.intent.action.AIRPLANE_MODE from pid=2483, uid=2000\n\njava.lang.SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.AIRPLANE_MODE from pid=2483, uid=2000\n\tat com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:19074)\n\tat com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:19712)\n\tat com.android.server.am.ActivityManagerShellCommand.runSendBroadcast(ActivityManagerShellCommand.java:614)\n\tat com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:154)\n\tat android.os.ShellCommand.exec(ShellCommand.java:96)\n\tat com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:14898)\n\tat android.os.Binder.shellCommand(Binder.java:573)\n\tat android.os.Binder.onTransact(Binder.java:473)\n\tat android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4256)\n\tat com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2935)\n\tat android.os.Binder.execTransact(Binder.java:674)\n",
+  "airplane_mode_setting": "1",
+  "fixture_apk_sha256": "8a2db25dc150d918885d6a8e9dc1dcdfc429f54f672af55fc6ee00fdeb0a2b09",
+  "command": "am instrument -w -r fr.jarvis.services.android.adapter.test/androidx.test.runner.AndroidJUnitRunner",
+  "complete": true,
+  "passed": 4,
+  "success": false,
+  "elapsed_host_seconds": 456.623
+}

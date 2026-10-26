@@ -1,0 +1,266 @@
+[Inherited cloud proxy/CA configuration redacted; no TLS or dependency verification disabled]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :android
+Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+
+> Task :services-portable-api:compileJava UP-TO-DATE
+> Task :shared-runtime:compileJava UP-TO-DATE
+> Task :desktop:compileJava UP-TO-DATE
+> Task :desktop:processResources NO-SOURCE
+> Task :desktop:classes UP-TO-DATE
+> Task :desktop:compileTestJava UP-TO-DATE
+> Task :desktop:processTestResources NO-SOURCE
+> Task :desktop:testClasses UP-TO-DATE
+> Task :services-portable-api:processResources NO-SOURCE
+> Task :services-portable-api:classes UP-TO-DATE
+> Task :services-portable-api:jar UP-TO-DATE
+> Task :shared-runtime:processResources NO-SOURCE
+> Task :shared-runtime:classes UP-TO-DATE
+> Task :shared-runtime:jar UP-TO-DATE
+> Task :desktop:test UP-TO-DATE
+> Task :services-android-adapter:preBuild UP-TO-DATE
+> Task :services-android-adapter:preDebugBuild UP-TO-DATE
+> Task :services-android-adapter:generateDebugResValues UP-TO-DATE
+> Task :services-android-adapter:generateDebugResources UP-TO-DATE
+> Task :services-android-adapter:packageDebugResources UP-TO-DATE
+> Task :services-android-adapter:parseDebugLocalResources UP-TO-DATE
+> Task :services-android-adapter:javaPreCompileDebug UP-TO-DATE
+> Task :services-android-adapter:preDebugUnitTestBuild UP-TO-DATE
+> Task :services-android-adapter:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :services-android-adapter:writeDebugAarMetadata UP-TO-DATE
+> Task :services-android-adapter:generateDebugRFile
+> Task :services-android-adapter:checkDebugUnitTestAarMetadata
+> Task :services-android-adapter:compileDebugJavaWithJavac
+> Task :services-android-adapter:bundleLibRuntimeToJarDebug
+> Task :services-android-adapter:bundleLibCompileToJarDebug
+> Task :services-android-adapter:generateDebugUnitTestResValues
+> Task :services-android-adapter:compileDebugLibraryResources
+> Task :services-android-adapter:mapDebugUnitTestSourceSetPaths
+> Task :services-android-adapter:generateDebugUnitTestResources
+> Task :services-android-adapter:mergeDebugUnitTestResources
+> Task :services-android-adapter:extractDeepLinksDebug
+> Task :services-android-adapter:generateDebugUnitTestAssets UP-TO-DATE
+> Task :services-android-adapter:mergeDebugShaders
+> Task :services-android-adapter:compileDebugShaders NO-SOURCE
+> Task :services-android-adapter:generateDebugAssets UP-TO-DATE
+> Task :services-android-adapter:mergeDebugAssets
+> Task :services-android-adapter:processDebugManifest
+> Task :services-android-adapter:mergeDebugUnitTestAssets
+> Task :services-android-adapter:processDebugUnitTestManifest
+> Task :services-android-adapter:processDebugJavaRes NO-SOURCE
+> Task :services-android-adapter:processDebugUnitTestJavaRes NO-SOURCE
+> Task :services-android-adapter:mergeDebugJniLibFolders
+> Task :services-android-adapter:mergeDebugNativeLibs NO-SOURCE
+> Task :services-android-adapter:stripDebugDebugSymbols NO-SOURCE
+> Task :services-android-adapter:copyDebugJniLibsProjectAndLocalJars
+> Task :services-android-adapter:extractDebugAnnotations
+> Task :services-android-adapter:extractDeepLinksForAarDebug
+> Task :services-android-adapter:mergeDebugGeneratedProguardFiles
+> Task :services-android-adapter:mergeDebugConsumerProguardFiles
+> Task :services-android-adapter:prepareDebugArtProfile
+> Task :services-android-adapter:prepareLintJarForPublish
+> Task :services-android-adapter:mergeDebugJavaResource
+> Task :services-android-adapter:syncDebugLibJars
+> Task :services-android-adapter:bundleDebugAar
+> Task :services-android-adapter:assembleDebug
+> Task :services-android-adapter:preDebugAndroidTestBuild UP-TO-DATE
+> Task :services-android-adapter:javaPreCompileDebugAndroidTest
+> Task :services-android-adapter:checkDebugAndroidTestAarMetadata
+> Task :services-android-adapter:generateDebugAndroidTestResValues
+> Task :services-android-adapter:mapDebugAndroidTestSourceSetPaths
+> Task :services-android-adapter:generateDebugAndroidTestResources
+> Task :services-android-adapter:processDebugUnitTestResources
+> Task :services-android-adapter:mergeDebugAndroidTestResources
+> Task :services-android-adapter:compileDebugUnitTestJavaWithJavac
+> Task :services-android-adapter:packageDebugUnitTestForUnitTest
+> Task :services-android-adapter:generateDebugUnitTestConfig
+> Task :services-android-adapter:processDebugAndroidTestManifest
+
+> Task :services-android-adapter:testDebugUnitTest
+[Inherited cloud proxy/CA configuration redacted; no TLS or dependency verification disabled]
+
+ServicesAndroidToolPortTest > cancellationBoundsUriRefusalsAndDocxFailClosed[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > cancellationBoundsUriRefusalsAndDocxFailClosed[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > cancellationBoundsUriRefusalsAndDocxFailClosed[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > cancellationBoundsUriRefusalsAndDocxFailClosed FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > corruptJournalRefusesWithoutResetAndReleasesConstructorLease[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > corruptJournalRefusesWithoutResetAndReleasesConstructorLease[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > corruptJournalRefusesWithoutResetAndReleasesConstructorLease[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > corruptJournalRefusesWithoutResetAndReleasesConstructorLease FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > interruptedReceiptBecomesUnknownAndIsNeverReplayed[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > interruptedReceiptBecomesUnknownAndIsNeverReplayed[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > interruptedReceiptBecomesUnknownAndIsNeverReplayed[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > interruptedReceiptBecomesUnknownAndIsNeverReplayed FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > rejectsConcurrentJournalOwnerUntilConfirmedClosure[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > rejectsConcurrentJournalOwnerUntilConfirmedClosure[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > rejectsConcurrentJournalOwnerUntilConfirmedClosure[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > rejectsConcurrentJournalOwnerUntilConfirmedClosure FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > closeAndCancellationWaitForObservedStreamEnd[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > closeAndCancellationWaitForObservedStreamEnd[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > closeAndCancellationWaitForObservedStreamEnd[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > closeAndCancellationWaitForObservedStreamEnd FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > refusesExistingUnownedDatabaseWithoutMigratingIt[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > refusesExistingUnownedDatabaseWithoutMigratingIt[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > refusesExistingUnownedDatabaseWithoutMigratingIt[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > refusesExistingUnownedDatabaseWithoutMigratingIt FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > realTwoPagePdfExtractionReturnsCorrectPageAndSha[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > realTwoPagePdfExtractionReturnsCorrectPageAndSha[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > realTwoPagePdfExtractionReturnsCorrectPageAndSha[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > realTwoPagePdfExtractionReturnsCorrectPageAndSha FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[24] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[25] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[26] FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+ServicesAndroidToolPortTest > permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled FAILED
+    java.lang.IllegalStateException at MavenDependencyResolver.java:118
+        Caused by: java.io.FileNotFoundException at RandomAccessFile.java:-2
+
+40 tests completed, 40 failed
+
+> Task :services-android-adapter:testDebugUnitTest FAILED
+
+[Incubating] Problems report is available at: file:///workspace/JARVIS-SERVICES/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':services-android-adapter:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///workspace/JARVIS-SERVICES/services-android-adapter/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 28s
+53 actionable tasks: 39 executed, 14 up-to-date

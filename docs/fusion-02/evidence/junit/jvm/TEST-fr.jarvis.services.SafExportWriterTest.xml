@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.SafExportWriterTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:42:37.992Z" hostname="cloud-lab-redacted" time="0.054">
+  <properties/>
+  <testcase name="verifiedMarkdownCommitsOnlyAfterReadbackAndCannotReplay()" classname="fr.jarvis.services.SafExportWriterTest" time="0.011"/>
+  <testcase name="docxUsesExistingSecureEncoderAndReader()" classname="fr.jarvis.services.SafExportWriterTest" time="0.009"/>
+  <testcase name="cancellationBeforeWriteCreatesNothing()" classname="fr.jarvis.services.SafExportWriterTest" time="0.005"/>
+  <testcase name="corruptReadbackRollsBackFreshOutputAndRefusesSuccess()" classname="fr.jarvis.services.SafExportWriterTest" time="0.007"/>
+  <testcase name="lostCreationAcknowledgementRemainsUnknown()" classname="fr.jarvis.services.SafExportWriterTest" time="0.006"/>
+  <testcase name="foreignTargetOrMissingPermissionCannotTouchProvider()" classname="fr.jarvis.services.SafExportWriterTest" time="0.005"/>
+  <testcase name="writeFailureAndFailedCleanupRemainUnknown()" classname="fr.jarvis.services.SafExportWriterTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,37 @@
+{
+  "api": 26,
+  "method": "Host copy via run-as of synthetic debug fixture AFTER successful actual SAF instrumentation; not the application export method. Application tests used ContentResolver and granted tree URIs.",
+  "test_apk_sha256": "bab7d98c14be1a0dd07a650430363afc5be39e2f5438151340c67eba77020bed",
+  "files": {
+    "source.csv": {
+      "fixture_document": "source.csv",
+      "sha256": "f657c0b5cd974888c2812bfd804e98c104c9409a9057ec250988760aae8e2374",
+      "bytes": 39,
+      "authority": "fr.jarvis.services.fixture.documents"
+    },
+    "source.txt": {
+      "fixture_document": "source.txt",
+      "sha256": "2c73f49a6c82567650ef82ca61bf2641a851563a6da015336e7091f2619b7176",
+      "bytes": 31,
+      "authority": "fr.jarvis.services.fixture.documents"
+    },
+    "source.pdf": {
+      "fixture_document": "sample.pdf",
+      "sha256": "d44f4f118f0f68d5a6302f7c78dd501d828f221d1a49b6e4e704bf2b58eeec16",
+      "bytes": 898,
+      "authority": "fr.jarvis.services.fixture.documents"
+    },
+    "result.csv": {
+      "fixture_document": "result-b9d39085-f28b-490a-b81d-0e835d5b1d37.csv",
+      "sha256": "0307ff9eb7cb3aa7da47dd1cf0e1599470841c0ff3c4f40c013d255469f76fe9",
+      "bytes": 41,
+      "authority": "fr.jarvis.services.fixture.documents"
+    },
+    "result.docx": {
+      "fixture_document": "result-7a792602-9a81-4672-b97c-88bcdc3fd650.docx",
+      "sha256": "bb11201ce9bf7a67aae932f4e5cacd8d2644edf73d61e6bf5472f5c4131fadbc",
+      "bytes": 877,
+      "authority": "fr.jarvis.services.fixture.documents"
+    }
+  }
+}

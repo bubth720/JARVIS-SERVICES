@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.OfflineBridgeSecurityTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:53:12.344Z" hostname="cloud-lab-redacted" time="0.055">
+  <properties/>
+  <testcase name="reflectedMessageAndDuplicateJsonKeysAreRefused()" classname="fr.jarvis.services.OfflineBridgeSecurityTest" time="0.023"/>
+  <testcase name="keyAuthenticationAndTamperingAreRefused()" classname="fr.jarvis.services.OfflineBridgeSecurityTest" time="0.005"/>
+  <testcase name="interruptionDuplicatesAndAuthenticatedAckNeverExecuteActions()" classname="fr.jarvis.services.OfflineBridgeSecurityTest" time="0.006"/>
+  <testcase name="outOfOrderAndFakeAckAreRefused()" classname="fr.jarvis.services.OfflineBridgeSecurityTest" time="0.005"/>
+  <testcase name="senderUnknownStateSurvivesRestartAndRequiresExplicitAck()" classname="fr.jarvis.services.OfflineBridgeSecurityTest" time="0.006"/>
+  <testcase name="arbitraryCommandsAndMissingPermissionAreRefused()" classname="fr.jarvis.services.OfflineBridgeSecurityTest" time="0.003"/>
+  <testcase name="duplicateAndSequenceStateSurviveReceiverRestart()" classname="fr.jarvis.services.OfflineBridgeSecurityTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

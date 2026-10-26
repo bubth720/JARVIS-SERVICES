@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.FoundationTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:42:37.001Z" hostname="cloud-lab-redacted" time="0.26">
+  <properties/>
+  <testcase name="permissionsFailClosed()" classname="fr.jarvis.services.FoundationTest" time="0.167"/>
+  <testcase name="symbolicLinkRejected()" classname="fr.jarvis.services.FoundationTest" time="0.003"/>
+  <testcase name="destructiveDowngradeRefused()" classname="fr.jarvis.services.FoundationTest" time="0.006"/>
+  <testcase name="backupRestoreRebuildsSearch()" classname="fr.jarvis.services.FoundationTest" time="0.007"/>
+  <testcase name="integrityAndRestart()" classname="fr.jarvis.services.FoundationTest" time="0.004"/>
+  <testcase name="transactionRollsBack()" classname="fr.jarvis.services.FoundationTest" time="0.003"/>
+  <testcase name="traversalAndAbsoluteRejected()" classname="fr.jarvis.services.FoundationTest" time="0.004"/>
+  <testcase name="confirmationBindsExactContent()" classname="fr.jarvis.services.FoundationTest" time="0.006"/>
+  <testcase name="confirmationOneShot()" classname="fr.jarvis.services.FoundationTest" time="0.005"/>
+  <testcase name="confirmationBindsIdentity()" classname="fr.jarvis.services.FoundationTest" time="0.005"/>
+  <testcase name="auditDoesNotStoreContent()" classname="fr.jarvis.services.FoundationTest" time="0.004"/>
+  <testcase name="singleHeavyTaskAndRelease()" classname="fr.jarvis.services.FoundationTest" time="0.004"/>
+  <testcase name="malformedRequestRejected()" classname="fr.jarvis.services.FoundationTest" time="0.004"/>
+  <testcase name="cancellationAndDeadline()" classname="fr.jarvis.services.FoundationTest" time="0.013"/>
+  <testcase name="migrationRoundtrip()" classname="fr.jarvis.services.FoundationTest" time="0.004"/>
+  <testcase name="malformedBackupDoesNotDelete()" classname="fr.jarvis.services.FoundationTest" time="0.003"/>
+  <testcase name="progressSequence()" classname="fr.jarvis.services.FoundationTest" time="0.004"/>
+  <testcase name="unknownProtocolRejected()" classname="fr.jarvis.services.FoundationTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

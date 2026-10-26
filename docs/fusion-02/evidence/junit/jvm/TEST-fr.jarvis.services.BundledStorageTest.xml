@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.BundledStorageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:42:36.851Z" hostname="cloud-lab-redacted" time="0.07">
+  <properties/>
+  <testcase name="bundledDriverSupportsFts5AndRollback()" classname="fr.jarvis.services.BundledStorageTest" time="0.07"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

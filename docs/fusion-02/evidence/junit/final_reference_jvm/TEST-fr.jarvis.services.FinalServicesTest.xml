@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.FinalServicesTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:53:10.591Z" hostname="cloud-lab-redacted" time="1.324">
+  <properties/>
+  <testcase name="changedSourceIsRefusedBeforeConfirmation()" classname="fr.jarvis.services.FinalServicesTest" time="0.171"/>
+  <testcase name="invalidXmlCharactersAreRefused()" classname="fr.jarvis.services.FinalServicesTest" time="0.019"/>
+  <testcase name="sourceAndWorkspaceQuotaAreBounded()" classname="fr.jarvis.services.FinalServicesTest" time="0.018"/>
+  <testcase name="inFlightStepRecoversUnknownAndNeverReplays()" classname="fr.jarvis.services.FinalServicesTest" time="0.039"/>
+  <testcase name="unconfirmedOrUnauthorizedActionIsRefusedAndAudited()" classname="fr.jarvis.services.FinalServicesTest" time="0.016"/>
+  <testcase name="pdfToSourcedDocxUsesRealFilesAndPreservesOriginal()" classname="fr.jarvis.services.FinalServicesTest" time="0.312"/>
+  <testcase name="csvCleanupDiffExactAnalysisAndJsonRoundtrip()" classname="fr.jarvis.services.FinalServicesTest" time="0.058"/>
+  <testcase name="dispatcherRefusalHasDurableMetadataWithoutArgumentContent()" classname="fr.jarvis.services.FinalServicesTest" time="0.013"/>
+  <testcase name="changedPreviewCannotBeApproved()" classname="fr.jarvis.services.FinalServicesTest" time="0.023"/>
+  <testcase name="incoherencesAreSourcedAndDoNotEchoInvalidValues()" classname="fr.jarvis.services.FinalServicesTest" time="0.01"/>
+  <testcase name="cancellationLeavesNoPreparedJob()" classname="fr.jarvis.services.FinalServicesTest" time="0.01"/>
+  <testcase name="changedEncodedDocxIsRefusedBeforePublicWrite()" classname="fr.jarvis.services.FinalServicesTest" time="0.034"/>
+  <testcase name="adapterReusesExistingFtsContractAndRejectsStaleRevision()" classname="fr.jarvis.services.FinalServicesTest" time="0.015"/>
+  <testcase name="workflowStatusToolPreservesStateAndAllEightDomainsRemainAvailable()" classname="fr.jarvis.services.FinalServicesTest" time="0.014"/>
+  <testcase name="recipeCodecRejectsDuplicatesUnknownOperatorsAndAmbiguousSchema()" classname="fr.jarvis.services.FinalServicesTest" time="0.01"/>
+  <testcase name="localMemoryRequiresExactConsentAndNeverWritesCentralStore()" classname="fr.jarvis.services.FinalServicesTest" time="0.032"/>
+  <testcase name="successfulSafReadbackAndDuplicateExportIsRefused()" classname="fr.jarvis.services.FinalServicesTest" time="0.04"/>
+  <testcase name="lostSafOutcomeRemainsUnknownAcrossRestart()" classname="fr.jarvis.services.FinalServicesTest" time="0.045"/>
+  <testcase name="safCorruptionRollsBackFreshOutputWithoutDeletingOriginal()" classname="fr.jarvis.services.FinalServicesTest" time="0.042"/>
+  <testcase name="optionalSearchAdapterCannotInventProvenance()" classname="fr.jarvis.services.FinalServicesTest" time="0.009"/>
+  <testcase name="actualDocxTemplateInputProducesDerivedFileAndPreservesOriginal()" classname="fr.jarvis.services.FinalServicesTest" time="0.036"/>
+  <testcase name="templateAndLiteralReplacementAreBoundedAndEscapeXml()" classname="fr.jarvis.services.FinalServicesTest" time="0.02"/>
+  <testcase name="versionedCatalogueRendersAndSavesLocalMemoryOnlyWithExactApproval()" classname="fr.jarvis.services.FinalServicesTest" time="0.014"/>
+  <testcase name="successfulVerificationIsNotReplayedAfterDatabaseRestart()" classname="fr.jarvis.services.FinalServicesTest" time="0.038"/>
+  <testcase name="confirmationCannotBeReusedAndExistingOutputIsNotOverwritten()" classname="fr.jarvis.services.FinalServicesTest" time="0.024"/>
+  <testcase name="localMemoryQuotaRefusesNewRecordsWithoutReplacingOldOnes()" classname="fr.jarvis.services.FinalServicesTest" time="0.034"/>
+  <testcase name="unitsTypesAndInexactMeanAreExplicit()" classname="fr.jarvis.services.FinalServicesTest" time="0.009"/>
+  <testcase name="fullExecutionJournalRefusesActionBeforeAnyOutput()" classname="fr.jarvis.services.FinalServicesTest" time="0.18"/>
+  <testcase name="filtersGroupsAndSortAreDeterministic()" classname="fr.jarvis.services.FinalServicesTest" time="0.008"/>
+  <testcase name="derivedExactSumsMayExceedInputDigitLimitWithoutBecomingApproximate()" classname="fr.jarvis.services.FinalServicesTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Oct 26, 2026 7:53:11 AM org.apache.pdfbox.pdmodel.font.PDType1Font <init>
+WARNING: Using fallback font LiberationSans for base font Symbol
+]]></system-err>
+</testsuite>

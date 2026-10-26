@@ -1,0 +1,1640 @@
+{
+  "jvm": {
+    "tests": 100,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "jsonFilterSortNormalizeAggregate()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "cancelledWorkflowCreatesNoFile()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "bridgeIdentityCapabilitiesAndDisconnect()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "recoveryIncludesOriginalsAndMetadata()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "memoryRequiresExactConfirmationAndPersists()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "multiBatchCorpusKeepsEverySource()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "protectedExportDenied()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "realPdfImportSearch()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "incrementalIndexAndDelete()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "vectorBaselineProvenance()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "representativeWorkflowWithNetworkDenied()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "corruptBackupRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "ftsSpecialCharactersAreLiteral()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystMultiDocumentMockAndOfflineFallback()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "importsTextAndMetadata()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "limitedSemanticSynonyms()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "noArbitraryToolOrDocumentInstructions()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "cancelledImportLeavesNoOriginal()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystRejectsInventedCitation()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "crashedWorkflowIsUnknownNotReplayed()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "memoryRetention()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "scannedPdfReportsOcrRequired()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "memoryRectificationDeletion()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "diagnosticsOfflineAndEightModules()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystCoordinatesKnowledgeDocumentsDataAndModel()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "coreMockCorrelationAndPermission()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "malformedCsvAndNumbers()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "xxeInDocxRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "csvExactDedupAndStatistics()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "backupRestoreRequiresConfirmation()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "boundsAndExtensions()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "importsCsvJson()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "docxRoundtripAndNoOverwrite()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "workflowCreatesDocxAndRejectsReplay()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "csvQuotedMultilineRoundtrip()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystCalculationsDeterministic()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "restartInvalidatesPendingReceiptWithoutDeletingJournal()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "collisionAndVersionsAreRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "threeRealAdaptersAndReadableDocx()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "journalContainsNoArgumentsOrPaths()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "contentPrincipalAndRequestCannotBeChanged()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "persistentRegistryDoesNotMakeAdaptersExecutable()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "permissionRefusedBeforeAdapterReadsAnything()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "cancelAndDeadlineArePropagatedAndQueuedWorkNeverRuns()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "absentApprovalAndUnsafePathNeverCreateFile()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "receiptCannotBeReplayedAndConsumptionIsDurable()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "verifiedMarkdownCommitsOnlyAfterReadbackAndCannotReplay()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "docxUsesExistingSecureEncoderAndReader()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "cancellationBeforeWriteCreatesNothing()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "corruptReadbackRollsBackFreshOutputAndRefusesSuccess()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "lostCreationAcknowledgementRemainsUnknown()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "foreignTargetOrMissingPermissionCannotTouchProvider()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "writeFailureAndFailedCleanupRemainUnknown()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolReceiptLifecycleTest",
+        "case": "drainCallbackWaitsForActuallyReturnedCancelledOperation()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolReceiptLifecycleTest",
+        "case": "uncertainReceiptNeverDeliversSuccessOrValue()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "cancellationAndMissingPermissionsAreRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "maliciousDocxXmlIsRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "sourceCitationCannotClaimMissingText()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "pdfAndCsvProduceVerifiedMarkdownAndDocx()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "malformedUtf8AndPdfAreRejectedWithoutPersistence()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "unicodeSegmentsRemainExactAndCsvRejectsInvalidNumbers()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "safePathsAndExactApprovalRemainMandatory()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "atomicExportDoesNotReplaceOriginalAndRefusesReplay()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "permissionsFailClosed()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "symbolicLinkRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "destructiveDowngradeRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "backupRestoreRebuildsSearch()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "integrityAndRestart()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "transactionRollsBack()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "traversalAndAbsoluteRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "confirmationBindsExactContent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "confirmationOneShot()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "confirmationBindsIdentity()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "auditDoesNotStoreContent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "singleHeavyTaskAndRelease()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "malformedRequestRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "cancellationAndDeadline()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "migrationRoundtrip()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "malformedBackupDoesNotDelete()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "progressSequence()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "unknownProtocolRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.CommitAuthorizationTest",
+        "case": "ambiguousCallbackFailureDoesNotRestoreConsent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.CommitAuthorizationTest",
+        "case": "revocationAfterCommitCannotPromiseRollback()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.CommitAuthorizationTest",
+        "case": "alteredDestinationAndCancellationRefuse()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.CommitAuthorizationTest",
+        "case": "everyPreviewFieldIsBoundToExactConsent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.CommitAuthorizationTest",
+        "case": "missingConsentAndExpiredDeadlineRefuse()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.CommitAuthorizationTest",
+        "case": "revocationBeforeCommitPreventsEffect()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "malformedXmlIsRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "dtdIsRejectedForUtf8AndUtf16()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "utf16AndBuiltInEntitiesRemainSupported()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "extractedTextIsBounded()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.BundledStorageTest",
+        "case": "bundledDriverSupportsFts5AndRollback()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "realTwoProcessLabTransferDeduplicatesAndAcknowledges()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "cyclesChangedDefinitionsAndUnknownDependenciesAreRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "inFlightRecoveryStaysUnknownAndCannotAutoRetry()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "gapsVectorRegressionTamperAndWrongContractAreRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "permissionsAreCheckedBeforeWorkflowDispatch()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "realThreeStepWorkflowResumesWithoutReplayingCompletedSteps()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "missingOrFalseAckAndDisabledTransportNeverBecomeSuccess()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "compensationOwnsOnlyFreshTemporaryAndRefusesChangedContent()",
+        "failed": false,
+        "skipped": false
+      }
+    ]
+  },
+  "robolectric": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "cancellationBoundsUriRefusalsAndDocxFailClosed[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "cancellationBoundsUriRefusalsAndDocxFailClosed[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "cancellationBoundsUriRefusalsAndDocxFailClosed[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "cancellationBoundsUriRefusalsAndDocxFailClosed",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "corruptJournalRefusesWithoutResetAndReleasesConstructorLease[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "corruptJournalRefusesWithoutResetAndReleasesConstructorLease[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "corruptJournalRefusesWithoutResetAndReleasesConstructorLease[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "corruptJournalRefusesWithoutResetAndReleasesConstructorLease",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "interruptedReceiptBecomesUnknownAndIsNeverReplayed[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "interruptedReceiptBecomesUnknownAndIsNeverReplayed[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "interruptedReceiptBecomesUnknownAndIsNeverReplayed[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "interruptedReceiptBecomesUnknownAndIsNeverReplayed",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "rejectsConcurrentJournalOwnerUntilConfirmedClosure[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "rejectsConcurrentJournalOwnerUntilConfirmedClosure[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "rejectsConcurrentJournalOwnerUntilConfirmedClosure[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "rejectsConcurrentJournalOwnerUntilConfirmedClosure",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "closeAndCancellationWaitForObservedStreamEnd[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "closeAndCancellationWaitForObservedStreamEnd[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "closeAndCancellationWaitForObservedStreamEnd[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "closeAndCancellationWaitForObservedStreamEnd",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "refusesExistingUnownedDatabaseWithoutMigratingIt[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "refusesExistingUnownedDatabaseWithoutMigratingIt[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "refusesExistingUnownedDatabaseWithoutMigratingIt[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "refusesExistingUnownedDatabaseWithoutMigratingIt",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "realTwoPagePdfExtractionReturnsCorrectPageAndSha[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "realTwoPagePdfExtractionReturnsCorrectPageAndSha[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "realTwoPagePdfExtractionReturnsCorrectPageAndSha[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "realTwoPagePdfExtractionReturnsCorrectPageAndSha",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[24]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[25]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[26]",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest",
+        "case": "permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled",
+        "failed": false,
+        "skipped": false
+      }
+    ]
+  },
+  "final_reference_jvm": {
+    "tests": 129,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "cases": [
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "jsonFilterSortNormalizeAggregate()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "cancelledWorkflowCreatesNoFile()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "bridgeIdentityCapabilitiesAndDisconnect()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "recoveryIncludesOriginalsAndMetadata()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "memoryRequiresExactConfirmationAndPersists()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "multiBatchCorpusKeepsEverySource()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "protectedExportDenied()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "realPdfImportSearch()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "incrementalIndexAndDelete()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "vectorBaselineProvenance()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "representativeWorkflowWithNetworkDenied()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "corruptBackupRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "ftsSpecialCharactersAreLiteral()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystMultiDocumentMockAndOfflineFallback()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "importsTextAndMetadata()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "limitedSemanticSynonyms()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "noArbitraryToolOrDocumentInstructions()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "cancelledImportLeavesNoOriginal()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystRejectsInventedCitation()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "crashedWorkflowIsUnknownNotReplayed()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "memoryRetention()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "scannedPdfReportsOcrRequired()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "memoryRectificationDeletion()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "diagnosticsOfflineAndEightModules()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystCoordinatesKnowledgeDocumentsDataAndModel()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "coreMockCorrelationAndPermission()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "malformedCsvAndNumbers()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "xxeInDocxRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "csvExactDedupAndStatistics()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "backupRestoreRequiresConfirmation()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "boundsAndExtensions()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "importsCsvJson()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "docxRoundtripAndNoOverwrite()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "workflowCreatesDocxAndRejectsReplay()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "csvQuotedMultilineRoundtrip()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ModulesTest",
+        "case": "analystCalculationsDeterministic()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "verifiedMarkdownCommitsOnlyAfterReadbackAndCannotReplay()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "docxUsesExistingSecureEncoderAndReader()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "cancellationBeforeWriteCreatesNothing()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "corruptReadbackRollsBackFreshOutputAndRefusesSuccess()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "lostCreationAcknowledgementRemainsUnknown()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "foreignTargetOrMissingPermissionCannotTouchProvider()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.SafExportWriterTest",
+        "case": "writeFailureAndFailedCleanupRemainUnknown()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "changedSourceIsRefusedBeforeConfirmation()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "invalidXmlCharactersAreRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "sourceAndWorkspaceQuotaAreBounded()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "inFlightStepRecoversUnknownAndNeverReplays()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "unconfirmedOrUnauthorizedActionIsRefusedAndAudited()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "pdfToSourcedDocxUsesRealFilesAndPreservesOriginal()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "csvCleanupDiffExactAnalysisAndJsonRoundtrip()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "dispatcherRefusalHasDurableMetadataWithoutArgumentContent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "changedPreviewCannotBeApproved()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "incoherencesAreSourcedAndDoNotEchoInvalidValues()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "cancellationLeavesNoPreparedJob()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "changedEncodedDocxIsRefusedBeforePublicWrite()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "adapterReusesExistingFtsContractAndRejectsStaleRevision()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "workflowStatusToolPreservesStateAndAllEightDomainsRemainAvailable()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "recipeCodecRejectsDuplicatesUnknownOperatorsAndAmbiguousSchema()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "localMemoryRequiresExactConsentAndNeverWritesCentralStore()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "successfulSafReadbackAndDuplicateExportIsRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "lostSafOutcomeRemainsUnknownAcrossRestart()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "safCorruptionRollsBackFreshOutputWithoutDeletingOriginal()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "optionalSearchAdapterCannotInventProvenance()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "actualDocxTemplateInputProducesDerivedFileAndPreservesOriginal()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "templateAndLiteralReplacementAreBoundedAndEscapeXml()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "versionedCatalogueRendersAndSavesLocalMemoryOnlyWithExactApproval()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "successfulVerificationIsNotReplayedAfterDatabaseRestart()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "confirmationCannotBeReusedAndExistingOutputIsNotOverwritten()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "localMemoryQuotaRefusesNewRecordsWithoutReplacingOldOnes()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "unitsTypesAndInexactMeanAreExplicit()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "fullExecutionJournalRefusesActionBeforeAnyOutput()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "filtersGroupsAndSortAreDeterministic()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FinalServicesTest",
+        "case": "derivedExactSumsMayExceedInputDigitLimitWithoutBecomingApproximate()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "realTwoProcessLabTransferDeduplicatesAndAcknowledges()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "cyclesChangedDefinitionsAndUnknownDependenciesAreRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "inFlightRecoveryStaysUnknownAndCannotAutoRetry()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "gapsVectorRegressionTamperAndWrongContractAreRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "permissionsAreCheckedBeforeWorkflowDispatch()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "realThreeStepWorkflowResumesWithoutReplayingCompletedSteps()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "missingOrFalseAckAndDisabledTransportNeverBecomeSuccess()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.WorkflowBridgeTest",
+        "case": "compensationOwnsOnlyFreshTemporaryAndRefusesChangedContent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "cancellationAndMissingPermissionsAreRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "maliciousDocxXmlIsRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "sourceCitationCannotClaimMissingText()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "pdfAndCsvProduceVerifiedMarkdownAndDocx()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "malformedUtf8AndPdfAreRejectedWithoutPersistence()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "unicodeSegmentsRemainExactAndCsvRejectsInvalidNumbers()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "safePathsAndExactApprovalRemainMandatory()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.PipelineFixtureTest",
+        "case": "atomicExportDoesNotReplaceOriginalAndRefusesReplay()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "malformedXmlIsRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "dtdIsRejectedForUtf8AndUtf16()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "utf16AndBuiltInEntitiesRemainSupported()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.DocxSecurityTest",
+        "case": "extractedTextIsBounded()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "restartInvalidatesPendingReceiptWithoutDeletingJournal()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "collisionAndVersionsAreRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "threeRealAdaptersAndReadableDocx()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "journalContainsNoArgumentsOrPaths()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "contentPrincipalAndRequestCannotBeChanged()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "persistentRegistryDoesNotMakeAdaptersExecutable()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "permissionRefusedBeforeAdapterReadsAnything()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "cancelAndDeadlineArePropagatedAndQueuedWorkNeverRuns()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "absentApprovalAndUnsafePathNeverCreateFile()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.ToolDispatcherTest",
+        "case": "receiptCannotBeReplayedAndConsumptionIsDurable()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.BundledStorageTest",
+        "case": "bundledDriverSupportsFts5AndRollback()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.OfflineBridgeSecurityTest",
+        "case": "reflectedMessageAndDuplicateJsonKeysAreRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.OfflineBridgeSecurityTest",
+        "case": "keyAuthenticationAndTamperingAreRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.OfflineBridgeSecurityTest",
+        "case": "interruptionDuplicatesAndAuthenticatedAckNeverExecuteActions()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.OfflineBridgeSecurityTest",
+        "case": "outOfOrderAndFakeAckAreRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.OfflineBridgeSecurityTest",
+        "case": "senderUnknownStateSurvivesRestartAndRequiresExplicitAck()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.OfflineBridgeSecurityTest",
+        "case": "arbitraryCommandsAndMissingPermissionAreRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.OfflineBridgeSecurityTest",
+        "case": "duplicateAndSequenceStateSurviveReceiverRestart()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "permissionsFailClosed()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "symbolicLinkRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "destructiveDowngradeRefused()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "backupRestoreRebuildsSearch()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "integrityAndRestart()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "transactionRollsBack()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "traversalAndAbsoluteRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "confirmationBindsExactContent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "confirmationOneShot()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "confirmationBindsIdentity()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "auditDoesNotStoreContent()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "singleHeavyTaskAndRelease()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "malformedRequestRejected()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "cancellationAndDeadline()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "migrationRoundtrip()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "malformedBackupDoesNotDelete()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "progressSequence()",
+        "failed": false,
+        "skipped": false
+      },
+      {
+        "class": "fr.jarvis.services.FoundationTest",
+        "case": "unknownProtocolRejected()",
+        "failed": false,
+        "skipped": false
+      }
+    ]
+  }
+}

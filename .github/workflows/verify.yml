@@ -138,6 +138,17 @@ jobs:
           packages: platform-tools
       - name: Build prerequisites
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Use the hosted runner KVM device for API35
+        if: matrix.api == 35
+        run: |
+          mkdir -p build
+          if [ ! -c /dev/kvm ]; then
+            echo '::error::API35 requires a CI host exposing KVM; no product tests were run.'
+            exit 1
+          fi
+          sudo chown "$(id -u)" /dev/kvm
+          test -r /dev/kvm
+          test -w /dev/kvm
       - name: Real SDK ports and SAF laboratory (not production activation)
         uses: ReactiveCircus/android-emulator-runner@4c44018e59b437e86cdfc41da381398f93ed8808 # v2
         with:
@@ -162,6 +173,7 @@ jobs:
             build/fusion02-readiness/
             build/fusion02-final-ui/
             build/fusion02-command.json
+            build/fusion02-accel.log
             services-android-adapter/build/outputs/androidTest-results/
             services-android-adapter/build/reports/androidTests/
             services-android-adapter/build/outputs/apk/androidTest/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.PipelineFixtureTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:53:12.400Z" hostname="cloud-lab-redacted" time="0.056">
+  <properties/>
+  <testcase name="cancellationAndMissingPermissionsAreRefused()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.003"/>
+  <testcase name="maliciousDocxXmlIsRejected()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.003"/>
+  <testcase name="sourceCitationCannotClaimMissingText()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.01"/>
+  <testcase name="pdfAndCsvProduceVerifiedMarkdownAndDocx()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.018"/>
+  <testcase name="malformedUtf8AndPdfAreRejectedWithoutPersistence()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.004"/>
+  <testcase name="unicodeSegmentsRemainExactAndCsvRejectsInvalidNumbers()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.004"/>
+  <testcase name="safePathsAndExactApprovalRemainMandatory()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.005"/>
+  <testcase name="atomicExportDoesNotReplaceOriginalAndRefusesReplay()" classname="fr.jarvis.services.PipelineFixtureTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

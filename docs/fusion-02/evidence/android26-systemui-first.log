@@ -1,0 +1,440 @@
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvAndPermissionsOnPlatformSQLite
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvAndPermissionsOnPlatformSQLite
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.adapter.FusionSafInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=realPersistedGrantRevocationAndHostFenceRefuse
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in realPersistedGrantRevocationAndHostFenceRefuse(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realPersistedGrantRevocationAndHostFenceRefuse(FusionSafInstrumentedTest.java:517)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=realPersistedGrantRevocationAndHostFenceRefuse
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realPersistedGrantRevocationAndHostFenceRefuse(FusionSafInstrumentedTest.java:517)
+
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=abandonedCommitAndJournalQuotaFailClosed
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in abandonedCommitAndJournalQuotaFailClosed(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.abandonedCommitAndJournalQuotaFailClosed(FusionSafInstrumentedTest.java:204)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=abandonedCommitAndJournalQuotaFailClosed
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.abandonedCommitAndJournalQuotaFailClosed(FusionSafInstrumentedTest.java:204)
+
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=revokeAtBarrierBeforeCommitHasNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in revokeAtBarrierBeforeCommitHasNoEffect(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAtBarrierBeforeCommitHasNoEffect(FusionSafInstrumentedTest.java:263)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=revokeAtBarrierBeforeCommitHasNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAtBarrierBeforeCommitHasNoEffect(FusionSafInstrumentedTest.java:263)
+
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=deceptiveAckUnknownAndNoRetryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in deceptiveAckUnknownAndNoRetryAfterReopen(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.deceptiveAckUnknownAndNoRetryAfterReopen(FusionSafInstrumentedTest.java:168)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=deceptiveAckUnknownAndNoRetryAfterReopen
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.deceptiveAckUnknownAndNoRetryAfterReopen(FusionSafInstrumentedTest.java:168)
+
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=maliciousUriAndProviderDenialHaveNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in maliciousUriAndProviderDenialHaveNoEffect(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.maliciousUriAndProviderDenialHaveNoEffect(FusionSafInstrumentedTest.java:341)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=maliciousUriAndProviderDenialHaveNoEffect
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.maliciousUriAndProviderDenialHaveNoEffect(FusionSafInstrumentedTest.java:341)
+
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=realTxtAndTwoPagePdfViaPort
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in realTxtAndTwoPagePdfViaPort(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realTxtAndTwoPagePdfViaPort(FusionSafInstrumentedTest.java:224)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=realTxtAndTwoPagePdfViaPort
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realTxtAndTwoPagePdfViaPort(FusionSafInstrumentedTest.java:224)
+
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=corruptLabJournalRefusesWithoutDeletingEvidenceOrLeakingLease
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=corruptLabJournalRefusesWithoutDeletingEvidenceOrLeakingLease
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=revokeAfterCommitReportsCommittedRatherThanRollback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in revokeAfterCommitReportsCommittedRatherThanRollback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAfterCommitReportsCommittedRatherThanRollback(FusionSafInstrumentedTest.java:301)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=revokeAfterCommitReportsCommittedRatherThanRollback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAfterCommitReportsCommittedRatherThanRollback(FusionSafInstrumentedTest.java:301)
+
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=lostAuthorityAckIsUnknownEvenWhenBytesCommitted
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in lostAuthorityAckIsUnknownEvenWhenBytesCommitted(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.lostAuthorityAckIsUnknownEvenWhenBytesCommitted(FusionSafInstrumentedTest.java:367)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=lostAuthorityAckIsUnknownEvenWhenBytesCommitted
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.lostAuthorityAckIsUnknownEvenWhenBytesCommitted(FusionSafInstrumentedTest.java:367)
+
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=runtimeJournalCorruptionPreservesEvidenceAndReleasesLease
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=runtimeJournalCorruptionPreservesEvidenceAndReleasesLease
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvRealSafExportExactSumAndOriginalIntact
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in csvRealSafExportExactSumAndOriginalIntact(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.csvRealSafExportExactSumAndOriginalIntact(FusionSafInstrumentedTest.java:99)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=csvRealSafExportExactSumAndOriginalIntact
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.csvRealSafExportExactSumAndOriginalIntact(FusionSafInstrumentedTest.java:99)
+
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=portablePermissionsAndUnqualifiedExportStillRefuse
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=portablePermissionsAndUnqualifiedExportStillRefuse
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in docxNoConsentNoCreationThenConfirmedReadback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.docxNoConsentNoCreationThenConfirmedReadback(FusionSafInstrumentedTest.java:143)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.docxNoConsentNoCreationThenConfirmedReadback(FusionSafInstrumentedTest.java:143)
+
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=cancellationAndSecondWorkerRefused
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: worker_uid=10066
+INSTRUMENTATION_STATUS: fixture_provider_uid=10065
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: numtests=15
+INSTRUMENTATION_STATUS: stream=
+Error in cancellationAndSecondWorkerRefused(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.cancellationAndSecondWorkerRefused(FusionSafInstrumentedTest.java:399)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=cancellationAndSecondWorkerRefused
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.cancellationAndSecondWorkerRefused(FusionSafInstrumentedTest.java:399)
+
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 149.58
+There were 11 failures:
+1) realPersistedGrantRevocationAndHostFenceRefuse(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realPersistedGrantRevocationAndHostFenceRefuse(FusionSafInstrumentedTest.java:517)
+2) abandonedCommitAndJournalQuotaFailClosed(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.abandonedCommitAndJournalQuotaFailClosed(FusionSafInstrumentedTest.java:204)
+3) revokeAtBarrierBeforeCommitHasNoEffect(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAtBarrierBeforeCommitHasNoEffect(FusionSafInstrumentedTest.java:263)
+4) deceptiveAckUnknownAndNoRetryAfterReopen(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.deceptiveAckUnknownAndNoRetryAfterReopen(FusionSafInstrumentedTest.java:168)
+5) maliciousUriAndProviderDenialHaveNoEffect(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.maliciousUriAndProviderDenialHaveNoEffect(FusionSafInstrumentedTest.java:341)
+6) realTxtAndTwoPagePdfViaPort(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.realTxtAndTwoPagePdfViaPort(FusionSafInstrumentedTest.java:224)
+7) revokeAfterCommitReportsCommittedRatherThanRollback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.revokeAfterCommitReportsCommittedRatherThanRollback(FusionSafInstrumentedTest.java:301)
+8) lostAuthorityAckIsUnknownEvenWhenBytesCommitted(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.lostAuthorityAckIsUnknownEvenWhenBytesCommitted(FusionSafInstrumentedTest.java:367)
+9) csvRealSafExportExactSumAndOriginalIntact(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.csvRealSafExportExactSumAndOriginalIntact(FusionSafInstrumentedTest.java:99)
+10) docxNoConsentNoCreationThenConfirmedReadback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.docxNoConsentNoCreationThenConfirmedReadback(FusionSafInstrumentedTest.java:143)
+11) cancellationAndSecondWorkerRefused(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.AssertionError: Missing SAF control [Show roots, Open navigation drawer]
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.clickAny(FusionSafInstrumentedTest.java:707)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.pick(FusionSafInstrumentedTest.java:616)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.cancellationAndSecondWorkerRefused(FusionSafInstrumentedTest.java:399)
+
+FAILURES!!!
+Tests run: 15,  Failures: 11
+
+
+INSTRUMENTATION_CODE: -1

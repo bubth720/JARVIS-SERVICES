@@ -1,0 +1,16 @@
+--------- beginning of system
+--------- beginning of main
+10-26 07:32:06.821  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+--------- beginning of crash
+10-26 07:35:50.433  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:35:50.470  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:38:14.300  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:38:14.349  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:38:14.369  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:42:14.732  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:42:14.736  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:44:25.416  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:44:25.489  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:44:25.549  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:46:42.521  1613  1694 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-26 07:46:52.558  1613  1693 I InputDispatcher: Dropped event because it is stale.

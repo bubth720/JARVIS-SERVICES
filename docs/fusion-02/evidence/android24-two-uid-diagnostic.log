@@ -1,0 +1,56 @@
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+fr.jarvis.services.android.adapter.FusionSafInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Error in docxNoConsentNoCreationThenConfirmedReadback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest):
+java.lang.SecurityException: Permission Denial: opening provider fr.jarvis.services.fixture.FusionDocumentsProvider from ProcessRecord{dd4b78e 2890:fr.jarvis.services.android.adapter.test/u0a62} (pid=2890, uid=10062) requires android.permission.MANAGE_DOCUMENTS or android.permission.MANAGE_DOCUMENTS
+	at android.os.Parcel.readException(Parcel.java:1683)
+	at android.os.Parcel.readException(Parcel.java:1636)
+	at android.app.ActivityManagerProxy.getContentProvider(ActivityManagerNative.java:4169)
+	at android.app.ActivityThread.acquireProvider(ActivityThread.java:5434)
+	at android.app.ContextImpl$ApplicationContentResolver.acquireProvider(ContextImpl.java:2248)
+	at android.content.ContentResolver.acquireProvider(ContentResolver.java:1468)
+	at android.content.ContentResolver.call(ContentResolver.java:1438)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.setup(FusionSafInstrumentedTest.java:35)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=docxNoConsentNoCreationThenConfirmedReadback
+INSTRUMENTATION_STATUS: class=fr.jarvis.services.android.adapter.FusionSafInstrumentedTest
+INSTRUMENTATION_STATUS: stack=java.lang.SecurityException: Permission Denial: opening provider fr.jarvis.services.fixture.FusionDocumentsProvider from ProcessRecord{dd4b78e 2890:fr.jarvis.services.android.adapter.test/u0a62} (pid=2890, uid=10062) requires android.permission.MANAGE_DOCUMENTS or android.permission.MANAGE_DOCUMENTS
+	at android.os.Parcel.readException(Parcel.java:1683)
+	at android.os.Parcel.readException(Parcel.java:1636)
+	at android.app.ActivityManagerProxy.getContentProvider(ActivityManagerNative.java:4169)
+	at android.app.ActivityThread.acquireProvider(ActivityThread.java:5434)
+	at android.app.ContextImpl$ApplicationContentResolver.acquireProvider(ContextImpl.java:2248)
+	at android.content.ContentResolver.acquireProvider(ContentResolver.java:1468)
+	at android.content.ContentResolver.call(ContentResolver.java:1438)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.setup(FusionSafInstrumentedTest.java:35)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.229
+There was 1 failure:
+1) docxNoConsentNoCreationThenConfirmedReadback(fr.jarvis.services.android.adapter.FusionSafInstrumentedTest)
+java.lang.SecurityException: Permission Denial: opening provider fr.jarvis.services.fixture.FusionDocumentsProvider from ProcessRecord{dd4b78e 2890:fr.jarvis.services.android.adapter.test/u0a62} (pid=2890, uid=10062) requires android.permission.MANAGE_DOCUMENTS or android.permission.MANAGE_DOCUMENTS
+	at android.os.Parcel.readException(Parcel.java:1683)
+	at android.os.Parcel.readException(Parcel.java:1636)
+	at android.app.ActivityManagerProxy.getContentProvider(ActivityManagerNative.java:4169)
+	at android.app.ActivityThread.acquireProvider(ActivityThread.java:5434)
+	at android.app.ContextImpl$ApplicationContentResolver.acquireProvider(ContextImpl.java:2248)
+	at android.content.ContentResolver.acquireProvider(ContentResolver.java:1468)
+	at android.content.ContentResolver.call(ContentResolver.java:1438)
+	at fr.jarvis.services.android.adapter.FusionSafInstrumentedTest.setup(FusionSafInstrumentedTest.java:35)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

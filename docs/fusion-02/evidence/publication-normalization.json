@@ -1,0 +1,270 @@
+{
+  "purpose": "Remove unnecessary cloud runner/proxy metadata; test commands, outcomes, assertions, API/build versions, artifact digests retained. No source/user data rewritten.",
+  "originals_local_only": "/tmp/fusion02-evidence/publication-originals",
+  "files": [
+    {
+      "published": "final-build.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "34b12bc1751a6e1c1c0b4fb076be87eaccc8ec280062703c16facfdc0c04ba30",
+      "published_sha256": "c580e0b1ef6216bf697006f160a744881ef82a218aeb652dbc986cfde285134c"
+    },
+    {
+      "published": "journal-security-build.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "c66579293bf66b808b51ce3cccb9f90f883b43c1e29839db9da67db86b4a1dba",
+      "published_sha256": "f6788fbeaeae36c281b039556546b2ccbf3c452886b7730483e2d84c6782398a"
+    },
+    {
+      "published": "signature-control-build.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "499f6f5c2ede64aef0e47ed39d2071c95712de8dcf26190904df06d8dc79d0f0",
+      "published_sha256": "e81cffbd77b8706af27138b752a1515c505b480c5e0591f7a6e087772f01eb84"
+    },
+    {
+      "published": "scroll-build.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "8c22d484fff4e8ff672c294b3c9110b4c9ff9d0be4f460454ef509ad081048e9",
+      "published_sha256": "b8620f05ffb598b42f19d8a88eb4447c9da02a443317a4297cc74c81fac3ff7f"
+    },
+    {
+      "published": "os-revocation-build.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "e391fc424a5d40332ab55ca9df61363aa025d6ef1bb9fb0a1016d1bf54a9ec64",
+      "published_sha256": "9e0252cdfac46a1a4359358ce046178101252d2e69b26737dd58b1d4ab7341a4"
+    },
+    {
+      "published": "baseline-third.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "c7e93a0f6d9372fc66f941e32811c083545bf7a8a3c1f500fa95c701bc21f96b",
+      "published_sha256": "2e2c21dcbb4e214cd9ca95880fc2cc812f79632428f72947d081dec2d4403e5f"
+    },
+    {
+      "published": "jvm-final.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "d8b177bdd33b1cb650e6a60689dda71bb896c9313f5e1d3f9be1bf8414dfe38a",
+      "published_sha256": "7e674cd2afa7ea567d3cb5a5a9a033d80ca1717ed9bc2b06719a3b27456ec7e8"
+    },
+    {
+      "published": "regression-final.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "04c336ff2bb0e23f9568ed252b375f97bc3e3f3fa8d6f1502540f6d158b72610",
+      "published_sha256": "952b2c9b684b729165c44813d099fe2d970322e7971027ee86b8ec9990e783d6"
+    },
+    {
+      "published": "control-reliability-build.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "56850ecc1350e79d6c714f60b61c7579300fc9fc3ebe344a2ca9c6029bed038d",
+      "published_sha256": "0f26dc94f47ba94928209531b45af6305408cc3541bed944f306e1031609af13"
+    },
+    {
+      "published": "baseline.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "1f7b004a360c75ae45ec8c094ca743be5dbd305ceba8fe66d5ff67c5ac36aec7",
+      "published_sha256": "d49b21bcacfd190bcf72eff4875d7a510dc3d51572f68a5c0eabfff816719010"
+    },
+    {
+      "published": "baseline-retry.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "0195eb2f8e795dbe86cf7aeef43daf04138c2105dc34f1f9d4a30540da873dc0",
+      "published_sha256": "6adb202e3f43a6b3fc94b58d39501c5c0dbac47e61c0624ab4c51ccead563b1e"
+    },
+    {
+      "published": "final-reference-jvm.log",
+      "rules": [
+        "replace inherited cloud proxy/CA option line only"
+      ],
+      "original_sha256": "be079f5212cdbb516a2c62791caabd211a0109d7ecac7f0e21c7fe72ab521571",
+      "published_sha256": "37f171078da98d465506abe41bd681dfbc5e7a99070e97cfae47c422128e93fb"
+    },
+    {
+      "published": "junit/robolectric/TEST-fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "9745f5674bd959eca2ca8f69c7c348b2c616fb69279ae751d88e903368359130",
+      "published_sha256": "62e56985bb9f54a22fe19b4f972141ae23dc73e5cc79e7433ba39787a3e8e6f2"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.ModulesTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "114c06251dfe129a082b1a8e0904f21b2052c69f253579301c90be033059c850",
+      "published_sha256": "be03ebb2ef8fe51e2f00ec697b6761255825230478a244fb6a64551ec1535b4a"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.OfflineBridgeSecurityTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "3184953ecd366e07c20f44d989cb8e8a588c6bac131417831e38c55c84f4cf41",
+      "published_sha256": "b3782348d441378d32da4e57bd7cef2a16a00dfd8f4d05e0dd907abc29d92a10"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.ToolDispatcherTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "0138e722e0140803742125a849033b61832d271969d0d09871896b77687ef671",
+      "published_sha256": "60535b4efc37a71ec8c7fb0dc99f13acce2a492dad8b6956721a23544a54c678"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.SafExportWriterTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "427a55335319f4cba4f6a2be3a1119700824ce49b67a19485180c8e6b783521b",
+      "published_sha256": "98eeb2b0519aec189c20e478f8804874257cfad4e078db4c39c36bcd3c99f92d"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.PipelineFixtureTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "66c2e1895544eeeef16976a99e4a8e0e938a75017b963754d85ae6de1e2a7655",
+      "published_sha256": "39ffd025f2a92e15777f191b9c040e807df71d1c778321397bc267f7c4e87c5e"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.FoundationTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "3a123b47beb8c9d4b6e11bbc9dcb904e8fb3447a29b590a48e59d29069aa95b6",
+      "published_sha256": "690dd1cf5bff4c4dbe33173badb6d11cd7e23c8e39d1bd7759a23794f2677c0e"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.DocxSecurityTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "857918037d00c139bcf076285adb642b800b6595a3783775770643d177374f75",
+      "published_sha256": "50668ad6f64c76b6aec04e831c4ec689537224a6e9a892a03de199d8c7ea74a1"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.FinalServicesTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "93f0b12d5e7d2c477e3dd13c79c04f5a059b2d5d2f678a68f4b7e8afcb224bc9",
+      "published_sha256": "821029a0c5908a8393a4f9a4c8635fc41ff9584c4b55421e689dab8d6701f20c"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.BundledStorageTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "95d8cb470d1ddf38297f2b6f42a329d342f32d68624868e80b7eae4c7774b750",
+      "published_sha256": "ba9383a6149a8188964ccb76c0f7e9f174b1e70765e8ed096600f993f8c9f201"
+    },
+    {
+      "published": "junit/final_reference_jvm/TEST-fr.jarvis.services.WorkflowBridgeTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "bebf2cf545a811600679008d3e15206a20caab5f5f50cfd1711b65342a532b2b",
+      "published_sha256": "1a73a1aedcdfe61c3b2571a262a7fe0cab4558eddd08cf680b0cc6167bc739f1"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.ModulesTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "f9b43ac798820a88b40dd1b8d335d0a00e88310197f6adb1179fd08366d027e3",
+      "published_sha256": "85b5f8938e13ae20e12eee855f90d26aa825e237a9147942df8f79aae8718ce7"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.ToolDispatcherTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "778d1bcfa2a1f9a17a567870206410c105ee3e6c9db38164908ea1390c1c0b27",
+      "published_sha256": "955e2eca50e34002a49aaa6317eead4632ef895ac1e7ed9035a12fc5afce1256"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.SafExportWriterTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "9ac69582c09beb80f273e9541776ee8367ebb420bf4282913cb0343cea5de54c",
+      "published_sha256": "1eb2fc0748c245708952fb3be2c3bbd0865753836d3f9ee9bde59bcc562bf120"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.ToolReceiptLifecycleTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "93cf7ff01c058efcb60dc050aeb052c5cce839f3328b4de4ed1a651efd2bd4fc",
+      "published_sha256": "f71bda36c6dbc16676fdfcfb88580098768bc117a5e0c86476a501e7749c5c17"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.PipelineFixtureTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "bb2bfba164b098c3da6995024abbee2658048d6f8a0729fee4b89f970e3c5e09",
+      "published_sha256": "5970cd109b4fca90ff70518f8283fd4e82f3c066bc948b03647d4b6171d72d69"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.FoundationTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "0dc36c5567acfeaa451d3190934f62f189997e15a60324e065853f302413f152",
+      "published_sha256": "7daa7700e3c30abbe943edce087f23f2c3972967f029eb3225b28228b51bb128"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.CommitAuthorizationTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "f6099de36799ff3edd7ff3ffa8b0c73b56c869d89e39cac484087b25f7bf0b03",
+      "published_sha256": "98d0d74fafb1fc20f477c181276c9cec1417e0dbe2619b9453adadc647534f53"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.DocxSecurityTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "576ff8afc7e155a21e527c671fd3682c7d77666b74ffccf75c7ea5a57699709d",
+      "published_sha256": "202481aa46651e14033e6c2c8be2312af56e025195604dd136baa1f75ecb4049"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.BundledStorageTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "680f755c82fa421042e712cd8ce0bf2f659c3fa5157947a10734755c37f9d2e1",
+      "published_sha256": "2442e7a6977557db7f30f5188299c754571e027d7b2a64ee4f8a6bb3bf64460a"
+    },
+    {
+      "published": "junit/jvm/TEST-fr.jarvis.services.WorkflowBridgeTest.xml",
+      "rules": [
+        "replace runner hostname metadata only"
+      ],
+      "original_sha256": "665be1780f3c33719057b7a17443daefc037f5281f7bca8bbb1d6b63136988be",
+      "published_sha256": "452d0a9180166b8d39f10a910a5c4a9600eaf3f0747edaaa675cf8bc1ab2e4f0"
+    }
+  ]
+}

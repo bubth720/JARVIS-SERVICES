@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.ToolDispatcherTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:53:12.495Z" hostname="cloud-lab-redacted" time="0.088">
+  <properties/>
+  <testcase name="restartInvalidatesPendingReceiptWithoutDeletingJournal()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.005"/>
+  <testcase name="collisionAndVersionsAreRejected()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.005"/>
+  <testcase name="threeRealAdaptersAndReadableDocx()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.009"/>
+  <testcase name="journalContainsNoArgumentsOrPaths()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.006"/>
+  <testcase name="contentPrincipalAndRequestCannotBeChanged()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.013"/>
+  <testcase name="persistentRegistryDoesNotMakeAdaptersExecutable()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.003"/>
+  <testcase name="permissionRefusedBeforeAdapterReadsAnything()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.003"/>
+  <testcase name="cancelAndDeadlineArePropagatedAndQueuedWorkNeverRuns()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.025"/>
+  <testcase name="absentApprovalAndUnsafePathNeverCreateFile()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.006"/>
+  <testcase name="receiptCannotBeReplayedAndConsumptionIsDurable()" classname="fr.jarvis.services.ToolDispatcherTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,31 @@
+{
+  "api": 24,
+  "host": "127.0.0.1",
+  "port": 5581,
+  "apk_sha256": "b66d1efb6ce5d41c1ab82dbaa559ffec53fd83ba6fc0dea2109bef0bb666e4bf",
+  "expected": 1,
+  "cases": [
+    {
+      "numtests": "1",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "docxNoConsentNoCreationThenConfirmedReadback",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;List view;Sort by;More options;sample.pdf;7:35 AM;source.csv;7:35 AM;source.txt;7:35 AM;template.docx;7:35 AM;",
+      "current": "1",
+      "status_code": -2
+    }
+  ],
+  "identity": [
+    "1",
+    "24",
+    "1"
+  ],
+  "fingerprint": "Android/sdk_phone_x86/generic_x86:7.0/NYC/4174735:userdebug/test-keys",
+  "airplane_mode": "1",
+  "command": "am instrument -w -r -e class fr.jarvis.services.android.adapter.FusionSafInstrumentedTest#docxNoConsentNoCreationThenConfirmedReadback fr.jarvis.services.android.adapter.test/androidx.test.runner.AndroidJUnitRunner",
+  "complete": true,
+  "passed": 0,
+  "success": false,
+  "elapsed_host_seconds": 52.968
+}

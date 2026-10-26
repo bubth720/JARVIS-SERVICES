@@ -1,0 +1,12 @@
+{
+  "api": 26,
+  "archive": "x86-26_r01.zip",
+  "bytes": 350195807,
+  "sha1_publisher": "e613d6e0da668e30daf547f3c6627a6352846f90",
+  "sha256": "3177b721ab4d616fcc05d5e5eb2c175e20fe4d2afd1f4ea5ef62cc4d347c7a0f",
+  "verified": true,
+  "host": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "jdk": "java version \"21.0.8\" 2025-07-15 LTS\nJava(TM) SE Runtime Environment (build 21.0.8+12-LTS-250)\nJava HotSpot(TM) 64-Bit Server VM (build 21.0.8+12-LTS-250, mixed mode, sharing)\n",
+  "guest_ram_mib": 1536,
+  "execution": "TCG software, no KVM; boot and host times are not physical performance"
+}

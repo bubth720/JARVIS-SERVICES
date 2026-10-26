@@ -2,6 +2,10 @@
 # Only GitHub's ephemeral, verified emulator. Preserve the actual Gradle exit status.
 set -eu
 case "${1-}" in 24|25|26|35) qualification_api="$1" ;; *) exit 2 ;; esac
+if [ "$qualification_api" = 35 ]; then
+  mkdir -p build
+  "$ANDROID_HOME/emulator/emulator" -accel-check > build/fusion02-accel.log 2>&1
+fi
 python3 scripts/android-lab-readiness.py --api "$qualification_api" --output build/fusion02-readiness
 set +e
 ./gradlew -PwithAndroid :services-saf-fixture:installDebug :services-android-adapter:connectedDebugAndroidTest --no-daemon --max-workers=2

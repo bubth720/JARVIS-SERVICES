@@ -1,0 +1,70 @@
+{
+  "api": 24,
+  "host": "127.0.0.1",
+  "port": 5581,
+  "apk_sha256": "92a72fc75f198914ee9bc518afe8f7bb2545c4c191026d82a5cb462b958c9f4b",
+  "expected": 14,
+  "cases": [
+    {
+      "numtests": "14",
+      "stream": ".",
+      "id": "AndroidJUnitRunner",
+      "test": "csvAndPermissionsOnPlatformSQLite",
+      "class": "fr.jarvis.services.android.adapter.AndroidToolPortInstrumentedTest",
+      "current": "1",
+      "status_code": 0
+    },
+    {
+      "numtests": "14",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "abandonedCommitAndJournalQuotaFailClosed",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;Grid view;Sort by;More options;sample.pdf;7:50 AM;source.csv;7:50 AM;source.txt;7:50 AM;template.docx;7:50 AM;",
+      "current": "2",
+      "status_code": -2
+    },
+    {
+      "numtests": "14",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "revokeAtBarrierBeforeCommitHasNoEffect",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;Grid view;Sort by;More options;sample.pdf;7:50 AM;source.csv;7:50 AM;source.txt;7:50 AM;template.docx;7:50 AM;",
+      "current": "3",
+      "status_code": -2
+    },
+    {
+      "numtests": "14",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "deceptiveAckUnknownAndNoRetryAfterReopen",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;Grid view;Sort by;More options;sample.pdf;7:50 AM;source.csv;7:50 AM;source.txt;7:50 AM;template.docx;7:50 AM;",
+      "current": "4",
+      "status_code": -2
+    },
+    {
+      "numtests": "14",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "maliciousUriAndProviderDenialHaveNoEffect",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.AssertionError: SAF selection; UI=Show roots;FUSION fixtures;Grid view;Sort by;More options;sample.pdf;7:50 AM;source.csv;7:50 AM;source.txt;7:50 AM;template.docx;7:50 AM;",
+      "current": "5",
+      "status_code": -2
+    }
+  ],
+  "identity": [
+    "1",
+    "24",
+    "1"
+  ],
+  "fingerprint": "Android/sdk_phone_x86/generic_x86:7.0/NYC/4174735:userdebug/test-keys",
+  "airplane_mode": "1",
+  "command": "am instrument -w -r fr.jarvis.services.android.adapter.test/androidx.test.runner.AndroidJUnitRunner",
+  "complete": false,
+  "passed": 1,
+  "success": false,
+  "elapsed_host_seconds": 188.257
+}

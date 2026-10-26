@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.ModulesTest" tests="36" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:53:12.003Z" hostname="cloud-lab-redacted" time="0.339">
+  <properties/>
+  <testcase name="jsonFilterSortNormalizeAggregate()" classname="fr.jarvis.services.ModulesTest" time="0.005"/>
+  <testcase name="cancelledWorkflowCreatesNoFile()" classname="fr.jarvis.services.ModulesTest" time="0.006"/>
+  <testcase name="bridgeIdentityCapabilitiesAndDisconnect()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="recoveryIncludesOriginalsAndMetadata()" classname="fr.jarvis.services.ModulesTest" time="0.008"/>
+  <testcase name="memoryRequiresExactConfirmationAndPersists()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="multiBatchCorpusKeepsEverySource()" classname="fr.jarvis.services.ModulesTest" time="0.026"/>
+  <testcase name="protectedExportDenied()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="realPdfImportSearch()" classname="fr.jarvis.services.ModulesTest" time="0.009"/>
+  <testcase name="incrementalIndexAndDelete()" classname="fr.jarvis.services.ModulesTest" time="0.006"/>
+  <testcase name="vectorBaselineProvenance()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="representativeWorkflowWithNetworkDenied()" classname="fr.jarvis.services.ModulesTest" time="0.022"/>
+  <testcase name="corruptBackupRefused()" classname="fr.jarvis.services.ModulesTest" time="0.005"/>
+  <testcase name="ftsSpecialCharactersAreLiteral()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="analystMultiDocumentMockAndOfflineFallback()" classname="fr.jarvis.services.ModulesTest" time="0.006"/>
+  <testcase name="importsTextAndMetadata()" classname="fr.jarvis.services.ModulesTest" time="0.003"/>
+  <testcase name="limitedSemanticSynonyms()" classname="fr.jarvis.services.ModulesTest" time="0.003"/>
+  <testcase name="noArbitraryToolOrDocumentInstructions()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="cancelledImportLeavesNoOriginal()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="analystRejectsInventedCitation()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="crashedWorkflowIsUnknownNotReplayed()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="memoryRetention()" classname="fr.jarvis.services.ModulesTest" time="0.124"/>
+  <testcase name="scannedPdfReportsOcrRequired()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="memoryRectificationDeletion()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="diagnosticsOfflineAndEightModules()" classname="fr.jarvis.services.ModulesTest" time="0.002"/>
+  <testcase name="analystCoordinatesKnowledgeDocumentsDataAndModel()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="coreMockCorrelationAndPermission()" classname="fr.jarvis.services.ModulesTest" time="0.004"/>
+  <testcase name="malformedCsvAndNumbers()" classname="fr.jarvis.services.ModulesTest" time="0.003"/>
+  <testcase name="xxeInDocxRejected()" classname="fr.jarvis.services.ModulesTest" time="0.006"/>
+  <testcase name="csvExactDedupAndStatistics()" classname="fr.jarvis.services.ModulesTest" time="0.005"/>
+  <testcase name="backupRestoreRequiresConfirmation()" classname="fr.jarvis.services.ModulesTest" time="0.003"/>
+  <testcase name="boundsAndExtensions()" classname="fr.jarvis.services.ModulesTest" time="0.002"/>
+  <testcase name="importsCsvJson()" classname="fr.jarvis.services.ModulesTest" time="0.003"/>
+  <testcase name="docxRoundtripAndNoOverwrite()" classname="fr.jarvis.services.ModulesTest" time="0.007"/>
+  <testcase name="workflowCreatesDocxAndRejectsReplay()" classname="fr.jarvis.services.ModulesTest" time="0.01"/>
+  <testcase name="csvQuotedMultilineRoundtrip()" classname="fr.jarvis.services.ModulesTest" time="0.002"/>
+  <testcase name="analystCalculationsDeterministic()" classname="fr.jarvis.services.ModulesTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

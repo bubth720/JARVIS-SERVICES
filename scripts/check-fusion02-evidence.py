@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate published FUSION-02 evidence without upgrading laboratory proof to production GO."""
 import hashlib, json
+import xml.etree.ElementTree as ET
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def check(root=ROOT/'docs/fusion-02'):
@@ -24,7 +25,12 @@ def check(root=ROOT/'docs/fusion-02'):
         assert 'OK (15 tests)' in raw and 'INSTRUMENTATION_CODE: -1' in raw
         assert raw.count('INSTRUMENTATION_STATUS_CODE: 0')==15
         assert 'INSTRUMENTATION_STATUS_CODE: -2' not in raw
-    assert v['jvm']['tests']==100 and v['jvm']['failures']==0 and v['jvm']['skipped']==0
-    assert v['robolectric']['tests']==40 and v['robolectric']['failures']==0 and v['robolectric']['skipped']==0
+    for group,expected in [('jvm',100),('robolectric',40),('final_reference_jvm',129)]:
+        suites=[ET.parse(p).getroot() for p in (root/'evidence/junit'/group).glob('TEST-*.xml')]
+        cases=[case for suite in suites for case in suite.iter('testcase')]
+        assert sum(int(s.get('tests',0)) for s in suites)==expected and len(cases)==expected
+        assert all(case.find('failure') is None and case.find('error') is None and case.find('skipped') is None for case in cases)
+    assert v['jvm']['tests']==100 and v['jvm']['failures']==0 and v['jvm']['errors']==0 and v['jvm']['skipped']==0
+    assert v['robolectric']['tests']==40 and v['robolectric']['failures']==0 and v['robolectric']['errors']==0 and v['robolectric']['skipped']==0
     print('FUSION-02 evidence consistent; PARTIAL, production activation blocked')
 if __name__=='__main__':check()

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" tests="40" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:40:43.956Z" hostname="cloud-lab-redacted" time="10.729">
+  <properties/>
+  <testcase name="cancellationBoundsUriRefusalsAndDocxFailClosed[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="2.048"/>
+  <testcase name="cancellationBoundsUriRefusalsAndDocxFailClosed[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="1.062"/>
+  <testcase name="cancellationBoundsUriRefusalsAndDocxFailClosed[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="2.364"/>
+  <testcase name="cancellationBoundsUriRefusalsAndDocxFailClosed" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="3.138"/>
+  <testcase name="corruptJournalRefusesWithoutResetAndReleasesConstructorLease[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.053"/>
+  <testcase name="corruptJournalRefusesWithoutResetAndReleasesConstructorLease[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.037"/>
+  <testcase name="corruptJournalRefusesWithoutResetAndReleasesConstructorLease[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.042"/>
+  <testcase name="corruptJournalRefusesWithoutResetAndReleasesConstructorLease" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.039"/>
+  <testcase name="interruptedReceiptBecomesUnknownAndIsNeverReplayed[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.048"/>
+  <testcase name="interruptedReceiptBecomesUnknownAndIsNeverReplayed[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.042"/>
+  <testcase name="interruptedReceiptBecomesUnknownAndIsNeverReplayed[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.073"/>
+  <testcase name="interruptedReceiptBecomesUnknownAndIsNeverReplayed" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.056"/>
+  <testcase name="rejectsConcurrentJournalOwnerUntilConfirmedClosure[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.051"/>
+  <testcase name="rejectsConcurrentJournalOwnerUntilConfirmedClosure[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.048"/>
+  <testcase name="rejectsConcurrentJournalOwnerUntilConfirmedClosure[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.044"/>
+  <testcase name="rejectsConcurrentJournalOwnerUntilConfirmedClosure" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.037"/>
+  <testcase name="csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.045"/>
+  <testcase name="csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.047"/>
+  <testcase name="csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.049"/>
+  <testcase name="csvUsesExistingAlgorithmAndDurableReceiptsWithoutBody" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.08"/>
+  <testcase name="closeAndCancellationWaitForObservedStreamEnd[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.037"/>
+  <testcase name="closeAndCancellationWaitForObservedStreamEnd[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.043"/>
+  <testcase name="closeAndCancellationWaitForObservedStreamEnd[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.039"/>
+  <testcase name="closeAndCancellationWaitForObservedStreamEnd" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.046"/>
+  <testcase name="refusesExistingUnownedDatabaseWithoutMigratingIt[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.03"/>
+  <testcase name="refusesExistingUnownedDatabaseWithoutMigratingIt[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.032"/>
+  <testcase name="refusesExistingUnownedDatabaseWithoutMigratingIt[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.035"/>
+  <testcase name="refusesExistingUnownedDatabaseWithoutMigratingIt" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.039"/>
+  <testcase name="realTwoPagePdfExtractionReturnsCorrectPageAndSha[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.201"/>
+  <testcase name="realTwoPagePdfExtractionReturnsCorrectPageAndSha[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.126"/>
+  <testcase name="realTwoPagePdfExtractionReturnsCorrectPageAndSha[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.132"/>
+  <testcase name="realTwoPagePdfExtractionReturnsCorrectPageAndSha" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.144"/>
+  <testcase name="selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.046"/>
+  <testcase name="selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.03"/>
+  <testcase name="selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.065"/>
+  <testcase name="selectedTextSearchPreservesProvenanceOffsetsAndRejectsDuplicate" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.061"/>
+  <testcase name="permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[24]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.07"/>
+  <testcase name="permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[25]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.056"/>
+  <testcase name="permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled[26]" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.039"/>
+  <testcase name="permissionsNeverComeFromToolArgumentsAndRefusalsAreJournalled" classname="fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest" time="0.047"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

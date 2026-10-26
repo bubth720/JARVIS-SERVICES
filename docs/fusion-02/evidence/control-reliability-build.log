@@ -1,0 +1,108 @@
+[Inherited cloud proxy/CA configuration redacted; no TLS or dependency verification disabled]
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :android
+Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+
+> Task :services-portable-api:compileJava UP-TO-DATE
+> Task :services-portable-api:processResources NO-SOURCE
+> Task :services-portable-api:classes UP-TO-DATE
+> Task :services-portable-api:jar UP-TO-DATE
+> Task :services-android-adapter:preBuild UP-TO-DATE
+> Task :services-android-adapter:preDebugBuild UP-TO-DATE
+> Task :services-android-adapter:generateDebugResValues UP-TO-DATE
+> Task :services-android-adapter:generateDebugResources UP-TO-DATE
+> Task :services-android-adapter:packageDebugResources UP-TO-DATE
+> Task :services-android-adapter:parseDebugLocalResources UP-TO-DATE
+> Task :services-android-adapter:generateDebugRFile UP-TO-DATE
+> Task :services-android-adapter:javaPreCompileDebug UP-TO-DATE
+> Task :services-android-adapter:compileDebugJavaWithJavac UP-TO-DATE
+> Task :services-android-adapter:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services-android-adapter:preDebugAndroidTestBuild UP-TO-DATE
+> Task :services-android-adapter:javaPreCompileDebugAndroidTest UP-TO-DATE
+> Task :services-android-adapter:writeDebugAarMetadata UP-TO-DATE
+> Task :services-android-adapter:checkDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :services-android-adapter:compileDebugLibraryResources UP-TO-DATE
+> Task :services-android-adapter:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :services-android-adapter:mapDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :services-android-adapter:generateDebugAndroidTestResources UP-TO-DATE
+> Task :services-android-adapter:mergeDebugAndroidTestResources UP-TO-DATE
+> Task :services-android-adapter:extractDeepLinksDebug UP-TO-DATE
+> Task :services-android-adapter:processDebugManifest UP-TO-DATE
+> Task :services-android-adapter:processDebugAndroidTestManifest UP-TO-DATE
+> Task :services-android-adapter:processDebugAndroidTestResources UP-TO-DATE
+
+> Task :services-android-adapter:compileDebugAndroidTestJavaWithJavac
+Note: /workspace/JARVIS-SERVICES/services-android-adapter/src/androidTest/java/fr/jarvis/services/android/adapter/FusionSafInstrumentedTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :services-android-adapter:mergeDebugAndroidTestShaders UP-TO-DATE
+> Task :services-android-adapter:compileDebugAndroidTestShaders NO-SOURCE
+> Task :services-android-adapter:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :services-android-adapter:mergeDebugShaders UP-TO-DATE
+> Task :services-android-adapter:compileDebugShaders NO-SOURCE
+> Task :services-android-adapter:generateDebugAssets UP-TO-DATE
+> Task :services-android-adapter:mergeDebugAssets UP-TO-DATE
+> Task :services-android-adapter:mergeDebugAndroidTestAssets UP-TO-DATE
+> Task :services-android-adapter:compressDebugAndroidTestAssets UP-TO-DATE
+> Task :services-android-adapter:processDebugAndroidTestJavaRes NO-SOURCE
+> Task :services-android-adapter:processDebugJavaRes NO-SOURCE
+> Task :services-android-adapter:mergeDebugAndroidTestJavaResource UP-TO-DATE
+> Task :services-android-adapter:checkDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :services-android-adapter:desugarDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :services-android-adapter:mergeExtDexDebugAndroidTest UP-TO-DATE
+> Task :services-android-adapter:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :services-android-adapter:dexBuilderDebugAndroidTest
+> Task :services-android-adapter:mergeLibDexDebugAndroidTest UP-TO-DATE
+> Task :services-android-adapter:mergeDebugJniLibFolders UP-TO-DATE
+> Task :services-android-adapter:mergeDebugNativeLibs NO-SOURCE
+> Task :services-android-adapter:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :services-android-adapter:mergeDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :services-android-adapter:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :services-android-adapter:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :services-android-adapter:validateSigningDebugAndroidTest UP-TO-DATE
+> Task :services-android-adapter:writeDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :services-android-adapter:stripDebugDebugSymbols NO-SOURCE
+> Task :services-android-adapter:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :services-android-adapter:extractDebugAnnotations UP-TO-DATE
+> Task :services-android-adapter:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :services-android-adapter:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :services-android-adapter:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :services-android-adapter:prepareDebugArtProfile UP-TO-DATE
+> Task :services-android-adapter:prepareLintJarForPublish UP-TO-DATE
+> Task :services-android-adapter:mergeDebugJavaResource UP-TO-DATE
+> Task :services-android-adapter:syncDebugLibJars UP-TO-DATE
+> Task :services-android-adapter:bundleDebugLocalLintAar UP-TO-DATE
+> Task :services-android-adapter:mergeProjectDexDebugAndroidTest
+> Task :services-android-adapter:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :services-android-adapter:createFullJarDebug UP-TO-DATE
+> Task :services-android-adapter:writeDebugLintModelMetadata UP-TO-DATE
+> Task :services-android-adapter:generateDebugAndroidTestLintModel
+> Task :services-android-adapter:extractProguardFiles UP-TO-DATE
+> Task :services-android-adapter:generateDebugLintReportModel UP-TO-DATE
+> Task :services-android-adapter:preDebugUnitTestBuild UP-TO-DATE
+> Task :services-android-adapter:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :services-android-adapter:lintAnalyzeDebug UP-TO-DATE
+> Task :services-android-adapter:packageDebugAndroidTest
+> Task :services-android-adapter:createDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :services-android-adapter:assembleDebugAndroidTest
+> Task :services-android-adapter:assembleAndroidTest
+
+> Task :services-android-adapter:lintAnalyzeDebugAndroidTest
+Warning: Unable to initialize metrics, ensure /home/agent/.android is writable, details: /home/agent/.android/analytics.settings (No such file or directory)
+
+> Task :services-android-adapter:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :services-android-adapter:lintReportDebug UP-TO-DATE
+> Task :services-android-adapter:lintDebug
+
+[Incubating] Problems report is available at: file:///workspace/JARVIS-SERVICES/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 18s
+65 actionable tasks: 7 executed, 58 up-to-date

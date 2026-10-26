@@ -1,0 +1,32 @@
+{
+  "api": 24,
+  "host": "127.0.0.1",
+  "port": 5581,
+  "apk_sha256": "248c671cc540fe673e6237b1011498e2d153eb4e2bb775a24c68f77fce5f9950",
+  "expected": 1,
+  "cases": [
+    {
+      "numtests": "1",
+      "stream": "",
+      "id": "AndroidJUnitRunner",
+      "test": "docxNoConsentNoCreationThenConfirmedReadback",
+      "class": "fr.jarvis.services.android.adapter.FusionSafInstrumentedTest",
+      "stack": "java.lang.SecurityException: No persistable permission grants found for UID 10062 and Uri 0 @ content://fr.jarvis.services.android.adapter.test.fusionfiles/document/source.txt",
+      "current": "1",
+      "status_code": -2
+    }
+  ],
+  "identity": [
+    "1",
+    "24",
+    "1"
+  ],
+  "fingerprint": "Android/sdk_phone_x86/generic_x86:7.0/NYC/4174735:userdebug/test-keys",
+  "airplane_request_output": "Broadcasting: Intent { act=android.intent.action.AIRPLANE_MODE (has extras) }\njava.lang.SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.AIRPLANE_MODE from pid=2650, uid=2000\n\tat android.os.Parcel.readException(Parcel.java:1683)\n\tat android.os.Parcel.readException(Parcel.java:1636)\n\tat android.app.ActivityManagerProxy.broadcastIntent(ActivityManagerNative.java:3507)\n\tat com.android.commands.am.Am.sendBroadcast(Am.java:772)\n\tat com.android.commands.am.Am.onRun(Am.java:404)\n\tat com.android.internal.os.BaseCommand.run(BaseCommand.java:51)\n\tat com.android.commands.am.Am.main(Am.java:121)\n\tat com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)\n\tat com.android.internal.os.RuntimeInit.main(RuntimeInit.java:262)\n",
+  "airplane_mode_setting": "1",
+  "command": "am instrument -w -r -e class fr.jarvis.services.android.adapter.FusionSafInstrumentedTest#docxNoConsentNoCreationThenConfirmedReadback fr.jarvis.services.android.adapter.test/androidx.test.runner.AndroidJUnitRunner",
+  "complete": false,
+  "passed": 0,
+  "success": false,
+  "elapsed_host_seconds": 35.003
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.ToolReceiptLifecycleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:42:38.150Z" hostname="cloud-lab-redacted" time="0.008">
+  <properties/>
+  <testcase name="drainCallbackWaitsForActuallyReturnedCancelledOperation()" classname="fr.jarvis.services.ToolReceiptLifecycleTest" time="0.004"/>
+  <testcase name="uncertainReceiptNeverDeliversSuccessOrValue()" classname="fr.jarvis.services.ToolReceiptLifecycleTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

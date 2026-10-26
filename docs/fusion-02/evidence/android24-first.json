@@ -1,0 +1,18 @@
+{
+  "api": 24,
+  "host": "127.0.0.1",
+  "port": 5581,
+  "apk_sha256": "35ff736603b4811dd59b1fdd18dcf373466b2e875963b8668c713a14afda920e",
+  "expected": 9,
+  "cases": [],
+  "identity": [
+    "1",
+    "24",
+    "1"
+  ],
+  "fingerprint": "Android/sdk_phone_x86/generic_x86:7.0/NYC/4174735:userdebug/test-keys",
+  "success": false,
+  "error": "Reading from 127.0.0.1:5581 timed out (10.0 seconds)",
+  "error_type": "TcpTimeoutException",
+  "elapsed_host_seconds": 55.096
+}

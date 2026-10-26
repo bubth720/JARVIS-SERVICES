@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.jarvis.services.DocxSecurityTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:53:10.523Z" hostname="cloud-lab-redacted" time="0.062">
+  <properties/>
+  <testcase name="malformedXmlIsRejected()" classname="fr.jarvis.services.DocxSecurityTest" time="0.031"/>
+  <testcase name="dtdIsRejectedForUtf8AndUtf16()" classname="fr.jarvis.services.DocxSecurityTest" time="0.009"/>
+  <testcase name="utf16AndBuiltInEntitiesRemainSupported()" classname="fr.jarvis.services.DocxSecurityTest" time="0.003"/>
+  <testcase name="extractedTextIsBounded()" classname="fr.jarvis.services.DocxSecurityTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
