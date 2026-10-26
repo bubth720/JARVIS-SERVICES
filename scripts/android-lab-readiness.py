@@ -10,7 +10,7 @@ if os.environ.get('GITHUB_ACTIONS')!='true':raise SystemExit('CI-only: refusing 
 a.output.mkdir(parents=True,exist_ok=True);record={'api':a.api,'serial':'emulator-5554','os_anr_wait_acknowledged':False,'attempts':[],'success':False,'capture_only':a.capture_only}
 def adb(*args,timeout=40):
     r=subprocess.run(['adb','-s','emulator-5554',*args],capture_output=True,timeout=timeout)
-    if r.returncode:raise RuntimeError(r.stderr.decode(errors='replace')[:400])
+    if r.returncode:raise RuntimeError('adb exit '+str(r.returncode)+': '+(r.stderr+r.stdout).decode(errors='replace')[:600])
     return r.stdout
 try:
     emulator_property='ro.boot.qemu' if a.api>=35 else 'ro.kernel.qemu'
@@ -20,11 +20,18 @@ try:
     record['identity']=identity
     if not a.capture_only:adb('shell','input keyevent KEYCODE_WAKEUP; input keyevent KEYCODE_MENU')
     for attempt in range(4):
-        adb('shell','rm -f /data/local/tmp/fusion-readiness.xml')
-        adb('shell','uiautomator dump /data/local/tmp/fusion-readiness.xml')
-        raw=adb('shell','cat /data/local/tmp/fusion-readiness.xml')
-        (a.output/f'ui-{attempt}.xml').write_bytes(raw)
+        record['phase']='screenshot'
         (a.output/f'ui-{attempt}.png').write_bytes(adb('exec-out','screencap -p'))
+        record['phase']='uiautomator_dump'
+        try:
+            adb('shell','rm -f /data/local/tmp/fusion-readiness.xml')
+            adb('shell','uiautomator dump /data/local/tmp/fusion-readiness.xml')
+            raw=adb('shell','cat /data/local/tmp/fusion-readiness.xml')
+        except (RuntimeError,subprocess.TimeoutExpired) as error:
+            record['attempts'].append({'attempt':attempt,'hierarchy_error':str(error)})
+            if attempt==3:raise
+            time.sleep(2);continue
+        (a.output/f'ui-{attempt}.xml').write_bytes(raw)
         tree=ET.fromstring(raw);nodes=list(tree.iter('node'));texts=[n.get('text','') for n in nodes]
         record['attempts'].append({'attempt':attempt,'texts':texts})
         if a.capture_only:record['success']=True;break
@@ -38,11 +45,12 @@ try:
         if wait is None:raise RuntimeError('System UI ANR has no explicit Wait control')
         bounds=re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',wait.get('bounds',''))
         if bounds is None:raise RuntimeError('Invalid Wait bounds')
-        x1,y1,x2,y2=map(int,bounds.groups());assert x2>x1 and y2>y1
+        x1,y1,x2,y2=map(int,bounds.groups())
+        if x2<=x1 or y2<=y1:raise RuntimeError('System UI Wait control has empty bounds')
         adb('shell',f'input tap {(x1+x2)//2} {(y1+y2)//2}')
         record['os_anr_wait_acknowledged']=True;time.sleep(2)
     if not record['success']:raise RuntimeError('OS readiness not established')
-except Exception as error:record['error']=str(error)
+except Exception as error:record['error']=type(error).__name__+': '+str(error)
 finally:(a.output/'readiness.json').write_text(json.dumps(record,indent=2)+'\n')
 if not record['success']:
     error=('Android OS readiness API'+str(a.api)+': '+str(record.get('error'))+'; observed='+str(record.get('identity_observed'))).replace('%','%25').replace('\r','%0D').replace('\n','%0A')
