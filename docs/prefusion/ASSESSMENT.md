@@ -57,7 +57,7 @@ Les 15 outils UNSUPPORTED_NOT_RECONCILED ne sont pas importés dans le port. La 
 
 `CommitAuthorization` proposal/1 accepte generation>=0 ; `ServicesWirePreflight` refuse generation0 et >2^53−1 sur le wire proposé. Pas de +1 silencieux. COMMIT_STARTED n'est pas DISPATCHED ; COMPLETED n'est pas COMMITTED. Une confirmation UI ne remplace pas une autorité CORE : aperçu exact, session/request/generation/deadline, consentement unique, révocation sérialisée au point d'engagement et journal durable sont nécessaires. ACK perdu/après effet => UNKNOWN durable, aucun réessai implicite. Readback intégral exigé avant COMMITTED. La fence de laboratoire ne qualifie pas l'autorité de production ; ADR-002 attend décision.
 
-Compatibilité : SDK API24 sans nouveau JNI, Java8 pour le port ; diagnostic autonome API26 distinct ; JDK21/Gradle du wrapper pour build. Gson2.11.0/PDFBox Android2.0.27.0/BouncyCastle1.86 inchangés. Licences et redistribution d'un assemblage restent à examiner, aucune nouvelle dépendance ou permission.
+Compatibilité : SDK API24 sans nouveau JNI, Java11 pour l'API portable et l'adaptateur ; diagnostic autonome API26 distinct ; JDK21/Gradle du wrapper pour build. Gson2.11.0/PDFBox Android2.0.27.0/BouncyCastle1.86 inchangés. Licences et redistribution d'un assemblage restent à examiner, aucune nouvelle dépendance ou permission.
 
 **PASS** campagne de laboratoire au SHA365da117… ; **BLOCKED** autorité CORE/ADR-002 et export production ; **NOT_RUN** physique. La réussite émulateur n'ouvre aucun gate de production.
 
