@@ -1,0 +1,26 @@
+name: ADR002 lot4 isolated SERVICES contract lab
+on:
+  push:
+    branches: ['feat/lot4-offline-recovery-*']
+  pull_request:
+    branches: ['mission/adr002-principles-lot4-20261028']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-only:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Entire desktop unit suite including synthetic two-journal fixture
+        run: ./gradlew :desktop:test --no-daemon
+      - name: Fail if lot4 test-only sources reach production API
+        run: |
+          git diff --exit-code 13242bca1761a5f71bd86e052db4bc7d1909df37 -- services-portable-api/src/main services-android-adapter/src/main
