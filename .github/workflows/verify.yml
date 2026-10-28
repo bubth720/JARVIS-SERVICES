@@ -1,7 +1,7 @@
 name: SERVICES foundation and Android qualification
 on:
   push:
-    branches: [mission-001-services-foundation, mission-002a-android-qualification, feat/serv-01-services, feat/serv-02-services, feat/serv-03-services, feat/serv-04a-android-tool-port, feat/fusion-02-services]
+    branches: [mission-001-services-foundation, mission-002a-android-qualification, feat/serv-01-services, feat/serv-02-services, feat/serv-03-services, feat/serv-04a-android-tool-port, feat/fusion-02-services, codex/prefusion-lot3-services]
   pull_request:
   workflow_dispatch:
 permissions:

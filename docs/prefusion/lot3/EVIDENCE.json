@@ -1,0 +1,105 @@
+{
+  "format": "jarvis.services.prefusion-lot3.evidence/1",
+  "mission": "SERV-PF-02",
+  "source_commit": "7c9b0efe10187edadbf8555fefe4c98702fa5e98",
+  "development_branch": "codex/prefusion-lot3-services",
+  "production_modified": false,
+  "production_export_enabled": false,
+  "adr_002_approved": false,
+  "jvm": {
+    "tests": 121,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": {
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.BundledStorageTest.xml": "bea005a973754722263029e83e6ad763443f52621f9b0c37ddfeb90312da7393",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.CommitAuthorizationTest.xml": "8416819fa48c5d45b77f58e088313797520a9c9e8c37e6873a98a6f55f4c3324",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.DocxSecurityTest.xml": "fbd9a6e67562a21e0b096917f2c9f56b4d76e74ede56308af76c42e2dfe442e8",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.FoundationTest.xml": "3292d8630572fc5086641b56c4008c0d26cb0568889131a4aa960a4fc5e7469f",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.ModulesTest.xml": "81b89de00eea4cd237d4d24a487722d20d1bf512e515a5e051f9eb89c67a9d30",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.PipelineFixtureTest.xml": "a3737bc4c51d394c064c971bf5ee4739176ae1337cc69a017a588c3538914f3c",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.SafExportWriterTest.xml": "3acd5af19b37721818cc62d104cd4d6d03cfb1915caba43d7032b906dd72534d",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.ServicesWirePreflightTest.xml": "530be2fc75bedd79d4d8b65afcd9f71528d6ddc0354ccc9e17bbab3494141c83",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.ToolDispatcherTest.xml": "c47b25ee32ae849d26355ad2cee45e536c40a1d582ab7ab508795fc16638c79b",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.ToolReceiptLifecycleTest.xml": "4d98b7c3f07494be480ceadcf27f2539be5c1fdbfa6cfa33b7041a69f3abedd2",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.WorkflowBridgeTest.xml": "1d7c77a88935857fdcc19642d21f128255278aafbd3d6451ee201903b6fc704f",
+      "desktop/build/test-results/test/TEST-fr.jarvis.services.prefusion.ReceiptContractBenchTest.xml": "5965afb777eba0374f914af517af0415dbd998d02ea996607b83a267a2cea586"
+    }
+  },
+  "robolectric": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": {
+      "services-android-adapter/build/test-results/testDebugUnitTest/TEST-fr.jarvis.services.android.adapter.ServicesAndroidToolPortTest.xml": "b47d2abe83e5b2d051094e4dcc71d6d6eef44bfa1a1fa31689c2ed90eacfa3bc"
+    }
+  },
+  "android_instrumentation": {
+    "24": {
+      "status": "NOT_RUN",
+      "expected_cases": 15,
+      "reason": "No local emulator/KVM; final commit CI must be observed separately."
+    },
+    "25": {
+      "status": "NOT_RUN",
+      "expected_cases": 15,
+      "reason": "No local emulator/KVM; final commit CI must be observed separately."
+    },
+    "26": {
+      "status": "NOT_RUN",
+      "expected_cases": 15,
+      "reason": "No local emulator/KVM; final commit CI must be observed separately."
+    },
+    "35": {
+      "status": "NOT_RUN",
+      "expected_cases": 15,
+      "reason": "No local emulator/KVM; final commit CI must be observed separately."
+    }
+  },
+  "physical_device": "NOT_RUN",
+  "commands": {
+    "jvm": "gradle :desktop:test --no-daemon",
+    "robolectric_build_lint": "gradle -PwithAndroid :services-android-adapter:testDebugUnitTest :services-android-adapter:assembleDebug :services-android-adapter:assembleAndroidTest :services-android-adapter:lintDebug --no-daemon --max-workers=2",
+    "api24_compile": "python3 scripts/check-api24-compile.py --sdk \"$ANDROID_HOME\" --dependency-cache \"$GRADLE_USER_HOME/caches/modules-2/files-2.1\" --output build/serv04a-api24",
+    "diagnostic_build_lint": "gradle -PwithAndroid :android:assembleDebug :android:assembleAndroidTest :android:lintDebug --no-daemon --max-workers=2"
+  },
+  "api24_compile": {
+    "api": 24,
+    "type": "compile_only_no_runtime_or_device_claim",
+    "source_files": 24,
+    "exit_code": 0,
+    "sha256": {
+      "android.jar": "4c438bf1b3d4e6104faccc62e1ffe95ef197b88055497b540a871349e93c8685",
+      "core-lambda-stubs.jar": "c8a21e0e653227d1fce74bd547c9e7278e17c016c405aa8e1f6c313b192ade31",
+      "gson-2.11.0.jar": "57928d6e5a6edeb2abd3770a8f95ba44dce45f3b23b7a9dc2b309c581552a78b",
+      "pdfbox-android-2.0.27.0.aar": "30277f879cfd571db2a137582c95516a0d4ea6778e945519bc58ca93d57d88c7"
+    }
+  },
+  "artifacts": {
+    "adapter_debug_aar": {
+      "sha256": "b023ecd5ac485e2c80ef6a053027c8bdacb17d4ac3126005ae156d8fc6ba220c",
+      "test_bench_in_classes_jar": false
+    },
+    "diagnostic_apk": {
+      "path": "android/build/outputs/apk/debug/android-debug.apk",
+      "sha256": "a04baa4bd8f4ac3fa1f286b1aa365bde1e0102fe8350c4fc8a486cb188333cb1"
+    },
+    "diagnostic_test_apk": {
+      "path": "android/build/outputs/apk/androidTest/debug/android-debug-androidTest.apk",
+      "sha256": "9339bef47b05c5d59e18738159db7502851344e6e349b5f96e18405086429e76"
+    }
+  },
+  "scope_check": {
+    "production_unchanged": true,
+    "tracked_change": ".github/workflows/verify.yml branch trigger only",
+    "new_code": "desktop/src/test/java/fr/jarvis/services/prefusion only"
+  },
+  "diagnostic_build_lint": {
+    "status": "SUCCESS",
+    "duration": "4m38s",
+    "tasks": 71,
+    "executed": 67,
+    "up_to_date": 4
+  }
+}
