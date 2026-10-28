@@ -11,7 +11,18 @@ import org.junit.jupiter.api.Test;
 class TwoJournalLot4Test {
   enum Owner { CORE, SERVICES }
   enum Step { PREPARED, CONSENT_CONSUMED, REVOKED, DISPATCHED, COMMIT_STARTED, COMMITTED, UNKNOWN }
-  record Entry(Owner owner, long sequence, Step step, String epoch, long generation) {}
+  static final class Entry {
+    final Owner owner;
+    final long sequence;
+    final Step state;
+    final String epoch;
+    final long generation;
+    Entry(Owner owner, long sequence, Step step, String epoch, long generation) {
+      this.owner=owner; this.sequence=sequence; this.state=step;
+      this.epoch=epoch; this.generation=generation;
+    }
+    Step step() { return state; }
+  }
   static final class Journal {
     final Owner owner;
     final ArrayList<Entry> events = new ArrayList<>();
@@ -23,8 +34,16 @@ class TwoJournalLot4Test {
     }
   }
   enum Inspection { EVIDENCE_MATCH, INCONCLUSIVE }
-  record Readback(String destination, String digest, boolean closed,
-                  boolean ack, boolean sourceUnchanged) {}
+  static final class Readback {
+    final String destination;
+    final String digest;
+    final boolean closed, ack, sourceUnchanged;
+    Readback(String destination, String digest, boolean closed,
+             boolean ack, boolean sourceUnchanged) {
+      this.destination=destination; this.digest=digest; this.closed=closed;
+      this.ack=ack; this.sourceUnchanged=sourceUnchanged;
+    }
+  }
   static final class Lab {
     final String epoch = "00000000-0000-4000-8000-000000000001";
     final String destination = "fixture://new/result.csv";
